@@ -404,7 +404,7 @@ const page40 = {
 }
 
 const page41 = {
-
+    
 }
 
 let menuOpen = false;
@@ -419,12 +419,12 @@ window.addEventListener("load", (event) => {
     // document.getElementById("menu-btn").addEventListener("mouseover", showMenu);
     // document.addEventListener("mouseover", (event) => {
         //     if (event.target.classList.contains("colored-text")) {
-    //         showDefinition();
-    //     }
-    // });
-    // createScreen(page38);
-    // createImgCarousel();
-    document.getElementById("menu-btn").addEventListener("click", showMenu);
+            //         showDefinition();
+            //     }
+            // });
+            // createScreen(page38);
+            // createImgCarousel();
+            document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
     })
@@ -469,10 +469,10 @@ const showQues = () => {
                     document.getElementById("ques-content").innerHTML = quesHTMLContent.exmpMenuContent;
                     menuExpVisited = true;
                 } else if (event.target.id === "exmp-info-btn") {
-                currText = "exmp-info-text";
-                document.getElementById("ques-content").innerHTML = quesHTMLContent.exmpInfoContent;
-                infoExpVisited = true;
-            } else if (event.target.id === "exmp-ques-btn") {
+                    currText = "exmp-info-text";
+                    document.getElementById("ques-content").innerHTML = quesHTMLContent.exmpInfoContent;
+                    infoExpVisited = true;
+                } else if (event.target.id === "exmp-ques-btn") {
                     currText = "exmp-ques-text";
                     document.getElementById("ques-content").innerHTML = quesHTMLContent.exmpQuesContent;
                     quesExpVisited = true;    
@@ -645,6 +645,13 @@ const createImgElement = (list) => {
     document.getElementById(list[4]).appendChild(newIMG);
 }
 
+const hativaDetails = {
+    el1: ["div", "structure-details", "hativa-details", "", "structure"],
+    img2: ["assets/images/close-btn.svg", "close-btn-structure", "close-details-btn", "", "hativa-details"],
+    el3: ["div", "title details-title", "", "מפקדת חטיבת החילוץ וההדרכה", "hativa-details"],
+    el4: ["div", "details-text", "", "מפקדת החטיבה תשמש כמפקדה משימתית בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירת המלחמה, לרבות מחוץ לגבולות מדינת ישראל ותפקד על מבצעים במרחב האזרחי ברגיעה ובלחימה.", "hativa-details"]
+}
+
 const createVideo = (vidList) => {
     let iFrameVideo = document.createElement("iframe");
     iFrameVideo.src = vidList[0];
@@ -765,6 +772,11 @@ var createImgCarousel = () => {
     srOnlyNext.classList.add("sr-only");
     srOnlyNext.innerText = "Next";
     carouselControlNext.appendChild(srOnlyNext);
+}
+
+const createHativaDetails = () => {
+    let detailsContainer = ["div", "structure-details", "hativa-details", "", "structure"];
+    createTextElement(detailsContainer);
 }
 
 ////////////////////////////////////////////////////////////////////////
