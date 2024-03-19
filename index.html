@@ -1,15 +1,494 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>search and rescue lesson</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi pariatur ut ipsam ratione soluta doloribus ex libero odio rerum eveniet officiis, quam illum accusantium nostrum laudantium voluptas nisi sapiente dolorem?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi pariatur ut ipsam ratione soluta doloribus ex libero odio rerum eveniet officiis, quam illum accusantium nostrum laudantium voluptas nisi sapiente dolorem?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi pariatur ut ipsam ratione soluta doloribus ex libero odio rerum eveniet officiis, quam illum accusantium nostrum laudantium voluptas nisi sapiente dolorem?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi pariatur ut ipsam ratione soluta doloribus ex libero odio rerum eveniet officiis, quam illum accusantium nostrum laudantium voluptas nisi sapiente dolorem?</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>תעודת זהות- חטיבת החילוץ וההדרכה</title>
+        <link rel="icon" href="assets/images/gapa-official.svg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="index1.css">
+        <script src="jquery-3.7.1.js"></script>
+        <script src="index1.js" type="text/javascript"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="main">
+            <img src="assets/images/menu-btn.svg" alt="תפריט" title="כפתור התפריט" id="menu-btn" class="toggle-nav">
+            <img src="assets/images/info-btn.svg" alt="אודות" title="כפתור אודות" id="info-btn">
+            <img src="assets/images/ques-btn.svg" alt="מידע" title="כפתור המידע" id="ques-btn">
+            <img src="assets/images/hativa.svg" alt="חטיבת החילוץ וההדרכה" title="חטיבת החילוץ וההדרכה" id="sym-hativa">
+            <img src="assets/images/gapa-unofficial.svg" alt="גוף פיתוח הדרכה" title="גוף פיתוח הדרכה" id="sym-gapa-unofficial">
+            <div class="nice-nav">
+                <ul class="main-menu">
+                    <li class="child-menu">
+                        <a href="#">
+                            <img src="assets/images/clock-icon.svg" alt="clock" class="menu-icon">
+                            <span class="menu-text">ציר הזמן- מ"פלח"ץ" לחטיבת החילוץ וההדרכה</span><span class="toggle-right arrow-container">
+                                <span class="arrow left-arrow"></span>
+                            </span>
+                        </a>
+                        <ul class="child-menu-ul">
+                            <!-- when putting this into js, make sure to add page num in the id. 
+                                make sure that the main thing also sends to the correct page. 
+                                make sure that the tree is okay when coding. -->
+                            <li>
+                                <a href="#">עכשיו- חטיבת החילוץ וההדרכה</a>
+                            </li>
+                            <li>
+                                <a href="#">1992- הקמת פיקוד העורף</a>
+                            </li>
+                            <li>
+                                <a href="#">2003- הקמת פלוגת החילוץ הראשונה</a>
+                            </li>
+                            <li>
+                                <a href="#">2004- הקמת פלוגת 'חץ' ופלוגת 'רותם'</a>
+                            </li>
+                            <li>
+                                <a href="#">2008- איחוד פלוגות החילוץ והקמת גדוד שחר</a>
+                            </li>
+                            <li>
+                                <a href="#">2009- הקמת גדוד קדם</a>
+                            </li>
+                            <li>
+                                <a href="#">2009- המעבר ממגל לפקע"ר</a>
+                            </li>
+                            <li>
+                                <a href="#">2012- הקמת גדוד תבור</a>
+                            </li>
+                            <li>
+                                <a href="#">2012- הקמת גדוד רם</a>
+                            </li>
+                            <li>
+                                <a href="#">2013- הקמת הנפה הסדירה</a>
+                            </li>
+                            <li>
+                                <a href="#">1984- בה''ד 16</a>
+                            </li>
+                            <li>
+                                <a href="#">2016- איחוד בה''ד 16 והנפה הסדירה</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="child-menu">
+                        <a href="#">
+                            <img src="assets/images/target-icon.svg" alt="target" class="menu-icon"><span>ייעוד ותפקידי חטיבת החילוץ וההדרכה</span> <span class="toggle-right arrow-container"><span class="arrow left-arrow"></span>
+                        </a>
+                        <ul class="child-menu-ul">
+                            <li>
+                                <a href="#">ייעוד ותפקידי חטיבת החילוץ וההדרכה</a>
+                            </li>
+                            <li>
+                                <a href="#">תפקידי החטיבה בשגרה</a>
+                            </li>
+                            <li>
+                                <a href="#">תפקידי החטיבה בחירום</a>
+                            </li>
+                            <li>
+                                <a href="#">תפקידים מרכזיים- מפקדה משימתית- טורקיה</a>
+                            </li>
+                            <li>
+                                <a href="#">תפקידים מרכזיים- מפקדה משימתית- קורונה</a>
+                            </li>
+                            <li>
+                                <a href="#">תפקידים מרכזיים- חילוץ בעורף</a>
+                            </li>
+                            <li>
+                                <a href="#">תפקידים מרכזיים- חילוץ בסיוע לתמרון</a>
+                            </li>
+                            <li>
+                                <a href="#">תפקידים מרכזיים- אב''כ</a>
+                            </li>
+                            <li>
+                                <a href="#">תפקידים מרכזיים- בט''ש</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="child-menu">
+                        <a href="#">
+                            <img src="assets/images/building-icon.svg" alt="building" class="menu-icon"><span>מבנה החטיבה- יחידות ומפקדה</span> <span class="toggle-right arrow-container"><span class="arrow left-arrow"></span>
+                        </a>
+                        <ul class="child-menu-ul">
+                            <li>
+                                <a href="#">מפקדת חטיבת החילוץ וההדרכה</a>
+                            </li>
+                            <li>
+                                <a href="#">בא''ח העורף</a>
+                            </li>
+                            <li>
+                                <a href="#">בא''פ העורף</a>
+                            </li>
+                            <li>
+                                <a href="#">ביה''ס לפיקוד ולמקצועות העורף</a>
+                            </li>
+                            <li>
+                                <a href="#">יחידת מתכים</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="body-part"></div>
+            <div id="info" class="container" style="display: none;">
+                <img src="assets/images/close-btn.svg" alt="X- סגור" id="close-btn-info" class="close-window-btn">
+                <div id="info-container"  class="text-container">
+                    <p class="title">אודות:</p>
+                    <div class="line"><span class="bold-txt">מפקדת גפ''ה: </span><span>רס''ן שירה קרצ'ין</span></div>
+                    <div class="line"><span class="bold-txt">ק. ניהול ידע: </span><span>סג''ם אורי ספרנוביץ</span></div>
+                    <div class="line"><span class="bold-txt">פיתוח: </span><span>רב''ט תמר שנהב</span></div>
+                    <div class="line"><span class="bold-txt">גרפיקות: </span><span>טוראי שקד שואן</span></div>
+                    <div class="line"><span class="bold-txt">מומחה תוכן: </span><span>אל''ם אלעד אדרי</span></div>
+                    <div class="line"><span class="bold-txt">גרסה: </span><span>חודש 2024</span></div>
+                    <div class="line"><span class="bold-txt">צור קשר: </span><span>gapa.rescue@gmail.com</span></div>
+                </div>
+                <div id="symbols">
+                    <img src="assets/images/gapa-official.svg" alt="סמל גפ''ה" class="symbol-gapa">
+                    <img src="assets/images/gapa-unofficial.svg" alt="סמל גפ''ה" class="symbol-gapa">
+                </div>
+            </div>
+            <div id="ques-container" class="container" style="display: none;">
+                <img id="close-btn-ques" src="assets/images/close-btn.svg" alt="X- סגור" class="close-window-btn">
+                <div id="ques-content" class="content-container"></div>
+            </div>
+            <div id="page">
+                <!-- <div id="structure" class="structure-text-page">
+                    <div id="structure-tree" style="display: none;">
+                        <div id="hative-container">
+                            <img src="assets/images/hativa.svg" alt="hativa" id="hativa" class="structure-sym">
+                            <strong class="hativa-desc">מפקדה</strong>
+                        </div>
+                        <div class="units-container">
+                            <div id="bah-container">
+                                <img src="assets/images/bah.svg" alt="bah" id="bah" class="structure-sym">
+                                <strong class="bah-desc">בא"ח העורף</strong>
+                            </div>
+                            <div id="baf-container">
+                                <img src="assets/images/baf.svg" alt="baf" id="baf" class="structure-sym">
+                                <strong class="baf-desc">בא"פ העורף</strong>
+                            </div>
+                            <div id="matachim-container">
+                                <img src="assets/images/matachim-unit.svg" alt="matachim" id="matachim" class="structure-sym">
+                                <strong class="matachim-desc">יחידת מתכים</strong>
+                            </div>
+                            <div id="school-container">
+                                <img src="assets/images/school-of-oref.svg" alt="school" id="school" class="structure-sym">
+                                <strong class="school-desc">בית הספר לפיקוד<br> ולמקצועות העורף</strong>
+                               
+                            </div>
+                        </div>
+                        <div class="gdudim-container">
+                            <div>
+                                <img src="assets/images/gdud-shahar.svg" alt="shahar" id="shahar" class="structure-sym">
+                                <strong class="gdudim-desc">גדוד שחר</strong>
+                            </div>
+                            <div>
+                                <img src="assets/images/gdud-tavor.svg" alt="tavor" id="tavor" class="structure-sym">
+                                <strong class="gdudim-desc">גדוד תבור</strong>
+                            </div>
+                            <div>
+                                <img src="assets/images/gdud-ram.svg" alt="ram" id="ram" class="structure-sym">
+                                <strong class="gdudim-desc">גדוד רם</strong>
+                            </div>
+                            <div>
+                                <img src="assets/images/gdud-kedem.svg" alt="kedem" id="kedem" class="structure-sym">
+                                <strong class="gdudim-desc">גדוד קדם</strong>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="structure-details" id="hativa-details" style="display: none;">
+                        <img id="close-btn-structure" src="assets/images/close-btn.svg" alt="X- סגור" class="close-details-btn">
+                        <div class="title details-title">מפקדת חטיבת החילוץ וההדרכה</div>
+                        <div class="details-text">מפקדת החטיבה תשמש כמפקדה משימתית בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירת המלחמה, לרבות מחוץ לגבולות מדינת ישראל ותפקד על מבצעים במרחב האזרחי ברגיעה ובלחימה.</div>
+                    </div>
+                    
+                    <div class="structure-details" id="bah-details" style="display: none;">
+                        <img id="close-btn-structure" src="assets/images/close-btn.svg" alt="X- סגור" class="close-details-btn">
+                        <div class="title details-title">בא''ח העורף</div>
+                        <img src="assets/images/bah.svg" alt="בא''ח העורף" class="details-img">
+                        <div class="details-conteiner">
+                            <div class="subtitle">הכר את בא"ח העורף</div>
+                            <div class="details-text">בסיס אימונים חטיבתי להכשרת הלוחמים ופיתוח המפקדים למקצועות החילוץ, אב"כ ולוחמה.</div>
+                            <div class="subtitle">מגמות הבא"ח והכשרות</div>
+                            <ul class="details-list">
+                                <li>מכין לוחמות.</li>
+                                <li>אימון יסוד - הכשרת הלוחם ברמת "כושר לחימה"- בסיסי ב'.</li>
+                                <li>אימון מתקדם- הכשרת הלוחם ללוחמה ברמת "כושר לחימה"- בסיסי ג', מחלקות הפיקוד ברמת 'מתקדם א', ולחילוץ ברמת מחלץ 06.</li>
+                                <li>הכשרות נוספות לחיילים מאותרים: מש"קי מודיעין אוכלוסייה, קלע, מטול, מפקדי חוליה.</li>
+                            </ul>
+                            <div class="closed-card">
+                                <span class="closed-card-title">הידעת?</span>
+                                <img src="assets/images/arrow.svg" alt="arrow" class="closed-card-arrow">
+                            </div>
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000" style="display: none;">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <div class="d-block w-100 card">
+                                        <strong class="card-title">הידעת?</strong>
+                                        <div class="card-text">בבאח העורף מדור גיוס ייעודי לתפקידי החטיבה ומדור זה מוביל את תהליך הגיוס ממלש"ב ועד לחייל, מדור זה מנהל את הרשתות החברתיות של החטיבה ומייצג את החטיבה באירועי הגיוס של צה"ל.</div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100 card">
+                                        <strong class="card-title">הידעת?</strong>
+                                        <div class="card-text">בא''ח העורף בחירום הינו גדוד הצלה וחילוץ חמישי בחטיבת החילוץ ומשמש כעתודה חטיבתית למשימות חילוץ קל וסיוע אזרחי. מפקדת הבא''ח הינה מפקדת הגדוד ופלוגות האימון המתקדם בשיתוף קורס מכ''ים והשלמה לקצונה חנית משמשות כפלוגות חילוץ.</div>
+                                    </div>
+                                </div>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100 card">
+                                            <strong class="card-title">הידעת?</strong>
+                                            <div class="card-text">בא''ח העורף בחירום הינו גדוד הצלה וחילוץ חמישי בחטיבת החילוץ ומשמש כעתודה חטיבתית למשימות חילוץ קל וסיוע אזרחי. מפקדת הבא''ח הינה מפקדת הגדוד ופלוגות האימון המתקדם בשיתוף קורס מכ''ים והשלמה לקצונה חנית משמשות כפלוגות חילוץ.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="structure-details" id="baf-details" style="display: none;">
+                        <img id="close-btn-structure" src="assets/images/close-btn.svg" alt="X- סגור" class="close-details-btn">
+                        <div class="title details-title">בא''פ העורף</div>
+                        <img src="assets/images/baf.svg" alt="בא''פ העורף" class="details-img">
+                        <div class="details-conteiner">
+                            <div class="subtitle">הכר את בא''פ העורף</div>
+                            <div class="details-text">
+                                <span>בסיס אימונים פיקודי המתמחה בהובלה וחניכה של אימוני גדודי מילואים בתחומי חילוץ, אב''כ וחי''ר קל, חניכת את גדודי החטיבה הסדירים באימונים בין קווים ותו''כ תע''מ והובלת קורסים והכשרות בתחומי חילוץ, רפואה, </span>
+                                <span class="colored-text" id="def10">שו''ב, </span>
+                                <span class="colored-text" id="def11">אוכלוסייה, </span>
+                                <span class="colored-text" id="def12">צמ''ה, </span>
+                                <span class="colored-text" id="def13">הנדסה </span>
+                                <span class="colored-text" id="def14">ואנו''ח.</span>
+                            </div>
+                            <div class="subtitle">מדורי הבא''פ וחניכה</div>
+                            <ul class="details-list">
+                                <li>2 מדורי אימוני חילוץ.</li>
+                                <li>מדור צמ''ה.</li>
+                                <li>מדור רפואה.</li>
+                                <li>מדור הנדסה.</li>
+                                <li>חניכת אוכלוסייה.</li>
+                                <li>חניכת שו''ב.</li>
+                                <li>חניכת אנו''ח.</li>
+                            </ul>
+                            <div class="closed-card">
+                                <span class="closed-card-title">הידעת?</span>
+                                <img src="assets/images/arrow.svg" alt="arrow" class="closed-card-arrow">
+                            </div>
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000" style="display: none;">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <div class="d-block w-100 card">
+                                        <strong class="card-title">הידעת?</strong>
+                                        <div class="card-text">בעבר בא''פ העורף נקרא ענף אימון יחידות תחת בה''ד 16 ולאחר מכן תחת חטיבת החילוץ וההדרכה בצריפין. בשנת 2020 ענף אימון יחידות (ענף אמ''י) עבר למכלול זיקים והוקם בא''פ העורף.</div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100 card">
+                                        <strong class="card-title">הידעת?</strong>
+                                        <div class="card-text">בא''פ העורף הינו בסיס אימונים פיקודי ועל כן נאמן על הכשרות ואימונים של כלל יחידות פיקוד העורף ועל כשירות היחידות והמערכים המקצועיים של הפיקוד.</div>
+                                    </div>
+                                </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="structure-details" id="school-details" style="display: none;">
+                        <img id="close-btn-structure" src="assets/images/close-btn.svg" alt="X- סגור" class="close-details-btn">
+                        <div class="title details-title">ביה"ס לפיקוד ומקצועות העורף</div>
+                        <img src="assets/images/school-of-oref.svg" alt="בא''פ העורף" class="details-img">
+                        <div class="details-conteiner" id="part1" style="display: none;">
+                            <div class="subtitle">הכר את ביה"ס לפיקוד ומקצועות העורף</div>
+                            <div class="details-text">בית הספר החיילי למקצועות הפיקוד והעורף, המתמחה בהכשרת מפקדים ומדריכים בחילוץ, לחימה, אב"כ, בעורף, ובשמירת כשירות הפרט בתחומי ליבת העורף.</div>
+                            <div class="closed-card">
+                                <span class="closed-card-title">הידעת?</span>
+                                <img src="assets/images/arrow.svg" alt="arrow" class="closed-card-arrow">
+                            </div>
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000" style="display: none;">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-block w-100 card">
+                                        <strong class="card-title">הידעת?</strong>
+                                        <div class="card-text">
+                                            עד שנת 2015 התקיימה השלמה לקצונה אחידה ללוחמים ומטה.
+                                            בשנת 2015 התפצלה ההשלמה למגמת חנית- קציני חילוץ לוחמים, ומגמת מורג- קציני עורף.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100 card">
+                                        <strong class="card-title">הידעת?</strong>
+                                        <div class="card-text">בשנת 2018 תחת חטיבת החילוץ וההדרכה הוקם ביה''ס לפיקוד ומקצועות העורף שהינו תוצר של איחוד גדוד הפיקוד וענף מקצועות אשר ישבו בבה"ד 16.</div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100 card">
+                                            <strong class="card-title">הידעת?</strong>
+                                            <div class="card-text">מדור הכשרות אב''כ הינו גוף צבאי ייחודי הממונה על תחום אב''כ בכלל צה''ל ומעביר הכשרות בכלל יחידות צה''ל.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details-conteiner" id="part2">
+                            <div class="subtitle">מגמות בית הספר והכשרות</div>
+                            <div class="sub-sub-title">מגמת הכשרות יסוד</div>
+                            <ul class="details-list">
+                                <li>מחלקת זאב (טירונות ברמת כושר לחימה אישי עורפי).</li>
+                                <li>קורסי הדרכה: קמ"ד אב"כ, קמ"ד חילוץ, קמ"ד חירום, קורס מבצעים.</li>
+                            </ul>
+                            <div class="sub-sub-title">מגמות הפיקוד</div>
+                            <ul class="details-list">
+                                <li>קורס מ"כים- הכשרת הלוחם ברמת "כושר לחימה"- מתקדם ב', ומחלץ 07.</li>
+                                <li>השלמה לקצונה 'חנית'- השלמה לקצונה לאוכלוסיית הלוחמים בוגרי מגמת 'שדה' בבה"ד 1.</li>
+                                <li>השלמה לקצונה 'מורג'- השלמה לקצונה לאוכלוסיית המטה בוגרי מגמת 'מעוז' בבה"ד 1.</li>
+                                <li>הכנות לקצונה לאוכלוסיית הלוחמים ('כידון') והמטה ('צור').</li>
+                            </ul>
+                            <div class="sub-sub-title">מגמת מקצועות</div>
+                            <ul class="details-list">
+                                <li>מדור הכשרות חילוץ.</li>
+                                <li>מדור הכשרות אב"כ.</li>
+                            </ul>
+                            <div class="closed-card">
+                                <span class="closed-card-title">הידעת?</span>
+                                <img src="assets/images/arrow.svg" alt="arrow" class="closed-card-arrow">
+                            </div>
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000" style="display: none;">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-block w-100 card">
+                                        <strong class="card-title">הידעת?</strong>
+                                        <div class="card-text">
+                                            עד שנת 2015 התקיימה השלמה לקצונה אחידה ללוחמים ומטה.
+                                            בשנת 2015 התפצלה ההשלמה למגמת חנית- קציני חילוץ לוחמים, ומגמת מורג- קציני עורף.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100 card">
+                                        <strong class="card-title">הידעת?</strong>
+                                        <div class="card-text">בשנת 2018 תחת חטיבת החילוץ וההדרכה הוקם ביה''ס לפיקוד ומקצועות העורף שהינו תוצר של איחוד גדוד הפיקוד וענף מקצועות אשר ישבו בבה"ד 16.</div>
+                                    </div>
+                                </div>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100 card">
+                                            <strong class="card-title">הידעת?</strong>
+                                            <div class="card-text">מדור הכשרות אב''כ הינו גוף צבאי ייחודי הממונה על תחום אב''כ בכלל צה''ל ומעביר הכשרות בכלל יחידות צה''ל.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="structure-details" id="matachim-details" style="display: none;">
+                        <img id="close-btn-structure" src="assets/images/close-btn.svg" alt="X- סגור" class="close-details-btn">
+                        <div class="title details-title">יחידת מתכים</div>
+                        <img src="assets/images/matachim-unit.svg" alt="בא''פ העורף" class="details-img matachim-img">
+                        <div class="details-conteiner">
+                            <div class="subtitle">תפקידיה של יחידת מתכים</div>
+                            <div class="details-text">להגן קרקעית על מתקן "מתכים" באמצעות יחידותיו וכוחות ת"פ.
+                                הסד"כ אשר מבצע את ההגנה על היחידה בפועל הוא כוח פלוגתי של אחד הגדודים בחטיבה אשר מתחלף ע"פ גרף התע"מ.
+                                בשנת 2020 הוקמה תחת גדוד תבור פלוגת ונוס אשר משימתה בחירום היא הגנה על מתכים.
+                            </div>
+                            <div class="closed-card">
+                                <span class="closed-card-title">הידעת?</span>
+                                <img src="assets/images/arrow.svg" alt="arrow" class="closed-card-arrow">
+                            </div>
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000" style="display: none;">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-block w-100 card">
+                                            <strong class="card-title">הידעת?</strong>
+                                            <div class="card-text">עד שנת 2021 היתה יחידת מתכים כפופה למחוז דרום. 
+                                                בתוך בסיס היחידה קיימים מתקני אימון רבים כגון לש''בייה, מטווחים, אתר הרס, מסלול בראור ועוד!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <iframe style="height: auto; display: none; position: absolute; top: 4.5rem; width: 34rem; height: 19rem; left: 50%; transform: translateX(-50%);" id="enlisting-video" width="420" height="315"
+                src="https://www.youtube.com/embed/8h2PR-d9bTY?autoplay=1&mute=1">
+            </iframe>
+            <iframe style="height: auto; display: none; position: absolute; top: 6.5rem; width: 32rem; height: 16rem; left: 50%; transform: translateX(-50%);" id="nafa-sdira-video" width="420" height="315"
+                src="https://www.youtube.com/embed/22jnDzn8Cmg?autoplay=1&mute=1">
+            </iframe>
+            <iframe style="height: auto; display: none; position: absolute; top: 8rem; width: 31rem; height: 16rem; left: 50%; transform: translateX(-50%);" id="turkey-mission-video" width="420" height="315"
+                src="https://www.youtube.com/embed/UizPszhEIcM?autoplay=1&mute=1">
+            </iframe>
+            <iframe style="height: auto; display: none; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;" id="building-collapse-video" width="420" height="315"
+                src="https://www.youtube.com/embed/ARUP-IxuH_g?autoplay=1&mute=1">
+            </iframe>
+            <iframe style="height: auto; display: none; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;" id="80-days-video" width="420" height="315"
+                src="https://www.youtube.com/embed/MHfaOD0cDe8?autoplay=1&mute=1">
+            </iframe>
+            <iframe style="height: auto; display: none; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;" id="abach-video" width="420" height="315"
+                src="https://www.youtube.com/embed/3HZRBKBRkHE?autoplay=1&mute=1">
+            </iframe>
+            <!-- <video id="enlisting-video" width="920" height="640" controls autoplay muted>
+                <source src="https://youtu.be/8h2PR-d9bTY" type="video/mp4">
+            </video> -->
+            <!-- <video id="nafa-sdira-video video" width="920" height="640" controls autoplay muted style="display: none;">
+                <source src="https://youtu.be/22jnDzn8Cmg" type="video/mp4">
+            </video> -->
+            <!-- <video id="turkey-mission-video video" width="920" height="640" controls autoplay muted style="display: none;">
+                <source src="https://youtu.be/UizPszhEIcM" type="video/mp4">
+            </video> -->
+            <!-- <video id="building-collapse-video video" width="920" height="640" controls autoplay muted style="display: none;">
+                <source src="https://youtu.be/ARUP-IxuH_g" type="video/mp4">
+            </video> -->
+            <!-- <video id="80-days-video video" width="920" height="640" controls autoplay muted style="display: none;">
+                <source src="https://youtu.be/MHfaOD0cDe8" type="video/mp4">
+            </video> -->
+            <!-- <video id="abach-video video" width="920" height="640" controls autoplay muted style="display: none;">
+                <source src="https://youtu.be/3HZRBKBRkHE" type="video/mp4">
+            </video> -->
+        </div>
+    </body>
 </html>
