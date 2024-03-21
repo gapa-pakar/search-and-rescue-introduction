@@ -408,11 +408,33 @@ const page41 = {
 }
 
 const hativaDetails = {
-    el1: ["div", "structure-details", "hativa-details", "", "structure"],
-    img2: ["assets/images/close-btn.svg", "חטיבת החילוץ וההדרכה", "close-btn-structure", "close-details-btn", "", "hativa-details"],
+    el1: ["div", "structure-details", "hativa-details", "", "page"],
+    img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "hativa-details"],
     el3: ["div", "title details-title", "", "מפקדת חטיבת החילוץ וההדרכה", "hativa-details"],
-    el4: ["div", "details-text", "", "מפקדת החטיבה תשמש כמפקדה משימתית בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירת המלחמה, לרבות מחוץ לגבולות מדינת ישראל ותפקד על מבצעים במרחב האזרחי ברגיעה ובלחימה.", "hativa-details"]
+    img4: ["assets/images/hatuve.svg", "חטיבת החילוץ וההדרכה", "", "details-img", "", "hativa-details"],
+    el5: ["div", "details-text", "", "מפקדת החטיבה תשמש כמפקדה משימתית בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירת המלחמה, לרבות מחוץ לגבולות מדינת ישראל ותפקד על מבצעים במרחב האזרחי ברגיעה ובלחימה.", "hativa-details"]
 }
+
+const bahDetails = {
+    el1: ["div", "structure-details", "bah-details", "", "page"],
+    img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "bah-details"],
+    el3: ["div", "title details-title", "", "בא''ח העורף", "bah-details"],
+    img4: ["assets/images/bah.svg", "בא''ח העורף", "", "details-img", "", "bah-details"],
+    el5: ["div", "details-conteiner", "details-conteiner", "", "bah-details"],
+    el6: ["div", "subtitle", "", "הכר את בא''ח העורף", "details-conteiner"],
+    el7: ["div", "details-text", "", "בסיס אימונים חטיבתי להכשרת הלוחמים ופיתוח המפקדים למקצועות החילוץ, אב''כ ולוחמה.", "details-conteiner"],
+    el8: ["div", "subtitle", "", "מגמות הבא''ח והכשרות", "details-conteiner"],
+    el9: ["ul", "details-list", "details-list", "", "details-conteiner"],
+    el10: ["li", "", "", "מכין לוחמות.", "details-list"],
+    el11: ["li", "", "", "אימון יסוד - הכשרת הלוחם ברמת ''כושר לחימה''- בסיסי ב'.", "details-list"],
+    el12: ["li", "", "", "אימון מתקדם- הכשרת הלוחם ללוחמה ברמת ''כושר לחימה''- בסיסי ג', מחלקות הפיקוד ברמת 'מתקדם א', ולחילוץ ברמת מחלץ 06.", "details-list"],
+    el13: ["li", "", "", "הכשרות נוספות לחיילים מאותרים: מש''קי מודיעין אוכלוסייה, קלע, מטול, מפקדי חוליה.", "details-list"],
+    el14: ["div", "closed-card", "closed-card-bah", "", "details-conteiner"],
+    el15: ["span", "closed-card-title", "", "הידעת?", "closed-card-bah"],
+    img16: ["assets/images/arrow.svg", "open", "", "closed-card-arrow", "", "closed-card-bah"],
+    car17: ["bahCarousel"]
+}
+
 
 var bahCarousel = {
     items: 3,
@@ -841,11 +863,11 @@ const createCarousel = (carouselContents) => {
 }
 
 const openCarouselCard = () => {
-    document.getElementById("carouselExampleIndicators").style.display = "block";
+    document.getElementById("carouselExampleIndicators").style.opacity = "1";
 }
 
 const closeCarouselCard = () => {
-    document.getElementById("carouselExampleIndicators").style.display = "none";
+    document.getElementById("carouselExampleIndicators").style.opacity = "0";
 }
 
 const createVideo = (vidList) => {
