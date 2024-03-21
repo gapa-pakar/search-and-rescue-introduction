@@ -925,6 +925,7 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    top: 4rem;
 }
 
 .close-details-btn {
@@ -987,7 +988,7 @@ a {
     width: 25rem;
     position: absolute;
     left: -5rem;
-    top: 3rem;
+    top: 2.5rem;
 }
 
 .card-text {
@@ -998,12 +999,20 @@ a {
     font-size: 0.8rem;
 }
 
-.carousel-control-prev-icon {
+.prev-icon-card {
     background-image: url("assets/images/carousel-prev-icon.svg");
 }
 
-.carousel-control-next-icon {
+.next-icon-card {
     background-image: url("assets/images/carousel-next-icon.svg");
+}
+
+.close-card-button {
+    width: 1rem;
+    position: absolute;
+    z-index: 5;
+    top: 0.5rem;
+    right: 0.5rem;
 }
 
 .closed-card {
