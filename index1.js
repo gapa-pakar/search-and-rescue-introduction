@@ -354,7 +354,7 @@ const page35 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בעורף", "main-roles"], 
     el4: ["div", "roles-text", "", "גדודי החטיבה הינם הגוף הסדיר בעל כשירות החילוץ הגבוהה ביותר, המחלצים ערוכים לביצוע פעולות חילוץ במתאר הרס מלחמתי בתוך שטח מדינת ישראל (כתוצאה מפגיעת רקטה לדוגמה), אסונות טבע וכשלים הנדסיים כל זאת במטרה להציל חיים.", "main-roles"],
-    func5: "createImgCarousel",
+    func5: "", // add proper function to add img carousel
     img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
@@ -407,6 +407,96 @@ const page41 = {
     
 }
 
+const hativaDetails = {
+    el1: ["div", "structure-details", "hativa-details", "", "structure"],
+    img2: ["assets/images/close-btn.svg", "חטיבת החילוץ וההדרכה", "close-btn-structure", "close-details-btn", "", "hativa-details"],
+    el3: ["div", "title details-title", "", "מפקדת חטיבת החילוץ וההדרכה", "hativa-details"],
+    el4: ["div", "details-text", "", "מפקדת החטיבה תשמש כמפקדה משימתית בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירת המלחמה, לרבות מחוץ לגבולות מדינת ישראל ותפקד על מבצעים במרחב האזרחי ברגיעה ובלחימה.", "hativa-details"]
+}
+
+var bahCarousel = {
+    items: 3,
+    carouselIndicators: false,
+    visible: false,
+    arrows: true,
+    cardType: "el",
+    card1: [
+        ["strong", "card-title", "", "הידעת?", "card-1"],
+        ["div", "card-text", "", "בבאח העורף מדור גיוס ייעודי לתפקידי החטיבה ומדור זה מוביל את תהליך הגיוס ממלש''ב ועד לחייל, מדור זה מנהל את הרשתות החברתיות של החטיבה ומייצג את החטיבה באירועי הגיוס של צה''ל.", "card-1"]
+    ],
+    card2: [
+        ["strong", "card-title", "", "הידעת?", "card-2"],
+        ["div", "card-text", "", "בא''ח העורף בחירום הינו גדוד הצלה וחילוץ חמישי בחטיבת החילוץ ומשמש כעתודה חטיבתית למשימות חילוץ קל וסיוע אזרחי. מפקדת הבא''ח הינה מפקדת הגדוד ופלוגות האימון המתקדם בשיתוף קורס מכ''ים והשלמה לקצונה חנית משמשות כפלוגות חילוץ.", "card-2"]
+    ],
+    card3: [
+        ["strong", "card-title", "", "הידעת?", "card-3"],
+        ["div", "card-text", "", "להכשרת הלוחם בבא''ח 3 מחזורי גיוס, הלוחמים משתבצים ב4 פלוגות הכשרה (שחר, קדם, תבור, רם) ועולים לגדודים המבצעיים, כל פלוגה לגדוד האורגני שלה.", "card-3"]
+    ]
+}
+
+var bafCarousel = {
+    items: 2,
+    carouselIndicators: false,
+    visible: false,
+    arrows: true,
+    cardType: "el",
+    card1: [
+        ["strong", "card-title", "", "הידעת?", "card-1"],
+        ["div", "card-text", "", "בעבר בא''פ העורף נקרא ענף אימון יחידות תחת בה''ד 16 ולאחר מכן תחת חטיבת החילוץ וההדרכה בצריפין. בשנת 2020 ענף אימון יחידות (ענף אמ''י) עבר למכלול זיקים והוקם בא''פ העורף.", "card-1"]
+    ],
+    card2: [
+        ["strong", "card-title", "", "הידעת?", "card-2"],
+        ["div", "card-text", "", "בא''פ העורף הינו בסיס אימונים פיקודי ועל כן נאמן על הכשרות ואימונים של כלל יחידות פיקוד העורף ועל כשירות היחידות והמערכים המקצועיים של הפיקוד.", "card-2"]
+    ],
+}
+
+var schoolCarousel = {
+    items: 3,
+    carouselIndicators: false,
+    visible: false,
+    arrows: true,
+    cardType: "el",
+    card1: [
+        ["strong", "card-title", "", "הידעת?", "card-1"],
+        ["div", "card-text", "", "בשנת 2018 תחת חטיבת החילוץ וההדרכה הוקם ביה''ס לפיקוד ומקצועות העורף שהינו תוצר של איחוד גדוד הפיקוד וענף מקצועות אשר ישבו בבה''ד 16.", "card-1"]
+    ],
+    card2: [
+        ["strong", "card-title", "", "הידעת?", "card-2"],
+        ["div", "card-text", "", "עד שנת 2015 התקיימה השלמה לקצונה אחידה ללוחמים ומטה.\nבשנת 2015 התפצלה ההשלמה למגמת חנית- קציני חילוץ לוחמים, ומגמת מורג- קציני עורף.", "card-2"]
+    ],
+    card3: [
+        ["strong", "card-title", "", "הידעת?", "card-3"],
+        ["div", "card-text", "", "מדור הכשרות אב''כ הינו גוף צבאי ייחודי הממונה על תחום אב''כ בכלל צה''ל ומעביר הכשרות בכלל יחידות צה''ל.", "card-3"]
+    ]
+}
+
+var schoolCarousel = {
+    items: 1,
+    carouselIndicators: false,
+    visible: false,
+    arrows: false,
+    cardType: "el",
+    card1: [
+        ["strong", "card-title", "", "הידעת?", "card-1"],
+        ["div", "card-text", "", "עד שנת 2021 היתה יחידת מתכים כפופה למחוז דרום.\nבתוך בסיס היחידה קיימים מתקני אימון רבים כגון לש''בייה, מטווחים, אתר הרס, מסלול בראור ועוד!", "card-1"]
+    ]
+}
+
+var rescueImgCarousel = {
+    items: 5,
+    carouselIndicators: true,
+    visible: true,
+    arrows: true,
+    cardType: "img",
+    card1: ["assets/images/rescue-carousel-1.jpg", "First slide", "card", ["d-block", "w-100"], "", "carousel-item"],
+    card2: ["assets/images/rescue-carousel-2.jpg", "Second slide", "card", ["d-block", "w-100"], "", "carousel-item"],
+    card3: ["assets/images/rescue-carousel-3.jpg", "Third slide", "card", ["d-block", "w-100"], "", "carousel-item"],
+    card4: ["assets/images/rescue-carousel-4.jpg", "Fourth slide", "card", ["d-block", "w-100"], "", "carousel-item"],
+    card5: ["assets/images/rescue-carousel-5.jpg", "Fifth slide", "card", ["d-block", "w-100"], "", "carousel-item"]
+}
+
+const carouselCardCloseButton = ["assets/images/close-btn.svg", "X", "close-card-button", "close-card-button", "", "carousel-inner"];
+
 let menuOpen = false;
 let quesVisited = false;
 let currPage = 1;
@@ -423,7 +513,6 @@ window.addEventListener("load", (event) => {
             //     }
             // });
             // createScreen(page32);
-            // createImgCarousel();
             document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
@@ -654,96 +743,6 @@ const createImgElement = (list) => {
     document.getElementById(list[5]).appendChild(newIMG);
 }
 
-const hativaDetails = {
-    el1: ["div", "structure-details", "hativa-details", "", "structure"],
-    img2: ["assets/images/close-btn.svg", "חטיבת החילוץ וההדרכה", "close-btn-structure", "close-details-btn", "", "hativa-details"],
-    el3: ["div", "title details-title", "", "מפקדת חטיבת החילוץ וההדרכה", "hativa-details"],
-    el4: ["div", "details-text", "", "מפקדת החטיבה תשמש כמפקדה משימתית בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירת המלחמה, לרבות מחוץ לגבולות מדינת ישראל ותפקד על מבצעים במרחב האזרחי ברגיעה ובלחימה.", "hativa-details"]
-}
-
-var bahCarousel = {
-    items: 3,
-    carouselIndicators: false,
-    visible: false,
-    arrows: true,
-    cardType: "el",
-    card1: [
-        ["strong", "card-title", "", "הידעת?", "card-1"],
-        ["div", "card-text", "", "בבאח העורף מדור גיוס ייעודי לתפקידי החטיבה ומדור זה מוביל את תהליך הגיוס ממלש''ב ועד לחייל, מדור זה מנהל את הרשתות החברתיות של החטיבה ומייצג את החטיבה באירועי הגיוס של צה''ל.", "card-1"]
-    ],
-    card2: [
-        ["strong", "card-title", "", "הידעת?", "card-2"],
-        ["div", "card-text", "", "בא''ח העורף בחירום הינו גדוד הצלה וחילוץ חמישי בחטיבת החילוץ ומשמש כעתודה חטיבתית למשימות חילוץ קל וסיוע אזרחי. מפקדת הבא''ח הינה מפקדת הגדוד ופלוגות האימון המתקדם בשיתוף קורס מכ''ים והשלמה לקצונה חנית משמשות כפלוגות חילוץ.", "card-2"]
-    ],
-    card3: [
-        ["strong", "card-title", "", "הידעת?", "card-3"],
-        ["div", "card-text", "", "להכשרת הלוחם בבא''ח 3 מחזורי גיוס, הלוחמים משתבצים ב4 פלוגות הכשרה (שחר, קדם, תבור, רם) ועולים לגדודים המבצעיים, כל פלוגה לגדוד האורגני שלה.", "card-3"]
-    ]
-}
-
-var bafCarousel = {
-    items: 2,
-    carouselIndicators: false,
-    visible: false,
-    arrows: true,
-    cardType: "el",
-    card1: [
-        ["strong", "card-title", "", "הידעת?", "card-1"],
-        ["div", "card-text", "", "בעבר בא''פ העורף נקרא ענף אימון יחידות תחת בה''ד 16 ולאחר מכן תחת חטיבת החילוץ וההדרכה בצריפין. בשנת 2020 ענף אימון יחידות (ענף אמ''י) עבר למכלול זיקים והוקם בא''פ העורף.", "card-1"]
-    ],
-    card2: [
-        ["strong", "card-title", "", "הידעת?", "card-2"],
-        ["div", "card-text", "", "בא''פ העורף הינו בסיס אימונים פיקודי ועל כן נאמן על הכשרות ואימונים של כלל יחידות פיקוד העורף ועל כשירות היחידות והמערכים המקצועיים של הפיקוד.", "card-2"]
-    ],
-}
-
-var schoolCarousel = {
-    items: 3,
-    carouselIndicators: false,
-    visible: false,
-    arrows: true,
-    cardType: "el",
-    card1: [
-        ["strong", "card-title", "", "הידעת?", "card-1"],
-        ["div", "card-text", "", "בשנת 2018 תחת חטיבת החילוץ וההדרכה הוקם ביה''ס לפיקוד ומקצועות העורף שהינו תוצר של איחוד גדוד הפיקוד וענף מקצועות אשר ישבו בבה''ד 16.", "card-1"]
-    ],
-    card2: [
-        ["strong", "card-title", "", "הידעת?", "card-2"],
-        ["div", "card-text", "", "עד שנת 2015 התקיימה השלמה לקצונה אחידה ללוחמים ומטה.\nבשנת 2015 התפצלה ההשלמה למגמת חנית- קציני חילוץ לוחמים, ומגמת מורג- קציני עורף.", "card-2"]
-    ],
-    card3: [
-        ["strong", "card-title", "", "הידעת?", "card-3"],
-        ["div", "card-text", "", "מדור הכשרות אב''כ הינו גוף צבאי ייחודי הממונה על תחום אב''כ בכלל צה''ל ומעביר הכשרות בכלל יחידות צה''ל.", "card-3"]
-    ]
-}
-
-var schoolCarousel = {
-    items: 1,
-    carouselIndicators: false,
-    visible: false,
-    arrows: false,
-    cardType: "el",
-    card1: [
-        ["strong", "card-title", "", "הידעת?", "card-1"],
-        ["div", "card-text", "", "עד שנת 2021 היתה יחידת מתכים כפופה למחוז דרום.\nבתוך בסיס היחידה קיימים מתקני אימון רבים כגון לש''בייה, מטווחים, אתר הרס, מסלול בראור ועוד!", "card-1"]
-    ]
-}
-
-var rescueImgCarousel = {
-    items: 5,
-    carouselIndicators: true,
-    visible: true,
-    arrows: true,
-    cardType: "img",
-    card1: ["assets/images/rescue-carousel-1.jpg", "First slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card2: ["assets/images/rescue-carousel-2.jpg", "Second slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card3: ["assets/images/rescue-carousel-3.jpg", "Third slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card4: ["assets/images/rescue-carousel-4.jpg", "Fourth slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card5: ["assets/images/rescue-carousel-5.jpg", "Fifth slide", "card", ["d-block", "w-100"], "", "carousel-item"]
-}
-
-const carouselCardCloseButton = ["assets/images/close-btn.svg", "X", "close-card-button", "close-card-button", "", "carousel-inner"];
-
 const createCarousel = (carouselContents) => {
     let carouselExampleIndicators = document.createElement("div");
     carouselExampleIndicators.setAttribute("id", "carouselExampleIndicators");
@@ -857,118 +856,6 @@ const createVideo = (vidList) => {
     iFrameVideo.setAttribute("id", vidList[3]);
     iFrameVideo.style.cssText = vidList[4];
     document.getElementById(vidList[5]).appendChild(iFrameVideo);
-}
-
-var createImgCarousel = () => {
-    let carouselExampleIndicators = document.createElement("div");
-    carouselExampleIndicators.setAttribute("id", "carouselExampleIndicators");
-    carouselExampleIndicators.classList.add("carousel", "slide");
-    carouselExampleIndicators.setAttribute("data-ride", "carousel");
-    document.getElementById("main-roles").appendChild(carouselExampleIndicators);
-    let carouselIndicatorsOL = document.createElement("ol");
-    carouselIndicatorsOL.setAttribute("id", "carousel-indicators");
-    carouselIndicatorsOL.classList.add("carousel-indicators");
-    carouselExampleIndicators.appendChild(carouselIndicatorsOL);
-    let carouselIndicatorLI1 = document.createElement("li");
-    carouselIndicatorLI1.setAttribute("data-target", "#carouselExampleIndicators");
-    carouselIndicatorLI1.setAttribute("data-slide-to", "0");
-    carouselIndicatorLI1.classList.add("active");
-    carouselIndicatorsOL.appendChild(carouselIndicatorLI1);
-    let carouselIndicatorLI2 = document.createElement("li");
-    carouselIndicatorLI2.setAttribute("data-target", "#carouselExampleIndicators");
-    carouselIndicatorLI2.setAttribute("data-slide-to", "1");
-    carouselIndicatorsOL.appendChild(carouselIndicatorLI2);
-    let carouselIndicatorLI3 = document.createElement("li");
-    carouselIndicatorLI3.setAttribute("data-target", "#carouselExampleIndicators");
-    carouselIndicatorLI3.setAttribute("data-slide-to", "2");
-    carouselIndicatorsOL.appendChild(carouselIndicatorLI3);
-    let carouselIndicatorLI4 = document.createElement("li");
-    carouselIndicatorLI4.setAttribute("data-target", "#carouselExampleIndicators");
-    carouselIndicatorLI4.setAttribute("data-slide-to", "3");
-    carouselIndicatorsOL.appendChild(carouselIndicatorLI4);
-    let carouselIndicatorLI5 = document.createElement("li");
-    carouselIndicatorLI5.setAttribute("data-target", "#carouselExampleIndicators");
-    carouselIndicatorLI5.setAttribute("data-slide-to", "4");
-    carouselIndicatorsOL.appendChild(carouselIndicatorLI5);
-    let carouselInner = document.createElement("div");
-    carouselInner.setAttribute("id", "carousel-inner");
-    carouselInner.classList.add("carousel-inner");
-    carouselExampleIndicators.appendChild(carouselInner);
-    let carouselItem1 = document.createElement("div");
-    carouselItem1.setAttribute("id", "carousel-item-1");
-    carouselItem1.classList.add("carousel-item", "active");
-    carouselInner.appendChild(carouselItem1);
-    let carouselItem1Img = document.createElement("img");
-    carouselItem1Img.src = "assets/images/rescue-carousel-1.jpg";
-    carouselItem1Img.classList.add("d-block", "w-100");
-    carouselItem1Img.alt = "First slide";
-    carouselItem1.appendChild(carouselItem1Img);
-    let carouselItem2 = document.createElement("div");
-    carouselItem2.setAttribute("id", "carousel-item-2");
-    carouselItem2.classList.add("carousel-item");
-    carouselInner.appendChild(carouselItem2);
-    let carouselItem2Img = document.createElement("img");
-    carouselItem2Img.src = "assets/images/rescue-carousel-2.jpg";
-    carouselItem2Img.classList.add("d-block", "w-100");
-    carouselItem2Img.alt = "Second slide";
-    carouselItem2.appendChild(carouselItem2Img);
-    let carouselItem3 = document.createElement("div");
-    carouselItem3.setAttribute("id", "carousel-item-3");
-    carouselItem3.classList.add("carousel-item");
-    carouselInner.appendChild(carouselItem3);
-    let carouselItem3Img = document.createElement("img");
-    carouselItem3Img.src = "assets/images/rescue-carousel-3.jpg";
-    carouselItem3Img.classList.add("d-block", "w-100");
-    carouselItem3Img.alt = "Third slide";
-    carouselItem3.appendChild(carouselItem3Img);
-    let carouselItem4 = document.createElement("div");
-    carouselItem4.setAttribute("id", "carousel-item-4");
-    carouselItem4.classList.add("carousel-item");
-    carouselInner.appendChild(carouselItem4);
-    let carouselItem4Img = document.createElement("img");
-    carouselItem4Img.src = "assets/images/rescue-carousel-4.jpg";
-    carouselItem4Img.classList.add("d-block", "w-100");
-    carouselItem4Img.alt = "Fourth slide";
-    carouselItem4.appendChild(carouselItem4Img);
-    let carouselItem5 = document.createElement("div");
-    carouselItem5.setAttribute("id", "carousel-item-5");
-    carouselItem5.classList.add("carousel-item");
-    carouselInner.appendChild(carouselItem5);
-    let carouselItem5Img = document.createElement("img");
-    carouselItem5Img.src = "assets/images/rescue-carousel-5.jpg";
-    carouselItem5Img.classList.add("d-block", "w-100");
-    carouselItem5Img.alt = "Fifth slide";
-    carouselItem5.appendChild(carouselItem5Img);
-    let carouselControlPrev = document.createElement("a");
-    carouselControlPrev.setAttribute("id", "carousel-control-prev");
-    carouselControlPrev.classList.add("carousel-control-prev");
-    carouselControlPrev.href = "#carouselExampleIndicators";
-    carouselControlPrev.setAttribute("role", "button");
-    carouselControlPrev.setAttribute("data-slide", "prev");
-    carouselExampleIndicators.appendChild(carouselControlPrev);
-    let carouselControlPrevIcon = document.createElement("span");
-    carouselControlPrevIcon.classList.add("carousel-control-prev-icon");
-    carouselControlPrevIcon.setAttribute("aria-hidden", "true");
-    carouselControlPrev.appendChild(carouselControlPrevIcon);
-    let srOnlyPrev = document.createElement("span");
-    srOnlyPrev.classList.add("sr-only");
-    srOnlyPrev.innerText = "Previous";
-    carouselControlPrev.appendChild(srOnlyPrev);
-    let carouselControlNext = document.createElement("a");
-    carouselControlNext.setAttribute("id", "carousel-control-next");
-    carouselControlNext.classList.add("carousel-control-next");
-    carouselControlNext.href = "#carouselExampleIndicators";
-    carouselControlNext.setAttribute("role", "button");
-    carouselControlNext.setAttribute("data-slide", "next");
-    carouselExampleIndicators.appendChild(carouselControlNext);
-    let carouselControlNextIcon = document.createElement("span");
-    carouselControlNextIcon.classList.add("carousel-control-next-icon");
-    carouselControlNextIcon.setAttribute("aria-hidden", "true");
-    carouselControlNext.appendChild(carouselControlNextIcon);
-    let srOnlyNext = document.createElement("span");
-    srOnlyNext.classList.add("sr-only");
-    srOnlyNext.innerText = "Next";
-    carouselControlNext.appendChild(srOnlyNext);
 }
 
 const createHativaDetails = () => {
