@@ -418,7 +418,7 @@ const hativaDetails = {
 const bahDetails = {
     el1: ["div", "structure-details", "bah-details", "", "page"],
     img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "bah-details"],
-    el3: ["div", "title details-title", "", "בא''ח העורף", "bah-details"],
+    el3: ["div", ["title", "details-title"], "", "בא''ח העורף", "bah-details"],
     img4: ["assets/images/bah.svg", "בא''ח העורף", "", "details-img", "", "bah-details"],
     el5: ["div", "details-conteiner", "details-conteiner", "", "bah-details"],
     el6: ["div", "subtitle", "", "הכר את בא''ח העורף", "details-conteiner"],
@@ -432,7 +432,8 @@ const bahDetails = {
     el14: ["div", "closed-card", "closed-card-bah", "", "details-conteiner"],
     el15: ["span", "closed-card-title", "", "הידעת?", "closed-card-bah"],
     img16: ["assets/images/arrow.svg", "open", "", "closed-card-arrow", "", "closed-card-bah"],
-    car17: ["bahCarousel"]
+    car17: ["bahCarousel"],
+    evLis18: ["closed-card-bah", "click", "openCarouselCard"]
 }
 
 
@@ -534,7 +535,7 @@ window.addEventListener("load", (event) => {
             //         showDefinition();
             //     }
             // });
-            // createScreen(page32);
+            createScreen(bahDetails);
             document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
@@ -721,6 +722,9 @@ const createScreen = (currObject) => {
         } else if (openContentKeys[i - 1].includes("vid")) {
             document.getElementById(currObject[1]).style.display = "block";
             console.log("show vid");
+        } else if (openContentKeys[i - 1].includes("car")) {
+            let carouselObject = currObject[`car${i}`];
+            createCarousel(window[carouselObject]);
         }
     }
 }
@@ -752,16 +756,19 @@ const createImgElement = (list) => {
     newIMG.src = list[0];
     newIMG.alt = list[1];
     if (list[2] !== "") {
-        newElement.setAttribute("id", list[2]);
+        newIMG.setAttribute("id", list[2]);
     }
     if (list[3] !== "") {
         if ((typeof list[3]) === "object") {
-            newElement.classList.add(...list[3]);
+            newIMG.classList.add(...list[3]);
         } else {
-            newElement.classList.add(list[3]);
+            newIMG.classList.add(list[3]);
         }
     }
     newIMG.setAttribute("title", list[4]);
+    console.log(list[5]);
+    console.log(list);
+    console.log(document.getElementById(list[5]));
     document.getElementById(list[5]).appendChild(newIMG);
 }
 
