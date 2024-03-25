@@ -32,7 +32,7 @@ const openScreenContent = {
     //          id         type    function
 }
 
-const endScreenContent = {
+var endScreenContent = {
     el1: ["div", "main-title", "open-title", "", "page"],
     el2: ["div", "", "", "תעודת זהות-", "open-title"],
     el3: ["div", "", "", "חטיבת החילוץ וההדרכה", "open-title"],
@@ -43,15 +43,15 @@ const endScreenContent = {
     evLis7: ["re-do-button", "click", "updatePage"]
 }
 
-const page2 = {
+var page2 = {
     vid1: ["https://www.youtube.com/embed/8h2PR-d9bTY?autoplay=1&mute=1", "420", "315", "enlisting-video", "height: auto; display: block; position: absolute; top: 4.5rem; width: 34rem; height: 19rem; left: 50%; transform: translateX(-50%);", "main"]
 }
 
-const page3 = {
+var page3 = {
     // timeline now
 }
 
-const page4 = {
+var page4 = {
     el1: ["div", "timeline", "", "", "page"],
     el2: ["div", "open-text", "page3text", "", "page"],
     el3: ["div", "", "", "חטיבת החילוץ וההדרכה הינה החטיבה הסדירה היחידה בפיקוד העורף אשר בנוי ברובו מאנשי מילואים.\nעל מנת להבין לעומק את ייחודיות החטיבה, נעמיק בדרך שהחטיבה עברה מאז ועד היום- מ'פלח''ץ' לחטיבת החילוץ וההדרכה.", "page3text"],
@@ -59,11 +59,11 @@ const page4 = {
     evLis5: ["next-btn-3", "click", "nextPage"]
 }
 
-const page5 = {
+var page5 = {
     // timeline now to 1992
 }
 
-const page6 = {
+var page6 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "1992- הקמת פיקוד העורף", "timeline-text-container"],
     el3: ["div", "", "", "פיקוד העורף הוקם בשנת 1992 לאחר מלחמת המפרץ  הראשונה בה האיום על העורף העלה את הצורך בהתגוננות אזרחית סדורה.\nבן גוריון כבר ב48 אמר: ''ביום מן הימים, מה שקרוי העורף יכריע לא פחות מהחזית. לא נוכל לעמוד במלחמה באמצעים צבאיים בלבד''.\nבמקרה כזה, ישחרר פיקוד העורף את אלופי הפיקודים האחרים (צפון, מרכז, דרום) מדאגה לעורף, ויאפשר להם להתרכז בצרכים המבצעיים בחזית.", "timeline-text-container"],
@@ -71,11 +71,11 @@ const page6 = {
     evLis5: ["next-btn-4", "click", "nextPage"]
 }
 
-const page7 = {
+var page7 = {
     // timeline 1992 to 2003
 }
 
-const page8 = {
+var page8 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2003- הקמת פלוגת החילוץ הראשונה- פלוגת 'שביט'", "timeline-text-container"],
     el3: ["div", "", "", "ממלחמת לבנון הראשונה ועד לאחר מלחמת המפרץ הורכבו פלוגות החילוץ וההצלה מאנשי מילואים בעלי ידע אזרחי הקשור בבינוי.\nבמלחמת המפרץ הבינו שיש צורך בגוף סדיר שיהיה כונן לאירועי חילוץ בעורף, והתקבלה ההחלטה להקים פלוגת חילוץ סדירה ראשונה, פלוגת 'שביט'.", "timeline-text-container"],
@@ -83,11 +83,11 @@ const page8 = {
     evLis5: ["next-btn-5", "click", "nextPage"]
 }
 
-const page9 = {
+var page9 = {
     // timeline 2003 to 2004
 }
 
-const page10 = {
+var page10 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2004- הקמת פלוגת 'חץ' ופלוגת 'רותם'", "timeline-text-container"],
     el3: ["div", "", "", "2004- הקמת שתי פלוגות חילוץ נוספות- פלוגת 'חץ' ופלוגת 'רותם'.\nמשימתן של הפלוגות האלו הייתה אבטחת בתי כלא בכלא 'עופר' ובכלא 'מגידו'.", "timeline-text-container"],
@@ -96,11 +96,11 @@ const page10 = {
     evLis6: ["next-btn-6", "click", "nextPage"]
 }
 
-const page11 = {
+var page11 = {
     // timeline 2004 to 2008
 }
 
-const page12 = {
+var page12 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2008- איחוד פלוגות החילוץ והקמת גדוד שחר", "timeline-text-container"],
     el3: ["div", "", "", "2008- שלוש פלוגות החילוץ התאחדו והוקם גדוד ראשון בחטיבה- גדוד שחר.", "timeline-text-container"],
@@ -113,11 +113,11 @@ const page12 = {
     evLis10: ["next-btn-7", "click", "nextPage"]
 }
 
-const page13 = {
+var page13 = {
     // timeline 2008 to 2009
 }
 
-const page14 = {
+var page14 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2009- הקמת גדוד קדם", "timeline-text-container"],
     el3: ["div", "", "", "2009- הקמת גדוד קדם אשר בתוכו שלוש פלוגות:\n'קרן', 'דוד' ו'מגן'.", "timeline-text-container"],
@@ -126,11 +126,11 @@ const page14 = {
     evLis6: ["next-btn-8", "click", "nextPage"]
 }
 
-const page15 = {
+var page15 = {
     // timeline 2009 to 2009 #2
 }
 
-const page16 = {
+var page16 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2009- המעבר ממגל לפקע''ר", "timeline-text-container"],
     el3: ["div", "", "", "text text text text text text text text text text", "timeline-text-container"],
@@ -139,11 +139,11 @@ const page16 = {
     evLis6: ["next-btn-8", "click", "nextPage"]
 }
 
-const page17 = {
+var page17 = {
     // timeline 2009 #2 to 2012
 }
 
-const page18 = {
+var page18 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד תבור", "timeline-text-container"],
     el3: ["div", "", "", "2012- הקמת גדוד תבור אשר בתוכו שלוש פלוגות:\n'תבל', 'ברק', 'ראם'.\nבשנת 2020 הוקמה בתוך הגדוד פלוגה נוספת בשם 'ונוס'.", "timeline-text-container"],
@@ -152,11 +152,11 @@ const page18 = {
     evLis6: ["next-btn-9", "click", "nextPage"]
 }
 
-const page19 = {
+var page19 = {
     // timeline 2012 to 2012 #2
 }
 
-const page20 = {
+var page20 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד רם", "timeline-text-container"],
     el3: ["div", "", "", "2012- גדוד נ''מ (נגד מטוסים) של חיל האוויר הוסב לפיקוד העורף.\nהשם שנבחר לגדוד החדש והרביעי הוא גדוד 'רם' אשר בתוכו שלוש פלוגות: 'רמון', 'מצדה', 'ארבל'.", "timeline-text-container"],
@@ -165,11 +165,11 @@ const page20 = {
     evLis6: ["next-btn-10", "click", "nextPage"]
 }
 
-const page21 = {
+var page21 = {
     // timeline 2012 #2 to 2013
 }
 
-const page22 = {
+var page22 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2013- הקמת הנפה הסדירה", "timeline-text-container"],
     el3: ["div", "", "complex-text11", "", "timeline-text-container"],
@@ -182,7 +182,7 @@ const page22 = {
     evLis10: ["next-btn-11", "click", "nextPage"]
 }
 
-const page23 = {
+var page23 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", ["title", "page23-title"], "timeline-title", "2013- הקמת הנפה הסדירה", "timeline-text-container"],
     vid3: ["https://www.youtube.com/embed/22jnDzn8Cmg?autoplay=1&mute=1", "420", "315", "nafa-sdira-video", "height: auto; display: block; position: absolute; top: 6.5rem; width: 32rem; height: 16rem; left: 50%; transform: translateX(-50%);","main"],
@@ -190,14 +190,14 @@ const page23 = {
     evLis5: ["next-btn-11", "click", "nextPage"]
 }
 
-const page24 = {
+var page24 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"],
     el2: ["div", "sub-title", "sub-title", "וכעת נעבור לזרוע השנייה שמרכיבה את חטיבת החילוץ וההדרכה:\nבה''ד 16", "timeline-text-container"],
     el3: ["button", "next-btn-timeline", "next-btn-13", "קדימה!", "timeline-text-container"],
     evLis4: ["next-btn-13", "click", "nextPage"]
 }
 
-const page25 = {
+var page25 = {
     // timeline 2013 to 1984
     // fix year text 
 }
@@ -209,7 +209,7 @@ const buildingCollapseVideo = ["https://www.youtube.com/embed/ARUP-IxuH_g?autopl
 const days80Video = ["https://www.youtube.com/embed/MHfaOD0cDe8?autoplay=1&mute=1", "420", "315", "80-days-video", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main"];
 const abachVideo = ["https://www.youtube.com/embed/3HZRBKBRkHE?autoplay=1&mute=1", "420", "315", "abach-video", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main"];
 
-const page26 = {
+var page26 = {
     // fix year text
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "1984- בה''ד 16", "timeline-text-container"],
@@ -228,11 +228,11 @@ const page26 = {
     evLis15: ["branches", "click", "timelineComplexPage"]
 }
 
-const page27 = {
+var page27 = {
     // timeline 1984 to 2016
 }
 
-const page28 = {
+var page28 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2016- איחוד בה''ד 16 והנפה הסדירה", "timeline-text-container"],
     el3: ["div", "", "complex-text15", "", "timeline-text-container"],
@@ -243,12 +243,12 @@ const page28 = {
     evLis8: ["next-btn-15", "click", "nextPage"]
 }
 
-const page29 = {
+var page29 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"], 
     el2: ["div", "sub-title", "", "ייעוד ותפקידי חטיבת החילוץ וההדרכה", "main-roles"]
 }
 
-const page30 = {
+var page30 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "ייעוד ותפקידי חטיבת החילוץ וההדרכה", "main-roles"],
     el3: ["div", "", "complex-text28", "", "main-roles"],
@@ -260,7 +260,7 @@ const page30 = {
     evLis9: ["roles-next-arrow", "click", "nextPage"]
 }
 
-const page31 = {
+var page31 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "", "infographic-31", "", "main-roles"],
     el3: ["div", "title", "", "תפקידי החטיבה בשגרה", "infographic-31"],
@@ -298,7 +298,7 @@ const page31 = {
     evLis35: ["roles-next-arrow", "click", "nextPage"]
 }
 
-const page32 = {
+var page32 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "", "infographic-32", "", "main-roles"],
     el3: ["div", "title", "", "תפקידי החטיבה בחירום", "infographic-32"],
@@ -330,7 +330,7 @@ const page32 = {
     evLis29: ["roles-next-arrow", "click", "nextPage"]
 }
 
-const page33 = {
+var page33 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- טורקיה", "main-roles"], 
@@ -339,7 +339,7 @@ const page33 = {
     evLis6: ["roles-next-arrow", "click", "nextPage"]
 }
 
-const page34 = {
+var page34 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- קורונה", "main-roles"], 
@@ -349,7 +349,7 @@ const page34 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-const page35 = {
+var page35 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בעורף", "main-roles"], 
@@ -359,7 +359,7 @@ const page35 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-const page36 = {
+var page36 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
@@ -369,7 +369,7 @@ const page36 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-const page37 = {
+var page37 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
@@ -379,7 +379,7 @@ const page37 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-const page38 = {
+var page38 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "אב''כ", "main-roles"], 
@@ -389,7 +389,7 @@ const page38 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-const page39 = {
+var page39 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "בט''ש", "main-roles"], 
@@ -398,12 +398,12 @@ const page39 = {
     evLis6: ["roles-next-arrow", "click", "nextPage"]
 }
 
-const page40 = {
+var page40 = {
     el1: ["div", "structure-text-page", "structure", "", "page"],
     el2: ["div", "sub-title", "", "מבנה החטיבה ויחידותיה", "structure"]
 }
 
-const page41 = {
+var page41 = {
     
 }
 
@@ -412,7 +412,8 @@ const hativaDetails = {
     img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "hativa-details"],
     el3: ["div", "title details-title", "", "מפקדת חטיבת החילוץ וההדרכה", "hativa-details"],
     img4: ["assets/images/hatuve.svg", "חטיבת החילוץ וההדרכה", "", "details-img", "", "hativa-details"],
-    el5: ["div", "details-text", "", "מפקדת החטיבה תשמש כמפקדה משימתית בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירת המלחמה, לרבות מחוץ לגבולות מדינת ישראל ותפקד על מבצעים במרחב האזרחי ברגיעה ובלחימה.", "hativa-details"]
+    el5: ["div", "details-text", "", "מפקדת החטיבה תשמש כמפקדה משימתית בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירת המלחמה, לרבות מחוץ לגבולות מדינת ישראל ותפקד על מבצעים במרחב האזרחי ברגיעה ובלחימה.", "hativa-details"],
+    evLis6: ["close-btn-structure", "click", "closeDetails"]
 }
 
 const bahDetails = {
@@ -433,9 +434,105 @@ const bahDetails = {
     el15: ["span", "closed-card-title", "", "הידעת?", "closed-card-bah"],
     img16: ["assets/images/arrow.svg", "open", "", "closed-card-arrow", "", "closed-card-bah"],
     car17: ["bahCarousel"],
-    evLis18: ["closed-card-bah", "click", "openCarouselCard"]
+    evLis18: ["closed-card-bah", "click", "openCarouselCard"],
+    evLis19: ["close-btn-structure", "click", "closeDetails"]
 }
 
+const bafDetails = {
+    el1: ["div", "structure-details", "baf-details", "", "page"],
+    img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "baf-details"],
+    el3: ["div", ["title", "details-title"], "", "בא''ח העורף", "baf-details"],
+    img4: ["assets/images/baf.svg", "בא''פ העורף", "", "details-img", "", "baf-details"],
+    el5: ["div", "details-conteiner", "details-conteiner", "", "baf-details"],
+    el6: ["div", "subtitle", "", "הכר את בא''פ העורף", "details-conteiner"],
+    el7: ["div", "details-text", "details-text", "", "details-conteiner"],
+    el8: ["span", "", "", "בסיס אימונים פיקודי המתמחה בהובלה וחניכה של אימוני גדודי מילואים בתחומי חילוץ, אב''כ וחי''ר קל, חניכת את גדודי החטיבה הסדירים באימונים בין קווים ותו''כ תע''מ והובלת קורסים והכשרות בתחומי חילוץ, רפואה, ", "details-text"],
+    el9: ["span", "colored-text", "def10", "שו''ב, ", "details-text"],
+    el10: ["span", "colored-text", "def11", "אוכלוסייה, ", "details-text"],
+    el11: ["span", "colored-text", "def12", "צמ''ה, ", "details-text"],
+    el12: ["span", "colored-text", "def13", "הנדסה ", "details-text"],
+    el13: ["span", "colored-text", "def14", "ואנו''ח.", "details-text"],
+    el14: ["div", "subtitle", "", "מדורי הבא''פ וחניכה", "details-conteiner"],
+    el15: ["ul", "details-list", "details-list", "", "details-conteiner"],
+    el16: ["li", "", "", "2 מדורי אימוני חילוץ.", "details-list"],
+    el17: ["li", "", "", "מדור צמ''ה.", "details-list"],
+    el18: ["li", "", "", "מדור רפואה.", "details-list"],
+    el19: ["li", "", "", "מדור הנדסה.", "details-list"],
+    el20: ["li", "", "", "חניכת אוכלוסייה.", "details-list"],
+    el21: ["li", "", "", "חניכת שו''ב.", "details-list"],
+    el22: ["li", "", "", "חניכת אנו''ח.", "details-list"],
+    el23: ["div", "closed-card", "closed-card-baf", "", "details-conteiner"],
+    el24: ["span", "closed-card-title", "", "הידעת?", "closed-card-baf"],
+    img25: ["assets/images/arrow.svg", "open", "", "closed-card-arrow", "", "closed-card-baf"],
+    car26: ["bafCarousel"],
+    evLis27: ["closed-card-baf", "click", "openCarouselCard"],
+    evLis28: ["close-btn-structure", "click", "closeDetails"]
+}
+
+const schoolDetailsA = {
+    el1: ["div", "structure-details", "school-details", "", "page"],
+    img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "school-details"],
+    el3: ["div", ["title", "details-title"], "", "ביה''ס לפיקוד ומקצועות העורף", "school-details"],
+    img4: ["assets/images/school-of-oref.svg", "", "ביה''ס לפיקוד ומקצועות העורף", "details-img", "", "school-details"],
+    el5: ["div", "details-conteiner", "details-part-1", "", "school-details"],
+    el6: ["div", "subtitle", "", "הכר את ביה''ס לפיקוד ומקצועות העורף", "details-part-1"],
+    el7: ["div", "details-text", "", "בית הספר החיילי למקצועות הפיקוד והעורף, המתמחה בהכשרת מפקדים ומדריכים בחילוץ, לחימה, אב''כ, בעורף, ובשמירת כשירות הפרט בתחומי ליבת העורף.", "details-part-1"],
+    el8: ["div", "closed-card", "closed-card-school", "", "details-part-1"],
+    el9: ["span", "closed-card-title", "", "הידעת?", "closed-card-school"],
+    img10: ["assets/images/arrow.svg", "open", "", "closed-card-arrow", "", "closed-card-school"],
+    img11: ["assets/images/arrow.svg", "next", "school-next-arrow", ["next-arrow", "next-left"], "", "details-part-1"],
+    car12: ["schoolCarousel"],
+    evLis13: ["closed-card-school", "click", "openCarouselCard"],
+    evLis14: ["close-btn-structure", "click", "closeDetails"],
+    evLis15: ["school-next-arrow", "click", "changeSchoolDetailsPart"]
+}
+
+const schoolDetailsB = {
+    el1: ["div", "structure-details", "school-details", "", "page"],
+    img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "school-details"],
+    el3: ["div", ["title", "details-title"], "", "ביה''ס לפיקוד ומקצועות העורף", "school-details"],
+    img4: ["assets/images/school-of-oref.svg", "", "ביה''ס לפיקוד ומקצועות העורף", "details-img", "", "school-details"],
+    el5: ["div", "details-conteiner", "details-part-2", "", "school-details"],
+    el6: ["div", "subtitle", "", "מגמות בית הספר והכשרות", "details-part-2"],
+    el7: ["div", "sub-sub-title", "", "מגמת הכשרות יסוד", "details-part-2"],
+    el8: ["ul", "details-list", "details-list-1", "", "details-part-2"],
+    el9: ["li", "", "", "מחלקת זאב (טירונות ברמת כושר לחימה אישי עורפי).", "details-list-1"],
+    el10: ["li", "", "", "קורסי הדרכה: קמ''ד אב''כ, קמ''ד חילוץ, קמ''ד חירום, קורס מבצעים.", "details-list-1"],
+    el11: ["div", "sub-sub-title", "", "מגמות הפיקוד", "details-part-2"],
+    el12: ["ul", "details-list", "details-list-2", "", "details-part-2"],
+    el13: ["li", "", "", "קורס מ''כים- הכשרת הלוחם ברמת 'כושר לחימה'- מתקדם ב', ומחלץ 07.", "details-list-2"],
+    el14: ["li", "", "", "השלמה לקצונה 'חנית'- השלמה לקצונה לאוכלוסיית הלוחמים בוגרי מגמת 'שדה' בבה''ד 1.", "details-list-2"],
+    el15: ["li", "", "", "השלמה לקצונה 'מורג'- השלמה לקצונה לאוכלוסיית המטה בוגרי מגמת 'מעוז' בבה''ד 1.", "details-list-2"],
+    el16: ["li", "", "", "הכנות לקצונה לאוכלוסיית הלוחמים ('כידון') והמטה ('צור').", "details-list-2"],
+    el17: ["div", "sub-sub-title", "", "מגמת מקצועות", "details-part-2"],
+    el18: ["ul", "details-list", "details-list-3", "", "details-part-2"],
+    el19: ["li", "", "", "מדור הכשרות חילוץ.", "details-list-3"],
+    el20: ["li", "", "", "מדור הכשרות אב''כ.", "details-list-3"],
+    el21: ["div", "closed-card", "closed-card-school", "", "details-part-2"],
+    el22: ["span", "closed-card-title", "", "הידעת?", "closed-card-school"],
+    img23: ["assets/images/arrow.svg", "open", "", "closed-card-arrow", "", "closed-card-school"],
+    img24: ["assets/images/arrow.svg", "next", "school-next-arrow", ["next-arrow", "next-right"], "", "details-part-2"],
+    car25: ["schoolCarousel"],
+    evLis26: ["closed-card-school", "click", "openCarouselCard"],
+    evLis27: ["close-btn-structure", "click", "closeDetails"],
+    evLis28: ["school-next-arrow", "click", "changeSchoolDetailsPart"]
+}
+
+const matachimDetails = {
+    el1: ["div", "structure-details", "matachim-details", "", "page"],
+    img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "matachim-details"],
+    el3: ["div", ["title", "details-title"], "", "יחידת מתכים", "matachim-details"],
+    img4: ["assets/images/matachim.svg", "יחידת מתכים", "", ["details-img", "matachim-img"], "", "matachim-details"],
+    el5: ["div", "details-conteiner", "details-conteiner", "", "matachim-details"],
+    el6: ["div", "subtitle", "", "תפקידיה של יחידת מתכים", "details-conteiner"],
+    el7: ["div", "details-text", "", "להגן קרקעית על מתקן 'מתכים' באמצעות יחידותיו וכוחות ת''פ.\nהסד''כ אשר מבצע את ההגנה על היחידה בפועל הוא כוח פלוגתי של אחד הגדודים בחטיבה אשר מתחלף ע''פ גרף התע''מ.\nבשנת 2020 הוקמה תחת גדוד תבור פלוגת ונוס אשר משימתה בחירום היא הגנה על מתכים.", "details-conteiner"],
+    el8: ["div", "closed-card", "closed-card-matachim", "", "details-conteiner"],
+    el9: ["span", "closed-card-title", "", "הידעת?", "closed-card-matachim"],
+    img10: ["assets/images/arrow.svg", "open", "", "closed-card-arrow", "", "closed-card-matachim"],
+    car11: ["matachimCarousel"],
+    evLis12: ["closed-card-matachim", "click", "openCarouselCard"],
+    evLis13: ["close-btn-structure", "click", "closeDetails"]
+}
 
 var bahCarousel = {
     items: 3,
@@ -460,7 +557,7 @@ var bahCarousel = {
 var bafCarousel = {
     items: 2,
     carouselIndicators: false,
-    visible: false,
+    visible: true,
     arrows: true,
     cardType: "el",
     card1: [
@@ -493,7 +590,7 @@ var schoolCarousel = {
     ]
 }
 
-var schoolCarousel = {
+var matachimCarousel = {
     items: 1,
     carouselIndicators: false,
     visible: false,
@@ -518,13 +615,12 @@ var rescueImgCarousel = {
     card5: ["assets/images/rescue-carousel-5.jpg", "Fifth slide", "card", ["d-block", "w-100"], "", "carousel-item"]
 }
 
-const carouselCardCloseButton = ["assets/images/close-btn.svg", "X", "close-card-button", "close-card-button", "", "carousel-inner"];
-
 let menuOpen = false;
 let quesVisited = false;
 let currPage = 1;
 let currExpShown = "";
 let currDefShown = ""; // type string
+let currDetailsShoen = "";
 let complexBranchesVisited = [];
 let complexFinishButton = ["button", "next-btn-timeline", "next-btn-14", "סיימתי!", "timeline-text-container"];
 
@@ -535,7 +631,7 @@ window.addEventListener("load", (event) => {
             //         showDefinition();
             //     }
             // });
-            createScreen(bahDetails);
+            createScreen(openScreenContent);
             document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
@@ -573,9 +669,11 @@ const showQues = () => {
     let displayStyle = document.getElementById("ques-container").style.display;
     if (document.getElementById("info").style.display === "none" && !document.querySelector(".nice-nav").classList.contains("open")) {
         if (displayStyle === "none") {
+            document.getElementById("page").style.opacity = "0";
             document.getElementById("ques-container").style.display = "block";
             document.getElementById("ques-content").innerHTML = quesHTMLContent.quesContent;
-            document.addEventListener("click", (event) => {
+            document.getElementById("ques-container").addEventListener("click", (event) => {
+                // listener for multipule click events inside ques container
                 if (event.target.id === "exmp-menu-btn") {
                     currText = "exmp-menu-text";
                     document.getElementById("ques-content").innerHTML = quesHTMLContent.exmpMenuContent;
@@ -599,16 +697,18 @@ const showQues = () => {
                         document.getElementById("menu-error").style.display = "block"; 
                     } else if (quesVisited) {
                         document.getElementById("ques-container").style.display = "none";
-                    }
-                } else if (event.target.id !== "close-btn-ques") {
-                    if (document.getElementById("menu-error") !== null ) {
-                        document.getElementById("menu-error").style.display = "none";
-                    }
-                } 
+                        document.getElementById("page").style.opacity = "1";
+                        }
+                    } else if (event.target.id !== "close-btn-ques") {
+                        if (document.getElementById("menu-error") !== null ) {
+                            document.getElementById("menu-error").style.display = "none";
+                        }
+                    } 
             });
         } else if (quesVisited) {
             document.getElementById("ques-container").style.display = "none";
             document.getElementById("ques-container").innerHTML = '';
+            document.getElementById("page").style.opacity = "1";
         }
     }
 }
@@ -766,28 +866,29 @@ const createImgElement = (list) => {
         }
     }
     newIMG.setAttribute("title", list[4]);
-    console.log(list[5]);
-    console.log(list);
-    console.log(document.getElementById(list[5]));
     document.getElementById(list[5]).appendChild(newIMG);
 }
 
-const createCarousel = (carouselContents) => {
+const createCarousel = (carouselContent) => {
+    // create container el for carousel
     let carouselExampleIndicators = document.createElement("div");
     carouselExampleIndicators.setAttribute("id", "carouselExampleIndicators");
     carouselExampleIndicators.classList.add("carousel", "slide");
     carouselExampleIndicators.setAttribute("data-ride", "carousel");
     carouselExampleIndicators.setAttribute("data-interval", "10000");
-    if (carouselContents.visible) {
+    if (carouselContent.visible) {
+        carouselExampleIndicators.style.display = "block";
+    } else {
         carouselExampleIndicators.style.display = "none";
     }
-    // add to parent element
-    if (carouselContents.carouselIndicators) {
+    document.querySelector(".details-conteiner").appendChild(carouselExampleIndicators);
+    // create carousel indicators accordingly
+    if (carouselContent.carouselIndicators) {
         let carouselIndicatorsOL = document.createElement("ol");
         carouselIndicatorsOL.setAttribute("id", "carousel-indicators");
         carouselIndicatorsOL.classList.add("carousel-indicators");
         carouselExampleIndicators.appendChild(carouselIndicatorsOL);
-        for (let i = 0; i < carouselContents.items; i++) {
+        for (let i = 0; i < carouselContent.items; i++) {
             let newItem = document.createElement("li");
             newItem.setAttribute("data-target", "#carouselExampleIndicators");
             newItem.setAttribute("data-slide-to", `${i}`);
@@ -797,15 +898,23 @@ const createCarousel = (carouselContents) => {
             carouselIndicatorsOL.appendChild(newItem);
         }
     }
+    // create inner container
     let carouselInner = document.createElement("div");
     carouselInner.setAttribute("id", "carousel-inner");
     carouselInner.classList.add("carousel-inner");
     carouselExampleIndicators.appendChild(carouselInner);
-    if (carouselContents.cardType === "el") {
-        createImgElement(carouselCardCloseButton);
-
+    // create X button according to card type
+    if (carouselContent.cardType === "el") {
+        let newIMG = document.createElement("img");
+        newIMG.src = "assets/images/close-btn.svg";
+        newIMG.alt = "X";
+        newIMG.setAttribute("id", "close-card-button");
+        newIMG.classList.add("close-card-button");
+        document.getElementById("carousel-inner").appendChild(newIMG);
+        newIMG.addEventListener("click", closeCarouselCard);
     }
-    for (let i = 0; i < carouselContents.items; i++) {
+    // create cards according to card num
+    for (let i = 0; i < carouselContent.items; i++) {
         let newItem = document.createElement("div");
         newItem.setAttribute("id", `carousel-item-${i + 1}`);
         newItem.classList.add("carousel-item");
@@ -813,30 +922,32 @@ const createCarousel = (carouselContents) => {
             newItem.classList.add("active");
         }
         carouselInner.appendChild(newItem);
-        if (carouselContents.cardType === "el") {
-            let cardItem = document.createElement("div");
-            cardItem.setAttribute("id", `card-${i + 1}`);
-            cardItem.classList.add("d-block", "w-100", "card");
-            newItem.appendChild(cardItem);
-            for (let i = 0; i < carouselContents.items; i++) {
-                createTextElement(carouselContents.window[`card-${i + 1}`]);
+        // create card content according to type
+        if (carouselContent.cardType === "el") {
+        let cardItem = document.createElement("div");
+        cardItem.setAttribute("id", `card-${i + 1}`);
+        cardItem.classList.add("d-block", "w-100", "card");
+        newItem.appendChild(cardItem);
+            for (let j = 0; j < carouselContent[`card${i + 1}`].length; j++) {
+                createTextElement(carouselContent[`card${i + 1}`][j]);
             }
-        } else if (carouselContents.cardType === "img") {
-            let imgProp = carouselContents.window[`card${i + 1}`];
+        } else if (carouselContent.cardType === "img") {
+            let imgProp = carouselContent.window[`card${i + 1}`];
             let imgList = [imgProp[0], imgProp[1], `${imgProp[2]}-${i + 1}`, imgProp[3], imgProp[4], `${imgProp[5]}-${i + 1}`];
             createImgElement(imgList);
         }
     }
-    let carouselControlPrev = document.createElement("a");
-    carouselControlPrev.setAttribute("id", "carousel-control-prev");
-    carouselControlPrev.classList.add("carousel-control-prev");
-    if (carouselContents.arrows) {
+    // create arrows, change color accordingly
+    if (carouselContent.arrows) {
+        let carouselControlPrev = document.createElement("a");
+        carouselControlPrev.setAttribute("id", "carousel-control-prev");
+        carouselControlPrev.classList.add("carousel-control-prev");
         carouselControlPrev.href = "#carouselExampleIndicators";
         carouselControlPrev.setAttribute("role", "button");
         carouselControlPrev.setAttribute("data-slide", "prev");
         carouselInner.appendChild(carouselControlPrev);
         let carouselControlPrevIcon = document.createElement("span");
-        if (carouselContents.cardType === "el") {
+        if (carouselContent.cardType === "el") {
             carouselControlPrevIcon.classList.add("carousel-control-prev-icon", "prev-icon-card");
         } else {
             carouselControlPrevIcon.classList.add("carousel-control-prev-icon");
@@ -855,7 +966,7 @@ const createCarousel = (carouselContents) => {
         carouselControlNext.setAttribute("data-slide", "next");
         carouselInner.appendChild(carouselControlNext);
         let carouselControlNextIcon = document.createElement("span");
-        if (carouselContents.cardType === "el") {
+        if (carouselContent.cardType === "el") {
             carouselControlNextIcon.classList.add("carousel-control-next-icon", "next-icon-card");
         } else {
             carouselControlNextIcon.classList.add("carousel-control-next-icon");
@@ -869,12 +980,18 @@ const createCarousel = (carouselContents) => {
     }
 }
 
-const openCarouselCard = () => {
-    document.getElementById("carouselExampleIndicators").style.opacity = "1";
+var openCarouselCard = () => {
+    document.getElementById("carouselExampleIndicators").style.display = "block";
 }
 
-const closeCarouselCard = () => {
-    document.getElementById("carouselExampleIndicators").style.opacity = "0";
+var closeCarouselCard = () => {
+    document.getElementById("carouselExampleIndicators").style.display = "none";
+}
+
+var closeDetails = () => {
+    document.getElementById("close-card-button").removeEventListener("click", closeCarouselCard);
+    document.getElementById("close-btn-structure").removeEventListener("click", closeDetails);
+    document.querySelector(".structure-details").remove();
 }
 
 const createVideo = (vidList) => {
@@ -885,11 +1002,6 @@ const createVideo = (vidList) => {
     iFrameVideo.setAttribute("id", vidList[3]);
     iFrameVideo.style.cssText = vidList[4];
     document.getElementById(vidList[5]).appendChild(iFrameVideo);
-}
-
-const createHativaDetails = () => {
-    let detailsContainer = ["div", "structure-details", "hativa-details", "", "structure"];
-    createTextElement(detailsContainer);
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -921,5 +1033,6 @@ var nextPage = () => {
 }
 
 var updatePage = () => {
-    console.log(currPage);
+    document.getElementById("page").innerHTML = "";
+    createScreen()
 }
