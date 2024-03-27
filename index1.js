@@ -1,3 +1,4 @@
+// this is the explanation about this project, by innerHTML.
 const quesHTMLContent = {
     quesContent: '<div id="ques-open-content" class="content-container"><div id="ques-open-content" class="text-container"><p class="title">על הלומדה:</p><div class="line">מטרת הלומדה:</div><div class="line">הצגת חטיבת החילוץ וההדרכה- היסטוריה, מבנה ותפקידים.</div><div class="line">הלומדה כוללת טקסט וגם סרטונים, לפעמים יחד ולפעמים לחוד.</div><div class="line">הסרטונים בלומדה יתחילו באופן אוטומטי כאשר הם מושתקים.</div><div class="line"><span>לאורך הלומדה יופיעו </span><span id="def1" class="colored-text">מילים בצבע</span><span> אשר בריחוף מעליהן יופיע ההסבר למושג.</span></div><div class="line">בנוסף, הכפתורים האלו יופיעו לכל אורך הלומדה. לחצו עליהם כדי לצפות בשימוש שלהם:</div></div><div id="buttons"><img src="assets/images/menu-btn.svg" alt="כפתור התפריט" id="exmp-menu-btn" title="כפתור התפריט" class="example-btn"><img src="assets/images/info-btn.svg" alt="כפתור אודות" id="exmp-info-btn" title="כפתור אודות" class="example-btn"><img src="assets/images/ques-btn.svg" alt="כפתור המידע" id="exmp-ques-btn" title="כפתור המידע" class="example-btn"></div><span class="error" id="menu-error" style="display: none;">אופס, עליכם לעבור על כל הכפתורים!</span></div>',
     exmpMenuContent: '</div><div id="exmp-menu-content" class="text-container"><div style="display: flex; align-items: center;"><img src="assets/images/menu-btn.svg" alt="כפתור התפריט" style="width: 2rem; margin-left: 0.5rem;"><span class="title">כפתור התפריט</span></div><div>כפתור זה יציג את ראשי הפרקים, אשר בלחיצה עליהם יוצגו תתי הנושאים בפרק.</div><div><span class="bold-txt">שימו לב! </span><span>לא ניתן יהיה לדלג על פרקים.</span></div><div>ניתן לעבור אחורה וקדימה בעזרת התפריט רק בין פרקים שכבר נצפו.</div></div>',
@@ -21,15 +22,18 @@ const definitionsText = {
     def13: ["הנדסת חילוץ- מכלול פעולות הנדסיות שמבוצעות באתר הרס."],
     def14: ["איסוף נתונים וחללים- תחום הטיפול בחללים באירוע הרס."],
 };
-
+// all of the objects for page creation are organized as:
+// element- text element: tag name, class value, id value, text value, parent element id
+// image:  src path, alt value, id value, class value, title value, parent element id 
+// carousel: object that contains the instrictions for creation
+// event listener: element id, event type, function
+// all functions or variavles used in this creation type have to be defined with var
 const openScreenContent = {
-    // tag name, class value, id value, text value, parent element id
     el1: ["div", "main-title", "open-title", "", "page"],
     el2: ["div", "", "", "תעודת זהות-", "open-title"],
     el3: ["div", "", "", "חטיבת החילוץ וההדרכה", "open-title"],
     el4: ["button", "next-btn-timeline", "start-btn", "התחל", "page"],
     evLis5: ["start-btn", "click", "nextPage"]
-    //          id         type    function
 }
 
 var endScreenContent = {
@@ -38,13 +42,14 @@ var endScreenContent = {
     el3: ["div", "", "", "חטיבת החילוץ וההדרכה", "open-title"],
     el4: ["div", "","re-do-button", "", "page"],
     img5: ["assets/images/re-do.svg", "חזור", "", "re-do-img", "", "re-do-button"],
-    //             src path, id value, class value, title value, parent element id 
     el6: ["div", "", "", "חזרה על הלומדה", "re-do-button"],
     evLis7: ["re-do-button", "click", "updatePage"]
 }
 
 var page2 = {
-    vid1: ["https://www.youtube.com/embed/8h2PR-d9bTY?autoplay=1&mute=1", "420", "315", "enlisting-video", "height: auto; display: block; position: absolute; top: 4.5rem; width: 34rem; height: 19rem; left: 50%; transform: translateX(-50%);", "main"]
+    vid1: ["https://www.youtube.com/embed/8h2PR-d9bTY?si=Uw1sfXDjVepQfH-T", "420", "315", "enlisting-video", "סרטון גיוס", "height: auto; display: block; position: absolute; top: 4.5rem; width: 34rem; height: 19rem; left: 50%; transform: translateX(-50%);", "page"],
+    el2: ["button", "next-btn-timeline", "next-btn-3", "המשך", "page"],
+    evLis3: ["next-btn-3", "click", "nextPage"]
 }
 
 var page3 = {
@@ -52,11 +57,10 @@ var page3 = {
 }
 
 var page4 = {
-    el1: ["div", "timeline", "", "", "page"],
-    el2: ["div", "open-text", "page3text", "", "page"],
-    el3: ["div", "", "", "חטיבת החילוץ וההדרכה הינה החטיבה הסדירה היחידה בפיקוד העורף אשר בנוי ברובו מאנשי מילואים.\nעל מנת להבין לעומק את ייחודיות החטיבה, נעמיק בדרך שהחטיבה עברה מאז ועד היום- מ'פלח''ץ' לחטיבת החילוץ וההדרכה.", "page3text"],
-    el4: ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page"],
-    evLis5: ["next-btn-3", "click", "nextPage"]
+    el1: ["div", "open-text", "page3text", "", "page"],
+    el2: ["div", "", "", "חטיבת החילוץ וההדרכה הינה החטיבה הסדירה היחידה בפיקוד העורף אשר בנוי ברובו מאנשי מילואים.\nעל מנת להבין לעומק את ייחודיות החטיבה, נעמיק בדרך שהחטיבה עברה מאז ועד היום- מ'פלח''ץ' לחטיבת החילוץ וההדרכה.", "page3text"],
+    el3: ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page"],
+    evLis4: ["next-btn-3", "click", "nextPage"]
 }
 
 var page5 = {
@@ -185,9 +189,9 @@ var page22 = {
 var page23 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", ["title", "page23-title"], "timeline-title", "2013- הקמת הנפה הסדירה", "timeline-text-container"],
-    vid3: ["https://www.youtube.com/embed/22jnDzn8Cmg?autoplay=1&mute=1", "420", "315", "nafa-sdira-video", "height: auto; display: block; position: absolute; top: 6.5rem; width: 32rem; height: 16rem; left: 50%; transform: translateX(-50%);","main"],
-    el4: ["button", ["next-btn-timeline", "page23-button"], "next-btn-11", "הבנתי", "timeline-text-container"],
-    evLis5: ["next-btn-11", "click", "nextPage"]
+    vid3: ["https://www.youtube.com/embed/22jnDzn8Cmg?si=TlIcttYFw91I-80h", "420", "315", "nafa-sdira-video", "הנפה הסדירה", "height: auto; display: block; position: absolute; top: 6.5rem; width: 32rem; height: 16rem; left: 50%; transform: translateX(-50%);", "timeline-text-container"],
+    el4: ["button", "next-btn-timeline", "next-btn-12", "הבנתי", "timeline-text-container"],
+    evLis5: ["next-btn-12", "click", "nextPage"]
 }
 
 var page24 = {
@@ -201,13 +205,6 @@ var page25 = {
     // timeline 2013 to 1984
     // fix year text 
 }
-
-const enlistingVideo = ["https://www.youtube.com/embed/8h2PR-d9bTY?autoplay=1&mute=1", "420", "315", "enlisting-video", "height: auto; display: block; position: absolute; top: 4.5rem; width: 34rem; height: 19rem; left: 50%; transform: translateX(-50%);", "main"];
-const nafaSdiraVideo = ["https://www.youtube.com/embed/22jnDzn8Cmg?autoplay=1&mute=1", "420", "315", "nafa-sdira-video", "height: auto; display: block; position: absolute; top: 6.5rem; width: 32rem; height: 16rem; left: 50%; transform: translateX(-50%);","main"];
-const turkeyMissionVideo = ["https://www.youtube.com/embed/UizPszhEIcM?autoplay=1&mute=1", "420", "315", "turkey-mission-video", "height: auto; display: block; position: absolute; top: 8rem; width: 31rem; height: 16rem; left: 50%; transform: translateX(-50%);","main"];
-const buildingCollapseVideo = ["https://www.youtube.com/embed/ARUP-IxuH_g?autoplay=1&mute=1", "420", "315", "building-collapse-video", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main"];
-const days80Video = ["https://www.youtube.com/embed/MHfaOD0cDe8?autoplay=1&mute=1", "420", "315", "80-days-video", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main"];
-const abachVideo = ["https://www.youtube.com/embed/3HZRBKBRkHE?autoplay=1&mute=1", "420", "315", "abach-video", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main"];
 
 var page26 = {
     // fix year text
@@ -334,7 +331,7 @@ var page33 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- טורקיה", "main-roles"], 
-    vid4: ["https://www.youtube.com/embed/UizPszhEIcM?autoplay=1&mute=1", "420", "315", "turkey-mission-video", "height: auto; display: block; position: absolute; top: 8rem; width: 31rem; height: 16rem; left: 50%; transform: translateX(-50%);","main"],
+    vid4: ["https://www.youtube.com/embed/UizPszhEIcM?si=02NkX59qYt5vhvY5", "420", "315", "turkey-mission-video", "סרטון טורקיה", "height: auto; display: block; position: absolute; top: 8rem; width: 31rem; height: 16rem; left: 50%; transform: translateX(-50%);","main-roles"],
     img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
     evLis6: ["roles-next-arrow", "click", "nextPage"]
 }
@@ -354,7 +351,7 @@ var page35 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בעורף", "main-roles"], 
     el4: ["div", "roles-text", "", "גדודי החטיבה הינם הגוף הסדיר בעל כשירות החילוץ הגבוהה ביותר, המחלצים ערוכים לביצוע פעולות חילוץ במתאר הרס מלחמתי בתוך שטח מדינת ישראל (כתוצאה מפגיעת רקטה לדוגמה), אסונות טבע וכשלים הנדסיים כל זאת במטרה להציל חיים.", "main-roles"],
-    func5: "", // add proper function to add img carousel
+    car5: ["rescueImgCarousel"],
     img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
@@ -364,7 +361,7 @@ var page36 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
     el4: ["div", "roles-text", "", "לאור מאפייני הלחימה במרחב התמרון (בשטח מדינת האויב), המאופיינים במרחב בנוי רווי מטענים ותשתיות תת קרקע ממולכדות, נדרש מענה מבצעי לאיום פגיעה בכוחותינו לאור קריסת מבנה או חלל תת קרקע.\nהכוח שמוכשר לתת מענה בפעולות חילוץ של כוחות מתמרנים של צה''ל מהריסות מבנים במרחב הלחימה, הינם לוחמי החילוץ של חטיבת החילוץ וההדרכה.", "main-roles"],
-    vid5: ["https://www.youtube.com/embed/ARUP-IxuH_g?autoplay=1&mute=1", "420", "315", "building-collapse-video", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main"],
+    vid5: ["https://www.youtube.com/embed/ARUP-IxuH_g?si=WKsshRfTPV1FKQHY", "420", "315", "building-collapse-video", "סינק התמוטטות בניין", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main-roles"],
     img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
@@ -374,7 +371,7 @@ var page37 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
     el4: ["div", "roles-text", "", "בעת תמרון בשטח אויב קיימת סכנה להתמוטטות מבנה על כוחותינו.\nתרחיש זה שונה בתכלית מתרחיש התמוטטות בעורף, מכיוון שאין באפשרות ארגוני החירום להגיע לאירוע.\nבמלחמה, גדודי החטיבה יצוותו לאוגדות מתמרנות בתצורת צק''פים (צוותי קרב פלוגתיים) אשר יתנו מענה לאירועי חילוץ של כוחותינו בשטח האויב.", "main-roles"],
-    vid5: ["https://www.youtube.com/embed/MHfaOD0cDe8?autoplay=1&mute=1", "420", "315", "80-days-video", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main"],
+    vid5: ["https://www.youtube.com/embed/MHfaOD0cDe8?si=B3wqldSbX0XhBsFg", "420", "315", "80-days-video", "סיכום 80 ימי לחימה", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main-roles"],
     img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
@@ -384,7 +381,7 @@ var page38 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "אב''כ", "main-roles"], 
     el4: ["div", "roles-text", "", "לגדודי החטיבה כשירות לטפל באירועים כימיים בעורף, טיהור המוקד הנגוע ופינוי האוכלוסייה עפ''י צורך.\nהלוחמים והלוחמות בגדוד מתמקצעים ביכולות השונות הנדרשות לטיפול באירוע כה מורכב: גילוי וזיהוי מוקד הזיהום, טיהור השטח הנגוע, טיהור בני אדם וכלי רכב היוצאים מהאזור הנגוע ועוד. כל זאת על מנת שיוכלו לפעול ביעילות ולהציל חיים בזמן הקצר ביותר.", "main-roles"],
-    vid5: ["https://www.youtube.com/embed/3HZRBKBRkHE?autoplay=1&mute=1", "420", "315", "abach-video", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main"],
+    vid5: ["https://www.youtube.com/embed/3HZRBKBRkHE?si=zuxHJqtuUxC4R2si", "420", "315", "abach-video", "סרטון תדמית אב''כ", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main-roles"],
     img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
@@ -404,7 +401,40 @@ var page40 = {
 }
 
 var page41 = {
-    
+    el1: ["div", "structure-text-page", "structure", "", "page"],
+    el2: ["div", "", "structure-tree", "", "structure"],
+    el3: ["div", "", "hativa-container", "", "structure-tree"],
+    img4: ["assets/images/hativa.svg", "hativa", "hativa", "structure-sym", "", "hativa-container"],
+    el5: ["strong", "hativa-desc", "hativa-desc", "מפקדה", "hativa-container"],
+    el6: ["div", "units-container", "units-container", "", "structure-tree"], 
+    el7: ["div", "", "bah-container", "", "units-container"], 
+    img8: ["assets/images/bah.svg", "bah", "bah", "structure-sym", "", "bah-container"], 
+    el9: ["strong", "bah-desc", "bah-desc", "בא''ח העורף", "bah-container"],
+    el10: ["div", "", "baf-container", "", "units-container"],
+    img11: ["assets/images/baf.svg", "baf", "baf", "structure-sym", "", "baf-container"],
+    el12: ["strong", "baf-desc", "baf-desc", "בא''פ העורף", "baf-container"],
+    el13: ["div", "", "matachim-container", "", "units-container"],
+    img14: ["assets/images/matachim.svg", "matachim", "matachim", "structure-sym", "", "matachim-container"],
+    el15: ["strong", "matachim-desc", "matachim-desc", "יחידת מתכים", "matachim-container"],
+    el16: ["div", "", "school-container", "", "units-container"],
+    img17: ["assets/images/school-of-oref.svg", "school", "school", "structure-sym", "", "school-container"],
+    el18: ["strong", "school-desc", "school-desc", "בית הספר לפיקוד\nולמקצועות העורף", "school-container"],
+    el19: ["div", "gdudim-container", "gdudim-container", "", "structure-tree"], 
+    el20: ["div", "", "gdud-shahar", "", "gdudim-container"],
+    img21: ["assets/images/gdud-shahar.svg", "shahar", "shahar", "structure-sym", "", "gdud-shahar"],
+    el22: ["strong", "gdudim-desc", "", "גדוד שחר", "gdud-shahar"],
+    el23: ["div", "", "gdud-tavor", "", "gdudim-container"],
+    img24: ["assets/images/gdud-tavor.svg", "tavor", "tavor", "structure-sym", "", "gdud-shahar"],
+    el25: ["strong", "gdudim-desc", "", "גדוד תבור", "gdud-tavor"],
+    el26: ["div", "", "gdud-ram", "", "gdudim-container"],
+    img27: ["assets/images/gdud-ram.svg", "ram", "shahar", "structure-sym", "", "gdud-ram"],
+    el28: ["strong", "gdudim-desc", "", "גדוד רם", "gdud-ram"],
+    el29: ["div", "", "gdud-kedem", "", "gdudim-container"],
+    img30: ["assets/images/gdud-kedem.svg", "kedem", "kedem", "structure-sym", "", "gdud-kedem"],
+    el31: ["strong", "gdudim-desc", "", "גדוד קדם", "gdud-kedem"],
+    el32: ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"],
+    evLis33: ["structure-tree", "click", "openDetails"],
+    evLis34: ["next-btn-timeline", "click", "finishScreen"]
 }
 
 const hativaDetails = {
@@ -620,25 +650,19 @@ let quesVisited = false;
 let currPage = 1;
 let currExpShown = "";
 let currDefShown = ""; // type string
-let currDetailsShoen = "";
+let currSchoolDetailsShown = "";
 let complexBranchesVisited = [];
+let detailsVisited = [];
 let complexFinishButton = ["button", "next-btn-timeline", "next-btn-14", "סיימתי!", "timeline-text-container"];
 
 window.addEventListener("load", (event) => {
-    // document.getElementById("menu-btn").addEventListener("mouseover", showMenu);
-    // document.addEventListener("mouseover", (event) => {
-        //     if (event.target.classList.contains("colored-text")) {
-            //         showDefinition();
-            //     }
-            // });
-            createScreen(openScreenContent);
-            document.getElementById("menu-btn").addEventListener("click", showMenu);
+    createScreen(page31);
+    document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
-    })
+    });
     document.getElementById("info-btn").addEventListener("click", showInfo);
     document.getElementById("ques-btn").addEventListener("click", showQues);
-    // document.getElementById("branches").addEventListener("click", timelineComplexPage);
     document.addEventListener("click", (event) => {
         if (event.target.classList.contains("colored-text")) {
             createDefinitionElement(event);
@@ -820,8 +844,7 @@ const createScreen = (currObject) => {
             window[func]();
             continue;
         } else if (openContentKeys[i - 1].includes("vid")) {
-            document.getElementById(currObject[1]).style.display = "block";
-            console.log("show vid");
+            createVideo(currObject[openContentKeys[i - 1]]);
         } else if (openContentKeys[i - 1].includes("car")) {
             let carouselObject = currObject[`car${i}`];
             createCarousel(window[carouselObject]);
@@ -881,7 +904,11 @@ const createCarousel = (carouselContent) => {
     } else {
         carouselExampleIndicators.style.display = "none";
     }
-    document.querySelector(".details-conteiner").appendChild(carouselExampleIndicators);
+    if (carouselContent.cardType === "el") {
+        document.querySelector(".details-conteiner").appendChild(carouselExampleIndicators);
+    } else {
+        document.getElementById("main-roles").appendChild(carouselExampleIndicators);
+    }
     // create carousel indicators accordingly
     if (carouselContent.carouselIndicators) {
         let carouselIndicatorsOL = document.createElement("ol");
@@ -988,6 +1015,54 @@ var closeCarouselCard = () => {
     document.getElementById("carouselExampleIndicators").style.display = "none";
 }
 
+var openDetails = (event) => {
+    if (event.target.id.includes("hativa")) {
+        createScreen(hativaDetails);
+        if (!detailsVisited.includes("hativa")) {
+            detailsVisited.push("hativa");
+        }
+    } else if (event.target.id.includes("bah")) {
+        createScreen(bahDetails);
+        if (!detailsVisited.includes("bah")) {
+            detailsVisited.push("bah");
+        }
+    } else if (event.target.id.includes("baf")) {
+        createScreen(bafDetails);
+        if (!detailsVisited.includes("baf")) {
+            detailsVisited.push("baf");
+        }
+    } else if (event.target.id.includes("matachim")) {
+        createScreen(matachimDetails);
+        if (!detailsVisited.includes("matachim")) {
+            detailsVisited.push("matachim");
+        }
+    } else if (event.target.id.includes("school")) {
+        createScreen(schoolDetailsA);
+        currSchoolDetailsShown = "a";
+        if (!detailsVisited.includes("school-a")) {
+            detailsVisited.push("school-a");
+        }
+    }
+}
+
+var changeSchoolDetailsPart = () => {
+    if (currSchoolDetailsShown === "a") {
+        closeDetails();
+        createScreen(schoolDetailsB);
+        currSchoolDetailsShown = "b";
+        if (!detailsVisited.includes("school-b")) {
+            detailsVisited.push("school-b");
+        }
+    } else if (currSchoolDetailsShown === "b") {
+        closeDetails();
+        createScreen(schoolDetailsA);
+        currSchoolDetailsShown = "a";
+        if (!detailsVisited.includes("school-a")) {
+            detailsVisited.push("school-a");
+        }
+    }
+}
+
 var closeDetails = () => {
     document.getElementById("close-card-button").removeEventListener("click", closeCarouselCard);
     document.getElementById("close-btn-structure").removeEventListener("click", closeDetails);
@@ -1000,9 +1075,40 @@ const createVideo = (vidList) => {
     iFrameVideo.width = vidList[1];
     iFrameVideo.height = vidList[2];
     iFrameVideo.setAttribute("id", vidList[3]);
-    iFrameVideo.style.cssText = vidList[4];
-    document.getElementById(vidList[5]).appendChild(iFrameVideo);
+    iFrameVideo.title = vidList[4];
+    iFrameVideo.style.cssText = vidList[5];
+    iFrameVideo.setAttribute("frameborder", "0");
+    iFrameVideo.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+    iFrameVideo.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+    iFrameVideo.setAttribute("allowfullscreen", "true");
+    document.getElementById(vidList[6]).appendChild(iFrameVideo);
+    // iFrameVideo.addEventListener("onStateChange", createFinishAfterVid());
 }
+
+const createFinishAfterVid = (event) => {
+    console.log(event);
+    // if (state === 0) {
+        let button;
+        let id;
+        if (currPage === 2 || currPage === 23) {
+            if (currPage === 2) {
+                id = "next-btn-3";
+                button = ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page"];
+            }
+            else {
+                id = "next-btn-11";
+                button = ["button", ["next-btn-timeline", "page23-button"], "next-btn-11", "הבנתי", "timeline-text-container"];
+            }
+            createTextElement(button);
+        } else {
+            id = "roles-next-arrow";
+            button = ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"];
+            createImgElement(button);
+        }
+        document.getElementById(id).addEventListener("click", nextPage);
+    // }
+}
+
 
 ////////////////////////////////////////////////////////////////////////
 // function setAttributes(element, attributes) {
@@ -1028,11 +1134,27 @@ var nextPage = () => {
         showQues();
     } else {
         currPage++;
+        console.log(currPage);
         updatePage();
     }
 }
 
 var updatePage = () => {
     document.getElementById("page").innerHTML = "";
-    createScreen()
+    let currObjContent = window[`page${currPage}`];
+    if (Object.keys(currObjContent).length === 0) {
+        nextPage();
+    } else if (currPage === 29 || currPage === 40) {
+        setTimeout(nextPage(), 3000);
+    }
+    console.log(currPage);
+    console.log(currObjContent);
+    createScreen(currObjContent);
+}
+
+var finishScreen = () => {
+    if (detailsVisited.length === 6) {
+        document.getElementById("page").innerHTML = "";
+        createScreen(endScreenContent);
+    }
 }

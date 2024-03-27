@@ -428,7 +428,6 @@ a {
 .timeline {
     height: 17rem;
     position: relative;
-    /* bottom: -2rem; */
 }
 
 .timeline-title {
@@ -487,8 +486,6 @@ a {
 
 .timeline-text-page {
     margin: 5rem;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
 .timeline-symbol-img {
@@ -558,7 +555,6 @@ a {
     margin-top: 1rem;
     position: relative;
     right: 1rem;
-    /* height: calc(100vh - 20rem); */
 }
 
 #infographic-32 .infographic-container {
@@ -568,7 +564,6 @@ a {
     margin-top: 1rem;
     position: relative;
     right: 1rem;
-    /* height: calc(100vh - 20rem); */
 }
 
 
@@ -634,6 +629,270 @@ a {
 #infographic-32 .complex-infographic-text {
     display: inline-block; 
     line-height: 1.2rem;
+}
+
+.structure-text-page {
+    margin: 3.5rem 2rem 0rem 2rem;
+    height: calc(100vh - 7rem);
+}
+
+.subtitle {
+    font-weight: 600;
+    text-align: right;
+}
+
+.roles-text {
+    width: 20rem;
+    text-align: right;
+}
+
+.roles-img {
+    width: 15rem;
+    position: absolute;
+    left: 5rem;
+    top: 8rem;
+    border: solid 5px white;
+}
+
+.carousel {
+    width: 15rem;
+    position: absolute;
+    left: 5rem;
+    top: 7rem;
+}
+
+.structure-sym {
+    height: 4rem;
+}
+
+.gdudim-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 17rem;
+}
+
+.units-container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+    width: calc(100vw - 5rem);
+    top: 6rem;
+}
+
+.hativa-desc {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5rem;
+}
+
+.bah-desc {
+    position: absolute;
+    right: 3rem;
+    top: 6rem;
+}
+
+.baf-desc {
+    position: absolute;
+    right: 15rem;
+    top: 6rem;
+}
+
+.matachim-desc {
+    position: absolute;
+    left: 17.5rem;
+    top: 6rem;
+}
+
+.school-desc {
+    position: absolute;
+    left: 5rem;
+    top: 5.5rem;
+}
+
+.gdudim-desc {
+    margin-left: 1rem;
+}
+
+#hativa {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 1rem;
+}
+
+#bah {
+    height: 5.5rem;
+    margin-top: 1rem;
+}
+
+#baf {
+    height: 6rem;
+}
+
+#matachim {
+    height: 3.5rem;
+}
+
+#school {
+    height: 8rem;
+}
+
+.structure-details {
+    background-color: var(--background-white);
+    border-radius: 5rem;
+    width: 40rem;
+    height: 21rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4rem;
+}
+
+.close-details-btn {
+    width: 1.5rem;
+    z-index: 3;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}  
+
+.details-title {
+    position: absolute;
+    top: 1.3rem;
+    right: 5rem;
+    font-size: 1.5rem;
+}
+
+.details-conteiner {
+    position: absolute;
+    text-align: right;
+    width: 30rem;
+    right: 5rem;
+    top: 4rem;
+}
+
+.details-text {
+    font-size: 0.8rem;
+}
+
+.details-list {
+    list-style-type: circle;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+}
+
+.details-img {
+    width: 7rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    margin: 1rem;
+}
+
+.matachim-img {
+    width: 4rem;
+}
+
+.sub-sub-title {
+    text-decoration: underline;
+    font-size: 0.8rem;
+}
+
+.card {
+    background-color: #f8f3da;
+    width: 25rem;
+    height: 7rem;
+    padding: 0.5rem 2.5rem;
+}
+
+.carousel {
+    width: 25rem;
+    position: absolute;
+    left: -5rem;
+    top: 2.5rem;
+}
+
+.card-text {
+    font-size: 0.7rem;
+}
+
+.card-title {
+    font-size: 0.8rem;
+}
+
+.prev-icon-card {
+    background-image: url("assets/images/carousel-prev-icon.svg");
+}
+
+.next-icon-card {
+    background-image: url("assets/images/carousel-next-icon.svg");
+}
+
+.close-card-button {
+    width: 1rem;
+    position: absolute;
+    z-index: 5;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.closed-card {
+    background-color: #f8f3da;
+    width: 7rem;
+    padding: 0.2rem 0.5rem;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -7.55rem;
+    top: 5rem;
+}
+
+.closed-card-title {
+    padding-right: 1rem;
+}
+
+.closed-card-arrow {
+    width: 1rem;
+    transform: rotate(90deg);
+}
+
+.next-left {
+    left: -2rem;
+}
+
+.next-right {
+    left: 31rem;
+    transform: rotate(180deg);
+}
+
+.end-text {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5rem;
+    width: 40rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+#re-do-button {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4rem;
+    width: 40rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.re-do-img {
+    width: 3rem;
 }
 
 @media only screen and (max-width: 1560px) {
@@ -808,278 +1067,3 @@ a {
         margin: 3.5rem 1rem 0rem 1rem;
     }
 }
-
-.structure-text-page {
-    margin: 3.5rem 2rem 0rem 2rem;
-    height: calc(100vh - 7rem);
-}
-
-.subtitle {
-    font-weight: 600;
-    text-align: right;
-}
-
-.roles-text {
-    width: 20rem;
-    text-align: right;
-}
-
-.roles-img {
-    width: 15rem;
-    position: absolute;
-    left: 5rem;
-    top: 8rem;
-    border: solid 5px white;
-}
-
-.carousel {
-    width: 15rem;
-    position: absolute;
-    left: 5rem;
-    top: 7rem;
-}
-
-.structure-sym {
-    height: 4rem;
-}
-
-.gdudim-container {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 17rem;
-}
-
-.units-container {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    align-items: center;
-    width: calc(100vw - 5rem);
-    top: 6rem;
-}
-
-.hativa-desc {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 5rem;
-}
-
-.bah-desc {
-    position: absolute;
-    right: 3rem;
-    top: 6rem;
-
-}
-
-.baf-desc {
-    position: absolute;
-    right: 15rem;
-    top: 6rem;
-}
-
-.matachim-desc {
-    position: absolute;
-    left: 17.5rem;
-    top: 6rem;
-}
-
-.school-desc {
-    position: absolute;
-    left: 5rem;
-    top: 5.5rem;
-}
-
-.gdudim-desc {
-    margin-left: 1rem;
-}
-
-#hativa {
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    top: 1rem;
-}
-
-#bah {
-    height: 5.5rem;
-    margin-top: 1rem;
-}
-
-#baf {
-    height: 6rem;
-}
-
-#matachim {
-    height: 3.5rem;
-}
-
-#school {
-    height: 8rem;
-}
-
-.structure-details {
-    background-color: var(--background-white);
-    border-radius: 5rem;
-    width: 40rem;
-    height: 21rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 4rem;
-}
-
-.close-details-btn {
-    width: 1.5rem;
-    z-index: 3;
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-}  
-
-.details-title {
-    position: absolute;
-    top: 1.3rem;
-    right: 5rem;
-    font-size: 1.5rem;
-}
-
-.details-conteiner {
-    position: absolute;
-    text-align: right;
-    width: 30rem;
-    right: 5rem;
-    top: 4rem;
-}
-
-.details-text {
-    font-size: 0.8rem;
-}
-
-.details-list {
-    list-style-type: circle;
-    margin-right: 1rem;
-    font-size: 0.8rem;
-}
-
-.details-img {
-    width: 7rem;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    margin: 1rem;
-}
-
-.matachim-img {
-    width: 4rem;
-}
-
-.sub-sub-title {
-    text-decoration: underline;
-    font-size: 0.8rem;
-}
-
-.card {
-    background-color: #f8f3da;
-    width: 25rem;
-    height: 7rem;
-    padding: 0.5rem 2.5rem;
-}
-
-.carousel {
-    width: 25rem;
-    position: absolute;
-    left: -5rem;
-    top: 2.5rem;
-}
-
-.card-text {
-    font-size: 0.7rem;
-}
-
-.card-title {
-    font-size: 0.8rem;
-}
-
-.prev-icon-card {
-    background-image: url("assets/images/carousel-prev-icon.svg");
-}
-
-.next-icon-card {
-    background-image: url("assets/images/carousel-next-icon.svg");
-}
-
-.close-card-button {
-    width: 1rem;
-    position: absolute;
-    z-index: 5;
-    top: 0.5rem;
-    right: 0.5rem;
-}
-
-.closed-card {
-    background-color: #f8f3da;
-    width: 7rem;
-    padding: 0.2rem 0.5rem;
-    transform: rotate(90deg);
-    position: absolute;
-    left: -7.55rem;
-    top: 5rem;
-}
-
-.closed-card-title {
-    padding-right: 1rem;
-    /* transform: rotate(180deg); */
-}
-
-.closed-card-arrow {
-    width: 1rem;
-    transform: rotate(90deg);
-}
-
-.next-arrow {
-    width: 2rem;
-    position: absolute;
-    top: 14rem;
-}
-
-.next-left {
-    left: -2rem;
-}
-
-.next-right {
-    left: 31rem;
-    transform: rotate(180deg);
-}
-
-.end-text {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 5rem;
-    width: 40rem;
-    font-size: 1.7rem;
-    font-weight: 700;
-}
-
-#re-do-button {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 4rem;
-    width: 40rem;
-    font-size: 0.7rem;
-    font-weight: 600;
-}
-
-.re-do-img {
-    width: 3rem;
-}
-
-
-
