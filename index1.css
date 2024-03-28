@@ -692,19 +692,19 @@ a {
 
 .bah-desc {
     position: absolute;
-    right: 3rem;
+    right: 2rem;
     top: 6rem;
 }
 
 .baf-desc {
     position: absolute;
-    right: 15rem;
+    right: 11.5rem;
     top: 6rem;
 }
 
 .matachim-desc {
     position: absolute;
-    left: 17.5rem;
+    left: 17rem;
     top: 6rem;
 }
 
@@ -715,7 +715,16 @@ a {
 }
 
 .gdudim-desc {
-    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.gdudim-desc,
+.school-desc,
+.matachim-desc,
+.baf-desc,
+.bah-desc,
+.hativa-desc {
+    font-size: 0.8rem;
 }
 
 #hativa {
@@ -726,12 +735,12 @@ a {
 }
 
 #bah {
-    height: 5.5rem;
+    height: 3.5rem;
     margin-top: 1rem;
 }
 
 #baf {
-    height: 6rem;
+    height: 3rem;
 }
 
 #matachim {
@@ -739,7 +748,12 @@ a {
 }
 
 #school {
-    height: 8rem;
+    height: 3rem;
+    margin-left: 1.5rem;
+}
+
+.gdudim-img {
+    height: 3rem;
 }
 
 .structure-details {
@@ -817,6 +831,13 @@ a {
     top: 2.5rem;
 }
 
+.roles-text-page .carousel {
+    width: 19rem;
+    position: absolute;
+    left: 2rem;
+    top: 6.5rem;
+}
+
 .card-text {
     font-size: 0.7rem;
 }
@@ -862,11 +883,29 @@ a {
 
 .next-left {
     left: -2rem;
+    bottom: -11rem;
 }
 
 .next-right {
     left: 31rem;
     transform: rotate(180deg);
+    bottom: 0rem;
+}
+
+#baf-details .details-img {
+    width: 5.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    margin: 1rem;
+}
+
+#bah-details .details-img {
+    width: 5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    margin: 1rem;
 }
 
 .end-text {
@@ -901,7 +940,7 @@ a {
         flex-wrap: wrap;
     }
     #infographic-31 .infographic-text-container {
-        width: 13rem;
+        width: 15rem;
         font-size: 0.8rem;
     }
     #infographic-31 .infographic {
@@ -927,9 +966,9 @@ a {
         flex-wrap: wrap;
     }
     #infographic-31 .infographic-text-container {
-        width: 9rem;
+        width: 13rem;
         font-size: 0.8rem;
-        height: 5.1rem;
+        height: 4.6rem;
         padding-right: 2rem;
     }
     #infographic-31 .infographic {
@@ -937,12 +976,12 @@ a {
         height: 6.3rem;
     }
     #infographic-31 .infographic-num-container {
-        height: 3.6rem;
+        height: 4.6rem;
         width: 5.1rem;
         padding-top: 1.5rem;
-        bottom: 5.1rem;
+        bottom: 4.6rem;
         font-size: 1.3rem;
-        right: -0.5rem;
+        right: -1.6rem;
     }
     
     #infographic-32 .infographic-container {
@@ -957,14 +996,14 @@ a {
     }
     #infographic-32 .infographic {
         width: 25rem;
-        height: 3rem;
+        height: 3.2rem;
     }
     #infographic-32 .infographic-num-container {
-        height: 2.2rem;
+        height: 2.6rem;
         width: 2.6rem;
-        padding-top: 0.4rem;
+        padding-top: 0.6rem;
         bottom: 2.6rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
@@ -974,21 +1013,21 @@ a {
     }
     #infographic-31 .infographic-text-container {
         width: 26rem;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         height: 2.3rem;
-        padding-right: 2rem;
+        padding-right: 2rem
     }
     #infographic-31 .infographic {
-        width: 12rem;
+        width: 25rem;
         height: 2.7rem;
     }
     #infographic-31 .infographic-num-container {
-        height: 2rem;
+        height: 2.3rem;
         width: 2.3rem;
-        padding-top: 0.3rem;
+        padding-top: 0.2rem;
         bottom: 2.3rem;
         font-size: 1.3rem;
-        right: -0.5rem;
+        right: 0.5rem;
     }
     
     #infographic-32 .infographic-container {
@@ -1003,42 +1042,50 @@ a {
     }
     #infographic-32 .infographic {
         width: 20rem;
-        height: 5rem;
+        height: 4rem;
     }
     #infographic-32 .infographic-num-container {
-        height: 2.7rem;
+        height: 3.45rem;
         width: 3.5rem;
         padding-top: 0.8rem;
         bottom: 3.5rem;
         font-size: 1.3rem;
         right: -0.6rem;
     }
+    #infographic-32 #infographic1 .infographic-num-container {
+        bottom: 3.7rem;
+    }
     .roles-text-page {
         margin: 3.5rem 1rem 0rem 1rem;
     }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 780px) {
     #infographic-31 .infographic-container {
         flex-direction: column;
-    }
+        position: absolute;
+        right: 0.3rem;
+     }     
     #infographic-31 .infographic-text-container {
-        width: 26rem;
+        width: 17rem;
         font-size: 0.9rem;
-        height: 2.3rem;
-        padding-right: 2rem;
-    }
+        height: 3.3rem;
+        padding-right: 1.5rem;
+     }     
     #infographic-31 .infographic {
         width: 12rem;
-        height: 2.7rem;
+        height: 3.5rem;
     }
     #infographic-31 .infographic-num-container {
-        height: 2rem;
-        width: 2.3rem;
-        padding-top: 0.3rem;
-        bottom: 2.3rem;
+        height: 3.3rem;
+        width: 2.6rem;
+        padding-top: 0.7rem;
+        bottom: 3.3rem;
         font-size: 1.3rem;
-        right: -0.5rem;
+        right: 0rem;
+    }
+    #infographic-31 .complex-infographic-text {
+        line-height: 1rem;
     }
     
     #infographic-32 .infographic-container {
@@ -1047,21 +1094,24 @@ a {
     #infographic-32 .infographic-text-container {
         width: 16rem;
         font-size: 0.9rem;
-        height: 3.6rem;
+        height: 4.7rem;
         padding-right: 2rem;
         right: 0.5rem;
     }
     #infographic-32 .infographic {
         width: 12rem;
-        height: 4rem;
+        height: 5rem;
     }
     #infographic-32 .infographic-num-container {
-        height: 2.8rem;
+        height: 4.7rem;
         width: 3.6rem;
-        padding-top: 0.8rem;
-        bottom: 3.6rem;
+        padding-top: 1.5rem;
+        bottom: 4.7rem;
         font-size: 1.3rem;
         right: -1.3rem;
+    }
+    #infographic-32 #infographic1 .infographic-num-container {
+        bottom: 4.7rem;
     }
     .roles-text-page {
         margin: 3.5rem 1rem 0rem 1rem;

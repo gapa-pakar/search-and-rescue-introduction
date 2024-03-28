@@ -421,16 +421,16 @@ var page41 = {
     el18: ["strong", "school-desc", "school-desc", "בית הספר לפיקוד\nולמקצועות העורף", "school-container"],
     el19: ["div", "gdudim-container", "gdudim-container", "", "structure-tree"], 
     el20: ["div", "", "gdud-shahar", "", "gdudim-container"],
-    img21: ["assets/images/gdud-shahar.svg", "shahar", "shahar", "structure-sym", "", "gdud-shahar"],
+    img21: ["assets/images/gdud-shahar.svg", "shahar", "shahar", ["structure-sym", "gdudim-img"], "", "gdud-shahar"],
     el22: ["strong", "gdudim-desc", "", "גדוד שחר", "gdud-shahar"],
     el23: ["div", "", "gdud-tavor", "", "gdudim-container"],
-    img24: ["assets/images/gdud-tavor.svg", "tavor", "tavor", "structure-sym", "", "gdud-shahar"],
+    img24: ["assets/images/gdud-tavor.svg", "tavor", "tavor", ["structure-sym", "gdudim-img"], "", "gdud-tavor"],
     el25: ["strong", "gdudim-desc", "", "גדוד תבור", "gdud-tavor"],
     el26: ["div", "", "gdud-ram", "", "gdudim-container"],
-    img27: ["assets/images/gdud-ram.svg", "ram", "shahar", "structure-sym", "", "gdud-ram"],
+    img27: ["assets/images/gdud-ram.svg", "ram", "shahar", ["structure-sym", "gdudim-img"], "", "gdud-ram"],
     el28: ["strong", "gdudim-desc", "", "גדוד רם", "gdud-ram"],
     el29: ["div", "", "gdud-kedem", "", "gdudim-container"],
-    img30: ["assets/images/gdud-kedem.svg", "kedem", "kedem", "structure-sym", "", "gdud-kedem"],
+    img30: ["assets/images/gdud-kedem.svg", "kedem", "kedem", ["structure-sym", "gdudim-img"], "", "gdud-kedem"],
     el31: ["strong", "gdudim-desc", "", "גדוד קדם", "gdud-kedem"],
     el32: ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"],
     evLis33: ["structure-tree", "click", "openDetails"],
@@ -587,7 +587,7 @@ var bahCarousel = {
 var bafCarousel = {
     items: 2,
     carouselIndicators: false,
-    visible: true,
+    visible: false,
     arrows: true,
     cardType: "el",
     card1: [
@@ -638,11 +638,11 @@ var rescueImgCarousel = {
     visible: true,
     arrows: true,
     cardType: "img",
-    card1: ["assets/images/rescue-carousel-1.jpg", "First slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card2: ["assets/images/rescue-carousel-2.jpg", "Second slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card3: ["assets/images/rescue-carousel-3.jpg", "Third slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card4: ["assets/images/rescue-carousel-4.jpg", "Fourth slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card5: ["assets/images/rescue-carousel-5.jpg", "Fifth slide", "card", ["d-block", "w-100"], "", "carousel-item"]
+    card1: ["assets/images/rescue-carousel1.jpg", "First slide", "card", ["d-block", "w-100"], "", "carousel-item"],
+    card2: ["assets/images/rescue-carousel2.jpg", "Second slide", "card", ["d-block", "w-100"], "", "carousel-item"],
+    card3: ["assets/images/rescue-carousel3.jpg", "Third slide", "card", ["d-block", "w-100"], "", "carousel-item"],
+    card4: ["assets/images/rescue-carousel4.jpg", "Fourth slide", "card", ["d-block", "w-100"], "", "carousel-item"],
+    card5: ["assets/images/rescue-carousel5.jpg", "Fifth slide", "card", ["d-block", "w-100"], "", "carousel-item"]
 }
 
 let menuOpen = false;
@@ -656,7 +656,7 @@ let detailsVisited = [];
 let complexFinishButton = ["button", "next-btn-timeline", "next-btn-14", "סיימתי!", "timeline-text-container"];
 
 window.addEventListener("load", (event) => {
-    createScreen(page31);
+    createScreen(page41);
     document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
@@ -959,7 +959,8 @@ const createCarousel = (carouselContent) => {
                 createTextElement(carouselContent[`card${i + 1}`][j]);
             }
         } else if (carouselContent.cardType === "img") {
-            let imgProp = carouselContent.window[`card${i + 1}`];
+            // let cardNum = 
+            let imgProp = carouselContent[`card${i + 1}`];
             let imgList = [imgProp[0], imgProp[1], `${imgProp[2]}-${i + 1}`, imgProp[3], imgProp[4], `${imgProp[5]}-${i + 1}`];
             createImgElement(imgList);
         }
