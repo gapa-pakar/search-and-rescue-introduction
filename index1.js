@@ -656,7 +656,7 @@ let detailsVisited = [];
 let complexFinishButton = ["button", "next-btn-timeline", "next-btn-14", "סיימתי!", "timeline-text-container"];
 
 window.addEventListener("load", (event) => {
-    createScreen(page41);
+    // createScreen(openScreenContent);
     document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
