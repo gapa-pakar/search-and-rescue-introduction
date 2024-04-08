@@ -512,9 +512,9 @@ a {
     top: 2rem;
     left: 268rem;
     height: 17rem;
-    animation: tl-anim-pg4-pg5 5s 1s 1 forwards;
-    -webkit-animation: tl-anim-pg4-pg5 5s 1s 1 forwards;
-    -moz-animation: tl-anim-pg4-pg5 5s 1s 1 forwards;
+    animation: tl-anim-pg4-pg5 5s linear 1s 1 forwards;
+    -webkit-animation: tl-anim-pg4-pg5 5s linear 1s 1 forwards;
+    -moz-animation: tl-anim-pg4-pg5 5s linear 1s 1 forwards;
 }
 
 @keyframes tl-anim-pg4-pg5 {
@@ -540,7 +540,7 @@ a {
     }
 }
 
-/* @-webkit-keyframes tl-anim-pg4-pg5 {
+@-webkit-keyframes tl-anim-pg4-pg5 {
     0% {
         top: 2rem;
         left: 268rem;
@@ -555,6 +555,11 @@ a {
         top: 5rem;
         left: 25rem;
         height: 17rem;
+    }
+    90% {
+        top: -3rem;
+        left: 73rem;
+        height: 33rem;
     }
     100% {
         top: -3rem;
@@ -579,12 +584,18 @@ a {
         left: 25rem;
         height: 17rem;
     }
+    90% {
+        top: -3rem;
+        left: 73rem;
+        height: 33rem;
+    }
     100% {
         top: -3rem;
         left: 73rem;
         height: 33rem;
     }
-} */
+}
+
 
 .tl-page-5 {
     top: 5rem;
