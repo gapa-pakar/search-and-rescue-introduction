@@ -1,0 +1,112 @@
+:root {
+    --border-blue: #31628d;
+    --enabled-text-color: #000000;
+    --disabled-text-color: #6e6e6e;
+    --background-white: #ffffff; 
+    --enabled-toggle-background: #b2d2ec;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nice-nav {
+    text-align: right;
+    width: 18rem;
+    background: var(--background-white);
+    height: 100%;
+    transition:all 0.4s ease-in-out 0s;
+    float: right;
+    margin-right: -19.3rem;
+    z-index: 5;
+    position: relative;
+}
+
+.nice-nav.open {
+    margin-right: 1.3rem;
+    display: block;
+}
+
+.nice-nav li.child-menu span.toggle-right {
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--enabled-toggle-background);
+    bottom: 0;
+    border-right: 2px solid var(--border-blue);
+}
+
+.nice-nav ul li a {
+    padding: 0.1rem 0.3rem 0.3rem 2rem;
+    background: var(--background-white);
+    border: 1px solid var(--border-blue);
+    display: block;
+    color: var(--enabled-text-color);
+    font-size: 0.8rem;
+    position: relative;
+}
+
+.nice-nav ul li.child-menu ul {
+    background: var(--background-white);
+    display: none;
+}
+
+.nice-nav ul li.child-menu ul li a {
+    background: var(--background-white);
+    padding: 0.2rem 0.4rem;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    display: inline-block;
+    position: relative;
+    z-index: 20;
+    margin-right: 0.4rem;
+    margin-left: 0.7rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-top: 3px solid var(--border-blue);
+    border-right: 3px solid var(--border-blue);
+}
+
+.right-arrow {
+    transform: rotate(45deg);
+}
+
+.left-arrow {
+    transform: rotate(-135deg);
+}
+
+.main-menu {
+    border: 1px solid var(--border-blue);
+}        
+
+.menu-icon {
+    height: 1rem;
+    padding-left: 0.2rem;
+    position: relative;
+    top: 0.2rem;
+}
+
+.menu-text {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}    

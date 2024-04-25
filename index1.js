@@ -1,4 +1,3 @@
-// this is the explanation about this project, by innerHTML.
 const quesHTMLContent = {
     quesContent: '<div id="ques-open-content" class="content-container"><div id="ques-open-content" class="text-container"><p class="title">על הלומדה:</p><div class="line">מטרת הלומדה:</div><div class="line">הצגת חטיבת החילוץ וההדרכה- היסטוריה, מבנה ותפקידים.</div><div class="line">הלומדה כוללת טקסט וגם סרטונים, לפעמים יחד ולפעמים לחוד.</div><div class="line">הסרטונים בלומדה יתחילו באופן אוטומטי כאשר הם מושתקים.</div><div class="line"><span>לאורך הלומדה יופיעו </span><span id="def1" class="colored-text">מילים בצבע</span><span> אשר בריחוף מעליהן יופיע ההסבר למושג.</span></div><div class="line">בנוסף, הכפתורים האלו יופיעו לכל אורך הלומדה. לחצו עליהם כדי לצפות בשימוש שלהם:</div></div><div id="buttons"><img src="assets/images/menu-btn.svg" alt="כפתור התפריט" id="exmp-menu-btn" title="כפתור התפריט" class="example-btn"><img src="assets/images/info-btn.svg" alt="כפתור אודות" id="exmp-info-btn" title="כפתור אודות" class="example-btn"><img src="assets/images/ques-btn.svg" alt="כפתור המידע" id="exmp-ques-btn" title="כפתור המידע" class="example-btn"></div><span class="error" id="menu-error" style="display: none;">אופס, עליכם לעבור על כל הכפתורים!</span></div>',
     exmpMenuContent: '</div><div id="exmp-menu-content" class="text-container"><div style="display: flex; align-items: center;"><img src="assets/images/menu-btn.svg" alt="כפתור התפריט" style="width: 2rem; margin-left: 0.5rem;"><span class="title">כפתור התפריט</span></div><div>כפתור זה יציג את ראשי הפרקים, אשר בלחיצה עליהם יוצגו תתי הנושאים בפרק.</div><div><span class="bold-txt">שימו לב! </span><span>לא ניתן יהיה לדלג על פרקים.</span></div><div>ניתן לעבור אחורה וקדימה בעזרת התפריט רק בין פרקים שכבר נצפו.</div></div>',
@@ -22,6 +21,7 @@ const definitionsText = {
     def13: ["הנדסת חילוץ- מכלול פעולות הנדסיות שמבוצעות באתר הרס."],
     def14: ["איסוף נתונים וחללים- תחום הטיפול בחללים באירוע הרס."],
 };
+
 // all of the objects for page creation are organized as:
 // element- text element: tag name, class value, id value, text value, parent element id
 // image:  src path, alt value, id value, class value, title value, parent element id 
@@ -43,31 +43,24 @@ var endScreenContent = {
     el4: ["div", "","re-do-button", "", "page"],
     img5: ["assets/images/re-do.svg", "חזור", "", "re-do-img", "", "re-do-button"],
     el6: ["div", "", "", "חזרה על הלומדה", "re-do-button"],
-    evLis7: ["re-do-button", "click", "updatePage"]
+    evLis7: ["re-do-button", "click", "nextPage"]
 }
 
 var page2 = {
-    vid1: ["https://www.youtube.com/embed/8h2PR-d9bTY?si=Uw1sfXDjVepQfH-T", "420", "315", "enlisting-video", "סרטון גיוס", "height: auto; display: block; position: absolute; top: 4.5rem; width: 34rem; height: 19rem; left: 50%; transform: translateX(-50%);", "page"],
-    el2: ["button", "next-btn-timeline", "next-btn-3", "המשך", "page"],
-    evLis3: ["next-btn-3", "click", "nextPage"]
+    el1: ["div", "timeline-opacity1", "timeline-text-container", "", "page"], 
+    vid2: ["https://www.youtube.com/embed/8h2PR-d9bTY?si=Uw1sfXDjVepQfH-T", "420", "315", "enlisting-video", "סרטון גיוס", "height: auto; display: block; position: absolute; top: 4.5rem; width: 34rem; height: 19rem; left: 50%; transform: translateX(-50%);", "timeline-text-container"],
+    el3: ["button", "next-btn-timeline", "next-btn-2", "המשך", "timeline-text-container"],
+    evLis4: ["next-btn-2", "click", "nextPage"]
 }
 
 var page3 = {
-    // timeline now
-}
-
-var page4 = {
     el1: ["div", "open-text", "page3text", "", "page"],
     el2: ["div", "", "", "חטיבת החילוץ וההדרכה הינה החטיבה הסדירה היחידה בפיקוד העורף אשר בנוי ברובו מאנשי מילואים.\nעל מנת להבין לעומק את ייחודיות החטיבה, נעמיק בדרך שהחטיבה עברה מאז ועד היום- מ'פלח''ץ' לחטיבת החילוץ וההדרכה.", "page3text"],
-    el3: ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page"],
+    el3: ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page3text"],
     evLis4: ["next-btn-3", "click", "nextPage"]
 }
 
-var page5 = {
-    // timeline now to 1992
-}
-
-var page6 = {
+var page4 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "1992- הקמת פיקוד העורף", "timeline-text-container"],
     el3: ["div", "", "", "פיקוד העורף הוקם בשנת 1992 לאחר מלחמת המפרץ  הראשונה בה האיום על העורף העלה את הצורך בהתגוננות אזרחית סדורה.\nבן גוריון כבר ב48 אמר: ''ביום מן הימים, מה שקרוי העורף יכריע לא פחות מהחזית. לא נוכל לעמוד במלחמה באמצעים צבאיים בלבד''.\nבמקרה כזה, ישחרר פיקוד העורף את אלופי הפיקודים האחרים (צפון, מרכז, דרום) מדאגה לעורף, ויאפשר להם להתרכז בצרכים המבצעיים בחזית.", "timeline-text-container"],
@@ -75,11 +68,7 @@ var page6 = {
     evLis5: ["next-btn-4", "click", "nextPage"]
 }
 
-var page7 = {
-    // timeline 1992 to 2003
-}
-
-var page8 = {
+var page5 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2003- הקמת פלוגת החילוץ הראשונה- פלוגת 'שביט'", "timeline-text-container"],
     el3: ["div", "", "", "ממלחמת לבנון הראשונה ועד לאחר מלחמת המפרץ הורכבו פלוגות החילוץ וההצלה מאנשי מילואים בעלי ידע אזרחי הקשור בבינוי.\nבמלחמת המפרץ הבינו שיש צורך בגוף סדיר שיהיה כונן לאירועי חילוץ בעורף, והתקבלה ההחלטה להקים פלוגת חילוץ סדירה ראשונה, פלוגת 'שביט'.", "timeline-text-container"],
@@ -87,11 +76,7 @@ var page8 = {
     evLis5: ["next-btn-5", "click", "nextPage"]
 }
 
-var page9 = {
-    // timeline 2003 to 2004
-}
-
-var page10 = {
+var page6 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2004- הקמת פלוגת 'חץ' ופלוגת 'רותם'", "timeline-text-container"],
     el3: ["div", "", "", "2004- הקמת שתי פלוגות חילוץ נוספות- פלוגת 'חץ' ופלוגת 'רותם'.\nמשימתן של הפלוגות האלו הייתה אבטחת בתי כלא בכלא 'עופר' ובכלא 'מגידו'.", "timeline-text-container"],
@@ -100,11 +85,7 @@ var page10 = {
     evLis6: ["next-btn-6", "click", "nextPage"]
 }
 
-var page11 = {
-    // timeline 2004 to 2008
-}
-
-var page12 = {
+var page7 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2008- איחוד פלוגות החילוץ והקמת גדוד שחר", "timeline-text-container"],
     el3: ["div", "", "", "2008- שלוש פלוגות החילוץ התאחדו והוקם גדוד ראשון בחטיבה- גדוד שחר.", "timeline-text-container"],
@@ -117,11 +98,7 @@ var page12 = {
     evLis10: ["next-btn-7", "click", "nextPage"]
 }
 
-var page13 = {
-    // timeline 2008 to 2009
-}
-
-var page14 = {
+var page8 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2009- הקמת גדוד קדם", "timeline-text-container"],
     el3: ["div", "", "", "2009- הקמת גדוד קדם אשר בתוכו שלוש פלוגות:\n'קרן', 'דוד' ו'מגן'.", "timeline-text-container"],
@@ -130,11 +107,7 @@ var page14 = {
     evLis6: ["next-btn-8", "click", "nextPage"]
 }
 
-var page15 = {
-    // timeline 2009 to 2009 #2
-}
-
-var page16 = {
+var page9 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2009- המעבר ממגל לפקע''ר", "timeline-text-container"],
     el3: ["div", "", "", "text text text text text text text text text text", "timeline-text-container"],
@@ -143,11 +116,7 @@ var page16 = {
     evLis6: ["next-btn-8", "click", "nextPage"]
 }
 
-var page17 = {
-    // timeline 2009 #2 to 2012
-}
-
-var page18 = {
+var page10 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד תבור", "timeline-text-container"],
     el3: ["div", "", "", "2012- הקמת גדוד תבור אשר בתוכו שלוש פלוגות:\n'תבל', 'ברק', 'ראם'.\nבשנת 2020 הוקמה בתוך הגדוד פלוגה נוספת בשם 'ונוס'.", "timeline-text-container"],
@@ -156,11 +125,7 @@ var page18 = {
     evLis6: ["next-btn-9", "click", "nextPage"]
 }
 
-var page19 = {
-    // timeline 2012 to 2012 #2
-}
-
-var page20 = {
+var page11 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד רם", "timeline-text-container"],
     el3: ["div", "", "", "2012- גדוד נ''מ (נגד מטוסים) של חיל האוויר הוסב לפיקוד העורף.\nהשם שנבחר לגדוד החדש והרביעי הוא גדוד 'רם' אשר בתוכו שלוש פלוגות: 'רמון', 'מצדה', 'ארבל'.", "timeline-text-container"],
@@ -169,11 +134,7 @@ var page20 = {
     evLis6: ["next-btn-10", "click", "nextPage"]
 }
 
-var page21 = {
-    // timeline 2012 #2 to 2013
-}
-
-var page22 = {
+var page12 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2013- הקמת הנפה הסדירה", "timeline-text-container"],
     el3: ["div", "", "complex-text11", "", "timeline-text-container"],
@@ -186,27 +147,22 @@ var page22 = {
     evLis10: ["next-btn-11", "click", "nextPage"]
 }
 
-var page23 = {
-    el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
-    el2: ["div", ["title", "page23-title"], "timeline-title", "2013- הקמת הנפה הסדירה", "timeline-text-container"],
+var page13 = {
+    el1: ["div", "timeline-opacity1", "timeline-text-container", "", "page"], 
+    el2: ["div", ["title", "page13-title"], "timeline-title", "2013- הקמת הנפה הסדירה", "timeline-text-container"],
     vid3: ["https://www.youtube.com/embed/22jnDzn8Cmg?si=TlIcttYFw91I-80h", "420", "315", "nafa-sdira-video", "הנפה הסדירה", "height: auto; display: block; position: absolute; top: 6.5rem; width: 32rem; height: 16rem; left: 50%; transform: translateX(-50%);", "timeline-text-container"],
     el4: ["button", "next-btn-timeline", "next-btn-12", "הבנתי", "timeline-text-container"],
     evLis5: ["next-btn-12", "click", "nextPage"]
 }
 
-var page24 = {
-    el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"],
+var page14 = {
+    el1: ["div", "timeline-opacity1", "timeline-text-container", "", "page"],
     el2: ["div", "sub-title", "sub-title", "וכעת נעבור לזרוע השנייה שמרכיבה את חטיבת החילוץ וההדרכה:\nבה''ד 16", "timeline-text-container"],
     el3: ["button", "next-btn-timeline", "next-btn-13", "קדימה!", "timeline-text-container"],
     evLis4: ["next-btn-13", "click", "nextPage"]
 }
 
-var page25 = {
-    // timeline 2013 to 1984
-    // fix year text 
-}
-
-var page26 = {
+var page15 = {
     // fix year text
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "1984- בה''ד 16", "timeline-text-container"],
@@ -225,11 +181,7 @@ var page26 = {
     evLis15: ["branches", "click", "timelineComplexPage"]
 }
 
-var page27 = {
-    // timeline 1984 to 2016
-}
-
-var page28 = {
+var page16 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2016- איחוד בה''ד 16 והנפה הסדירה", "timeline-text-container"],
     el3: ["div", "", "complex-text15", "", "timeline-text-container"],
@@ -240,12 +192,12 @@ var page28 = {
     evLis8: ["next-btn-15", "click", "nextPage"]
 }
 
-var page29 = {
+var page17 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"], 
     el2: ["div", "sub-title", "", "ייעוד ותפקידי חטיבת החילוץ וההדרכה", "main-roles"]
 }
 
-var page30 = {
+var page18 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "ייעוד ותפקידי חטיבת החילוץ וההדרכה", "main-roles"],
     el3: ["div", "", "complex-text28", "", "main-roles"],
@@ -257,7 +209,7 @@ var page30 = {
     evLis9: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page31 = {
+var page19 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "", "infographic-31", "", "main-roles"],
     el3: ["div", "title", "", "תפקידי החטיבה בשגרה", "infographic-31"],
@@ -295,7 +247,7 @@ var page31 = {
     evLis35: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page32 = {
+var page20 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "", "infographic-32", "", "main-roles"],
     el3: ["div", "title", "", "תפקידי החטיבה בחירום", "infographic-32"],
@@ -327,7 +279,7 @@ var page32 = {
     evLis29: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page33 = {
+var page21 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- טורקיה", "main-roles"], 
@@ -336,7 +288,7 @@ var page33 = {
     evLis6: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page34 = {
+var page22 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- קורונה", "main-roles"], 
@@ -346,7 +298,7 @@ var page34 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page35 = {
+var page23 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בעורף", "main-roles"], 
@@ -356,7 +308,7 @@ var page35 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page36 = {
+var page24 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
@@ -366,7 +318,7 @@ var page36 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page37 = {
+var page25 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
@@ -376,7 +328,7 @@ var page37 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page38 = {
+var page26 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "אב''כ", "main-roles"], 
@@ -386,7 +338,7 @@ var page38 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page39 = {
+var page27 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "בט''ש", "main-roles"], 
@@ -395,12 +347,12 @@ var page39 = {
     evLis6: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page40 = {
+var page28 = {
     el1: ["div", "structure-text-page", "structure", "", "page"],
     el2: ["div", "sub-title", "", "מבנה החטיבה ויחידותיה", "structure"]
 }
 
-var page41 = {
+var page29 = {
     el1: ["div", "structure-text-page", "structure", "", "page"],
     el2: ["div", "", "structure-tree", "", "structure"],
     el3: ["div", "", "hativa-container", "", "structure-tree"],
@@ -656,7 +608,7 @@ let detailsVisited = [];
 let complexFinishButton = ["button", "next-btn-timeline", "next-btn-14", "סיימתי!", "timeline-text-container"];
 
 window.addEventListener("load", (event) => {
-    // createScreen(openScreenContent);
+    createScreen(openScreenContent);
     document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
@@ -1091,14 +1043,14 @@ const createFinishAfterVid = (event) => {
     // if (state === 0) {
         let button;
         let id;
-        if (currPage === 2 || currPage === 23) {
+        if (currPage === 2 || currPage === 13) {
             if (currPage === 2) {
                 id = "next-btn-3";
                 button = ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page"];
             }
             else {
                 id = "next-btn-11";
-                button = ["button", ["next-btn-timeline", "page23-button"], "next-btn-11", "הבנתי", "timeline-text-container"];
+                button = ["button", ["next-btn-timeline", "page13-button"], "next-btn-11", "הבנתי", "timeline-text-container"];
             }
             createTextElement(button);
         } else {
@@ -1107,55 +1059,123 @@ const createFinishAfterVid = (event) => {
             createImgElement(button);
         }
         document.getElementById(id).addEventListener("click", nextPage);
-    // }
-}
-
-
-////////////////////////////////////////////////////////////////////////
-// function setAttributes(element, attributes) {
-//     Object.keys(attributes).forEach(attr => {
-//         element.setAttribute(attr, attributes[attr]);
-//     });
-// }
-  
-// const attributes = {
-//     name: 'example',
-//     title: 'Box 1',
-//     disabled: '',
-//     style: 'background-color: salmon; color: white;',
-// };
-  
-// const button = document.getElementById('btn');
-// setAttributes(button, attributes);
-///////////////////////////////////////////////////////////////////////////////
-
-
-var nextPage = () => {
-    if (currPage === 1 && !quesVisited) {
-        showQues();
-    } else {
-        currPage++;
-        console.log(currPage);
-        updatePage();
+        // }
     }
-}
-
-var updatePage = () => {
-    document.getElementById("page").innerHTML = "";
-    let currObjContent = window[`page${currPage}`];
-    if (Object.keys(currObjContent).length === 0) {
-        nextPage();
-    } else if (currPage === 29 || currPage === 40) {
-        setTimeout(nextPage(), 3000);
-    }
-    console.log(currPage);
-    console.log(currObjContent);
-    createScreen(currObjContent);
+    
+    var nextPage = () => {
+        if (currPage === 1 && !quesVisited) {
+            showQues();
+        } else {
+            if (currPage === 2 || currPage === 4) {
+                // animation is 3 s long
+                console.log("3 s long");
+                if (currPage === 4) {
+                    document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                }
+                document.getElementById("timeline-text-container").classList.add("hide-anim");
+                document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+                setTimeout(function() {
+                    document.getElementById("page").innerHTML = "";
+                    currPage++;
+                    let currObjContent = window[`page${currPage}`];
+                    createScreen(currObjContent);
+                    setTimeout(function() {
+                        if (currPage === 3) {
+                            document.getElementById("page3text").classList.add("show-anim");
+                        } else {
+                            document.getElementById("timeline-text-container").classList.add("show-anim");
+                            setTimeout(function() {
+                                document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                            }, 500);
+                        }
+                    }, 3000);
+                }, 500);
+            } else if (currPage === 8 || currPage === 10) {
+                // animation is 2.5 s long
+                console.log("2.5 s long");
+                document.getElementById("timeline-text-container").classList.add("hide-anim");
+                document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+                setTimeout(function() {
+                    document.getElementById("page").innerHTML = "";
+                    currPage++;
+                    let currObjContent = window[`page${currPage}`];
+                    createScreen(currObjContent);
+                    setTimeout(function() {
+                        document.getElementById("timeline-text-container").classList.add("show-anim");
+                        setTimeout(function() {
+                            document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                        }, 500);
+                    }, 2000);
+                }, 500);
+            } else if (5 <= currPage && currPage <= 7 || currPage === 9 || currPage === 11) {
+                // animation is 3.5 s long
+                console.log("3.5 s long");
+                console.log(currPage <= 7);
+                document.getElementById("timeline-text-container").classList.add("hide-anim");
+                document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+                setTimeout(function() {
+                    document.getElementById("page").innerHTML = "";
+                    currPage++;
+                    let currObjContent = window[`page${currPage}`];
+                    createScreen(currObjContent);
+                    setTimeout(function() {
+                        document.getElementById("timeline-text-container").classList.add("show-anim");
+                        setTimeout(function() {
+                            document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                        }, 500);
+                    }, 3000);
+                }, 500);
+            } else if (currPage === 3 || currPage === 14 || currPage === 15) {
+                console.log("4.5 s long");
+                // animation is 4.5 s long
+                if (currPage === 3) {
+                    document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                    document.getElementById("page3text").classList.add("hide-anim");
+                } else {
+                    document.getElementById("timeline-text-container").classList.add("hide-anim");
+                }
+                document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+                setTimeout(function() {
+                    document.getElementById("page").innerHTML = "";
+                    currPage++;
+                    let currObjContent = window[`page${currPage}`];
+                    createScreen(currObjContent);
+                    setTimeout(function() {
+                        document.getElementById("timeline-text-container").classList.add("show-anim");
+                        document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                    }, 4500);
+                }, 500);
+            } else if (currPage === 29) {
+                console.log("finish");
+                finishScreen();
+            } else if (currPage === 16 || currPage === 27) {
+                console.log("auto-next");
+                document.getElementById("page").innerHTML = "";
+                    currPage++;
+                    let currObjContent = window[`page${currPage}`];
+                    createScreen(currObjContent);
+                setTimeout(function() {
+                    document.getElementById("page").innerHTML = "";
+                    currPage++;
+                    let currObjContent = window[`page${currPage}`];
+                    createScreen(currObjContent);
+                }, 3000);
+            } else {
+                console.log("else");
+                document.getElementById("page").innerHTML = "";
+                currPage++;
+                let currObjContent = window[`page${currPage}`];
+                createScreen(currObjContent);
+            }
+            console.log(currPage);
+        }
 }
 
 var finishScreen = () => {
     if (detailsVisited.length === 6) {
         document.getElementById("page").innerHTML = "";
         createScreen(endScreenContent);
+    } else {
+
     }
 }
