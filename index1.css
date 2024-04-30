@@ -20,7 +20,8 @@ html, body {
 }
 
 body {
-    background-image: url("assets/images/background.svg");
+    /* background-image: url("assets/images/background.svg"); */
+    background-color: #d5dce0;
     background-size: 100vw 104vh;
     background-repeat: no-repeat;
 }    

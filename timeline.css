@@ -1,4 +1,16 @@
 /* timeline styling */
+:root {
+    --border-blue: #31628d;
+    --enabled-text-color: #000000;
+    --disabled-text-color: #6e6e6e;
+    --background-white: #ffffff;
+    --enabled-toggle-background: #b2d2ec;
+    --disabled-toggle-background: #ffffff;
+    --colored-text: #ff8205;
+    --active-colored-text: #c55b10;
+    --timeline-button-background: #eb9743;
+    --active-timeline-button-background: #DB852E;
+}
 
 #next-btn-3 {
     bottom: -4rem;
@@ -10,7 +22,7 @@
     font-size: 0.8rem;
     font-family: "Assistant";
     font-weight: 550;
-    background-color: var(--timeline-buttom-backgroung);
+    background-color: var(--timeline-button-background);
     border: none;
     border-radius: 0.2rem;
     position: absolute;
@@ -26,7 +38,7 @@
 }
 
 .next-btn-timeline:hover {
-    background-color: var(--active-timeline-buttom-backgroung);
+    background-color: var(--active-timeline-button-background);
 }
 
 .open-text {
