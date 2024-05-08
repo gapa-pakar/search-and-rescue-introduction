@@ -16,6 +16,20 @@
     bottom: -4rem;
 }
 
+#next-btn-2 {
+    bottom: 2rem;
+}
+
+.enlistingvid {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    width: 26rem;
+    height: 15rem;
+    transform: translateX(-50%);
+}
+
 .next-btn-timeline {
     width: fit-content;
     padding: 0.15rem 0.5rem;

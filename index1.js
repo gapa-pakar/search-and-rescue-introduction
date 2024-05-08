@@ -48,7 +48,7 @@ var endScreenContent = {
 
 var page2 = {
     el1: ["div", "timeline-opacity1", "timeline-text-container", "", "page"], 
-    vid2: ["https://www.youtube.com/embed/8h2PR-d9bTY?si=Uw1sfXDjVepQfH-T", "420", "315", "enlisting-video", "סרטון גיוס", "height: auto; display: block; position: absolute; top: 4.5rem; width: 34rem; height: 19rem; left: 50%; transform: translateX(-50%);", "timeline-text-container"],
+    vid2: ["https://www.youtube.com/embed/8h2PR-d9bTY?si=Uw1sfXDjVepQfH-T", "420", "315", "enlisting-video", "סרטון גיוס", "height: auto; display: block; position: absolute; top: 3.5rem; width: 32rem; height: 18rem; left: 50%; transform: translateX(-50%);", "timeline-text-container"],
     el3: ["button", "next-btn-timeline", "next-btn-2", "המשך", "timeline-text-container"],
     evLis4: ["next-btn-2", "click", "nextPage"]
 }
@@ -386,7 +386,7 @@ var page29 = {
     el31: ["strong", "gdudim-desc", "", "גדוד קדם", "gdud-kedem"],
     el32: ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"],
     evLis33: ["structure-tree", "click", "openDetails"],
-    evLis34: ["next-btn-timeline", "click", "finishScreen"]
+    evLis34: ["finished-structure", "click", "finishScreen"]
 }
 
 const hativaDetails = {
@@ -613,6 +613,7 @@ window.addEventListener("load", (event) => {
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
     });
+    document.querySelector(".nice-nav").addEventListener("click", menuRedirection);
     document.getElementById("info-btn").addEventListener("click", showInfo);
     document.getElementById("ques-btn").addEventListener("click", showQues);
     document.addEventListener("click", (event) => {
@@ -623,7 +624,66 @@ window.addEventListener("load", (event) => {
     });
 });
 
+const menuRedirection = (event) => {
+    if (event.target.id.includes("page")) {
+        let pageID = Number(event.target.id.replace("page", ""));
+        let pageObject = window[event.target.id];
+        document.getElementById("page").innerHTML = "";
+        document.getElementById("timeline-roll").style.opacity = 0;
+        currPage = pageID;
+        if (currPage === 1) {
+            createScreen(openScreenContent);
+        } else {
+            createScreen(pageObject);
+        }
+        document.querySelector(".nice-nav").classList.remove("open");
+        setTimeout(()=> {
+            $('.child-menu-ul').removeClass('active').slideUp('fast');
+        }, 250);
+        menuOpen = false;
+    } else if (event.target.id.includes("Details")) {
+        currPage = 29;
+
+    }
+}
+
+const showMenu = () => {
+    console.log("menu");
+    if (!menuOpen) {
+        document.querySelector(".nice-nav").classList.add("open");
+        menuOpen = true;
+        $submenu = $('.child-menu-ul');
+        $('.child-menu .toggle-right').on('click', function(e) {
+            e.preventDefault();
+            $this = $(this);
+            $parent = $this.parent().next();
+            // $parent.addClass('active');
+            $tar = $('.child-menu-ul');
+            if (!$parent.hasClass('active')) {
+                console.log("open sub-menu");
+                $tar.removeClass('active').slideUp('fast');
+                $parent.addClass('active').slideDown('fast');
+            } else {
+                $parent.removeClass('active').slideUp('fast');
+                console.log("close sub-menu");
+            }
+        });
+    } else {
+        document.querySelector(".nice-nav").classList.remove("open");
+        setTimeout(()=> {
+            $('.child-menu-ul').removeClass('active').slideUp('fast');
+        }, 250);
+        menuOpen = false;
+    }
+}
+
+//not finished
+const hideMenu = () => {
+    
+}
+
 const showInfo = () => {
+    console.log("info");
     let style = document.getElementById("info").style.display;
     if (document.getElementById("ques-container").style.display === "none" && !document.querySelector(".nice-nav").classList.contains("open")) {
         if (style === "none") {
@@ -638,6 +698,7 @@ const showInfo = () => {
 }
 
 const showQues = () => {
+    console.log("ques");
     let currText = 'ques-text';
     let menuExpVisited = false;
     let infoExpVisited = false;
@@ -718,40 +779,6 @@ const closeDefinition = () => {
     document.getElementById(currExpShown).remove();
     currDefShown = "";
     currExpShown = "";
-}
-
-const showMenu = () => {
-    if (!menuOpen) {
-        document.querySelector(".nice-nav").classList.add("open");
-        menuOpen = true;
-        $submenu = $('.child-menu-ul');
-        $('.child-menu .toggle-right').on('click', function(e) {
-            e.preventDefault();
-            $this = $(this);
-            $parent = $this.parent().next();
-            // $parent.addClass('active');
-            $tar = $('.child-menu-ul');
-            if (!$parent.hasClass('active')) {
-                console.log("open sub-menu");
-                $tar.removeClass('active').slideUp('fast');
-                $parent.addClass('active').slideDown('fast');
-            } else {
-                $parent.removeClass('active').slideUp('fast');
-                console.log("close sub-menu");
-            }
-        });
-    } else {
-        document.querySelector(".nice-nav").classList.remove("open");
-        setTimeout(()=> {
-            $('.child-menu-ul').removeClass('active').slideUp('fast');
-        }, 250);
-        menuOpen = false;
-    }
-}
-
-//not finished
-const hideMenu = () => {
-    
 }
 
 var timelineComplexPage = (event) => {
@@ -1038,137 +1065,137 @@ const createVideo = (vidList) => {
     // iFrameVideo.addEventListener("onStateChange", createFinishAfterVid());
 }
 
-const createFinishAfterVid = (event) => {
-    console.log(event);
-    // if (state === 0) {
-        let button;
-        let id;
-        if (currPage === 2 || currPage === 13) {
-            if (currPage === 2) {
-                id = "next-btn-3";
-                button = ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page"];
-            }
-            else {
-                id = "next-btn-11";
-                button = ["button", ["next-btn-timeline", "page13-button"], "next-btn-11", "הבנתי", "timeline-text-container"];
-            }
-            createTextElement(button);
-        } else {
-            id = "roles-next-arrow";
-            button = ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"];
-            createImgElement(button);
-        }
-        document.getElementById(id).addEventListener("click", nextPage);
-        // }
-    }
+// const createFinishAfterVid = (event) => {
+//     console.log(event);
+//     // if (state === 0) {
+//         let button;
+//         let id;
+//         if (currPage === 2 || currPage === 13) {
+//             if (currPage === 2) {
+//                 id = "next-btn-3";
+//                 button = ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page"];
+//             }
+//             else {
+//                 id = "next-btn-11";
+//                 button = ["button", ["next-btn-timeline", "page13-button"], "next-btn-11", "הבנתי", "timeline-text-container"];
+//             }
+//             createTextElement(button);
+//         } else {
+//             id = "roles-next-arrow";
+//             button = ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"];
+//             createImgElement(button);
+//         }
+//         document.getElementById(id).addEventListener("click", nextPage);
+//         // }
+//     }
     
-    var nextPage = () => {
-        if (currPage === 1 && !quesVisited) {
-            showQues();
-        } else {
-            if (currPage === 2 || currPage === 4) {
-                // animation is 3 s long
-                console.log("3 s long");
-                if (currPage === 4) {
-                    document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                }
-                document.getElementById("timeline-text-container").classList.add("hide-anim");
-                document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
-                setTimeout(function() {
-                    document.getElementById("page").innerHTML = "";
-                    currPage++;
-                    let currObjContent = window[`page${currPage}`];
-                    createScreen(currObjContent);
-                    setTimeout(function() {
-                        if (currPage === 3) {
-                            document.getElementById("page3text").classList.add("show-anim");
-                        } else {
-                            document.getElementById("timeline-text-container").classList.add("show-anim");
-                            setTimeout(function() {
-                                document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                            }, 500);
-                        }
-                    }, 3000);
-                }, 500);
-            } else if (currPage === 8 || currPage === 10) {
-                // animation is 2.5 s long
-                console.log("2.5 s long");
-                document.getElementById("timeline-text-container").classList.add("hide-anim");
-                document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
-                setTimeout(function() {
-                    document.getElementById("page").innerHTML = "";
-                    currPage++;
-                    let currObjContent = window[`page${currPage}`];
-                    createScreen(currObjContent);
-                    setTimeout(function() {
-                        document.getElementById("timeline-text-container").classList.add("show-anim");
-                        setTimeout(function() {
-                            document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                        }, 500);
-                    }, 2000);
-                }, 500);
-            } else if (5 <= currPage && currPage <= 7 || currPage === 9 || currPage === 11) {
-                // animation is 3.5 s long
-                console.log("3.5 s long");
-                console.log(currPage <= 7);
-                document.getElementById("timeline-text-container").classList.add("hide-anim");
-                document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
-                setTimeout(function() {
-                    document.getElementById("page").innerHTML = "";
-                    currPage++;
-                    let currObjContent = window[`page${currPage}`];
-                    createScreen(currObjContent);
-                    setTimeout(function() {
-                        document.getElementById("timeline-text-container").classList.add("show-anim");
-                        setTimeout(function() {
-                            document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                        }, 500);
-                    }, 3000);
-                }, 500);
-            } else if (currPage === 3 || currPage === 14 || currPage === 15) {
-                console.log("4.5 s long");
-                // animation is 4.5 s long
-                if (currPage === 3) {
-                    document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                    document.getElementById("page3text").classList.add("hide-anim");
-                } else {
-                    document.getElementById("timeline-text-container").classList.add("hide-anim");
-                }
-                document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
-                setTimeout(function() {
-                    document.getElementById("page").innerHTML = "";
-                    currPage++;
-                    let currObjContent = window[`page${currPage}`];
-                    createScreen(currObjContent);
-                    setTimeout(function() {
-                        document.getElementById("timeline-text-container").classList.add("show-anim");
-                        document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                    }, 4500);
-                }, 500);
-            } else if (currPage === 29) {
-                console.log("finish");
-                finishScreen();
-            } else if (currPage === 16 || currPage === 27) {
-                console.log("auto-next");
-                document.getElementById("page").innerHTML = "";
-                    currPage++;
-                    let currObjContent = window[`page${currPage}`];
-                    createScreen(currObjContent);
-                setTimeout(function() {
-                    document.getElementById("page").innerHTML = "";
-                    currPage++;
-                    let currObjContent = window[`page${currPage}`];
-                    createScreen(currObjContent);
-                }, 3000);
-            } else {
-                console.log("else");
+var nextPage = () => {
+    if (currPage === 1 && !quesVisited) {
+        showQues();
+    } else {
+        if (currPage === 2 || currPage === 4) {
+            // animation is 3 s long
+            console.log("3 s long");
+            if (currPage === 4) {
+                document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+            }
+            document.getElementById("timeline-text-container").classList.add("hide-anim");
+            document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+            setTimeout(function() {
                 document.getElementById("page").innerHTML = "";
                 currPage++;
                 let currObjContent = window[`page${currPage}`];
                 createScreen(currObjContent);
+                setTimeout(function() {
+                    if (currPage === 3) {
+                        document.getElementById("page3text").classList.add("show-anim");
+                    } else {
+                        document.getElementById("timeline-text-container").classList.add("show-anim");
+                        setTimeout(function() {
+                            document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                        }, 500);
+                    }
+                }, 3000);
+            }, 500);
+        } else if (currPage === 8 || currPage === 10) {
+            // animation is 2.5 s long
+            console.log("2.5 s long");
+            document.getElementById("timeline-text-container").classList.add("hide-anim");
+            document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+            setTimeout(function() {
+                document.getElementById("page").innerHTML = "";
+                currPage++;
+                let currObjContent = window[`page${currPage}`];
+                createScreen(currObjContent);
+                setTimeout(function() {
+                    document.getElementById("timeline-text-container").classList.add("show-anim");
+                    setTimeout(function() {
+                        document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                    }, 500);
+                }, 2000);
+            }, 500);
+        } else if (5 <= currPage && currPage <= 7 || currPage === 9 || currPage === 11) {
+            // animation is 3.5 s long
+            console.log("3.5 s long");
+            console.log(currPage <= 7);
+            document.getElementById("timeline-text-container").classList.add("hide-anim");
+            document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+            setTimeout(function() {
+                document.getElementById("page").innerHTML = "";
+                currPage++;
+                let currObjContent = window[`page${currPage}`];
+                createScreen(currObjContent);
+                setTimeout(function() {
+                    document.getElementById("timeline-text-container").classList.add("show-anim");
+                    setTimeout(function() {
+                        document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                    }, 500);
+                }, 3000);
+            }, 500);
+        } else if (currPage === 3 || currPage === 14 || currPage === 15) {
+            console.log("4.5 s long");
+            // animation is 4.5 s long
+            if (currPage === 3) {
+                document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                document.getElementById("page3text").classList.add("hide-anim");
+            } else {
+                document.getElementById("timeline-text-container").classList.add("hide-anim");
             }
-            console.log(currPage);
+            document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+            setTimeout(function() {
+                document.getElementById("page").innerHTML = "";
+                currPage++;
+                let currObjContent = window[`page${currPage}`];
+                createScreen(currObjContent);
+                setTimeout(function() {
+                    document.getElementById("timeline-text-container").classList.add("show-anim");
+                    document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                }, 4500);
+            }, 500);
+        } else if (currPage === 29) {
+            console.log("finish");
+            finishScreen();
+        } else if (currPage === 16 || currPage === 27) {
+            console.log("auto-next");
+            document.getElementById("page").innerHTML = "";
+                currPage++;
+                let currObjContent = window[`page${currPage}`];
+                createScreen(currObjContent);
+            setTimeout(function() {
+                document.getElementById("page").innerHTML = "";
+                currPage++;
+                let currObjContent = window[`page${currPage}`];
+                createScreen(currObjContent);
+            }, 3000);
+        } else {
+            console.log("else");
+            document.getElementById("page").innerHTML = "";
+            currPage++;
+            let currObjContent = window[`page${currPage}`];
+            createScreen(currObjContent);
         }
+        console.log(currPage);
+    }
 }
 
 var finishScreen = () => {
@@ -1179,3 +1206,8 @@ var finishScreen = () => {
 
     }
 }
+
+document.addEventListener("click", function next() {
+    this.removeEventListener("click", next)
+    document.querySelector(".class")
+})
