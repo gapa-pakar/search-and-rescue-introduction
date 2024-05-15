@@ -26,6 +26,7 @@ const definitionsText = {
 // element- text element: tag name, class value, id value, text value, parent element id
 // image:  src path, alt value, id value, class value, title value, parent element id 
 // carousel: object that contains the instrictions for creation
+// video:  width, height, class, id, parent element id, src
 // event listener: element id, event type, function
 // all functions or variavles used in this creation type have to be defined with var
 const openScreenContent = {
@@ -47,17 +48,15 @@ var endScreenContent = {
 }
 
 var page2 = {
-    el1: ["div", "timeline-opacity1", "timeline-text-container", "", "page"], 
-    vid2: ["https://www.youtube.com/embed/8h2PR-d9bTY?si=Uw1sfXDjVepQfH-T", "420", "315", "enlisting-video", "סרטון גיוס", "height: auto; display: block; position: absolute; top: 3.5rem; width: 32rem; height: 18rem; left: 50%; transform: translateX(-50%);", "timeline-text-container"],
-    el3: ["button", "next-btn-timeline", "next-btn-2", "המשך", "timeline-text-container"],
-    evLis4: ["next-btn-2", "click", "nextPage"]
-}
-
-var page3 = {
     el1: ["div", "open-text", "page3text", "", "page"],
     el2: ["div", "", "", "חטיבת החילוץ וההדרכה הינה החטיבה הסדירה היחידה בפיקוד העורף אשר בנוי ברובו מאנשי מילואים.\nעל מנת להבין לעומק את ייחודיות החטיבה, נעמיק בדרך שהחטיבה עברה מאז ועד היום- מ'פלח''ץ' לחטיבת החילוץ וההדרכה.", "page3text"],
     el3: ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page3text"],
     evLis4: ["next-btn-3", "click", "nextPage"]
+}
+
+var page3 = {
+    el1: ["div", "timeline-opacity1", "timeline-text-container", "", "page"], 
+    vid2: ["420", "315", "enlistingvid", "enlistingvid", "timeline-text-container", "assets/videos/enlisting.mp4"]
 }
 
 var page4 = {
@@ -112,7 +111,7 @@ var page9 = {
     el2: ["div", "title", "timeline-title", "2009- המעבר ממגל לפקע''ר", "timeline-text-container"],
     el3: ["div", "", "", "text text text text text text text text text text", "timeline-text-container"],
     img4: ["assets/images/re-do.svg", "מערך מגל", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el5: ["button", "next-btn-timeline", "next-btn-8", "אני רוצה להמשיך!", "timeline-text-container"],
+    el5: ["button", "next-btn-timeline", "next-btn-9", "אני רוצה להמשיך!", "timeline-text-container"],
     evLis6: ["next-btn-8", "click", "nextPage"]
 }
 
@@ -121,7 +120,7 @@ var page10 = {
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד תבור", "timeline-text-container"],
     el3: ["div", "", "", "2012- הקמת גדוד תבור אשר בתוכו שלוש פלוגות:\n'תבל', 'ברק', 'ראם'.\nבשנת 2020 הוקמה בתוך הגדוד פלוגה נוספת בשם 'ונוס'.", "timeline-text-container"],
     img4: ["assets/images/gdud-tavor.svg", "גדוד תבור", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el5: ["button", "next-btn-timeline", "next-btn-9", "בואו נמשיך!", "timeline-text-container"],
+    el5: ["button", "next-btn-timeline", "next-btn-10", "בואו נמשיך!", "timeline-text-container"],
     evLis6: ["next-btn-9", "click", "nextPage"]
 }
 
@@ -130,7 +129,7 @@ var page11 = {
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד רם", "timeline-text-container"],
     el3: ["div", "", "", "2012- גדוד נ''מ (נגד מטוסים) של חיל האוויר הוסב לפיקוד העורף.\nהשם שנבחר לגדוד החדש והרביעי הוא גדוד 'רם' אשר בתוכו שלוש פלוגות: 'רמון', 'מצדה', 'ארבל'.", "timeline-text-container"],
     img4: ["assets/images/gdud-ram.svg", "גדוד רם", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el5: ["button", "next-btn-timeline", "next-btn-10", "הבנתי!", "timeline-text-container"],
+    el5: ["button", "next-btn-timeline", "next-btn-11", "הבנתי!", "timeline-text-container"],
     evLis6: ["next-btn-10", "click", "nextPage"]
 }
 
@@ -143,22 +142,20 @@ var page12 = {
     el6: ["span", "", "", " בפיקוד העורף אשר אליה יהיו כפופים הגדודים הסדירים של הפיקוד.", "complex-text11"],
     el7: ["div", "", "", "ההחלטה התקבלה בעקבות המורכבות של המחוז לתת קשב גם לגדודי המילואים וגם לגדודים הסדירים.\nבנוסף לארבעת הגדודים הוכפפו לנפה בא''ח העורף וענף מפקדים (עליהם נפרט בהמשך).", "timeline-text-container"],
     img8: ["assets/images/hativa.svg", "סמל חטיבה", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el9: ["button", "next-btn-timeline", "next-btn-11", "הבנתי", "timeline-text-container"],
+    el9: ["button", "next-btn-timeline", "next-btn-12", "הבנתי", "timeline-text-container"],
     evLis10: ["next-btn-11", "click", "nextPage"]
 }
 
 var page13 = {
     el1: ["div", "timeline-opacity1", "timeline-text-container", "", "page"], 
     el2: ["div", ["title", "page13-title"], "timeline-title", "2013- הקמת הנפה הסדירה", "timeline-text-container"],
-    vid3: ["https://www.youtube.com/embed/22jnDzn8Cmg?si=TlIcttYFw91I-80h", "420", "315", "nafa-sdira-video", "הנפה הסדירה", "height: auto; display: block; position: absolute; top: 6.5rem; width: 32rem; height: 16rem; left: 50%; transform: translateX(-50%);", "timeline-text-container"],
-    el4: ["button", "next-btn-timeline", "next-btn-12", "הבנתי", "timeline-text-container"],
-    evLis5: ["next-btn-12", "click", "nextPage"]
+    vid3: ["420", "315", "nafavid", "nafavid", "timeline-text-container", "assets/videos/nafa-sdira.mp4"]
 }
 
 var page14 = {
     el1: ["div", "timeline-opacity1", "timeline-text-container", "", "page"],
     el2: ["div", "sub-title", "sub-title", "וכעת נעבור לזרוע השנייה שמרכיבה את חטיבת החילוץ וההדרכה:\nבה''ד 16", "timeline-text-container"],
-    el3: ["button", "next-btn-timeline", "next-btn-13", "קדימה!", "timeline-text-container"],
+    el3: ["button", "next-btn-timeline", "next-btn-14", "קדימה!", "timeline-text-container"],
     evLis4: ["next-btn-13", "click", "nextPage"]
 }
 
@@ -177,7 +174,7 @@ var page15 = {
     el11: ["div", "", "emi-branch", "", "branches"],
     img12: ["assets/images/emi-branch.png", "ענף אימון יחידות", "emi-branch-img", "branch-img", "", "emi-branch"],
     el13: ["div", "branch-text", "emi-branch-text", "ענף אימון יחידות", "emi-branch"],
-    el14: ["div", "", "branch-explaination", "", "timeline-text-container"],
+    el14: ["div", "", "branch-explaination", "עברו על כל היחידות כדי להמשיך בלומדה", "timeline-text-container"],
     evLis15: ["branches", "click", "timelineComplexPage"]
 }
 
@@ -188,7 +185,7 @@ var page16 = {
     el4: ["span", "", "", "2016- איחוד בה''ד 16 עם הנפה הסדירה והקמת ", "complex-text15"],
     el5: ["strong", "", "", "חטיבת החילוץ וההדרכה.", "complex-text15"],
     img6: ["assets/images/fighter-pin.svg", "סיכת לוחם", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el7: ["button", "next-btn-timeline", "next-btn-15", "המשך!", "timeline-text-container"],
+    el7: ["button", "next-btn-timeline", "next-btn-16", "המשך!", "timeline-text-container"],
     evLis8: ["next-btn-15", "click", "nextPage"]
 }
 
@@ -283,9 +280,8 @@ var page21 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- טורקיה", "main-roles"], 
-    vid4: ["https://www.youtube.com/embed/UizPszhEIcM?si=02NkX59qYt5vhvY5", "420", "315", "turkey-mission-video", "סרטון טורקיה", "height: auto; display: block; position: absolute; top: 8rem; width: 31rem; height: 16rem; left: 50%; transform: translateX(-50%);","main-roles"],
-    img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
-    evLis6: ["roles-next-arrow", "click", "nextPage"]
+    vid4: ["420", "315", "nafavid", "nafavid", "timeline-text-container", "assets/videos/nafa-sdira.mp4"],
+    img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"]
 }
 
 var page22 = {
@@ -384,9 +380,10 @@ var page29 = {
     el29: ["div", "", "gdud-kedem", "", "gdudim-container"],
     img30: ["assets/images/gdud-kedem.svg", "kedem", "kedem", ["structure-sym", "gdudim-img"], "", "gdud-kedem"],
     el31: ["strong", "gdudim-desc", "", "גדוד קדם", "gdud-kedem"],
-    el32: ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"],
+    el32: ["div", "explain-structure", "explain-structure", "עברו על כל היחידות כדי לסיים את הלומדה", "structure"],
+    // el32: ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"],
     evLis33: ["structure-tree", "click", "openDetails"],
-    evLis34: ["finished-structure", "click", "finishScreen"]
+    // evLis34: ["finished-structure", "click", "finishScreen"]
 }
 
 const hativaDetails = {
@@ -606,9 +603,13 @@ let currSchoolDetailsShown = "";
 let complexBranchesVisited = [];
 let detailsVisited = [];
 let complexFinishButton = ["button", "next-btn-timeline", "next-btn-14", "סיימתי!", "timeline-text-container"];
+let enlisingBtn = ["button", "next-btn-timeline", "next-btn-2", "בואו נמשיך!", "timeline-text-container"];
+let nafaBtn = ["button", "next-btn-timeline", "next-btn-13", "הבנתי", "timeline-text-container"];
+let rolesNextBtn = ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"];
 
 window.addEventListener("load", (event) => {
     createScreen(openScreenContent);
+    // createVideo(enlistingVid);
     document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
@@ -871,22 +872,57 @@ const createImgElement = (list) => {
     document.getElementById(list[5]).appendChild(newIMG);
 }
 
+//                  width  height     class             id             parent element id            src
+let enlistingVid = ["420", "315", "enlistingvid", "enlistingvid", "timeline-text-container", "assets/videos/enlisting.mp4"];
+let nafaVid = ["420", "315", "nafavid", "nafavid", "timeline-text-container", "assets/videos/nafa-sdira.mp4"];
+let turkeyVid = ["420", "315", "nafavid", "nafavid", "timeline-text-container", "assets/videos/nafa-sdira.mp4"];
+let daysVid = ["420", "315", "daysvid", "daysvid", "main-roles", "assets/videos/80-days.mp4"];
+let buildingVid = ["420", "315", "buildingvid", "buildingvid", "main-roles", "assets/videos/building-collapse.mp4"];
+
+const createVideo = (vidList) => {
+    let newVideo = document.createElement("video");
+    newVideo.width = vidList[0];
+    newVideo.height = vidList[1];
+    newVideo.classList.add(vidList[2]);
+    newVideo.setAttribute("id", vidList[3]);
+    newVideo.setAttribute("controls", "controls");
+    newVideo.setAttribute("autoplay", "autoplay");
+    document.getElementById(vidList[4]).appendChild(newVideo);
+    let sourceTag = document.createElement("source");
+    sourceTag.src = vidList[5];
+    sourceTag.setAttribute("type", "video/mp4");
+    newVideo.appendChild(sourceTag);
+    newVideo.onended = function() {
+        // alert("enden");
+        if (currPage === 3) {
+            createTextElement(enlisingBtn);
+            document.getElementById(enlisingBtn[2]).addEventListener("click", nextPage);
+        } else if (currPage === 13) {
+            createTextElement(nafaBtn);
+            document.getElementById(nafaBtn[2]).addEventListener("click", nextPage);
+        } else if (currPage === 21 || currPage === 24 || currPage === 25) {
+            document.getElementById("roles-next-arrow").addEventListener("click", nextPage);
+        }
+    }
+}
+
 const createCarousel = (carouselContent) => {
     // create container el for carousel
     let carouselExampleIndicators = document.createElement("div");
     carouselExampleIndicators.setAttribute("id", "carouselExampleIndicators");
     carouselExampleIndicators.classList.add("carousel", "slide");
     carouselExampleIndicators.setAttribute("data-ride", "carousel");
-    carouselExampleIndicators.setAttribute("data-interval", "10000");
     if (carouselContent.visible) {
         carouselExampleIndicators.style.display = "block";
     } else {
         carouselExampleIndicators.style.display = "none";
     }
     if (carouselContent.cardType === "el") {
+        carouselExampleIndicators.setAttribute("data-interval", "5000");
         document.querySelector(".details-conteiner").appendChild(carouselExampleIndicators);
     } else {
         document.getElementById("main-roles").appendChild(carouselExampleIndicators);
+        carouselExampleIndicators.setAttribute("data-interval", "3000");
     }
     // create carousel indicators accordingly
     if (carouselContent.carouselIndicators) {
@@ -1049,22 +1085,6 @@ var closeDetails = () => {
     document.querySelector(".structure-details").remove();
 }
 
-const createVideo = (vidList) => {
-    let iFrameVideo = document.createElement("iframe");
-    iFrameVideo.src = vidList[0];
-    iFrameVideo.width = vidList[1];
-    iFrameVideo.height = vidList[2];
-    iFrameVideo.setAttribute("id", vidList[3]);
-    iFrameVideo.title = vidList[4];
-    iFrameVideo.style.cssText = vidList[5];
-    iFrameVideo.setAttribute("frameborder", "0");
-    iFrameVideo.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
-    iFrameVideo.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
-    iFrameVideo.setAttribute("allowfullscreen", "true");
-    document.getElementById(vidList[6]).appendChild(iFrameVideo);
-    // iFrameVideo.addEventListener("onStateChange", createFinishAfterVid());
-}
-
 // const createFinishAfterVid = (event) => {
 //     console.log(event);
 //     // if (state === 0) {
@@ -1090,10 +1110,33 @@ const createVideo = (vidList) => {
 //     }
     
 var nextPage = () => {
-    if (currPage === 1 && !quesVisited) {
-        showQues();
-    } else {
-        if (currPage === 2 || currPage === 4) {
+    // if (currPage === 1 && !quesVisited) {
+    //     showQues();
+    // } else {
+        if (currPage === 1) {
+            console.log("3 s long");
+            // if (currPage === 4) {
+            //     document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+            // }
+            // document.getElementById("timeline-text-container").classList.add("hide-anim");
+            document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+            setTimeout(function() {
+                document.getElementById("page").innerHTML = "";
+                currPage++;
+                let currObjContent = window[`page${currPage}`];
+                createScreen(currObjContent);
+                setTimeout(function() {
+                    document.getElementById("page3text").classList.add("show-anim");
+                    // if (currPage === 3) {
+                    // } else {
+                    //     document.getElementById("timeline-text-container").classList.add("show-anim");
+                    //     setTimeout(function() {
+                    //         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                        // }, 500);
+                    // }
+                }, 3000);
+            }, 500);
+        } else if (currPage === 2 || currPage === 4) {
             // animation is 3 s long
             console.log("3 s long");
             if (currPage === 4) {
@@ -1195,7 +1238,7 @@ var nextPage = () => {
             createScreen(currObjContent);
         }
         console.log(currPage);
-    }
+    // }
 }
 
 var finishScreen = () => {

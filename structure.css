@@ -258,3 +258,14 @@
     left: 1rem;
     margin: 1rem;
 }
+
+#finished-structure {
+    bottom: 1.5rem;
+}
+
+.explain-structure {
+    text-align: center;
+    position: relative;
+    top: 20rem;
+    font-size: 0.8rem;
+}

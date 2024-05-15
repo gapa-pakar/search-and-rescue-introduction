@@ -16,8 +16,13 @@
     bottom: -4rem;
 }
 
-#next-btn-2 {
+#next-btn-2,
+#next-btn-15 {
     bottom: 2rem;
+}
+
+#next-btn-13 {
+    bottom: 1rem;
 }
 
 .enlistingvid {
@@ -108,6 +113,10 @@
 .branch-text {
     font-weight: 600; 
     font-size: 0.8rem; 
+    text-align: center;
+}
+
+#branch-explaination {
     text-align: center;
 }
 
