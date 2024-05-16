@@ -50,12 +50,11 @@ var endScreenContent = {
 var page2 = {
     el1: ["div", "open-text", "page3text", "", "page"],
     el2: ["div", "", "", "חטיבת החילוץ וההדרכה הינה החטיבה הסדירה היחידה בפיקוד העורף אשר בנוי ברובו מאנשי מילואים.\nעל מנת להבין לעומק את ייחודיות החטיבה, נעמיק בדרך שהחטיבה עברה מאז ועד היום- מ'פלח''ץ' לחטיבת החילוץ וההדרכה.", "page3text"],
-    el3: ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page3text"],
-    evLis4: ["next-btn-3", "click", "nextPage"]
+    el3: ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page3text"]
 }
 
 var page3 = {
-    el1: ["div", "timeline-opacity1", "timeline-text-container", "", "page"], 
+    el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     vid2: ["420", "315", "enlistingvid", "enlistingvid", "timeline-text-container", "assets/videos/enlisting.mp4"]
 }
 
@@ -63,16 +62,14 @@ var page4 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "1992- הקמת פיקוד העורף", "timeline-text-container"],
     el3: ["div", "", "", "פיקוד העורף הוקם בשנת 1992 לאחר מלחמת המפרץ  הראשונה בה האיום על העורף העלה את הצורך בהתגוננות אזרחית סדורה.\nבן גוריון כבר ב48 אמר: ''ביום מן הימים, מה שקרוי העורף יכריע לא פחות מהחזית. לא נוכל לעמוד במלחמה באמצעים צבאיים בלבד''.\nבמקרה כזה, ישחרר פיקוד העורף את אלופי הפיקודים האחרים (צפון, מרכז, דרום) מדאגה לעורף, ויאפשר להם להתרכז בצרכים המבצעיים בחזית.", "timeline-text-container"],
-    el4: ["button", "next-btn-timeline", "next-btn-4", "הבנתי!", "timeline-text-container"],
-    evLis5: ["next-btn-4", "click", "nextPage"]
+    el4: ["button", "next-btn-timeline", "next-btn-4", "הבנתי!", "timeline-text-container"]
 }
 
 var page5 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2003- הקמת פלוגת החילוץ הראשונה- פלוגת 'שביט'", "timeline-text-container"],
     el3: ["div", "", "", "ממלחמת לבנון הראשונה ועד לאחר מלחמת המפרץ הורכבו פלוגות החילוץ וההצלה מאנשי מילואים בעלי ידע אזרחי הקשור בבינוי.\nבמלחמת המפרץ הבינו שיש צורך בגוף סדיר שיהיה כונן לאירועי חילוץ בעורף, והתקבלה ההחלטה להקים פלוגת חילוץ סדירה ראשונה, פלוגת 'שביט'.", "timeline-text-container"],
-    el4: ["button", "next-btn-timeline", "next-btn-5", "בואו נמשיך!", "timeline-text-container"],
-    evLis5: ["next-btn-5", "click", "nextPage"]
+    el4: ["button", "next-btn-timeline", "next-btn-5", "בואו נמשיך!", "timeline-text-container"]
 }
 
 var page6 = {
@@ -80,8 +77,7 @@ var page6 = {
     el2: ["div", "title", "timeline-title", "2004- הקמת פלוגת 'חץ' ופלוגת 'רותם'", "timeline-text-container"],
     el3: ["div", "", "", "2004- הקמת שתי פלוגות חילוץ נוספות- פלוגת 'חץ' ופלוגת 'רותם'.\nמשימתן של הפלוגות האלו הייתה אבטחת בתי כלא בכלא 'עופר' ובכלא 'מגידו'.", "timeline-text-container"],
     el4: ["div", "bold-txt", "", "המושג 'פלח''ץ' מתייחס לתקופה שבה היו קיימות רק פלוגות חילוץ ללא שייכות לגדוד ולחטיבה.", "timeline-text-container"],
-    el5: ["button", "next-btn-timeline", "next-btn-6", "המשך", "timeline-text-container"],
-    evLis6: ["next-btn-6", "click", "nextPage"]
+    el5: ["button", "next-btn-timeline", "next-btn-6", "המשך", "timeline-text-container"]
 }
 
 var page7 = {
@@ -93,8 +89,7 @@ var page7 = {
     el6: ["span", "colored-text", "def2", "למחוז", "complex-text7"],
     el7: ["span", "", "", " מרכז/ירושלים שמלבד גדוד שחר, הורכב מגדודי מילואים בלבד.", "complex-text7"],
     img8: ["assets/images/gdud-shahar.svg", "גדוד שחר", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el9: ["button", "next-btn-timeline", "next-btn-7", "הבנתי", "timeline-text-container"],
-    evLis10: ["next-btn-7", "click", "nextPage"]
+    el9: ["button", "next-btn-timeline", "next-btn-7", "הבנתי", "timeline-text-container"]
 }
 
 var page8 = {
@@ -102,8 +97,7 @@ var page8 = {
     el2: ["div", "title", "timeline-title", "2009- הקמת גדוד קדם", "timeline-text-container"],
     el3: ["div", "", "", "2009- הקמת גדוד קדם אשר בתוכו שלוש פלוגות:\n'קרן', 'דוד' ו'מגן'.", "timeline-text-container"],
     img4: ["assets/images/gdud-kedem.svg", "גדוד קדם", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el5: ["button", "next-btn-timeline", "next-btn-8", "אני רוצה להמשיך!", "timeline-text-container"],
-    evLis6: ["next-btn-8", "click", "nextPage"]
+    el5: ["button", "next-btn-timeline", "next-btn-8", "אני רוצה להמשיך!", "timeline-text-container"]
 }
 
 var page9 = {
@@ -111,8 +105,7 @@ var page9 = {
     el2: ["div", "title", "timeline-title", "2009- המעבר ממגל לפקע''ר", "timeline-text-container"],
     el3: ["div", "", "", "text text text text text text text text text text", "timeline-text-container"],
     img4: ["assets/images/re-do.svg", "מערך מגל", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el5: ["button", "next-btn-timeline", "next-btn-9", "אני רוצה להמשיך!", "timeline-text-container"],
-    evLis6: ["next-btn-8", "click", "nextPage"]
+    el5: ["button", "next-btn-timeline", "next-btn-9", "אני רוצה להמשיך!", "timeline-text-container"]
 }
 
 var page10 = {
@@ -120,8 +113,7 @@ var page10 = {
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד תבור", "timeline-text-container"],
     el3: ["div", "", "", "2012- הקמת גדוד תבור אשר בתוכו שלוש פלוגות:\n'תבל', 'ברק', 'ראם'.\nבשנת 2020 הוקמה בתוך הגדוד פלוגה נוספת בשם 'ונוס'.", "timeline-text-container"],
     img4: ["assets/images/gdud-tavor.svg", "גדוד תבור", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el5: ["button", "next-btn-timeline", "next-btn-10", "בואו נמשיך!", "timeline-text-container"],
-    evLis6: ["next-btn-9", "click", "nextPage"]
+    el5: ["button", "next-btn-timeline", "next-btn-10", "בואו נמשיך!", "timeline-text-container"]
 }
 
 var page11 = {
@@ -129,8 +121,7 @@ var page11 = {
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד רם", "timeline-text-container"],
     el3: ["div", "", "", "2012- גדוד נ''מ (נגד מטוסים) של חיל האוויר הוסב לפיקוד העורף.\nהשם שנבחר לגדוד החדש והרביעי הוא גדוד 'רם' אשר בתוכו שלוש פלוגות: 'רמון', 'מצדה', 'ארבל'.", "timeline-text-container"],
     img4: ["assets/images/gdud-ram.svg", "גדוד רם", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el5: ["button", "next-btn-timeline", "next-btn-11", "הבנתי!", "timeline-text-container"],
-    evLis6: ["next-btn-10", "click", "nextPage"]
+    el5: ["button", "next-btn-timeline", "next-btn-11", "הבנתי!", "timeline-text-container"]
 }
 
 var page12 = {
@@ -185,8 +176,7 @@ var page16 = {
     el4: ["span", "", "", "2016- איחוד בה''ד 16 עם הנפה הסדירה והקמת ", "complex-text15"],
     el5: ["strong", "", "", "חטיבת החילוץ וההדרכה.", "complex-text15"],
     img6: ["assets/images/fighter-pin.svg", "סיכת לוחם", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el7: ["button", "next-btn-timeline", "next-btn-16", "המשך!", "timeline-text-container"],
-    evLis8: ["next-btn-15", "click", "nextPage"]
+    el7: ["button", "next-btn-timeline", "next-btn-16", "המשך!", "timeline-text-container"]
 }
 
 var page17 = {
@@ -606,6 +596,7 @@ let complexFinishButton = ["button", "next-btn-timeline", "next-btn-14", "סיי
 let enlisingBtn = ["button", "next-btn-timeline", "next-btn-2", "בואו נמשיך!", "timeline-text-container"];
 let nafaBtn = ["button", "next-btn-timeline", "next-btn-13", "הבנתי", "timeline-text-container"];
 let rolesNextBtn = ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"];
+let structureFinishBtn = ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"];
 
 window.addEventListener("load", (event) => {
     createScreen(openScreenContent);
@@ -1085,29 +1076,6 @@ var closeDetails = () => {
     document.querySelector(".structure-details").remove();
 }
 
-// const createFinishAfterVid = (event) => {
-//     console.log(event);
-//     // if (state === 0) {
-//         let button;
-//         let id;
-//         if (currPage === 2 || currPage === 13) {
-//             if (currPage === 2) {
-//                 id = "next-btn-3";
-//                 button = ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page"];
-//             }
-//             else {
-//                 id = "next-btn-11";
-//                 button = ["button", ["next-btn-timeline", "page13-button"], "next-btn-11", "הבנתי", "timeline-text-container"];
-//             }
-//             createTextElement(button);
-//         } else {
-//             id = "roles-next-arrow";
-//             button = ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"];
-//             createImgElement(button);
-//         }
-//         document.getElementById(id).addEventListener("click", nextPage);
-//         // }
-//     }
     
 var nextPage = () => {
     // if (currPage === 1 && !quesVisited) {
@@ -1115,10 +1083,6 @@ var nextPage = () => {
     // } else {
         if (currPage === 1) {
             console.log("3 s long");
-            // if (currPage === 4) {
-            //     document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-            // }
-            // document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
                 document.getElementById("page").innerHTML = "";
@@ -1127,21 +1091,13 @@ var nextPage = () => {
                 createScreen(currObjContent);
                 setTimeout(function() {
                     document.getElementById("page3text").classList.add("show-anim");
-                    // if (currPage === 3) {
-                    // } else {
-                    //     document.getElementById("timeline-text-container").classList.add("show-anim");
-                    //     setTimeout(function() {
-                    //         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                        // }, 500);
-                    // }
+                    document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
                 }, 3000);
             }, 500);
-        } else if (currPage === 2 || currPage === 4) {
+        } else if (currPage === 4) {
             // animation is 3 s long
             console.log("3 s long");
-            if (currPage === 4) {
-                document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-            }
+            document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
             document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
@@ -1150,15 +1106,31 @@ var nextPage = () => {
                 let currObjContent = window[`page${currPage}`];
                 createScreen(currObjContent);
                 setTimeout(function() {
-                    if (currPage === 3) {
-                        document.getElementById("page3text").classList.add("show-anim");
-                    } else {
-                        document.getElementById("timeline-text-container").classList.add("show-anim");
-                        setTimeout(function() {
-                            document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                        }, 500);
-                    }
+                    document.getElementById("timeline-text-container").classList.add("show-anim");
+                    setTimeout(function() {
+                        document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                        document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                    }, 500);
                 }, 3000);
+            }, 500);
+        } else if (currPage === 2) {
+            // animation is 2 s long
+            console.log("2 s long");
+            document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+            document.getElementById("page3text").classList.add("hide-anim");
+            document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+            setTimeout(function() {
+                document.getElementById("page").innerHTML = "";
+                currPage++;
+                let currObjContent = window[`page${currPage}`];
+                createScreen(currObjContent);
+                setTimeout(function() {
+                    document.getElementById("timeline-text-container").classList.add("show-anim");
+                    setTimeout(function() {
+                        document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                        document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                    }, 500);
+                }, 2000);
             }, 500);
         } else if (currPage === 8 || currPage === 10) {
             // animation is 2.5 s long
@@ -1174,6 +1146,7 @@ var nextPage = () => {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     setTimeout(function() {
                         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                        document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
                     }, 500);
                 }, 2000);
             }, 500);
@@ -1192,6 +1165,7 @@ var nextPage = () => {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     setTimeout(function() {
                         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                        document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
                     }, 500);
                 }, 3000);
             }, 500);
@@ -1200,10 +1174,9 @@ var nextPage = () => {
             // animation is 4.5 s long
             if (currPage === 3) {
                 document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                document.getElementById("page3text").classList.add("hide-anim");
-            } else {
-                document.getElementById("timeline-text-container").classList.add("hide-anim");
+                // document.getElementById("page3text").classList.add("hide-anim");
             }
+            document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
                 document.getElementById("page").innerHTML = "";
@@ -1213,11 +1186,19 @@ var nextPage = () => {
                 setTimeout(function() {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                    document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
                 }, 4500);
             }, 500);
-        } else if (currPage === 29) {
-            console.log("finish");
-            finishScreen();
+        } else if (currPage === 28) {
+            createScreen(page29);
+            if (detailsVisited.length === 6) {
+                document.getElementById("explain-structure").remove();
+                createTextElement(structureFinishBtn);
+                document.getElementById("finished-structure").addEventListener("click", nextPage);
+            }
+        } else if (currPage === 28) {
+            document.getElementById("page").innerHTML = "";
+            createScreen(endScreenContent);
         } else if (currPage === 16 || currPage === 27) {
             console.log("auto-next");
             document.getElementById("page").innerHTML = "";
@@ -1229,7 +1210,7 @@ var nextPage = () => {
                 currPage++;
                 let currObjContent = window[`page${currPage}`];
                 createScreen(currObjContent);
-            }, 3000);
+            }, 2000);
         } else {
             console.log("else");
             document.getElementById("page").innerHTML = "";

@@ -289,6 +289,10 @@ body {
     text-align: right;
 }
 
+.enabled-btn:hover {
+    cursor: pointer;
+}
+
 /* button cursor pointer */
 #menu-btn:hover, 
 #info-btn:hover,
@@ -299,6 +303,10 @@ body {
 .close-def-btn:hover,
 .example-btn:hover {
     cursor: pointer;
+}
+
+video {
+    outline: none;
 }
 
 .end-text {

@@ -181,9 +181,6 @@
         left: 268rem;
         opacity: 1;
     }
-    5% {
-        opacity: 0.2;
-    }
     40% {
         opacity: 1;
         top: 5rem;
@@ -212,22 +209,22 @@
 }
 
 .tl-page-2 {
-    top: -3rem;
-    left: 610rem;
-    height: 37rem;
+    top: 2rem;
+    height: 17rem;
+    left: 268rem;
     position: relative;
-    opacity: 0;
-    animation: tlAnimPg2ToPg3 3s linear 1s 1 forwards;
-    -webkit-animation: tlAnimPg2ToPg3 3s linear 1s 1 forwards;
-    -moz-animation: tlAnimPg2ToPg3 3s linear 1s 1 forwards;
+    opacity: 1;
+    animation: tlAnimPg2ToPg3 2s linear 1s 1 forwards;
+    -webkit-animation: tlAnimPg2ToPg3 2s linear 1s 1 forwards;
+    -moz-animation: tlAnimPg2ToPg3 2s linear 1s 1 forwards;
 }
 
 @keyframes tlAnimPg3ToPg4 {
     0% {
-        top: 2rem;
-        height: 17rem;
-        left: 268rem;
-        opacity: 1;
+        top: -3rem;
+        left: 610rem;
+        height: 37rem;
+        opacity: 0;
     }
     20% {
         top: 5rem;
@@ -263,10 +260,10 @@
 
 @-webkit-keyframes tlAnimPg3ToPg4 {
     0% {
-        top: 2rem;
-        height: 17rem;
-        left: 268rem;
-        opacity: 1;
+        top: -3rem;
+        left: 610rem;
+        height: 37rem;
+        opacity: 0;
     }
     20% {
         top: 5rem;
@@ -302,10 +299,10 @@
 
 @-moz-keyframes tlAnimPg3ToPg4 {
     0% {
-        top: 2rem;
-        height: 17rem;
-        left: 268rem;
-        opacity: 1;
+        top: -3rem;
+        left: 610rem;
+        height: 37rem;
+        opacity: 0;
     }
     20% {
         top: 5rem;
@@ -340,10 +337,10 @@
 }
 
 .tl-page-3 {
-    top: 2rem;
-    height: 17rem;
-    left: 268rem;
-    opacity: 1;
+    top: -3rem;
+    left: 610rem;
+    height: 37rem;
+    opacity: 0;
     position: relative;
     animation: tlAnimPg3ToPg4 4.5s ease 1s 1 forwards;
     -webkit-animation: tlAnimPg3ToPg4 4.5s ease 1s 1 forwards;

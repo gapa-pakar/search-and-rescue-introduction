@@ -16,11 +16,11 @@
     bottom: -4rem;
 }
 
-#next-btn-2,
 #next-btn-15 {
     bottom: 2rem;
 }
 
+#next-btn-2,
 #next-btn-13 {
     bottom: 1rem;
 }
@@ -28,10 +28,10 @@
 .enlistingvid {
     display: block;
     position: absolute;
-    top: 1rem;
+    top: 4rem;
     left: 50%;
-    width: 26rem;
-    height: 15rem;
+    width: 33rem;
+    height: 19rem;
     transform: translateX(-50%);
 }
 
