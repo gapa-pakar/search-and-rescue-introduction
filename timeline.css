@@ -35,6 +35,16 @@
     transform: translateX(-50%);
 }
 
+.nafavid {
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    width: 32rem;
+    height: 16rem;
+    transform: translateX(-50%);
+}
+
 .next-btn-timeline {
     width: fit-content;
     padding: 0.15rem 0.5rem;

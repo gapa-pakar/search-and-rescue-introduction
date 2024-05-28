@@ -1,5 +1,5 @@
 const quesHTMLContent = {
-    quesContent: '<div id="ques-open-content" class="content-container"><div id="ques-open-content" class="text-container"><p class="title">על הלומדה:</p><div class="line">מטרת הלומדה:</div><div class="line">הצגת חטיבת החילוץ וההדרכה- היסטוריה, מבנה ותפקידים.</div><div class="line">הלומדה כוללת טקסט וגם סרטונים, לפעמים יחד ולפעמים לחוד.</div><div class="line">הסרטונים בלומדה יתחילו באופן אוטומטי כאשר הם מושתקים.</div><div class="line"><span>לאורך הלומדה יופיעו </span><span id="def1" class="colored-text">מילים בצבע</span><span> אשר בריחוף מעליהן יופיע ההסבר למושג.</span></div><div class="line">בנוסף, הכפתורים האלו יופיעו לכל אורך הלומדה. לחצו עליהם כדי לצפות בשימוש שלהם:</div></div><div id="buttons"><img src="assets/images/menu-btn.svg" alt="כפתור התפריט" id="exmp-menu-btn" title="כפתור התפריט" class="example-btn"><img src="assets/images/info-btn.svg" alt="כפתור אודות" id="exmp-info-btn" title="כפתור אודות" class="example-btn"><img src="assets/images/ques-btn.svg" alt="כפתור המידע" id="exmp-ques-btn" title="כפתור המידע" class="example-btn"></div><span class="error" id="menu-error" style="display: none;">אופס, עליכם לעבור על כל הכפתורים!</span></div>',
+    quesContent: '<div id="ques-open-content" class="content-container"><div id="ques-open-content" class="text-container"><p class="title">על הלומדה:</p><div class="line">מטרת הלומדה:</div><div class="line">הצגת חטיבת החילוץ וההדרכה- היסטוריה, מבנה ותפקידים.</div><div class="line">הלומדה כוללת טקסט וגם סרטונים, לפעמים יחד ולפעמים לחוד.</div><div class="line">הסרטונים בלומדה יתחילו באופן אוטומטי.</div><div class="line"><span>לאורך הלומדה יופיעו </span><span id="def1" class="colored-text">מילים בצבע</span><span> אשר בריחוף מעליהן יופיע ההסבר למושג.</span></div><div class="line">כמו כן, יופיעו קרוסלות של תמונות או טקסט. על מנת לצפות בהמשך הקרוסלה, לחצו על אחד החצים לפחות פעם אחת!</div><div class="line">בנוסף, הכפתורים האלו יופיעו לכל אורך הלומדה. לחצו עליהם כדי לצפות בשימוש שלהם:</div></div><div id="buttons"><img src="assets/images/menu-btn.svg" alt="כפתור התפריט" id="exmp-menu-btn" title="כפתור התפריט" class="example-btn"><img src="assets/images/info-btn.svg" alt="כפתור אודות" id="exmp-info-btn" title="כפתור אודות" class="example-btn"><img src="assets/images/ques-btn.svg" alt="כפתור המידע" id="exmp-ques-btn" title="כפתור המידע" class="example-btn"></div><span class="error" id="menu-error" style="display: none;">אופס, עליכם לעבור על כל הכפתורים!</span></div>',
     exmpMenuContent: '</div><div id="exmp-menu-content" class="text-container"><div style="display: flex; align-items: center;"><img src="assets/images/menu-btn.svg" alt="כפתור התפריט" style="width: 2rem; margin-left: 0.5rem;"><span class="title">כפתור התפריט</span></div><div>כפתור זה יציג את ראשי הפרקים, אשר בלחיצה עליהם יוצגו תתי הנושאים בפרק.</div><div><span class="bold-txt">שימו לב! </span><span>לא ניתן יהיה לדלג על פרקים.</span></div><div>ניתן לעבור אחורה וקדימה בעזרת התפריט רק בין פרקים שכבר נצפו.</div></div>',
     exmpInfoContent: '</div><div id="exmp-info-content" class="text-container"><div style="display: flex; align-items: center;"><img src="assets/images/info-btn.svg" alt="כפתור אודות" style="width: 2rem; margin-left: 0.5rem;"><p class="title">כפתור אודות</p></div><div>כפתור זה יציג את הקרדיטים ללומדה בהיטבי הפיתוח, התוכן, העיצוב, הגרפיקות וכן בעלי תפקידים נוספים אשר לקחו חלק בתהליך.</div></div>',
     exmpQuesContent: '</div><div id="exmp-ques-content" class="text-container"><div style="display: flex; align-items: center;"><img src="assets/images/ques-btn.svg" alt="כפתור המידע" style="width: 2rem; margin-left: 0.5rem;"><p class="title">כפתור המידע</p></div><div>כפתור זה יציג את כל התזכורות שמופיעות בעמודים הקודמים.</div><div>אם תרצו להיזכר במשהו, כפתור זה יהיה נגיש לכם לכל אורך הלומדה עם ההסברים הללו.</div></div>'
@@ -44,7 +44,7 @@ var endScreenContent = {
     el4: ["div", "","re-do-button", "", "page"],
     img5: ["assets/images/re-do.svg", "חזור", "", "re-do-img", "", "re-do-button"],
     el6: ["div", "", "", "חזרה על הלומדה", "re-do-button"],
-    evLis7: ["re-do-button", "click", "nextPage"]
+    evLis7: ["re-do-button", "click", "restert"]
 }
 
 var page2 = {
@@ -104,7 +104,7 @@ var page9 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2009- המעבר ממגל לפקע''ר", "timeline-text-container"],
     el3: ["div", "", "", "text text text text text text text text text text", "timeline-text-container"],
-    img4: ["assets/images/re-do.svg", "מערך מגל", "", "timeline-symbol-img", "", "timeline-text-container"],
+    img4: ["assets/images/magal.png", "מערך מגל", "", "timeline-symbol-img", "", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-9", "אני רוצה להמשיך!", "timeline-text-container"]
 }
 
@@ -134,7 +134,7 @@ var page12 = {
     el7: ["div", "", "", "ההחלטה התקבלה בעקבות המורכבות של המחוז לתת קשב גם לגדודי המילואים וגם לגדודים הסדירים.\nבנוסף לארבעת הגדודים הוכפפו לנפה בא''ח העורף וענף מפקדים (עליהם נפרט בהמשך).", "timeline-text-container"],
     img8: ["assets/images/hativa.svg", "סמל חטיבה", "", "timeline-symbol-img", "", "timeline-text-container"],
     el9: ["button", "next-btn-timeline", "next-btn-12", "הבנתי", "timeline-text-container"],
-    evLis10: ["next-btn-11", "click", "nextPage"]
+    evLis10: ["next-btn-12", "click", "nextPage"]
 }
 
 var page13 = {
@@ -147,7 +147,7 @@ var page14 = {
     el1: ["div", "timeline-opacity1", "timeline-text-container", "", "page"],
     el2: ["div", "sub-title", "sub-title", "וכעת נעבור לזרוע השנייה שמרכיבה את חטיבת החילוץ וההדרכה:\nבה''ד 16", "timeline-text-container"],
     el3: ["button", "next-btn-timeline", "next-btn-14", "קדימה!", "timeline-text-container"],
-    evLis4: ["next-btn-13", "click", "nextPage"]
+    evLis4: ["next-btn-14", "click", "nextPage"]
 }
 
 var page15 = {
@@ -157,7 +157,7 @@ var page15 = {
     el3: ["div", "", "", "מתוקף חוק הג''א, היו בבה''ד 16 ענפים אשר היו אמונים על הכשרת מקצועות העורף לאוכלוסיות השונות.\nבה''ד 16, ובשמו השני- ''המרכז הלאומי לחילוץ, אב''כ והתגוננות אזרחית'' ישב בצריפין והיה בנוי משלושה ענפים ומטה בה''ד:", "timeline-text-container"],
     el4: ["div", "", "branches", "", "timeline-text-container"],
     el5: ["div", "", "profession-branch", "", "branches"],
-    img6: ["assets/images/profession-branch.svg", "ענף מקצועות", "profession-branch-img", "branch-img", "", "profession-branch"],
+    img6: ["assets/images/profession-branch.png", "ענף מקצועות", "profession-branch-img", "branch-img", "", "profession-branch"],
     el7: ["div", "branch-text", "profession-branch-text", "ענף מקצועות", "profession-branch"],
     el8: ["div", "", "command-branch", "", "branches"],
     img9: ["assets/images/command-branch.png", "ענף מפקדות", "command-branch-img", "branch-img", "", "command-branch"],
@@ -270,7 +270,7 @@ var page21 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- טורקיה", "main-roles"], 
-    vid4: ["420", "315", "nafavid", "nafavid", "timeline-text-container", "assets/videos/nafa-sdira.mp4"],
+    vid4: ["420", "315", "turkeyvid", "turkeyvid", "main-roles", "assets/videos/turkey-mission.mp4"],
     img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"]
 }
 
@@ -299,9 +299,8 @@ var page24 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
     el4: ["div", "roles-text", "", "לאור מאפייני הלחימה במרחב התמרון (בשטח מדינת האויב), המאופיינים במרחב בנוי רווי מטענים ותשתיות תת קרקע ממולכדות, נדרש מענה מבצעי לאיום פגיעה בכוחותינו לאור קריסת מבנה או חלל תת קרקע.\nהכוח שמוכשר לתת מענה בפעולות חילוץ של כוחות מתמרנים של צה''ל מהריסות מבנים במרחב הלחימה, הינם לוחמי החילוץ של חטיבת החילוץ וההדרכה.", "main-roles"],
-    vid5: ["https://www.youtube.com/embed/ARUP-IxuH_g?si=WKsshRfTPV1FKQHY", "420", "315", "building-collapse-video", "סינק התמוטטות בניין", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main-roles"],
-    img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
-    evLis7: ["roles-next-arrow", "click", "nextPage"]
+    vid5: ["420", "315", "buildingvid", "buildingvid", "main-roles", "assets/videos/building-collapse.mp4"],
+    img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"]
 }
 
 var page25 = {
@@ -309,9 +308,8 @@ var page25 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
     el4: ["div", "roles-text", "", "בעת תמרון בשטח אויב קיימת סכנה להתמוטטות מבנה על כוחותינו.\nתרחיש זה שונה בתכלית מתרחיש התמוטטות בעורף, מכיוון שאין באפשרות ארגוני החירום להגיע לאירוע.\nבמלחמה, גדודי החטיבה יצוותו לאוגדות מתמרנות בתצורת צק''פים (צוותי קרב פלוגתיים) אשר יתנו מענה לאירועי חילוץ של כוחותינו בשטח האויב.", "main-roles"],
-    vid5: ["https://www.youtube.com/embed/MHfaOD0cDe8?si=B3wqldSbX0XhBsFg", "420", "315", "80-days-video", "סיכום 80 ימי לחימה", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main-roles"],
-    img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
-    evLis7: ["roles-next-arrow", "click", "nextPage"]
+    vid5: ["420", "315", "daysvid", "daysvid", "main-roles", "assets/videos/80-days.mp4"],
+    img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"]
 }
 
 var page26 = {
@@ -319,7 +317,7 @@ var page26 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "אב''כ", "main-roles"], 
     el4: ["div", "roles-text", "", "לגדודי החטיבה כשירות לטפל באירועים כימיים בעורף, טיהור המוקד הנגוע ופינוי האוכלוסייה עפ''י צורך.\nהלוחמים והלוחמות בגדוד מתמקצעים ביכולות השונות הנדרשות לטיפול באירוע כה מורכב: גילוי וזיהוי מוקד הזיהום, טיהור השטח הנגוע, טיהור בני אדם וכלי רכב היוצאים מהאזור הנגוע ועוד. כל זאת על מנת שיוכלו לפעול ביעילות ולהציל חיים בזמן הקצר ביותר.", "main-roles"],
-    vid5: ["https://www.youtube.com/embed/3HZRBKBRkHE?si=zuxHJqtuUxC4R2si", "420", "315", "abach-video", "סרטון תדמית אב''כ", "height: auto; display: block; position: absolute; top: 8rem; width: 20rem; height: 13rem; left: 5rem;","main-roles"],
+    vid5: ["420", "315", "abachvid", "abachvid", "main-roles", "assets/videos/abach.mp4"],
     img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
@@ -330,7 +328,7 @@ var page27 = {
     el3: ["div", "subtitle", "", "בט''ש", "main-roles"], 
     el4: ["div", "roles-text", "", "גדודי החטיבה מבצעים תעסוקה מבצעית מלאה באיו''ש ובגבולות המדינה: מעצרי מבוקשים, סיורים, תצפיות, מארבים ועוד…\nהלוחמים והלוחמות מוכשרים ללחימה בשטח פתוח ובשטח בנוי, ביום ובלילה, בכדי להגן על ביטחון מדינת ישראל.", "main-roles"],
     img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
-    evLis6: ["roles-next-arrow", "click", "nextPage"]
+    vid6: ["420", "315", "batashvid", "batashvid", "main-roles", "assets/videos/batash.mp4"]
 }
 
 var page28 = {
@@ -379,9 +377,9 @@ var page29 = {
 const hativaDetails = {
     el1: ["div", "structure-details", "hativa-details", "", "page"],
     img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "hativa-details"],
-    el3: ["div", "title details-title", "", "מפקדת חטיבת החילוץ וההדרכה", "hativa-details"],
-    img4: ["assets/images/hatuve.svg", "חטיבת החילוץ וההדרכה", "", "details-img", "", "hativa-details"],
-    el5: ["div", "details-text", "", "מפקדת החטיבה תשמש כמפקדה משימתית בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירת המלחמה, לרבות מחוץ לגבולות מדינת ישראל ותפקד על מבצעים במרחב האזרחי ברגיעה ובלחימה.", "hativa-details"],
+    el3: ["div", ["title", "details-title"], "", "מפקדת חטיבת החילוץ וההדרכה", "hativa-details"],
+    img4: ["assets/images/hativa.svg", "חטיבת החילוץ וההדרכה", "", "details-img", "", "hativa-details"],
+    el5: ["div", ["details-text", "hativa-text"], "", "מפקדת החטיבה תשמש כמפקדה משימתית בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירת המלחמה, לרבות מחוץ לגבולות מדינת ישראל ותפקד על מבצעים במרחב האזרחי ברגיעה ובלחימה.", "hativa-details"],
     evLis6: ["close-btn-structure", "click", "closeDetails"]
 }
 
@@ -584,14 +582,17 @@ var rescueImgCarousel = {
     card5: ["assets/images/rescue-carousel5.jpg", "Fifth slide", "card", ["d-block", "w-100"], "", "carousel-item"]
 }
 
-let menuOpen = false;
+// let menuOpen = false;
 let quesVisited = false;
 let currPage = 1;
+let furthestPageVisited = 1;
 let currExpShown = "";
 let currDefShown = ""; // type string
 let currSchoolDetailsShown = "";
 let complexBranchesVisited = [];
+let currDetails = "";
 let detailsVisited = [];
+let currPageEvLis = [];
 let complexFinishButton = ["button", "next-btn-timeline", "next-btn-14", "סיימתי!", "timeline-text-container"];
 let enlisingBtn = ["button", "next-btn-timeline", "next-btn-2", "בואו נמשיך!", "timeline-text-container"];
 let nafaBtn = ["button", "next-btn-timeline", "next-btn-13", "הבנתי", "timeline-text-container"];
@@ -600,13 +601,28 @@ let structureFinishBtn = ["button", "next-btn-timeline", "finished-structure", "
 
 window.addEventListener("load", (event) => {
     createScreen(openScreenContent);
-    // createVideo(enlistingVid);
     document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.querySelector(".body-part").addEventListener("click", () => {
         document.querySelector(".nice-nav").classList.add("open");
     });
-    document.querySelector(".nice-nav").addEventListener("click", menuRedirection);
+    // document.querySelector(".nice-nav").addEventListener("click", menuRedirection);
     document.getElementById("info-btn").addEventListener("click", showInfo);
+    
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+        console.log(dropdown[i]);
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+        });
+    }
     document.getElementById("ques-btn").addEventListener("click", showQues);
     document.addEventListener("click", (event) => {
         if (event.target.classList.contains("colored-text")) {
@@ -617,6 +633,7 @@ window.addEventListener("load", (event) => {
 });
 
 const menuRedirection = (event) => {
+    console.log(event.target.id);
     if (event.target.id.includes("page")) {
         let pageID = Number(event.target.id.replace("page", ""));
         let pageObject = window[event.target.id];
@@ -638,35 +655,52 @@ const menuRedirection = (event) => {
 
     }
 }
-
 const showMenu = () => {
-    console.log("menu");
-    if (!menuOpen) {
-        document.querySelector(".nice-nav").classList.add("open");
-        menuOpen = true;
-        $submenu = $('.child-menu-ul');
-        $('.child-menu .toggle-right').on('click', function(e) {
-            e.preventDefault();
-            $this = $(this);
-            $parent = $this.parent().next();
-            // $parent.addClass('active');
-            $tar = $('.child-menu-ul');
-            if (!$parent.hasClass('active')) {
-                console.log("open sub-menu");
-                $tar.removeClass('active').slideUp('fast');
-                $parent.addClass('active').slideDown('fast');
-            } else {
-                $parent.removeClass('active').slideUp('fast');
-                console.log("close sub-menu");
-            }
-        });
-    } else {
-        document.querySelector(".nice-nav").classList.remove("open");
-        setTimeout(()=> {
-            $('.child-menu-ul').removeClass('active').slideUp('fast');
-        }, 250);
-        menuOpen = false;
-    }
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    // document.querySelector(".nice-nav").classList.toggle("open");
+    // let mainMenu = document.querySelectorAll(".child-menu");
+    // for (let i = 0; i < mainMenu.length; i++) {
+    //     mainMenu[i].addEventListener("click", function() {
+    //         // this.classList.toggle("active");
+    //         var panel = this.nextElementSibling;
+    //         console.log(panel);
+    //         console.log(panel.style.maxHeight);
+    //         // console.log(null);
+    //         console.log(panel.scrollHeight + "px");
+    //         if (panel.style.maxHeight) {
+    //           panel.style.maxHeight = null;
+    //         } else {
+    //           panel.style.maxHeight = panel.scrollHeight + "px";
+    //         }
+    //     });
+    // }
+    // console.log("menu");
+    // if (!menuOpen) {
+    //     document.querySelector(".nice-nav").classList.add("open");
+    //     menuOpen = true;
+    //     $submenu = $('.child-menu-ul');
+    //     $('.child-menu .toggle-right').on('click', function(e) {
+    //         e.preventDefault();
+    //         $this = $(this);
+    //         $parent = $this.parent().next();
+    //         // $parent.addClass('active');
+    //         $tar = $('.child-menu-ul');
+    //         if (!$parent.hasClass('active')) {
+    //             console.log("open sub-menu");
+    //             $tar.removeClass('active').slideUp('fast');
+    //             $parent.addClass('active').slideDown('fast');
+    //         } else {
+    //             $parent.removeClass('active').slideUp('fast');
+    //             console.log("close sub-menu");
+    //         }
+    //     });
+    // } else {
+    //     document.querySelector(".nice-nav").classList.remove("open");
+    //     setTimeout(()=> {
+    //         $('.child-menu-ul').removeClass('active').slideUp('fast');
+    //     }, 250);
+    //     menuOpen = false;
+    // }
 }
 
 //not finished
@@ -696,7 +730,8 @@ const showQues = () => {
     let infoExpVisited = false;
     let quesExpVisited = false;
     let displayStyle = document.getElementById("ques-container").style.display;
-    if (document.getElementById("info").style.display === "none" && !document.querySelector(".nice-nav").classList.contains("open")) {
+    // if (document.getElementById("info").style.display === "none" && !document.querySelector(".nice-nav").classList.contains("open")) {
+    if (document.getElementById("info").style.display === "none") {
         if (displayStyle === "none") {
             document.getElementById("page").style.opacity = "0";
             document.getElementById("ques-container").style.display = "block";
@@ -794,6 +829,7 @@ var timelineComplexPage = (event) => {
         // add finish button
         createTextElement(complexFinishButton);
         document.getElementById("next-btn-14").addEventListener("click", nextPage);
+        currPageEvLis = ["id", "next-btn-14", "click", "nextPage"];
     }
 }
 
@@ -805,7 +841,9 @@ const createScreen = (currObject) => {
             continue;
         } else if (openContentKeys[i - 1].includes("evLis")) {
             let lisFunc = currObject[`evLis${i}`][2];
+            console.log(document.getElementById(currObject[`evLis${i}`][0]));
             document.getElementById(currObject[`evLis${i}`][0]).addEventListener(currObject[`evLis${i}`][1], window[lisFunc]);
+            currPageEvLis = ["id", currObject[`evLis${i}`][0], currObject[`evLis${i}`][1], lisFunc];
             continue;
         } else if (openContentKeys[i - 1].includes("img")) {
             createImgElement(currObject[openContentKeys[i - 1]]);
@@ -863,13 +901,6 @@ const createImgElement = (list) => {
     document.getElementById(list[5]).appendChild(newIMG);
 }
 
-//                  width  height     class             id             parent element id            src
-let enlistingVid = ["420", "315", "enlistingvid", "enlistingvid", "timeline-text-container", "assets/videos/enlisting.mp4"];
-let nafaVid = ["420", "315", "nafavid", "nafavid", "timeline-text-container", "assets/videos/nafa-sdira.mp4"];
-let turkeyVid = ["420", "315", "nafavid", "nafavid", "timeline-text-container", "assets/videos/nafa-sdira.mp4"];
-let daysVid = ["420", "315", "daysvid", "daysvid", "main-roles", "assets/videos/80-days.mp4"];
-let buildingVid = ["420", "315", "buildingvid", "buildingvid", "main-roles", "assets/videos/building-collapse.mp4"];
-
 const createVideo = (vidList) => {
     let newVideo = document.createElement("video");
     newVideo.width = vidList[0];
@@ -888,11 +919,14 @@ const createVideo = (vidList) => {
         if (currPage === 3) {
             createTextElement(enlisingBtn);
             document.getElementById(enlisingBtn[2]).addEventListener("click", nextPage);
+            currPageEvLis = ["id", enlisingBtn[2], "click", "nextPage"];
         } else if (currPage === 13) {
             createTextElement(nafaBtn);
             document.getElementById(nafaBtn[2]).addEventListener("click", nextPage);
-        } else if (currPage === 21 || currPage === 24 || currPage === 25) {
+            currPageEvLis = ["id", nafaBtn[2], "click", "nextPage"];
+        } else if (currPage === 21 || currPage === 24 || currPage === 25 || currPage === 27) {
             document.getElementById("roles-next-arrow").addEventListener("click", nextPage);
+            currPageEvLis = ["id", "roles-next-arrow", "click", "nextPage"];
         }
     }
 }
@@ -1025,27 +1059,32 @@ var closeCarouselCard = () => {
 var openDetails = (event) => {
     if (event.target.id.includes("hativa")) {
         createScreen(hativaDetails);
+        currDetails = "hativa";
         if (!detailsVisited.includes("hativa")) {
             detailsVisited.push("hativa");
         }
     } else if (event.target.id.includes("bah")) {
         createScreen(bahDetails);
+        currDetails = "bah";
         if (!detailsVisited.includes("bah")) {
             detailsVisited.push("bah");
         }
     } else if (event.target.id.includes("baf")) {
         createScreen(bafDetails);
+        currDetails = "baf";
         if (!detailsVisited.includes("baf")) {
             detailsVisited.push("baf");
         }
     } else if (event.target.id.includes("matachim")) {
         createScreen(matachimDetails);
+        currDetails = "matachim";
         if (!detailsVisited.includes("matachim")) {
             detailsVisited.push("matachim");
         }
     } else if (event.target.id.includes("school")) {
         createScreen(schoolDetailsA);
         currSchoolDetailsShown = "a";
+        currDetails = "school-a";
         if (!detailsVisited.includes("school-a")) {
             detailsVisited.push("school-a");
         }
@@ -1057,6 +1096,7 @@ var changeSchoolDetailsPart = () => {
         closeDetails();
         createScreen(schoolDetailsB);
         currSchoolDetailsShown = "b";
+        currDetails = "school-b";
         if (!detailsVisited.includes("school-b")) {
             detailsVisited.push("school-b");
         }
@@ -1064,6 +1104,7 @@ var changeSchoolDetailsPart = () => {
         closeDetails();
         createScreen(schoolDetailsA);
         currSchoolDetailsShown = "a";
+        currDetails = "school-a";
         if (!detailsVisited.includes("school-a")) {
             detailsVisited.push("school-a");
         }
@@ -1071,9 +1112,18 @@ var changeSchoolDetailsPart = () => {
 }
 
 var closeDetails = () => {
-    document.getElementById("close-card-button").removeEventListener("click", closeCarouselCard);
+    if (currDetails !== "hativa") {
+        document.getElementById("close-card-button").removeEventListener("click", closeCarouselCard);
+    }
+    currDetails = "";
     document.getElementById("close-btn-structure").removeEventListener("click", closeDetails);
     document.querySelector(".structure-details").remove();
+    if (detailsVisited.length === 5) {
+        document.getElementById("explain-structure").remove();
+        createTextElement(structureFinishBtn);
+        document.getElementById("finished-structure").addEventListener("click", nextPage);
+        currPageEvLis = ["id", "finished-structure", "click", "nextPage"];
+    }
 }
 
     
@@ -1081,6 +1131,17 @@ var nextPage = () => {
     // if (currPage === 1 && !quesVisited) {
     //     showQues();
     // } else {
+        //remove current next button event listener
+        if (currPageEvLis.length !== 0 && currPage !== 29) {
+            let eventFunction = currPageEvLis[3];
+            if (currPageEvLis[0] === "id") {
+                document.getElementById(currPageEvLis[1]).removeEventListener(currPageEvLis[2], window[eventFunction]);
+                currPageEvLis = [];
+            } else {
+                document.querySelector(currPageEvLis[1]).removeEventListener(currPageEvLis[2], window[eventFunction]);
+                currPageEvLis = [];
+            }
+        }
         if (currPage === 1) {
             console.log("3 s long");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
@@ -1092,6 +1153,7 @@ var nextPage = () => {
                 setTimeout(function() {
                     document.getElementById("page3text").classList.add("show-anim");
                     document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                    currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                 }, 3000);
             }, 500);
         } else if (currPage === 4) {
@@ -1110,6 +1172,7 @@ var nextPage = () => {
                     setTimeout(function() {
                         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
                         document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                        currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                     }, 500);
                 }, 3000);
             }, 500);
@@ -1128,7 +1191,7 @@ var nextPage = () => {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     setTimeout(function() {
                         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                        document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                        // document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
                     }, 500);
                 }, 2000);
             }, 500);
@@ -1147,6 +1210,7 @@ var nextPage = () => {
                     setTimeout(function() {
                         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
                         document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                        currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                     }, 500);
                 }, 2000);
             }, 500);
@@ -1160,12 +1224,14 @@ var nextPage = () => {
                 document.getElementById("page").innerHTML = "";
                 currPage++;
                 let currObjContent = window[`page${currPage}`];
+                console.log(currObjContent);
                 createScreen(currObjContent);
                 setTimeout(function() {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     setTimeout(function() {
                         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
                         document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                        currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                     }, 500);
                 }, 3000);
             }, 500);
@@ -1187,6 +1253,7 @@ var nextPage = () => {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
                     document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                    currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                 }, 4500);
             }, 500);
         } else if (currPage === 28) {
@@ -1195,8 +1262,9 @@ var nextPage = () => {
                 document.getElementById("explain-structure").remove();
                 createTextElement(structureFinishBtn);
                 document.getElementById("finished-structure").addEventListener("click", nextPage);
+                currPageEvLis = ["id", "finished-structure", "click", "nextPage"];
             }
-        } else if (currPage === 28) {
+        } else if (currPage === 29) {
             document.getElementById("page").innerHTML = "";
             createScreen(endScreenContent);
         } else if (currPage === 16 || currPage === 27) {
@@ -1220,6 +1288,18 @@ var nextPage = () => {
         }
         console.log(currPage);
     // }
+}
+
+var restert = () => {
+    document.getElementById("page").innerHTML = "";
+    currPage = 1;
+    currExpShown = "";
+    currDefShown = ""; // type string
+    currSchoolDetailsShown = "";
+    complexBranchesVisited = [];
+    currDetails = "";
+    currPageEvLis = [];
+    createScreen(openScreenContent);
 }
 
 var finishScreen = () => {

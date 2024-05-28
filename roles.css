@@ -11,7 +11,7 @@
     left: 2rem;
 }
 
-#infographic-31 .infographic {
+/* #infographic-31 .infographic {
     margin-left: 4rem;
     height: 4rem;
     min-width: 0;
@@ -106,7 +106,7 @@
 #infographic-32 .complex-infographic-text {
     display: inline-block; 
     line-height: 1.2rem;
-}
+} */
 
 .roles-text {
     width: 20rem;
@@ -126,4 +126,96 @@
 .next-arrow,
 .close-details-btn {
     cursor: pointer;
+}
+
+.turkeyvid {
+    display: block;
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    width: 34rem;
+    height: 17rem;
+    transform: translateX(-50%);
+}
+
+.buildingvid {
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    width: 24rem;
+    height: 14rem;
+}
+
+.daysvid {
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    width: 24rem;
+    height: 14rem;
+}
+
+.abachvid {
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    width: 24rem;
+    height: 14rem;
+}
+
+.batashvid {
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    width: 24rem;
+    height: 14rem;
+}
+
+.routine-roles {
+    position: relative;
+    height: 4rem;
+    width: 18rem;
+}
+
+#routine-roles4  {
+    height: 5rem;
+}
+
+#routine-roles5  {
+    height: 7rem;
+}
+
+.black-frame {
+    position: absolute;
+    border: 2px solid black;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* z-index: 5; */
+    top: -0.2rem;
+    right: 0.2rem;
+}
+
+.roles-num {
+    position: absolute;
+    background-color: var(--active-background);
+    width: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+.infographic-text {
+    position: absolute;
+    margin-right: 2rem;
+    width: 15rem;
+    background-color: var(--active-background);
+    padding-right: 0.5rem;
+}
+
+.infographic-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 20rem;
 }

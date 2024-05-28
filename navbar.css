@@ -1,11 +1,13 @@
 :root {
-    --border-blue: #31628d;
+    --border-orange: #b96f29;
     --enabled-text-color: #000000;
     --disabled-text-color: #6e6e6e;
-    --background-white: #ffffff; 
-    --enabled-toggle-background: #b2d2ec;
+    --background: #fffefe; 
+    --enabled-toggle: #ecdcc9;
+    --active-background: #e4e4e4;
+    --active-toggle: #e2ceb5;
 }
-
+/* 
 ul {
     list-style-type: none;
     margin: 0;
@@ -13,8 +15,16 @@ ul {
     border-collapse: collapse;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
+}
+
+.nice-nav li.child-menu span.toggle-right:hover {
+    background-color: var(--active-toggle);
+}
+
+.child-menu>a:hover{
+    background-color: var(--active-background);
 }
 
 :after, :before {
@@ -26,7 +36,7 @@ a {
 .nice-nav {
     text-align: right;
     width: 18rem;
-    background: var(--background-white);
+    background: var(--background);
     height: 100%;
     transition:all 0.4s ease-in-out 0s;
     float: right;
@@ -46,15 +56,15 @@ a {
     position: absolute;
     left: 0;
     top: 0;
-    background: var(--enabled-toggle-background);
+    background: var(--enabled-toggle);
     bottom: 0;
-    border-right: 2px solid var(--border-blue);
+    border-right: 2px solid var(--border-orange);
 }
 
 .nice-nav ul li a {
     padding: 0.1rem 0.3rem 0.3rem 2rem;
-    background: var(--background-white);
-    border: 1px solid var(--border-blue);
+    background: var(--background);
+    border: 1px solid var(--border-orange);
     display: block;
     color: var(--enabled-text-color);
     font-size: 0.8rem;
@@ -62,13 +72,19 @@ a {
 }
 
 .nice-nav ul li.child-menu ul {
-    background: var(--background-white);
-    display: none;
+    background: var(--background);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 .nice-nav ul li.child-menu ul li a {
-    background: var(--background-white);
+    background: var(--background);
     padding: 0rem 0.4rem;
+}
+
+.nice-nav ul li.child-menu ul li a:hover {
+    background-color: var(--active-background);
 }
 
 .arrow-container {
@@ -84,8 +100,8 @@ a {
     margin-left: 0.7rem;
     width: 0.5rem;
     height: 0.5rem;
-    border-top: 3px solid var(--border-blue);
-    border-right: 3px solid var(--border-blue);
+    border-top: 3px solid var(--border-orange);
+    border-right: 3px solid var(--border-orange);
 }
 
 .right-arrow {
@@ -97,7 +113,7 @@ a {
 }
 
 .main-menu {
-    border: 1px solid var(--border-blue);
+    border: 1px solid var(--border-orange);
     position: absolute;
 }        
 
@@ -110,4 +126,70 @@ a {
 .menu-text {
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-}    
+}     */
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: fit-content;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

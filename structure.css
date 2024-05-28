@@ -145,6 +145,13 @@
     font-size: 0.8rem;
 }
 
+.hativa-text {
+    position: absolute;
+    top: 3rem;
+    width: 32rem;
+    padding: 2rem;
+}
+
 .details-list {
     list-style-type: circle;
     margin-right: 1rem;
@@ -152,7 +159,7 @@
 }
 
 .details-img {
-    width: 7rem;
+    width: 3rem;
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -191,10 +198,12 @@
 
 .card-text {
     font-size: 0.7rem;
+    color: black;
 }
 
 .card-title {
     font-size: 0.8rem;
+    color: black;
 }
 
 .prev-icon-card {
@@ -219,7 +228,7 @@
     padding: 0.2rem 0.5rem;
     transform: rotate(90deg);
     position: absolute;
-    left: -7.55rem;
+    left: -7.52rem;
     top: 5rem;
 }
 
