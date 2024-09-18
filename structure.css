@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Assistant";
+    src: url("assets/fonts/Assistant/Assistant-Regular.ttf");
+}
+
+html, body {
+    font-family: "Assistant";
+    font-size: calc(1vh + 1vw + 8px);
+    direction: rtl;
+    overflow: hidden;
+    text-align: right;
+}
+
 /* structure styling */
 .structure-text-page {
     margin: 3.5rem 2rem 0rem 2rem;
@@ -9,6 +22,13 @@
     position: absolute;
     left: 5rem;
     top: 7rem;
+}
+
+.structure-tree-img {
+    height: 20rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .structure-sym {
@@ -76,35 +96,6 @@
 .hativa-desc {
     font-size: 0.8rem;
     display: block;
-}
-
-#hativa {
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    top: 1rem;
-}
-
-#bah {
-    height: 3.5rem;
-    margin-top: 1rem;
-}
-
-#baf {
-    height: 3rem;
-}
-
-#matachim {
-    height: 3.5rem;
-}
-
-#school {
-    height: 3rem;
-    margin-left: 1.5rem;
-}
-
-.gdudim-img {
-    height: 3rem;
 }
 
 .structure-details {
@@ -189,11 +180,12 @@
     top: 2.5rem;
 }
 
-.roles-text-page .carousel {
+#rescueCarousel {
     width: 19rem;
     position: absolute;
     left: 2rem;
     top: 6.5rem;
+    z-index: 3;
 }
 
 .card-text {
@@ -206,13 +198,17 @@
     color: black;
 }
 
-.prev-icon-card {
-    background-image: url("assets/images/carousel-prev-icon.svg");
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
 }
 
-.next-icon-card {
+/* .prev-icon-card {
+    background-image: url("assets/images/carousel-prev-icon.svg");
+} */
+
+/* .next-icon-card {
     background-image: url("assets/images/carousel-next-icon.svg");
-}
+} */
 
 .close-card-button {
     width: 1rem;
@@ -277,4 +273,12 @@
     position: relative;
     top: 20rem;
     font-size: 0.8rem;
+}
+
+#Layer_2 {
+    position: absolute;
+    top: 2rem;
+    width: 37rem;
+    left: 50%;
+    transform: translateX(-50%);
 }

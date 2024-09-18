@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Assistant";
+    src: url("assets/fonts/Assistant/Assistant-Regular.ttf");
+}
+
+html, body {
+    font-family: "Assistant";
+    font-size: calc(1vh + 1vw + 8px);
+    direction: rtl;
+    overflow: hidden;
+    text-align: right;
+}
+
 /* roles styling */
 .roles-text-page {
     margin: 3.5rem 2rem 0rem 2rem;
@@ -11,114 +24,17 @@
     left: 2rem;
 }
 
-/* #infographic-31 .infographic {
-    margin-left: 4rem;
-    height: 4rem;
-    min-width: 0;
-    min-height: 0;
-}
-
-#infographic-32 .infographic {
-    margin-left: 4rem;
-    height: 3rem;
-    min-width: 0;
-    min-height: 0;
-}
-
-#infographic-31 .infographic-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-    position: relative;
-    right: 1rem;
-}
-
-#infographic-32 .infographic-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-    position: relative;
-    right: 1rem;
-}
-
-
-#infographic-31 .infographic-text-container {
-    background-color: #bdd7ee;
-    width: 15rem;
-    position: relative;
-    height: 3.3rem;
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding-right: 2.3rem;
-    right: 1.5rem;
-}
-
-#infographic-32 .infographic-text-container {
-    background-color: #bdd7ee;
-    width: 25rem;
-    position: relative;
-    height: 2.6rem;
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding-right: 2.3rem;
-    right: 1.5rem;
-}
-
-#infographic-31 .infographic-num-container {
-    background-color: #ffffff;
-    border-radius: 50%;
-    text-align: center;
-    position: relative;
-    color: #44546a;
-    height: 3.3rem;
-    width: 3.3rem;
-    padding-top: 0.6rem;
-    bottom: 3.3rem;
-    font-size: 1.3rem;
-    right: 0.2rem;
-}
-
-#infographic-32 .infographic-num-container {
-    background-color: #ffffff;
-    border-radius: 50%;
-    text-align: center;
-    position: relative;
-    color: #44546a;
-    height: 2.6rem;
-    width: 2.6rem;
-    padding-top: 0.4rem;
-    bottom: 2.6rem;
-    font-size: 1.3rem;
-    right: 0.2rem;
-}
-
-#infographic-31 .complex-infographic-text {
-    display: inline-block; 
-    line-height: 1.56rem;
-}
-
-#infographic-32 .complex-infographic-text {
-    display: inline-block; 
-    line-height: 1.2rem;
-} */
-
 .roles-text {
     width: 20rem;
     text-align: right;
 }
 
 .roles-img {
-    width: 15rem;
+    width: 19.1rem;
+    height: 12.9rem;
     position: absolute;
-    left: 5rem;
-    top: 8rem;
-    border: solid 5px white;
+    left: 2rem;
+    top: 6.4rem;
 }
 
 .closed-card,
@@ -175,9 +91,29 @@
 }
 
 .routine-roles {
-    position: relative;
-    height: 4rem;
-    width: 18rem;
+    position: absolute;
+    right: 2rem;
+    top: 7rem;
+    width: 20rem;
+}
+
+.emergency-roles {
+    position: absolute;
+    left: 2rem;
+    top: 7rem;
+    width: 20rem;
+}
+
+#rolesErrorText {
+    top: 12rem;
+}
+
+.routine-roles .card {
+    background-color: rgb(201, 235, 201);
+}
+
+.emergency-roles .card {
+    background-color: rgb(245, 218, 223);
 }
 
 #routine-roles4  {
@@ -218,4 +154,32 @@
     flex-wrap: wrap;
     flex-direction: column;
     height: 20rem;
+}
+
+.polaroid {
+    width: 26.3rem;
+    position: absolute;
+    height: 18.8rem;
+    left: -0.24rem;
+    top: 3.89rem;
+}
+
+.tape {
+    position: absolute;
+    z-index: 5;
+    width: 2.5rem;
+    top: 3.5rem;
+    left: 10.5rem;
+}
+
+.carousel-control-prev {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.carousel-control-next {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.active {
+    background-color: transparent;
 }

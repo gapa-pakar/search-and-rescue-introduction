@@ -20,11 +20,10 @@ html, body {
 }
 
 body {
-    /* background-image: url("assets/images/background.svg"); */
-    background-image: url("assets/images/Asset2.svg");
-    background-color: #d5dce0;
+    background-image: url("assets/images/background.svg");
     background-size: 100vw 104vh;
     background-repeat: no-repeat;
+    -webkit-tap-highlight-color: transparent;
 }    
 
 /* elements that appear for all of the screens */
@@ -159,20 +158,20 @@ body {
 }
 
 #def2-exp {
-    bottom: 12rem;
+    bottom: 10.5rem;
     left: 26.5rem;
     width: 12rem;
 }
 
 #def3-exp {
-    bottom: 9rem;
-    left: 25rem;
+    bottom: 8rem;
+    left: 2rem;
     width: 18rem;
 }
 
 #def4-exp {
-    bottom: 16rem;
-    left: 23rem;
+    bottom: 13rem;
+    left: 29rem;
     width: 12rem;
 }
 
@@ -292,6 +291,30 @@ body {
 .subtitle {
     font-weight: 600;
     text-align: right;
+}
+
+.sub-title {
+    position: absolute;
+    font-weight: 600;
+    font-size: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 26rem;
+    top: 8rem;
+}
+
+.con-sen {
+    text-align: center;
+    position: absolute;
+    top: 6rem;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#next-btn-17 {
+    bottom: 4rem;
 }
 
 .enabled-btn:hover {

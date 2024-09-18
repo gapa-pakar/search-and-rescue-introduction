@@ -1,5 +1,5 @@
 const quesHTMLContent = {
-    quesContent: '<div id="ques-open-content" class="content-container"><div id="ques-open-content" class="text-container"><p class="title">על הלומדה:</p><div class="line">מטרת הלומדה:</div><div class="line">הצגת חטיבת החילוץ וההדרכה- היסטוריה, מבנה ותפקידים.</div><div class="line">הלומדה כוללת טקסט וגם סרטונים, לפעמים יחד ולפעמים לחוד.</div><div class="line">הסרטונים בלומדה יתחילו באופן אוטומטי.</div><div class="line"><span>לאורך הלומדה יופיעו </span><span id="def1" class="colored-text">מילים בצבע</span><span> אשר בריחוף מעליהן יופיע ההסבר למושג.</span></div><div class="line">כמו כן, יופיעו קרוסלות של תמונות או טקסט. על מנת לצפות בהמשך הקרוסלה, לחצו על אחד החצים לפחות פעם אחת!</div><div class="line">בנוסף, הכפתורים האלו יופיעו לכל אורך הלומדה. לחצו עליהם כדי לצפות בשימוש שלהם:</div></div><div id="buttons"><img src="assets/images/menu-btn.svg" alt="כפתור התפריט" id="exmp-menu-btn" title="כפתור התפריט" class="example-btn"><img src="assets/images/info-btn.svg" alt="כפתור אודות" id="exmp-info-btn" title="כפתור אודות" class="example-btn"><img src="assets/images/ques-btn.svg" alt="כפתור המידע" id="exmp-ques-btn" title="כפתור המידע" class="example-btn"></div><span class="error" id="menu-error" style="display: none;">אופס, עליכם לעבור על כל הכפתורים!</span></div>',
+    quesContent: '<div id="ques-open-content" class="content-container"><div id="ques-open-content" class="text-container"><p class="title">על הלומדה:</p><div class="line">מטרת הלומדה:</div><div class="line">הצגת חטיבת החילוץ וההדרכה- היסטוריה, מבנה ותפקידים.</div><div class="line">הלומדה כוללת טקסט וגם סרטונים, לפעמים יחד ולפעמים לחוד.</div><div class="line">הסרטונים בלומדה יתחילו באופן אוטומטי.</div><div class="line"><span>לאורך הלומדה יופיעו </span><span id="def1" class="colored-text">מילים בצבע</span><span> אשר לאחר לחיצה עליהן יופיע ההסבר למושג.</span></div><div class="line">כמו כן, יופיעו קרוסלות של תמונות או טקסט. על מנת לצפות בהמשך הקרוסלה, לחצו על אחד החצים לפחות פעם אחת!</div><div class="line">בנוסף, הכפתורים האלו יופיעו לכל אורך הלומדה. לחצו עליהם כדי לצפות בשימוש שלהם:</div></div><div id="buttons"><img src="assets/images/menu-btn.svg" alt="כפתור התפריט" id="exmp-menu-btn" title="כפתור התפריט" class="example-btn"><img src="assets/images/info-btn.svg" alt="כפתור אודות" id="exmp-info-btn" title="כפתור אודות" class="example-btn"><img src="assets/images/ques-btn.svg" alt="כפתור המידע" id="exmp-ques-btn" title="כפתור המידע" class="example-btn"></div><span class="error" id="menu-error" style="display: none;">אופס, עליכם לעבור על כל הכפתורים!</span></div>',
     exmpMenuContent: '</div><div id="exmp-menu-content" class="text-container"><div style="display: flex; align-items: center;"><img src="assets/images/menu-btn.svg" alt="כפתור התפריט" style="width: 2rem; margin-left: 0.5rem;"><span class="title">כפתור התפריט</span></div><div>כפתור זה יציג את ראשי הפרקים, אשר בלחיצה עליהם יוצגו תתי הנושאים בפרק.</div><div><span class="bold-txt">שימו לב! </span><span>לא ניתן יהיה לדלג על פרקים.</span></div><div>ניתן לעבור אחורה וקדימה בעזרת התפריט רק בין פרקים שכבר נצפו.</div></div>',
     exmpInfoContent: '</div><div id="exmp-info-content" class="text-container"><div style="display: flex; align-items: center;"><img src="assets/images/info-btn.svg" alt="כפתור אודות" style="width: 2rem; margin-left: 0.5rem;"><p class="title">כפתור אודות</p></div><div>כפתור זה יציג את הקרדיטים ללומדה בהיטבי הפיתוח, התוכן, העיצוב, הגרפיקות וכן בעלי תפקידים נוספים אשר לקחו חלק בתהליך.</div></div>',
     exmpQuesContent: '</div><div id="exmp-ques-content" class="text-container"><div style="display: flex; align-items: center;"><img src="assets/images/ques-btn.svg" alt="כפתור המידע" style="width: 2rem; margin-left: 0.5rem;"><p class="title">כפתור המידע</p></div><div>כפתור זה יציג את כל התזכורות שמופיעות בעמודים הקודמים.</div><div>אם תרצו להיזכר במשהו, כפתור זה יהיה נגיש לכם לכל אורך הלומדה עם ההסברים הללו.</div></div>'
@@ -8,7 +8,7 @@ const quesHTMLContent = {
 const definitionsText = {
     def1: ["כאן יופיע ההסבר למושג."],
     def2: ["מסגרת ארגונית בעורף הממונה על מרחב גזרתי בגזרת פיקוד העורף, המחוז כפוף ישירות למפקדת פיקוד העורף."],
-    def3: ["נפה= מסגרת מרחבית של מסגרות ושל כוחות מילואים הכפופה למחוז ומופקדת על פעולת ההגנה האזרחית במרחבה בשעת חירום.\nהנפה הסדירה= המפקדה הקודמת לחטיבה אשר הורכבה מארבעה גדודי חילוץ והצלה סדירים ובסיס הכשרות ובסיס הכשרת מפקדים, הנפה הסדירה הייתה המפקדה היחידה המורכבת ממשרתי סדיר ועל כן שמה."],
+    def3: ["נפה= מסגרת מרחבית של מסגרות ושל כוחות מילואים הכפופה למחוז ומופקדת על פעולת ההגנה האזרחית במרחבה בשעת חירום.\nהנפה הסדירה= המפקדה הקודמת לחטיבה אשר הורכבה מארבעה גדודי חילוץ והצלה סדירים, בסיס הכשרות ובסיס הכשרת מפקדים. הנפה הסדירה הייתה המפקדה היחידה המורכבת ממשרתי סדיר ועל כן שמה."],
     def4: ["בניין הכוח הוא החלק העוסק בבנייתו של הכוח העומד לרשות הצבא ויחידותיו."],
     def5: ["רצף קבוע של מופעי אימונים העומדים לראשות המסגרת המתאמנת במשך זמן מוגדר ותחום, במטרה לרענן, לשמר ולשפר כשירות בסיסית ומבצעית למסגרת המתאמנת."],
     def6: ["כשירות= תכונה כללית של גורם צבאי המבטאת את הערכת מידת יכולתם למלא כנדרש את תפקידיהם התקניים.\nכוננות= מצב של מוכנות ונכונות לפעולה טרם ההפעלה."],
@@ -61,7 +61,7 @@ var page3 = {
 var page4 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "1992- הקמת פיקוד העורף", "timeline-text-container"],
-    el3: ["div", "", "", "פיקוד העורף הוקם בשנת 1992 לאחר מלחמת המפרץ  הראשונה בה האיום על העורף העלה את הצורך בהתגוננות אזרחית סדורה.\nבן גוריון כבר ב48 אמר: ''ביום מן הימים, מה שקרוי העורף יכריע לא פחות מהחזית. לא נוכל לעמוד במלחמה באמצעים צבאיים בלבד''.\nבמקרה כזה, ישחרר פיקוד העורף את אלופי הפיקודים האחרים (צפון, מרכז, דרום) מדאגה לעורף, ויאפשר להם להתרכז בצרכים המבצעיים בחזית.", "timeline-text-container"],
+    el3: ["div", "", "", "פיקוד העורף הוקם בשנת 1992 לאחר מלחמת המפרץ הראשונה בה האיום על העורף העלה את הצורך בהתגוננות אזרחית סדורה. \nבן גוריון אמר בשנת 1948: ''ביום מן הימים, מה שקרוי העורף יכריע לא פחות מהחזית. לא נוכל לעמוד במלחמה באמצעים צבאיים בלבד''. \nבמקרה כזה, ישחרר פיקוד העורף את אלופי הפיקודים האחרים (צפון, מרכז, דרום) מדאגה לעורף, ויאפשר להם להתרכז בצרכים המבצעיים בחזית.", "timeline-text-container"],
     el4: ["button", "next-btn-timeline", "next-btn-4", "הבנתי!", "timeline-text-container"]
 }
 
@@ -75,7 +75,7 @@ var page5 = {
 var page6 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2004- הקמת פלוגת 'חץ' ופלוגת 'רותם'", "timeline-text-container"],
-    el3: ["div", "", "", "2004- הקמת שתי פלוגות חילוץ נוספות- פלוגת 'חץ' ופלוגת 'רותם'.\nמשימתן של הפלוגות האלו הייתה אבטחת בתי כלא בכלא 'עופר' ובכלא 'מגידו'.", "timeline-text-container"],
+    el3: ["div", "", "", "2004- הקמת שתי פלוגות חילוץ נוספות- פלוגת 'חץ' ופלוגת 'רותם'.\nמשימת הבט''ש של הפלוגות האלו הייתה אבטחת בתי כלא בכלא 'עופר' ובכלא 'מגידו' בעוד שמשימתם האופרטיבית הייתה חילוץ והצלה.", "timeline-text-container"],
     el4: ["div", "bold-txt", "", "המושג 'פלח''ץ' מתייחס לתקופה שבה היו קיימות רק פלוגות חילוץ ללא שייכות לגדוד ולחטיבה.", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-6", "המשך", "timeline-text-container"]
 }
@@ -83,11 +83,11 @@ var page6 = {
 var page7 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2008- איחוד פלוגות החילוץ והקמת גדוד שחר", "timeline-text-container"],
-    el3: ["div", "", "", "2008- שלוש פלוגות החילוץ התאחדו והוקם גדוד ראשון בחטיבה- גדוד שחר.", "timeline-text-container"],
+    el3: ["div", "", "", "כאמור, בשלב זה ישנן 3 פלוגות חילוץ סדירות. \nלאחר מלחמת לבנון השנייה הוחלט לחבר את הפלוגות לכדי גדוד בעל מפקדה אשר תבנה ותפעיל את הכוח. \nאיחוד הפלוגות תחת מפקדה אחת אפשר יצירת סטנדרט אחיד ושפה משותפת.\nבשנת 2008, אוחדו שלושת פלוגות החילוץ והוקם הגדוד הראשון בחטיבה- גדוד 'שחר'.\nהגדוד החל להתקדם גם בהיבטים המבצעיים, החל מתחילת תעסוקות מבצעיות ביהודה ושומרון ועד כניסה לעזה כצוותי פריצה וצוותי חילוץ בעת הצורך.", "timeline-text-container"],
     el4: ["div", "", "complex-text7", "", "timeline-text-container"],
-    el5: ["span", "", "", "גדוד שחר הוכפף ", "complex-text7"],
+    el5: ["span", "", "", "בתחילת דרכו גדוד 'שחר' היה כפוף ", "complex-text7"],
     el6: ["span", "colored-text", "def2", "למחוז", "complex-text7"],
-    el7: ["span", "", "", " מרכז/ירושלים שמלבד גדוד שחר, הורכב מגדודי מילואים בלבד.", "complex-text7"],
+    el7: ["span", "", "", " מרכז, אשר במקביל הורכב מגדודי מילואים.", "complex-text7"],
     img8: ["assets/images/gdud-shahar.svg", "גדוד שחר", "", "timeline-symbol-img", "", "timeline-text-container"],
     el9: ["button", "next-btn-timeline", "next-btn-7", "הבנתי", "timeline-text-container"]
 }
@@ -95,23 +95,23 @@ var page7 = {
 var page8 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2009- הקמת גדוד קדם", "timeline-text-container"],
-    el3: ["div", "", "", "2009- הקמת גדוד קדם אשר בתוכו שלוש פלוגות:\n'קרן', 'דוד' ו'מגן'.", "timeline-text-container"],
+    el3: ["div", "", "", "2009- הוחלט להרחיב את מערך החילוץ הסדיר ולהקים גדוד נוסף בשם גדוד 'קדם' ולו 3 פלוגות\n'קרן', 'דוד' ו'מגן'.", "timeline-text-container"],
     img4: ["assets/images/gdud-kedem.svg", "גדוד קדם", "", "timeline-symbol-img", "", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-8", "אני רוצה להמשיך!", "timeline-text-container"]
 }
 
 var page9 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
-    el2: ["div", "title", "timeline-title", "2009- המעבר ממגל לפקע''ר", "timeline-text-container"],
-    el3: ["div", "", "", "text text text text text text text text text text", "timeline-text-container"],
-    img4: ["assets/images/magal.png", "מערך מגל", "", "timeline-symbol-img", "", "timeline-text-container"],
+    el2: ["div", "title", "timeline-title", "2011- המעבר ממגל לפקע''ר", "timeline-text-container"],
+    el3: ["div", "", "", "בשנת 2011 פיקוד העורף קיבל את האחריות על מחנה זיקים שעד אז, היה בכפיפות מג''ל.\nכלל המתגייסים ללוחמה בפיקוד העורף בין השנים 2009-2011 עברו הכשרה אשר הייתה מחולקת לשני חלקים: סגל מגל העביר למתגייסים החדשים את פרק הטירונות, ואת נושאי העורף העבירו מפקדים מפיקוד העורף. \nהידעת? במחזור הראשון שהתגייס ללוחמה בפיקוד העורף היו 80 חיילים בפלוגה. לצורך השוואה- במחזור הגיוס מרץ 2024, היו כ140 חיילים בפלוגה! ", "timeline-text-container"],
+    img4: ["assets/images/magal.png", "מערך מגל", "", ["timeline-symbol-img", "shield-sym"], "", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-9", "אני רוצה להמשיך!", "timeline-text-container"]
 }
 
 var page10 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד תבור", "timeline-text-container"],
-    el3: ["div", "", "", "2012- הקמת גדוד תבור אשר בתוכו שלוש פלוגות:\n'תבל', 'ברק', 'ראם'.\nבשנת 2020 הוקמה בתוך הגדוד פלוגה נוספת בשם 'ונוס'.", "timeline-text-container"],
+    el3: ["div", "", "", "2012- הקמת גדוד 'תבור' אשר בתוכו שלוש פלוגות:\n'תבל', 'ברק', 'ראם'.\nבשנת 2020 הוקמה בתוך הגדוד פלוגה נוספת בשם 'ונוס'.", "timeline-text-container"],
     img4: ["assets/images/gdud-tavor.svg", "גדוד תבור", "", "timeline-symbol-img", "", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-10", "בואו נמשיך!", "timeline-text-container"]
 }
@@ -119,7 +119,7 @@ var page10 = {
 var page11 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד רם", "timeline-text-container"],
-    el3: ["div", "", "", "2012- גדוד נ''מ (נגד מטוסים) של חיל האוויר הוסב לפיקוד העורף.\nהשם שנבחר לגדוד החדש והרביעי הוא גדוד 'רם' אשר בתוכו שלוש פלוגות: 'רמון', 'מצדה', 'ארבל'.", "timeline-text-container"],
+    el3: ["div", "", "", "2012- גדוד נ''מ (נגד מטוסים) של חיל האוויר ''סטינגר'' הוסב לפיקוד העורף. \nהוחלט כי הגדוד יעבור לפיקוד העורף לאחר סגירת הגדוד בחיל האוויר בשל חוסר צורך מבצעי ביחידה.\nרוב עיסוקו של הגדוד בשנותיו האחרונות בחיל האוויר היה תע''מ ביבשה. \nהשם שנבחר לגדוד החדש בפיקוד העורף הוא גדוד 'רם' אשר בתוכו שלוש פלוגות: 'רמון', 'מצדה', 'ארבל'- שמות הפלוגות ששונו ממושגים של חיל האוויר למושגים של פיקוד העורף. ", "timeline-text-container"],
     img4: ["assets/images/gdud-ram.svg", "גדוד רם", "", "timeline-symbol-img", "", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-11", "הבנתי!", "timeline-text-container"]
 }
@@ -132,7 +132,7 @@ var page12 = {
     el5: ["span", "colored-text", "def3", "נפה סדירה", "complex-text11"],
     el6: ["span", "", "", " בפיקוד העורף אשר אליה יהיו כפופים הגדודים הסדירים של הפיקוד.", "complex-text11"],
     el7: ["div", "", "", "ההחלטה התקבלה בעקבות המורכבות של המחוז לתת קשב גם לגדודי המילואים וגם לגדודים הסדירים.\nבנוסף לארבעת הגדודים הוכפפו לנפה בא''ח העורף וענף מפקדים (עליהם נפרט בהמשך).", "timeline-text-container"],
-    img8: ["assets/images/hativa.svg", "סמל חטיבה", "", "timeline-symbol-img", "", "timeline-text-container"],
+    img8: ["assets/images/hativa.svg", "סמל חטיבה", "", ["timeline-symbol-img", "shield-sym"], "", "timeline-text-container"],
     el9: ["button", "next-btn-timeline", "next-btn-12", "הבנתי", "timeline-text-container"],
     evLis10: ["next-btn-12", "click", "nextPage"]
 }
@@ -153,20 +153,19 @@ var page14 = {
 var page15 = {
     // fix year text
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
-    el2: ["div", "title", "timeline-title", "1984- בה''ד 16", "timeline-text-container"],
+    el2: ["div", "title", "timeline-title", "1952- בה''ד 16", "timeline-text-container"],
     el3: ["div", "", "", "מתוקף חוק הג''א, היו בבה''ד 16 ענפים אשר היו אמונים על הכשרת מקצועות העורף לאוכלוסיות השונות.\nבה''ד 16, ובשמו השני- ''המרכז הלאומי לחילוץ, אב''כ והתגוננות אזרחית'' ישב בצריפין והיה בנוי משלושה ענפים ומטה בה''ד:", "timeline-text-container"],
     el4: ["div", "", "branches", "", "timeline-text-container"],
     el5: ["div", "", "profession-branch", "", "branches"],
     img6: ["assets/images/profession-branch.png", "ענף מקצועות", "profession-branch-img", "branch-img", "", "profession-branch"],
     el7: ["div", "branch-text", "profession-branch-text", "ענף מקצועות", "profession-branch"],
     el8: ["div", "", "command-branch", "", "branches"],
-    img9: ["assets/images/command-branch.png", "ענף מפקדות", "command-branch-img", "branch-img", "", "command-branch"],
-    el10: ["div", "branch-text", "command-branch-text", "ענף מפקדות", "command-branch"],
-    el11: ["div", "", "emi-branch", "", "branches"],
-    img12: ["assets/images/emi-branch.png", "ענף אימון יחידות", "emi-branch-img", "branch-img", "", "emi-branch"],
-    el13: ["div", "branch-text", "emi-branch-text", "ענף אימון יחידות", "emi-branch"],
-    el14: ["div", "", "branch-explaination", "עברו על כל היחידות כדי להמשיך בלומדה", "timeline-text-container"],
-    evLis15: ["branches", "click", "timelineComplexPage"]
+    el9: ["div", "branch-text", "command-branch-text", "ענף מפקדות", "command-branch"],
+    el10: ["div", "", "emi-branch", "", "branches"],
+    img11: ["assets/images/emi-branch.png", "ענף אימון יחידות", "emi-branch-img", "branch-img", "", "emi-branch"],
+    el12: ["div", "branch-text", "emi-branch-text", "ענף אימון יחידות", "emi-branch"],
+    el13: ["div", "", "branch-explaination", "עברו על כל היחידות כדי להמשיך בלומדה", "timeline-text-container"],
+    evLis14: ["branches", "click", "timelineComplexPage"]
 }
 
 var page16 = {
@@ -175,13 +174,18 @@ var page16 = {
     el3: ["div", "", "complex-text15", "", "timeline-text-container"],
     el4: ["span", "", "", "2016- איחוד בה''ד 16 עם הנפה הסדירה והקמת ", "complex-text15"],
     el5: ["strong", "", "", "חטיבת החילוץ וההדרכה.", "complex-text15"],
-    img6: ["assets/images/fighter-pin.svg", "סיכת לוחם", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el7: ["button", "next-btn-timeline", "next-btn-16", "המשך!", "timeline-text-container"]
+    el6: ["div", "", "pin-container", "", "timeline-text-container"],
+    img6: ["assets/images/new-fighter.svg", "סיכת לוחם חדשה", "", ["timeline-symbol-img", "fighter-pin"], "", "pin-container"],
+    img7: ["assets/images/old-fighter.svg", "סיכת לוחם ישנה", "", ["timeline-symbol-img", "fighter-pin"], "", "pin-container"],
+    el8: ["button", "next-btn-timeline", "next-btn-16", "המשך!", "timeline-text-container"]
 }
 
 var page17 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"], 
-    el2: ["div", "sub-title", "", "ייעוד ותפקידי חטיבת החילוץ וההדרכה", "main-roles"]
+    el2: ["div", "con-sen", "", "עכשיו, לאחר שלמדנו על הדרך שעברה החטיבה עד היום, נעבור ל:", "main-roles"],
+    el3: ["div", "sub-title", "", "ייעוד ותפקידי חטיבת החילוץ וההדרכה", "main-roles"],
+    el4: ["button", "next-btn-timeline", "next-btn-17", "קדימה!", "main-roles"],
+    evLis5: ["next-btn-17", "click", "nextPage"]
 }
 
 var page18 = {
@@ -198,75 +202,15 @@ var page18 = {
 
 var page19 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
-    el2: ["div", "", "infographic-31", "", "main-roles"],
-    el3: ["div", "title", "", "תפקידי החטיבה בשגרה", "infographic-31"],
-    el4: ["div", "infographic-container", "infographic-container", "", "infographic-31"],
-    el5: ["div", "infographic", "infographic1", "", "infographic-container"], 
-    el6: ["div", "infographic-text-container", "", "להכשיר את מקצועות העורף בסדיר ובמילואים ואת מערך הלחימה בפקע''ר.", "infographic1"],
-    el7: ["div", "infographic-num-container", "", "1", "infographic1"],
-    el8: ["div", "infographic", "infographic2", "", "infographic-container"],
-    el9: ["div", ["infographic-text-container", "complex-infographic-text"], "infographic2-complex-text", "", "infographic2"],
-    el10: ["span", "", "", "לאמן ולשמר כשירות למסגרות המילואים בפיקוד בהתאם ", "infographic2-complex-text"],
-    el11: ["span", "colored-text", "def5", "למחזוריות האימונים.", "infographic2-complex-text"], 
-    el12: ["div", "infographic-num-container", "", "2", "infographic2"],
-    el13: ["div", "infographic", "infographic3", "", "infographic-container"], 
-    el14: ["div", "infographic-text-container", "", "לשמש כח כוננות מיידי לאירועי חילוץ, הצלה ואב''כ.", "infographic3"],
-    el15: ["div", "infographic-num-container", "", "3", "infographic3"],
-    el16: ["div", "infographic", "infographic4", "", "infographic-container"], 
-    el17: ["div", "infographic-text-container", "", "הפעלת סד''כ חטיבתי להגנה קרקעית על מתקן אסטרטגי 'מתכים' בשגרה ובחירום.", "infographic4"],
-    el18: ["div", "infographic-num-container", "", "4", "infographic4"],
-    el19: ["div", "infographic", "infographic5", "", "infographic-container"], 
-    el20: ["div", "infographic-text-container", "", "לשמש בניין הכוח של גדודי החילוץ וההצלה הסדירים, בא''ח, ביה''ס לפיקוד ולמקצועות העורף ובסיס אימון יחידות פיקודי.", "infographic5"],
-    el21: ["div", "infographic-num-container", "", "5", "infographic5"],
-    el22: ["div", "infographic", "infographic6", "", "infographic-container"], 
-    el23: ["div", "infographic-text-container", "", "לפתח ידע מקצועי בעולמות החילוץ והאב''כ.", "infographic6"],
-    el24: ["div", "infographic-num-container", "", "6", "infographic6"],
-    el25: ["div", "infographic", "infographic7", "", "infographic-container"], 
-    el26: ["div", "infographic-text-container", "", "לשמש בניין הכוח של גדודי החילוץ וההצלה הסדירים, בא''ח, ביה''ס לפיקוד ולמקצועות העורף ובסיס אימון יחידות פיקודי.", "infographic7"],
-    el27: ["div", "infographic-num-container", "", "7", "infographic7"],
-    el28: ["div", "infographic", "infographic8", "", "infographic-container"],
-    el29: ["div", ["infographic-text-container", "complex-infographic-text"], "infographic8-complex-text", "", "infographic8"],
-    el30: ["span", "", "", "שמירת ", "infographic8-complex-text"],
-    el31: ["span", "colored-text", "def6", " כשירות וכוננות ", "infographic8-complex-text"],
-    el32: ["span", "", "", "  למפקדת החטיבה ויחידותיה.", "infographic8-complex-text"],
-    el33: ["div", "infographic-num-container", "", "8", "infographic8"],
-    img34: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
-    evLis35: ["roles-next-arrow", "click", "nextPage"]
+    el2: ["div", "", "info-roles", "", "main-roles"],
+    el3: ["div", "title", "", "תפקידי החטיבה בשגרה ובחירום", "info-roles"],
+    el4: ["div", "info-carousel", "info-carousel", "", "info-roles"],
+    img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
+    el6: ["div", "error", "rolesErrorText", "עליך לעבור על כל המידע בקרוסלות על מנת להמשיך", "main-roles"],
+    func7: ["rolesCarousels"]
 }
 
 var page20 = {
-    el1: ["div", "roles-text-page", "main-roles", "", "page"],
-    el2: ["div", "", "infographic-32", "", "main-roles"],
-    el3: ["div", "title", "", "תפקידי החטיבה בחירום", "infographic-32"],
-    el4: ["div", "infographic-container", "infographic-container", "", "infographic-32"],
-    el5: ["div", "infographic", "infographic1", "", "infographic-container"],
-    el6: ["div", ["infographic-text-container", "complex-infographic-text"], "infographic1-complex-text", "", "infographic1"],
-    el7: ["span", "", "", "לשמש ", "infographic1-complex-text"],
-    el8: ["span", "colored-text", "def7", "מפקדה משימתית קידמית", "infographic1-complex-text"],
-    el9: ["span", "", "", " במרחב העורף לסיוע במצבי החירום השונים בהתאם למחויבות אופרטיבית ומוכנות לקבל אחריות גזרתית בעורף.", "infographic1-complex-text"],
-    el10: ["div", "infographic-num-container", "", "1", "infographic1"],
-    el11: ["div", "infographic", "infographic2", "", "infographic-container"], 
-    el12: ["div", "infographic-text-container", "", "פו''ש על אירועי חילוץ, הצלה, בלתי קונבנציונליים ופינוי אוכלוסיה.", "infographic2"],
-    el13: ["div", "infographic-num-container", "", "2", "infographic2"],
-    el14: ["div", "infographic", "infographic3", "", "infographic-container"],
-    el15: ["div", ["infographic-text-container", "complex-infographic-text"], "infographic3-complex-text", "", "infographic3"],
-    el16: ["span", "", "", "לתגבר את ", "infographic3-complex-text"],
-    el17: ["span", "colored-text", "def8", "מרכז המידע הפיקודי", "infographic3-complex-text"],
-    el18: ["span", "", "", " וביצוע משימות סיוע אזרחי.", "infographic3-complex-text"],
-    el19: ["div", "infographic-num-container", "", "3", "infographic3"],
-    el20: ["div", "infographic", "infographic4", "", "infographic-container"], 
-    el21: ["div", "infographic-text-container", "", "לפקד/לשלח את גדודי החטיבה ת''פ מחוז אחר בהתאם לניתוח האיום ועפ''י הע''מ.", "infographic4"],
-    el22: ["div", "infographic-num-container", "", "4", "infographic4"],
-    el23: ["div", "infographic", "infographic5", "", "infographic-container"],
-    el24: ["div", ["infographic-text-container", "complex-infographic-text"], "infographic5-complex-text", "", "infographic5"],
-    el25: ["span", "", "", "לבצע אימונים והכשרות במסגרת תכנית ", "infographic5-complex-text"],
-    el26: ["span", "colored-text", "def9", "'זמן יקר'.", "infographic5-complex-text"], 
-    el27: ["div", "infographic-num-container", "", "5", "infographic5"],
-    img28: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
-    evLis29: ["roles-next-arrow", "click", "nextPage"]
-}
-
-var page21 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- טורקיה", "main-roles"], 
@@ -274,27 +218,36 @@ var page21 = {
     img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"]
 }
 
-var page22 = {
+var page21 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- קורונה", "main-roles"], 
-    el4: ["div", "roles-text", "", "עם פרוץ מגפת הקורונה, חטיבת החילוץ לקחה חלק מרכזי במאמצי הסיוע וההתמודדות עם המשבר הלאומי בכל רחבי הארץ.\nעיקרי המשימות אשר החטיבה לקחה בהן חלק כ'מפקדה משימתית':\nסיוע למשרד הבריאות ולרשויות המקומיות לקיים הסברה ממוקדת, להוציא חולים, להגן על אוכלוסיות בסיכון ולהבטיח את אספקת השירותים החיוניים תוך שימור המענה לרשות בהתפרצות על מנת להציל חיים ולאפשר את המשך תפקוד המשק תחת הגבלות הקורונה.", "main-roles"],
-    img5: ["assets/images/corona-img.JPG", "תמונת קורונה", "", "roles-img", "", "main-roles"],
-    img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
-    evLis7: ["roles-next-arrow", "click", "nextPage"]
+    el4: ["div", "roles-text", "", "עם פרוץ מגפת הקורונה, פיקוד העורף ובתוכו החטיבה לקחו חלק משמעותי במאמצי הסיוע וההתמודדות עם המשבר הלאומי בכל רחבי הארץ.\nעיקרי המשימות אשר החטיבה לקחה בהן חלק כ'מפקדה משימתית': ", "main-roles"],
+    el5: ["ol", "roles-text", "corona-list", "", "main-roles"],
+    el6: ["li", "roles-text", "", "סיוע למשרד הבריאות ולרשויות המקומיות בקיום הסברה ממוקדת ומותאמת אוכלוסיות", "corona-list"],
+    el7: ["li", "roles-text", "", "סיוע בפינוי חולי קורונה לבתי חולים ", "corona-list"],
+    el8: ["li", "roles-text", "", "סיוע בהגנה ושמירה על אוכלוסיות בסיכון", "corona-list"],
+    el9: ["div", "roles-text", "", "כל זאת על מנת להציל חיים ולאפשר את המשך תפקוד המשק תחת הגבלות הקורונה.", "main-roles"],
+    img10: ["assets/images/polaroid.svg", "רקע", "", "polaroid", "", "main-roles"],
+    img11: ["assets/images/tape.svg", "עיצוב", "", "tape", "", "main-roles"],
+    img12: ["assets/images/corona-img.JPG", "תמונת קורונה", "", "roles-img", "", "main-roles"],
+    img13: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
+    evLis14: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page23 = {
+var page22 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בעורף", "main-roles"], 
-    el4: ["div", "roles-text", "", "גדודי החטיבה הינם הגוף הסדיר בעל כשירות החילוץ הגבוהה ביותר, המחלצים ערוכים לביצוע פעולות חילוץ במתאר הרס מלחמתי בתוך שטח מדינת ישראל (כתוצאה מפגיעת רקטה לדוגמה), אסונות טבע וכשלים הנדסיים כל זאת במטרה להציל חיים.", "main-roles"],
-    car5: ["rescueImgCarousel"],
-    img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
-    evLis7: ["roles-next-arrow", "click", "nextPage"]
+    el4: ["div", "roles-text", "", "גדודי החטיבה הינם הגוף הסדיר בעל כשירות החילוץ הגבוהה ביותר. המחלצים ערוכים לביצוע פעולות חילוץ במתאר הרס מלחמתי בתוך שטח מדינת ישראל (כתוצאה מפגיעת רקטה לדוגמה), אסונות טבע וכשלים הנדסיים כל זאת במטרה להציל חיים.", "main-roles"],
+    img5: ["assets/images/polaroid.svg", "רקע", "", "polaroid", "", "main-roles"],
+    img6: ["assets/images/tape.svg", "עיצוב", "", "tape", "", "main-roles"],
+    img7: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
+    evLis8: ["roles-next-arrow", "click", "nextPage"],
+    func9: ["rescueImgCarousel"]
 }
 
-var page24 = {
+var page23 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
@@ -303,7 +256,7 @@ var page24 = {
     img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"]
 }
 
-var page25 = {
+var page24 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
@@ -312,7 +265,7 @@ var page25 = {
     img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"]
 }
 
-var page26 = {
+var page25 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "אב''כ", "main-roles"], 
@@ -322,7 +275,7 @@ var page26 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page27 = {
+var page26 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "בט''ש", "main-roles"], 
@@ -331,46 +284,21 @@ var page27 = {
     vid6: ["420", "315", "batashvid", "batashvid", "main-roles", "assets/videos/batash.mp4"]
 }
 
-var page28 = {
+var page27 = {
     el1: ["div", "structure-text-page", "structure", "", "page"],
-    el2: ["div", "sub-title", "", "מבנה החטיבה ויחידותיה", "structure"]
+    el2: ["div", "con-sen", "", "וכעת נעבור לסקירת:", "structure"],
+    el3: ["div", "sub-title", "", "מבנה החטיבה ויחידותיה", "structure"],
+    el4: ["button", "next-btn-timeline", "next-btn-17", "קדימה!", "structure"],
+    evLis5: ["next-btn-17", "click", "nextPage"]
 }
 
-var page29 = {
+var page28 = {
     el1: ["div", "structure-text-page", "structure", "", "page"],
     el2: ["div", "", "structure-tree", "", "structure"],
-    el3: ["div", "", "hativa-container", "", "structure-tree"],
-    img4: ["assets/images/hativa.svg", "hativa", "hativa", "structure-sym", "", "hativa-container"],
-    el5: ["strong", "hativa-desc", "hativa-desc", "מפקדה", "hativa-container"],
-    el6: ["div", "units-container", "units-container", "", "structure-tree"], 
-    el7: ["div", "", "bah-container", "", "units-container"], 
-    img8: ["assets/images/bah.svg", "bah", "bah", "structure-sym", "", "bah-container"], 
-    el9: ["strong", "bah-desc", "bah-desc", "בא''ח העורף", "bah-container"],
-    el10: ["div", "", "baf-container", "", "units-container"],
-    img11: ["assets/images/baf.svg", "baf", "baf", "structure-sym", "", "baf-container"],
-    el12: ["strong", "baf-desc", "baf-desc", "בא''פ העורף", "baf-container"],
-    el13: ["div", "", "matachim-container", "", "units-container"],
-    img14: ["assets/images/matachim.svg", "matachim", "matachim", "structure-sym", "", "matachim-container"],
-    el15: ["strong", "matachim-desc", "matachim-desc", "יחידת מתכים", "matachim-container"],
-    el16: ["div", "", "school-container", "", "units-container"],
-    img17: ["assets/images/school-of-oref.svg", "school", "school", "structure-sym", "", "school-container"],
-    el18: ["strong", "school-desc", "school-desc", "בית הספר לפיקוד\nולמקצועות העורף", "school-container"],
-    el19: ["div", "gdudim-container", "gdudim-container", "", "structure-tree"], 
-    el20: ["div", "", "gdud-shahar", "", "gdudim-container"],
-    img21: ["assets/images/gdud-shahar.svg", "shahar", "shahar", ["structure-sym", "gdudim-img"], "", "gdud-shahar"],
-    el22: ["strong", "gdudim-desc", "", "גדוד שחר", "gdud-shahar"],
-    el23: ["div", "", "gdud-tavor", "", "gdudim-container"],
-    img24: ["assets/images/gdud-tavor.svg", "tavor", "tavor", ["structure-sym", "gdudim-img"], "", "gdud-tavor"],
-    el25: ["strong", "gdudim-desc", "", "גדוד תבור", "gdud-tavor"],
-    el26: ["div", "", "gdud-ram", "", "gdudim-container"],
-    img27: ["assets/images/gdud-ram.svg", "ram", "shahar", ["structure-sym", "gdudim-img"], "", "gdud-ram"],
-    el28: ["strong", "gdudim-desc", "", "גדוד רם", "gdud-ram"],
-    el29: ["div", "", "gdud-kedem", "", "gdudim-container"],
-    img30: ["assets/images/gdud-kedem.svg", "kedem", "kedem", ["structure-sym", "gdudim-img"], "", "gdud-kedem"],
-    el31: ["strong", "gdudim-desc", "", "גדוד קדם", "gdud-kedem"],
-    el32: ["div", "explain-structure", "explain-structure", "עברו על כל היחידות כדי לסיים את הלומדה", "structure"],
+    img3: ["assets/images/structure-tree.svg", "עץ מבנה חטיבה", "structure-tree-img", "structure-tree-img", "", "structure-tree"],
+    el4: ["div", "explain-structure", "explain-structure", "עברו על כל היחידות כדי לסיים את הלומדה", "structure"],
     // el32: ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"],
-    evLis33: ["structure-tree", "click", "openDetails"],
+    evLis5: ["structure-tree-img", "click", "openDetails"],
     // evLis34: ["finished-structure", "click", "finishScreen"]
 }
 
@@ -390,12 +318,12 @@ const bahDetails = {
     img4: ["assets/images/bah.svg", "בא''ח העורף", "", "details-img", "", "bah-details"],
     el5: ["div", "details-conteiner", "details-conteiner", "", "bah-details"],
     el6: ["div", "subtitle", "", "הכר את בא''ח העורף", "details-conteiner"],
-    el7: ["div", "details-text", "", "בסיס אימונים חטיבתי להכשרת הלוחמים ופיתוח המפקדים למקצועות החילוץ, אב''כ ולוחמה.", "details-conteiner"],
+    el7: ["div", "details-text", "", "בסיס אימונים חטיבתי להכשרת לוחמי החטיבה למקצועות החילוץ, אב''כ ולוחמה.", "details-conteiner"],
     el8: ["div", "subtitle", "", "מגמות הבא''ח והכשרות", "details-conteiner"],
     el9: ["ul", "details-list", "details-list", "", "details-conteiner"],
     el10: ["li", "", "", "מכין לוחמות.", "details-list"],
     el11: ["li", "", "", "אימון יסוד - הכשרת הלוחם ברמת ''כושר לחימה''- בסיסי ב'.", "details-list"],
-    el12: ["li", "", "", "אימון מתקדם- הכשרת הלוחם ללוחמה ברמת ''כושר לחימה''- בסיסי ג', מחלקות הפיקוד ברמת 'מתקדם א', ולחילוץ ברמת מחלץ 06.", "details-list"],
+    el12: ["li", "", "", "אימון מתקדם- הכשרת הלוחם ללוחמה ברמת ''כושר לחימה- מתקדם א'', ולחילוץ ברמת מחלץ 06.", "details-list"],
     el13: ["li", "", "", "הכשרות נוספות לחיילים מאותרים: מש''קי מודיעין אוכלוסייה, קלע, מטול, מפקדי חוליה.", "details-list"],
     el14: ["div", "closed-card", "closed-card-bah", "", "details-conteiner"],
     el15: ["span", "closed-card-title", "", "הידעת?", "closed-card-bah"],
@@ -408,12 +336,12 @@ const bahDetails = {
 const bafDetails = {
     el1: ["div", "structure-details", "baf-details", "", "page"],
     img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "baf-details"],
-    el3: ["div", ["title", "details-title"], "", "בא''ח העורף", "baf-details"],
+    el3: ["div", ["title", "details-title"], "", "בא''פ העורף", "baf-details"],
     img4: ["assets/images/baf.svg", "בא''פ העורף", "", "details-img", "", "baf-details"],
     el5: ["div", "details-conteiner", "details-conteiner", "", "baf-details"],
     el6: ["div", "subtitle", "", "הכר את בא''פ העורף", "details-conteiner"],
     el7: ["div", "details-text", "details-text", "", "details-conteiner"],
-    el8: ["span", "", "", "בסיס אימונים פיקודי המתמחה בהובלה וחניכה של אימוני גדודי מילואים בתחומי חילוץ, אב''כ וחי''ר קל, חניכת את גדודי החטיבה הסדירים באימונים בין קווים ותו''כ תע''מ והובלת קורסים והכשרות בתחומי חילוץ, רפואה, ", "details-text"],
+    el8: ["span", "", "", "בסיס אימונים פיקודי המתמחה בהובלה וחניכה של אימוני גדודי מילואים בתחומי חילוץ, אב''כ וחי''ר קל, חניכת גדודי החטיבה הסדירים באימונים בין קווים ותו''כ תע''מ והובלת קורסים והכשרות בתחומי חילוץ, רפואה, ", "details-text"],
     el9: ["span", "colored-text", "def10", "שו''ב, ", "details-text"],
     el10: ["span", "colored-text", "def11", "אוכלוסייה, ", "details-text"],
     el11: ["span", "colored-text", "def12", "צמ''ה, ", "details-text"],
@@ -467,7 +395,7 @@ const schoolDetailsB = {
     el10: ["li", "", "", "קורסי הדרכה: קמ''ד אב''כ, קמ''ד חילוץ, קמ''ד חירום, קורס מבצעים.", "details-list-1"],
     el11: ["div", "sub-sub-title", "", "מגמות הפיקוד", "details-part-2"],
     el12: ["ul", "details-list", "details-list-2", "", "details-part-2"],
-    el13: ["li", "", "", "קורס מ''כים- הכשרת הלוחם ברמת 'כושר לחימה'- מתקדם ב', ומחלץ 07.", "details-list-2"],
+    el13: ["li", "", "", "קורס מ''כים- הכשרת הלוחם לתפקיד מפקד בחטיבה ברמת 'כושר לחימה'- מתקדם ב', ומחלץ 07.", "details-list-2"],
     el14: ["li", "", "", "השלמה לקצונה 'חנית'- השלמה לקצונה לאוכלוסיית הלוחמים בוגרי מגמת 'שדה' בבה''ד 1.", "details-list-2"],
     el15: ["li", "", "", "השלמה לקצונה 'מורג'- השלמה לקצונה לאוכלוסיית המטה בוגרי מגמת 'מעוז' בבה''ד 1.", "details-list-2"],
     el16: ["li", "", "", "הכנות לקצונה לאוכלוסיית הלוחמים ('כידון') והמטה ('צור').", "details-list-2"],
@@ -491,7 +419,7 @@ const matachimDetails = {
     el3: ["div", ["title", "details-title"], "", "יחידת מתכים", "matachim-details"],
     img4: ["assets/images/matachim.svg", "יחידת מתכים", "", ["details-img", "matachim-img"], "", "matachim-details"],
     el5: ["div", "details-conteiner", "details-conteiner", "", "matachim-details"],
-    el6: ["div", "subtitle", "", "תפקידיה של יחידת מתכים", "details-conteiner"],
+    el6: ["div", "subtitle", "", "תפקידה של יחידת מתכים", "details-conteiner"],
     el7: ["div", "details-text", "", "להגן קרקעית על מתקן 'מתכים' באמצעות יחידותיו וכוחות ת''פ.\nהסד''כ אשר מבצע את ההגנה על היחידה בפועל הוא כוח פלוגתי של אחד הגדודים בחטיבה אשר מתחלף ע''פ גרף התע''מ.\nבשנת 2020 הוקמה תחת גדוד תבור פלוגת ונוס אשר משימתה בחירום היא הגנה על מתכים.", "details-conteiner"],
     el8: ["div", "closed-card", "closed-card-matachim", "", "details-conteiner"],
     el9: ["span", "closed-card-title", "", "הידעת?", "closed-card-matachim"],
@@ -506,6 +434,8 @@ var bahCarousel = {
     carouselIndicators: false,
     visible: false,
     arrows: true,
+    closable: true,
+    carouselName: "bah",
     cardType: "el",
     card1: [
         ["strong", "card-title", "", "הידעת?", "card-1"],
@@ -526,14 +456,16 @@ var bafCarousel = {
     carouselIndicators: false,
     visible: false,
     arrows: true,
+    closable: true,
+    carouselName: "baf",
     cardType: "el",
     card1: [
-        ["strong", "card-title", "", "הידעת?", "card-1"],
-        ["div", "card-text", "", "בעבר בא''פ העורף נקרא ענף אימון יחידות תחת בה''ד 16 ולאחר מכן תחת חטיבת החילוץ וההדרכה בצריפין. בשנת 2020 ענף אימון יחידות (ענף אמ''י) עבר למכלול זיקים והוקם בא''פ העורף.", "card-1"]
+        ["strong", "card-title", "", "הידעת?", "baf-card-1"],
+        ["div", "card-text", "", "בעבר בא''פ העורף נקרא ענף אימון יחידות תחת בה''ד 16 ולאחר מכן תחת חטיבת החילוץ וההדרכה בצריפין. בשנת 2020 ענף אימון יחידות (ענף אמ''י) עבר למכלול זיקים והוקם בא''פ העורף.", "baf-card-1"]
     ],
     card2: [
-        ["strong", "card-title", "", "הידעת?", "card-2"],
-        ["div", "card-text", "", "בא''פ העורף הינו בסיס אימונים פיקודי ועל כן נאמן על הכשרות ואימונים של כלל יחידות פיקוד העורף ועל כשירות היחידות והמערכים המקצועיים של הפיקוד.", "card-2"]
+        ["strong", "card-title", "", "הידעת?", "baf-card-2"],
+        ["div", "card-text", "", "בא''פ העורף הינו בסיס אימונים פיקודי ועל כן נאמן על הכשרות ואימונים של כלל יחידות פיקוד העורף ועל כשירות היחידות והמערכים המקצועיים של הפיקוד.", "baf-card-2"]
     ],
 }
 
@@ -542,18 +474,20 @@ var schoolCarousel = {
     carouselIndicators: false,
     visible: false,
     arrows: true,
+    closable: true,
+    carouselName: "school",
     cardType: "el",
     card1: [
-        ["strong", "card-title", "", "הידעת?", "card-1"],
-        ["div", "card-text", "", "בשנת 2018 תחת חטיבת החילוץ וההדרכה הוקם ביה''ס לפיקוד ומקצועות העורף שהינו תוצר של איחוד גדוד הפיקוד וענף מקצועות אשר ישבו בבה''ד 16.", "card-1"]
+        ["strong", "card-title", "", "הידעת?", "school-card-1"],
+        ["div", "card-text", "", "בשנת 2018 תחת חטיבת החילוץ וההדרכה הוקם ביה''ס לפיקוד ומקצועות העורף שהינו תוצר של איחוד גדוד הפיקוד וענף מקצועות אשר ישבו בבה''ד 16.", "school-card-1"]
     ],
     card2: [
-        ["strong", "card-title", "", "הידעת?", "card-2"],
-        ["div", "card-text", "", "עד שנת 2015 התקיימה השלמה לקצונה אחידה ללוחמים ומטה.\nבשנת 2015 התפצלה ההשלמה למגמת חנית- קציני חילוץ לוחמים, ומגמת מורג- קציני עורף.", "card-2"]
+        ["strong", "card-title", "", "הידעת?", "school-card-2"],
+        ["div", "card-text", "", "עד שנת 2015 התקיימה השלמה לקצונה אחידה ללוחמים ומטה.\nבשנת 2015 התפצלה ההשלמה למגמת חנית- קציני חילוץ לוחמים, ומגמת מורג- קציני עורף.", "school-card-2"]
     ],
     card3: [
-        ["strong", "card-title", "", "הידעת?", "card-3"],
-        ["div", "card-text", "", "מדור הכשרות אב''כ הינו גוף צבאי ייחודי הממונה על תחום אב''כ בכלל צה''ל ומעביר הכשרות בכלל יחידות צה''ל.", "card-3"]
+        ["strong", "card-title", "", "הידעת?", "school-card-3"],
+        ["div", "card-text", "", "מדור הכשרות אב''כ הינו גוף צבאי ייחודי הממונה על תחום אב''כ בכלל צה''ל ומעביר הכשרות בכלל יחידות צה''ל.", "school-card-3"]
     ]
 }
 
@@ -562,27 +496,16 @@ var matachimCarousel = {
     carouselIndicators: false,
     visible: false,
     arrows: false,
+    closable: true,
+    carouselName: "matachim",
     cardType: "el",
     card1: [
-        ["strong", "card-title", "", "הידעת?", "card-1"],
-        ["div", "card-text", "", "עד שנת 2021 היתה יחידת מתכים כפופה למחוז דרום.\nבתוך בסיס היחידה קיימים מתקני אימון רבים כגון לש''בייה, מטווחים, אתר הרס, מסלול בראור ועוד!", "card-1"]
+        ["strong", "card-title", "", "הידעת?", "matachim-card-1"],
+        ["div", "card-text", "", "בתוך בסיס היחידה קיימים מתקני אימון רבים כגון לש''בייה, מטווחים, אתר הרס, מסלול בראור ועוד!", "matachim-card-1"]
     ]
 }
 
-var rescueImgCarousel = {
-    items: 5,
-    carouselIndicators: true,
-    visible: true,
-    arrows: true,
-    cardType: "img",
-    card1: ["assets/images/rescue-carousel1.jpg", "First slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card2: ["assets/images/rescue-carousel2.jpg", "Second slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card3: ["assets/images/rescue-carousel3.jpg", "Third slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card4: ["assets/images/rescue-carousel4.jpg", "Fourth slide", "card", ["d-block", "w-100"], "", "carousel-item"],
-    card5: ["assets/images/rescue-carousel5.jpg", "Fifth slide", "card", ["d-block", "w-100"], "", "carousel-item"]
-}
 
-// let menuOpen = false;
 let quesVisited = false;
 let currPage = 1;
 let furthestPageVisited = 1;
@@ -593,6 +516,8 @@ let complexBranchesVisited = [];
 let currDetails = "";
 let detailsVisited = [];
 let currPageEvLis = [];
+let finishButtonAdded = false;
+let currCarouselRelevant = "";
 let complexFinishButton = ["button", "next-btn-timeline", "next-btn-14", "סיימתי!", "timeline-text-container"];
 let enlisingBtn = ["button", "next-btn-timeline", "next-btn-2", "בואו נמשיך!", "timeline-text-container"];
 let nafaBtn = ["button", "next-btn-timeline", "next-btn-13", "הבנתי", "timeline-text-container"];
@@ -600,29 +525,10 @@ let rolesNextBtn = ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "
 let structureFinishBtn = ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"];
 
 window.addEventListener("load", (event) => {
-    createScreen(openScreenContent);
+    // createScreen(openScreenContent);
+    structureTreeLis();
     document.getElementById("menu-btn").addEventListener("click", showMenu);
-    document.querySelector(".body-part").addEventListener("click", () => {
-        document.querySelector(".nice-nav").classList.add("open");
-    });
-    // document.querySelector(".nice-nav").addEventListener("click", menuRedirection);
     document.getElementById("info-btn").addEventListener("click", showInfo);
-    
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-    
-    for (i = 0; i < dropdown.length; i++) {
-        console.log(dropdown[i]);
-        dropdown[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-            } else {
-            dropdownContent.style.display = "block";
-            }
-        });
-    }
     document.getElementById("ques-btn").addEventListener("click", showQues);
     document.addEventListener("click", (event) => {
         if (event.target.classList.contains("colored-text")) {
@@ -632,86 +538,24 @@ window.addEventListener("load", (event) => {
     });
 });
 
+// to do
 const menuRedirection = (event) => {
-    console.log(event.target.id);
-    if (event.target.id.includes("page")) {
-        let pageID = Number(event.target.id.replace("page", ""));
-        let pageObject = window[event.target.id];
-        document.getElementById("page").innerHTML = "";
-        document.getElementById("timeline-roll").style.opacity = 0;
-        currPage = pageID;
-        if (currPage === 1) {
-            createScreen(openScreenContent);
-        } else {
-            createScreen(pageObject);
-        }
-        document.querySelector(".nice-nav").classList.remove("open");
-        setTimeout(()=> {
-            $('.child-menu-ul').removeClass('active').slideUp('fast');
-        }, 250);
-        menuOpen = false;
-    } else if (event.target.id.includes("Details")) {
-        currPage = 29;
-
-    }
+    
 }
+
+// to do
 const showMenu = () => {
-    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    // document.querySelector(".nice-nav").classList.toggle("open");
-    // let mainMenu = document.querySelectorAll(".child-menu");
-    // for (let i = 0; i < mainMenu.length; i++) {
-    //     mainMenu[i].addEventListener("click", function() {
-    //         // this.classList.toggle("active");
-    //         var panel = this.nextElementSibling;
-    //         console.log(panel);
-    //         console.log(panel.style.maxHeight);
-    //         // console.log(null);
-    //         console.log(panel.scrollHeight + "px");
-    //         if (panel.style.maxHeight) {
-    //           panel.style.maxHeight = null;
-    //         } else {
-    //           panel.style.maxHeight = panel.scrollHeight + "px";
-    //         }
-    //     });
-    // }
-    // console.log("menu");
-    // if (!menuOpen) {
-    //     document.querySelector(".nice-nav").classList.add("open");
-    //     menuOpen = true;
-    //     $submenu = $('.child-menu-ul');
-    //     $('.child-menu .toggle-right').on('click', function(e) {
-    //         e.preventDefault();
-    //         $this = $(this);
-    //         $parent = $this.parent().next();
-    //         // $parent.addClass('active');
-    //         $tar = $('.child-menu-ul');
-    //         if (!$parent.hasClass('active')) {
-    //             console.log("open sub-menu");
-    //             $tar.removeClass('active').slideUp('fast');
-    //             $parent.addClass('active').slideDown('fast');
-    //         } else {
-    //             $parent.removeClass('active').slideUp('fast');
-    //             console.log("close sub-menu");
-    //         }
-    //     });
-    // } else {
-    //     document.querySelector(".nice-nav").classList.remove("open");
-    //     setTimeout(()=> {
-    //         $('.child-menu-ul').removeClass('active').slideUp('fast');
-    //     }, 250);
-    //     menuOpen = false;
-    // }
+    
 }
 
-//not finished
+// to do
 const hideMenu = () => {
     
 }
 
 const showInfo = () => {
-    console.log("info");
     let style = document.getElementById("info").style.display;
-    if (document.getElementById("ques-container").style.display === "none" && !document.querySelector(".nice-nav").classList.contains("open")) {
+    if (document.getElementById("ques-container").style.display === "none") {
         if (style === "none") {
             document.getElementById("info").style.display = "block";
         } else {
@@ -724,7 +568,6 @@ const showInfo = () => {
 }
 
 const showQues = () => {
-    console.log("ques");
     let currText = 'ques-text';
     let menuExpVisited = false;
     let infoExpVisited = false;
@@ -825,8 +668,9 @@ var timelineComplexPage = (event) => {
             complexBranchesVisited[complexBranchesVisited.length] = "emi-branch";
         }
     }
-    if (complexBranchesVisited.length === 3) {
+    if (!finishButtonAdded && complexBranchesVisited.length === 3) {
         // add finish button
+        finishButtonAdded = true;
         createTextElement(complexFinishButton);
         document.getElementById("next-btn-14").addEventListener("click", nextPage);
         currPageEvLis = ["id", "next-btn-14", "click", "nextPage"];
@@ -841,7 +685,6 @@ const createScreen = (currObject) => {
             continue;
         } else if (openContentKeys[i - 1].includes("evLis")) {
             let lisFunc = currObject[`evLis${i}`][2];
-            console.log(document.getElementById(currObject[`evLis${i}`][0]));
             document.getElementById(currObject[`evLis${i}`][0]).addEventListener(currObject[`evLis${i}`][1], window[lisFunc]);
             currPageEvLis = ["id", currObject[`evLis${i}`][0], currObject[`evLis${i}`][1], lisFunc];
             continue;
@@ -924,7 +767,7 @@ const createVideo = (vidList) => {
             createTextElement(nafaBtn);
             document.getElementById(nafaBtn[2]).addEventListener("click", nextPage);
             currPageEvLis = ["id", nafaBtn[2], "click", "nextPage"];
-        } else if (currPage === 21 || currPage === 24 || currPage === 25 || currPage === 27) {
+        } else if (currPage === 20 || currPage === 23 || currPage === 24 || currPage === 26) {
             document.getElementById("roles-next-arrow").addEventListener("click", nextPage);
             currPageEvLis = ["id", "roles-next-arrow", "click", "nextPage"];
         }
@@ -933,57 +776,59 @@ const createVideo = (vidList) => {
 
 const createCarousel = (carouselContent) => {
     // create container el for carousel
+    currCarouselRelevant = carouselContent.carouselName;
     let carouselExampleIndicators = document.createElement("div");
-    carouselExampleIndicators.setAttribute("id", "carouselExampleIndicators");
+    carouselExampleIndicators.setAttribute("id", carouselContent.carouselName);
     carouselExampleIndicators.classList.add("carousel", "slide");
-    carouselExampleIndicators.setAttribute("data-ride", "carousel");
+    if (carouselContent.cardType === "el") {
+        carouselExampleIndicators.classList.add("carousel-dark");
+    }
     if (carouselContent.visible) {
         carouselExampleIndicators.style.display = "block";
     } else {
         carouselExampleIndicators.style.display = "none";
     }
-    if (carouselContent.cardType === "el") {
-        carouselExampleIndicators.setAttribute("data-interval", "5000");
-        document.querySelector(".details-conteiner").appendChild(carouselExampleIndicators);
+    carouselExampleIndicators.setAttribute("data-bs-ride", "carousel");
+    if (carouselContent.cardType === "el" && carouselContent.closable) {
+        document.getElementById("details-conteiner").appendChild(carouselExampleIndicators);
     } else {
         document.getElementById("main-roles").appendChild(carouselExampleIndicators);
-        carouselExampleIndicators.setAttribute("data-interval", "3000");
     }
     // create carousel indicators accordingly
     if (carouselContent.carouselIndicators) {
         let carouselIndicatorsOL = document.createElement("ol");
-        carouselIndicatorsOL.setAttribute("id", "carousel-indicators");
+        carouselIndicatorsOL.setAttribute("id", `${carouselContent.carouselName}-carousel-indicators`);
         carouselIndicatorsOL.classList.add("carousel-indicators");
-        carouselExampleIndicators.appendChild(carouselIndicatorsOL);
+        document.getElementById(carouselContent.carouselName).appendChild(carouselIndicatorsOL);
         for (let i = 0; i < carouselContent.items; i++) {
             let newItem = document.createElement("li");
-            newItem.setAttribute("data-target", "#carouselExampleIndicators");
-            newItem.setAttribute("data-slide-to", `${i}`);
             if (i === 0) {
                 newItem.classList.add("active");
+                
             }
             carouselIndicatorsOL.appendChild(newItem);
         }
     }
     // create inner container
     let carouselInner = document.createElement("div");
-    carouselInner.setAttribute("id", "carousel-inner");
+    carouselInner.setAttribute("id", `${carouselContent.carouselName}-carousel-inner`);
     carouselInner.classList.add("carousel-inner");
-    carouselExampleIndicators.appendChild(carouselInner);
+    document.getElementById(carouselContent.carouselName).appendChild(carouselInner);
     // create X button according to card type
-    if (carouselContent.cardType === "el") {
+    if (carouselContent.closable) {
         let newIMG = document.createElement("img");
         newIMG.src = "assets/images/close-btn.svg";
         newIMG.alt = "X";
-        newIMG.setAttribute("id", "close-card-button");
+        newIMG.setAttribute("id", `${carouselContent.carouselName}-close-card-button`);
         newIMG.classList.add("close-card-button");
-        document.getElementById("carousel-inner").appendChild(newIMG);
+        document.getElementById(`${carouselContent.carouselName}-carousel-inner`).appendChild(newIMG);
         newIMG.addEventListener("click", closeCarouselCard);
     }
     // create cards according to card num
     for (let i = 0; i < carouselContent.items; i++) {
         let newItem = document.createElement("div");
-        newItem.setAttribute("id", `carousel-item-${i + 1}`);
+        newItem.setAttribute("id", `${carouselContent.carouselName}-carousel-item-${i + 1}`);
+        newItem.setAttribute("data-bs-interval", 5000);
         newItem.classList.add("carousel-item");
         if (i === 0) {
             newItem.classList.add("active");
@@ -991,10 +836,10 @@ const createCarousel = (carouselContent) => {
         carouselInner.appendChild(newItem);
         // create card content according to type
         if (carouselContent.cardType === "el") {
-        let cardItem = document.createElement("div");
-        cardItem.setAttribute("id", `card-${i + 1}`);
-        cardItem.classList.add("d-block", "w-100", "card");
-        newItem.appendChild(cardItem);
+            let cardItem = document.createElement("div");
+            cardItem.setAttribute("id", `${carouselContent.carouselName}-card-${i + 1}`);
+            cardItem.classList.add("d-block", "w-100", "card");
+            newItem.appendChild(cardItem);
             for (let j = 0; j < carouselContent[`card${i + 1}`].length; j++) {
                 createTextElement(carouselContent[`card${i + 1}`][j]);
             }
@@ -1008,11 +853,11 @@ const createCarousel = (carouselContent) => {
     // create arrows, change color accordingly
     if (carouselContent.arrows) {
         let carouselControlPrev = document.createElement("a");
-        carouselControlPrev.setAttribute("id", "carousel-control-prev");
+        carouselControlPrev.setAttribute("id", `${carouselContent.carouselName}-carousel-control-prev`);
         carouselControlPrev.classList.add("carousel-control-prev");
-        carouselControlPrev.href = "#carouselExampleIndicators";
+        carouselControlPrev.href = `#${carouselContent.carouselName}`;
         carouselControlPrev.setAttribute("role", "button");
-        carouselControlPrev.setAttribute("data-slide", "prev");
+        carouselControlPrev.setAttribute("data-bs-slide", "prev");
         carouselInner.appendChild(carouselControlPrev);
         let carouselControlPrevIcon = document.createElement("span");
         if (carouselContent.cardType === "el") {
@@ -1022,16 +867,12 @@ const createCarousel = (carouselContent) => {
         }
         carouselControlPrevIcon.setAttribute("aria-hidden", "true");
         carouselControlPrev.appendChild(carouselControlPrevIcon);
-        let srOnlyPrev = document.createElement("span");
-        srOnlyPrev.classList.add("sr-only");
-        srOnlyPrev.innerText = "Previous";
-        carouselControlPrev.appendChild(srOnlyPrev);
         let carouselControlNext = document.createElement("a");
-        carouselControlNext.setAttribute("id", "carousel-control-next");
+        carouselControlNext.setAttribute("id", `${carouselContent.carouselName}-carousel-control-next`);
         carouselControlNext.classList.add("carousel-control-next");
-        carouselControlNext.href = "#carouselExampleIndicators";
+        carouselControlNext.href = `#${carouselContent.carouselName}`;
         carouselControlNext.setAttribute("role", "button");
-        carouselControlNext.setAttribute("data-slide", "next");
+        carouselControlNext.setAttribute("data-bs-slide", "next");
         carouselInner.appendChild(carouselControlNext);
         let carouselControlNextIcon = document.createElement("span");
         if (carouselContent.cardType === "el") {
@@ -1041,19 +882,65 @@ const createCarousel = (carouselContent) => {
         }
         carouselControlNextIcon.setAttribute("aria-hidden", "true");
         carouselControlNext.appendChild(carouselControlNextIcon);
-        let srOnlyNext = document.createElement("span");
-        srOnlyNext.classList.add("sr-only");
-        srOnlyNext.innerText = "Next";
-        carouselControlNext.appendChild(srOnlyNext);
     }
 }
 
+// relevant only for the structure page, remember to reset when handling tructure page
 var openCarouselCard = () => {
-    document.getElementById("carouselExampleIndicators").style.display = "block";
+    document.getElementById(currCarouselRelevant).style.display = "block";
 }
 
 var closeCarouselCard = () => {
-    document.getElementById("carouselExampleIndicators").style.display = "none";
+    document.getElementById(currCarouselRelevant).style.display = "none";
+}
+
+var rolesCarousels = () => {
+    // 'slide.bs.carousel' event is when the slide of the carousel's item is activated, as in one of the arrows was clicked / automatic slide happened
+    // this fonction shows the carousels and checks if the user went through the entire carousels.
+    // only after that happens, the click on the page's arrow allows tomove to the next page
+    // if that is not the case, the click will trigger an error massage that will dissapear after a few seconds
+    let routineCar = document.getElementById("routineRoles");
+    let emergancyCar = document.getElementById("emergencyRoles");
+    let routineNum = [];
+    let emergencyNum = [];
+    routineCar.style.display = "block";
+    emergancyCar.style.display = "block";
+    routineCar.addEventListener('slide.bs.carousel', function () {
+        let currItemID = document.querySelector("#routineRoles-carousel-inner > .active").id;
+        if (!routineNum.includes(currItemID)) {
+            routineNum.push(currItemID);
+        }
+    });
+    emergancyCar.addEventListener('slide.bs.carousel', function () {
+        let currItemID = document.querySelector("#emergencyRoles-carousel-inner > .active").id;
+        if (!emergencyNum.includes(currItemID)) {
+            emergencyNum.push(currItemID);
+        }
+    });
+    document.getElementById("roles-next-arrow").addEventListener("click", () => {
+        if (routineNum.length === 8 && emergencyNum.length === 5) {
+            routineCar.style.display = "none";
+            emergancyCar.style.display = "none";
+            nextPage();
+        } else {
+            document.getElementById("rolesErrorText").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("rolesErrorText").style.display = "none";
+            }, 10000);
+        }
+    });
+}
+
+const removeRescueImageCarousel = () => {
+    document.getElementById("rescueCarousel").style.display = "none";
+    console.log("hidden");
+}
+
+var rescueImgCarousel = () => {
+    document.getElementById("rescueCarousel").style.display = "block";
+    console.log("visable");
+    document.getElementById("roles-next-arrow").addEventListener("click", removeRescueImageCarousel);
+    document.getElementById("roles-next-arrow").removeEventListener("click", removeRescueImageCarousel);
 }
 
 var openDetails = (event) => {
@@ -1143,7 +1030,6 @@ var nextPage = () => {
             }
         }
         if (currPage === 1) {
-            console.log("3 s long");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
                 document.getElementById("page").innerHTML = "";
@@ -1158,7 +1044,6 @@ var nextPage = () => {
             }, 500);
         } else if (currPage === 4) {
             // animation is 3 s long
-            console.log("3 s long");
             document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
             document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
@@ -1178,7 +1063,6 @@ var nextPage = () => {
             }, 500);
         } else if (currPage === 2) {
             // animation is 2 s long
-            console.log("2 s long");
             document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
             document.getElementById("page3text").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
@@ -1197,7 +1081,6 @@ var nextPage = () => {
             }, 500);
         } else if (currPage === 8 || currPage === 10) {
             // animation is 2.5 s long
-            console.log("2.5 s long");
             document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
@@ -1216,15 +1099,12 @@ var nextPage = () => {
             }, 500);
         } else if (5 <= currPage && currPage <= 7 || currPage === 9 || currPage === 11) {
             // animation is 3.5 s long
-            console.log("3.5 s long");
-            console.log(currPage <= 7);
             document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
                 document.getElementById("page").innerHTML = "";
                 currPage++;
                 let currObjContent = window[`page${currPage}`];
-                console.log(currObjContent);
                 createScreen(currObjContent);
                 setTimeout(function() {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
@@ -1236,7 +1116,6 @@ var nextPage = () => {
                 }, 3000);
             }, 500);
         } else if (currPage === 3 || currPage === 14 || currPage === 15) {
-            console.log("4.5 s long");
             // animation is 4.5 s long
             if (currPage === 3) {
                 document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
@@ -1252,11 +1131,14 @@ var nextPage = () => {
                 setTimeout(function() {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                    document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                    if (currPage !== 15) {
+                        document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                    }
                     currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                 }, 4500);
             }, 500);
-        } else if (currPage === 28) {
+        } else if (currPage === 27) {
+            document.getElementById("page").innerHTML = "";
             createScreen(page29);
             if (detailsVisited.length === 6) {
                 document.getElementById("explain-structure").remove();
@@ -1264,30 +1146,18 @@ var nextPage = () => {
                 document.getElementById("finished-structure").addEventListener("click", nextPage);
                 currPageEvLis = ["id", "finished-structure", "click", "nextPage"];
             }
-        } else if (currPage === 29) {
+        } else if (currPage === 22) {
             document.getElementById("page").innerHTML = "";
-            createScreen(endScreenContent);
-        } else if (currPage === 16 || currPage === 27) {
-            console.log("auto-next");
-            document.getElementById("page").innerHTML = "";
-                currPage++;
-                let currObjContent = window[`page${currPage}`];
-                createScreen(currObjContent);
-            setTimeout(function() {
-                document.getElementById("page").innerHTML = "";
-                currPage++;
-                let currObjContent = window[`page${currPage}`];
-                createScreen(currObjContent);
-            }, 2000);
+            document.getElementById("rescueCarousel").style.display = "none";
+            currPage++;
+            let currObjContent = window[`page${currPage}`];
+            createScreen(currObjContent);
         } else {
-            console.log("else");
             document.getElementById("page").innerHTML = "";
             currPage++;
             let currObjContent = window[`page${currPage}`];
             createScreen(currObjContent);
         }
-        console.log(currPage);
-    // }
 }
 
 var restert = () => {
