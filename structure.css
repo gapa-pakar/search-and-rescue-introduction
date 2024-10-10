@@ -17,85 +17,83 @@ html, body {
     height: calc(100vh - 7rem);
 }
 
-.carousel {
-    width: 15rem;
-    position: absolute;
-    left: 5rem;
-    top: 7rem;
-}
-
 .structure-tree-img {
     height: 20rem;
     position: absolute;
     left: 50%;
+    top: 4rem;
     transform: translateX(-50%);
 }
 
-.structure-sym {
-    height: 4rem;
-}
-
-.gdudim-container {
-    display: flex;
-    justify-content: center;
+.st-structure {
+    height: 9.5rem;
     position: absolute;
-    left: 50%;
+    left: 51.5%;
+    top: 8.3rem;
     transform: translateX(-50%);
-    top: 17rem;
+    display: none;
 }
 
-.units-container {
-    display: flex;
-    justify-content: space-around;
+.st-hativa, 
+.st-baf,
+.st-bah,
+.st-matachim,
+.st-school,
+.st-gdudim {
     position: absolute;
-    align-items: center;
-    width: calc(100vw - 5rem);
-    top: 6rem;
+    z-index: 2;
+    display: none;
 }
 
-.hativa-desc {
-    position: absolute;
-    left: 50%;
+.st-hativa:hover, 
+.st-baf:hover,
+.st-bah:hover,
+.st-matachim:hover,
+.st-school:hover,
+.st-gdudim:hover {
+    cursor: pointer;
+}
+
+.st-hativa {
+    top: 3rem;
+    width: 3rem;
+    left: 50.5%;
     transform: translateX(-50%);
-    top: 5rem;
 }
 
-.bah-desc {
-    position: absolute;
-    right: 2rem;
-    top: 6rem;
+.st-baf {
+    top: 11rem;
+    width: 5rem;
+    left: 58.3%;
+    transform: translateX(10px);
 }
 
-.baf-desc {
-    position: absolute;
-    right: 11.5rem;
-    top: 6rem;
+.st-bah {
+    top: 10.9rem;
+    width: 3.9rem;
+    left: 76.3%;
+    transform: translateX(-50%);
 }
 
-.matachim-desc {
-    position: absolute;
-    left: 17rem;
-    top: 6rem;
+.st-matachim {
+    top: 10.9rem;
+    width: 3.6rem;
+    left: 35.7%;
+    transform: translateX(10px);
 }
 
-.school-desc {
-    position: absolute;
-    left: 5rem;
-    top: 5.5rem;
+.st-school {
+    top: 11rem;
+    width: 7rem;
+    left: 19.1%;
+    transform: translateX(10px);
 }
 
-.gdudim-desc {
-    margin-right: 1rem;
-}
-
-.gdudim-desc,
-.school-desc,
-.matachim-desc,
-.baf-desc,
-.bah-desc,
-.hativa-desc {
-    font-size: 0.8rem;
-    display: block;
+.st-gdudim {
+    top: 18rem;
+    width: 19.3rem;
+    left: 50.5%;
+    transform: translateX(-50%);
 }
 
 .structure-details {
@@ -107,6 +105,7 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
     top: 4rem;
+    z-index: 5;
 }
 
 .close-details-btn {
@@ -127,7 +126,7 @@ html, body {
 .details-conteiner {
     position: absolute;
     text-align: right;
-    width: 30rem;
+    width: 33rem;
     right: 5rem;
     top: 4rem;
 }
@@ -176,8 +175,9 @@ html, body {
 .carousel {
     width: 25rem;
     position: absolute;
-    left: -5rem;
+    left: -2rem;
     top: 2.5rem;
+    z-index: 10;
 }
 
 #rescueCarousel {
@@ -224,7 +224,7 @@ html, body {
     padding: 0.2rem 0.5rem;
     transform: rotate(90deg);
     position: absolute;
-    left: -7.52rem;
+    left: -4.52rem;
     top: 5rem;
 }
 
@@ -238,14 +238,23 @@ html, body {
 }
 
 .next-left {
-    left: -2rem;
+    left: 0rem;
     bottom: -11rem;
 }
 
 .next-right {
-    left: 31rem;
+    left: 34rem;
     transform: rotate(180deg);
-    bottom: 0rem;
+    bottom: 3rem;
+}
+
+.next-left, .next-right {
+    height: 1.5rem;
+    position: absolute;
+}
+
+.next-left:hover, .next-right:hover {
+    cursor: pointer;
 }
 
 #baf-details .details-img {
@@ -275,10 +284,177 @@ html, body {
     font-size: 0.8rem;
 }
 
-#Layer_2 {
+.structure-details-gdud-shahar,
+.structure-details-gdud-tavor,
+.structure-details-gdud-kedem,
+.structure-details-gdud-ram {
+    width: 7rem;
     position: absolute;
-    top: 2rem;
-    width: 37rem;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 4rem;
+}
+
+.structure-details-gdud-shahar {
+    left: 16.3rem;
+    opacity: 1;
+}
+
+.structure-details-gdud-tavor {
+    left: 27rem;
+    opacity: 0;
+}
+
+.structure-details-gdud-kedem {
+    left: 27rem;
+    opacity: 0;
+}
+
+.structure-details-gdud-ram {
+    left: 27rem;
+    opacity: 0;
+}
+
+.structure-details-gdud-shahar-exp,
+.structure-details-gdud-tavor-exp,
+.structure-details-gdud-kedem-exp,
+.structure-details-gdud-ram-exp {
+    position: absolute;
+    width: 18rem;
+}
+
+.structure-details-gdud-shahar-exp {
+    top: 2.8rem;
+    left: 10.9rem;
+    opacity: 0;
+}
+
+.structure-details-gdud-tavor-exp {
+    left: 10rem;
+    opacity: 0;
+}
+
+.structure-details-gdud-kedem-exp {
+    left: 9.5rem;
+    top: 0.8rem;
+    opacity: 0;
+}
+
+.structure-details-gdud-ram-exp {
+    left: 10rem;
+    opacity: 0;
+}
+
+#continue-gdudim-exp-next{
+    position: absolute;
+    top: 13rem;
+    width: 3rem;
+    left: 5rem;
+}
+
+#continue-gdudim-exp-next:hover {
+    cursor: pointer;
+}
+/* 
+#continue-gdudim-exp-prev {
+    transform: rotate(180deg);
+    right: 1rem;
+} */
+
+@keyframes showExp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.show-exp {
+    opacity: 0;
+    animation: showExp 1s ease 0s 1 forwards;
+}
+
+@keyframes hideExp {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hide-exp {
+    opacity: 1;
+    animation: hideExp 1s ease 0s 1 forwards;
+}
+
+/* hide and move from center to left */
+@keyframes hideGdudLeft {
+    0% {
+        opacity: 1;
+        left: 16.3rem;
+    }
+    100% {
+        opacity: 0;
+        left: 4rem;
+    }
+}
+
+.hide-gdud-left {
+    opacity: 1;
+    left: 16.3rem;
+    animation: hideGdud 1.5s ease 0s 1 forwards;
+}
+
+/* hide and move from center to right */
+@keyframes hideGdudRight {
+    0% {
+        opacity: 1;
+        left: 16.3rem;
+    }
+    100% {
+        opacity: 0;
+        left: 27rem;
+    }
+}
+
+.hide-gdud-right {
+    opacity: 1;
+    left: 16.3rem;
+    animation: hideGdudRight 1.5s ease 0s 1 forwards;
+}
+
+/* show and move from left to center */
+@keyframes showGdudRight {
+    0% {
+        opacity: 0;
+        left: 4rem;
+    }
+    100% {
+        opacity: 1;
+        left: 16.3rem;
+    }
+}
+
+.show-gdud-right {
+    opacity: 0;
+    left: 4rem;
+    animation: showGdudRight 1.5s ease 0s 1 forwards;
+}
+
+/* show and move from right to center */
+@keyframes showGdudLeft {
+    0% {
+        opacity: 0;
+        left: 27rem;
+    }
+    100% {
+        opacity: 1;
+        left: 16.3rem;
+    }
+}
+
+.show-gdud-left {
+    opacity: 0;
+    left: 27rem;
+    animation: showGdudLeft 1.5s ease 0s 1 forwards;
 }

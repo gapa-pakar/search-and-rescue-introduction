@@ -95,6 +95,7 @@ html, body {
     right: 2rem;
     top: 7rem;
     width: 20rem;
+    user-select: auto;
 }
 
 .emergency-roles {
@@ -102,6 +103,7 @@ html, body {
     left: 2rem;
     top: 7rem;
     width: 20rem;
+    user-select: auto;
 }
 
 #rolesErrorText {
@@ -141,7 +143,7 @@ html, body {
     padding-right: 0.5rem;
 }
 
-.infographic-text {
+/* .infographic-text {
     position: absolute;
     margin-right: 2rem;
     width: 15rem;
@@ -154,7 +156,7 @@ html, body {
     flex-wrap: wrap;
     flex-direction: column;
     height: 20rem;
-}
+} */
 
 .polaroid {
     width: 26.3rem;

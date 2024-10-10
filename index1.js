@@ -44,13 +44,13 @@ var endScreenContent = {
     el4: ["div", "","re-do-button", "", "page"],
     img5: ["assets/images/re-do.svg", "חזור", "", "re-do-img", "", "re-do-button"],
     el6: ["div", "", "", "חזרה על הלומדה", "re-do-button"],
-    evLis7: ["re-do-button", "click", "restert"]
+    evLis7: ["re-do-button", "click", "restart"]
 }
 
 var page2 = {
     el1: ["div", "open-text", "page3text", "", "page"],
     el2: ["div", "", "", "חטיבת החילוץ וההדרכה הינה החטיבה הסדירה היחידה בפיקוד העורף אשר בנוי ברובו מאנשי מילואים.\nעל מנת להבין לעומק את ייחודיות החטיבה, נעמיק בדרך שהחטיבה עברה מאז ועד היום- מ'פלח''ץ' לחטיבת החילוץ וההדרכה.", "page3text"],
-    el3: ["button", "next-btn-timeline", "next-btn-3", "בואו נתחיל!", "page3text"]
+    el3: ["button", "next-btn-timeline", "next-btn-2", "בואו נתחיל!", "page3text"]
 }
 
 var page3 = {
@@ -121,7 +121,7 @@ var page11 = {
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד רם", "timeline-text-container"],
     el3: ["div", "", "", "2012- גדוד נ''מ (נגד מטוסים) של חיל האוויר ''סטינגר'' הוסב לפיקוד העורף. \nהוחלט כי הגדוד יעבור לפיקוד העורף לאחר סגירת הגדוד בחיל האוויר בשל חוסר צורך מבצעי ביחידה.\nרוב עיסוקו של הגדוד בשנותיו האחרונות בחיל האוויר היה תע''מ ביבשה. \nהשם שנבחר לגדוד החדש בפיקוד העורף הוא גדוד 'רם' אשר בתוכו שלוש פלוגות: 'רמון', 'מצדה', 'ארבל'- שמות הפלוגות ששונו ממושגים של חיל האוויר למושגים של פיקוד העורף. ", "timeline-text-container"],
     img4: ["assets/images/gdud-ram.svg", "גדוד רם", "", "timeline-symbol-img", "", "timeline-text-container"],
-    el5: ["button", "next-btn-timeline", "next-btn-11", "הבנתי!", "timeline-text-container"]
+    // func5: ["handleFlipCards"]
 }
 
 var page12 = {
@@ -183,7 +183,7 @@ var page16 = {
 var page17 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"], 
     el2: ["div", "con-sen", "", "עכשיו, לאחר שלמדנו על הדרך שעברה החטיבה עד היום, נעבור ל:", "main-roles"],
-    el3: ["div", "sub-title", "", "ייעוד ותפקידי חטיבת החילוץ וההדרכה", "main-roles"],
+    el3: ["div", "sub-title", "sub-title-roles", "ייעוד ותפקידי חטיבת החילוץ וההדרכה", "main-roles"],
     el4: ["button", "next-btn-timeline", "next-btn-17", "קדימה!", "main-roles"],
     evLis5: ["next-btn-17", "click", "nextPage"]
 }
@@ -230,7 +230,7 @@ var page21 = {
     el9: ["div", "roles-text", "", "כל זאת על מנת להציל חיים ולאפשר את המשך תפקוד המשק תחת הגבלות הקורונה.", "main-roles"],
     img10: ["assets/images/polaroid.svg", "רקע", "", "polaroid", "", "main-roles"],
     img11: ["assets/images/tape.svg", "עיצוב", "", "tape", "", "main-roles"],
-    img12: ["assets/images/corona-img.JPG", "תמונת קורונה", "", "roles-img", "", "main-roles"],
+    img12: ["assets/images/corona-img.JPG", "תמונת קורונה", "corona-img", "roles-img", "", "main-roles"],
     img13: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
     evLis14: ["roles-next-arrow", "click", "nextPage"]
 }
@@ -295,11 +295,8 @@ var page27 = {
 var page28 = {
     el1: ["div", "structure-text-page", "structure", "", "page"],
     el2: ["div", "", "structure-tree", "", "structure"],
-    img3: ["assets/images/structure-tree.svg", "עץ מבנה חטיבה", "structure-tree-img", "structure-tree-img", "", "structure-tree"],
-    el4: ["div", "explain-structure", "explain-structure", "עברו על כל היחידות כדי לסיים את הלומדה", "structure"],
-    // el32: ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"],
-    evLis5: ["structure-tree-img", "click", "openDetails"],
-    // evLis34: ["finished-structure", "click", "finishScreen"]
+    func3: ["handleStructureTree"],
+    el4: ["div", "explain-structure", "explain-structure", "עברו על כל היחידות כדי לסיים את הלומדה", "structure"]
 }
 
 const hativaDetails = {
@@ -375,7 +372,7 @@ const schoolDetailsA = {
     el8: ["div", "closed-card", "closed-card-school", "", "details-part-1"],
     el9: ["span", "closed-card-title", "", "הידעת?", "closed-card-school"],
     img10: ["assets/images/arrow.svg", "open", "", "closed-card-arrow", "", "closed-card-school"],
-    img11: ["assets/images/arrow.svg", "next", "school-next-arrow", ["next-arrow", "next-left"], "", "details-part-1"],
+    img11: ["assets/images/arrow.svg", "next", "school-next-arrow", "next-left", "", "details-part-1"],
     car12: ["schoolCarousel"],
     evLis13: ["closed-card-school", "click", "openCarouselCard"],
     evLis14: ["close-btn-structure", "click", "closeDetails"],
@@ -406,7 +403,7 @@ const schoolDetailsB = {
     el21: ["div", "closed-card", "closed-card-school", "", "details-part-2"],
     el22: ["span", "closed-card-title", "", "הידעת?", "closed-card-school"],
     img23: ["assets/images/arrow.svg", "open", "", "closed-card-arrow", "", "closed-card-school"],
-    img24: ["assets/images/arrow.svg", "next", "school-next-arrow", ["next-arrow", "next-right"], "", "details-part-2"],
+    img24: ["assets/images/arrow.svg", "next", "school-next-arrow", "next-right", "", "details-part-2"],
     car25: ["schoolCarousel"],
     evLis26: ["closed-card-school", "click", "openCarouselCard"],
     evLis27: ["close-btn-structure", "click", "closeDetails"],
@@ -429,6 +426,23 @@ const matachimDetails = {
     evLis13: ["close-btn-structure", "click", "closeDetails"]
 }
 
+const gdudimDetails = {
+    el1: ["div", "structure-details", "gdudim-details", "", "page"],
+    img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "gdudim-details"],
+    el3: ["div", ["title", "details-title"], "", "גדודים", "gdudim-details"],
+    el4: ["div", "details-conteiner", "details-conteiner", "", "gdudim-details"],
+    img5: ["assets/images/gdud-shahar.svg", "", "", "structure-details-gdud-shahar", "", "details-conteiner"],
+    img6: ["assets/images/gdud-tavor.svg", "", "", "structure-details-gdud-tavor", "", "details-conteiner"],
+    img7: ["assets/images/gdud-kedem.svg", "", "", "structure-details-gdud-kedem", "", "details-conteiner"],
+    img8: ["assets/images/gdud-ram.svg", "", "", "structure-details-gdud-ram", "", "details-conteiner"],
+    img9: ["assets/images/shahar-explaination.svg", "", "", "structure-details-gdud-shahar-exp", "", "details-conteiner"],
+    img10: ["assets/images/tavor-explaination.svg", "", "", "structure-details-gdud-tavor-exp", "", "details-conteiner"],
+    img11: ["assets/images/kedem-explaination.svg", "", "", "structure-details-gdud-kedem-exp", "", "details-conteiner"],
+    img12: ["assets/images/ram-explaination.svg", "", "", "structure-details-gdud-ram-exp", "", "details-conteiner"],
+    img13: ["assets/images/arrow.svg", "<<", "continue-gdudim-exp-next", "", "", "details-conteiner"],
+    el14: ["div", "error", "structure-gdudim-error", "עליך לעבור על כל הסמלים כדי לסיים", "details-conteiner"],
+}
+
 var bahCarousel = {
     items: 3,
     carouselIndicators: false,
@@ -438,16 +452,16 @@ var bahCarousel = {
     carouselName: "bah",
     cardType: "el",
     card1: [
-        ["strong", "card-title", "", "הידעת?", "card-1"],
-        ["div", "card-text", "", "בבאח העורף מדור גיוס ייעודי לתפקידי החטיבה ומדור זה מוביל את תהליך הגיוס ממלש''ב ועד לחייל, מדור זה מנהל את הרשתות החברתיות של החטיבה ומייצג את החטיבה באירועי הגיוס של צה''ל.", "card-1"]
+        ["strong", "card-title", "", "הידעת?", "bah-card-1"],
+        ["div", "card-text", "", "בבאח העורף מדור גיוס ייעודי לתפקידי החטיבה ומדור זה מוביל את תהליך הגיוס ממלש''ב ועד לחייל, מדור זה מנהל את הרשתות החברתיות של החטיבה ומייצג את החטיבה באירועי הגיוס של צה''ל.", "bah-card-1"]
     ],
     card2: [
-        ["strong", "card-title", "", "הידעת?", "card-2"],
-        ["div", "card-text", "", "בא''ח העורף בחירום הינו גדוד הצלה וחילוץ חמישי בחטיבת החילוץ ומשמש כעתודה חטיבתית למשימות חילוץ קל וסיוע אזרחי. מפקדת הבא''ח הינה מפקדת הגדוד ופלוגות האימון המתקדם בשיתוף קורס מכ''ים והשלמה לקצונה חנית משמשות כפלוגות חילוץ.", "card-2"]
+        ["strong", "card-title", "", "הידעת?", "bah-card-2"],
+        ["div", "card-text", "", "בא''ח העורף בחירום הינו גדוד הצלה וחילוץ חמישי בחטיבת החילוץ ומשמש כעתודה חטיבתית למשימות חילוץ קל וסיוע אזרחי. מפקדת הבא''ח הינה מפקדת הגדוד ופלוגות האימון המתקדם בשיתוף קורס מכ''ים והשלמה לקצונה חנית משמשות כפלוגות חילוץ.", "bah-card-2"]
     ],
     card3: [
-        ["strong", "card-title", "", "הידעת?", "card-3"],
-        ["div", "card-text", "", "להכשרת הלוחם בבא''ח 3 מחזורי גיוס, הלוחמים משתבצים ב4 פלוגות הכשרה (שחר, קדם, תבור, רם) ועולים לגדודים המבצעיים, כל פלוגה לגדוד האורגני שלה.", "card-3"]
+        ["strong", "card-title", "", "הידעת?", "bah-card-3"],
+        ["div", "card-text", "", "להכשרת הלוחם בבא''ח 3 מחזורי גיוס, הלוחמים משתבצים ב4 פלוגות הכשרה (שחר, קדם, תבור, רם) ועולים לגדודים המבצעיים, כל פלוגה לגדוד האורגני שלה.", "bah-card-3"]
     ]
 }
 
@@ -506,6 +520,12 @@ var matachimCarousel = {
 }
 
 
+let hativaStructure;
+let bafStructure;
+let bahStructure;
+let matachimStructure;
+let schoolStructure;
+let gdudimStructure;
 let quesVisited = false;
 let currPage = 1;
 let furthestPageVisited = 1;
@@ -518,15 +538,24 @@ let detailsVisited = [];
 let currPageEvLis = [];
 let finishButtonAdded = false;
 let currCarouselRelevant = "";
+let structureExplainTextRemoved = false;
 let complexFinishButton = ["button", "next-btn-timeline", "next-btn-14", "סיימתי!", "timeline-text-container"];
-let enlisingBtn = ["button", "next-btn-timeline", "next-btn-2", "בואו נמשיך!", "timeline-text-container"];
+let enlisingBtn = ["button", "next-btn-timeline", "next-btn-3", "בואו נמשיך!", "timeline-text-container"];
 let nafaBtn = ["button", "next-btn-timeline", "next-btn-13", "הבנתי", "timeline-text-container"];
 let rolesNextBtn = ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"];
 let structureFinishBtn = ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"];
+let gdudimNextClicks = 0;
+let gdudimNextEnabled = true;
+// let gdudimPrevClicks = 0;
 
 window.addEventListener("load", (event) => {
-    // createScreen(openScreenContent);
-    structureTreeLis();
+    hativaStructure = document.getElementById("st-hativa");
+    bafStructure = document.getElementById("st-baf");
+    bahStructure = document.getElementById("st-bah");
+    matachimStructure = document.getElementById("st-matachim");
+    schoolStructure = document.getElementById("st-school");
+    gdudimStructure = document.getElementById("st-gdudim");
+    createScreen(openScreenContent);
     document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.getElementById("info-btn").addEventListener("click", showInfo);
     document.getElementById("ques-btn").addEventListener("click", showQues);
@@ -537,6 +566,212 @@ window.addEventListener("load", (event) => {
         
     });
 });
+
+
+var handleFlipCards = () => {
+    document.getElementById("flip-card-component").style.display = "block";
+    const cards = document.querySelectorAll('.flip-card');
+    const flippedStatus = {}; 
+    let totalFlipped = 0;
+    cards.forEach((card, index) => {
+        flippedStatus[`card${index + 1}`] = false;
+        card.addEventListener('click', () => {
+            const cardInner = card.querySelector('.flip-card-inner');
+            cardInner.classList.toggle('flipped');
+            if (!flippedStatus[`card${index + 1}`]) {
+                flippedStatus[`card${index + 1}`] = true;
+                totalFlipped++;
+            }
+            if (totalFlipped === cards.length) {
+                document.getElementById('instruction').style.display = 'none'; 
+                document.getElementById('next-btn-11').style.display = 'block'; 
+                document.getElementById('next-btn-11').addEventListener("click", nextPage);
+            }
+        });
+    });
+}
+
+var handleStructureTree = () => {
+    document.getElementById("st-structure").style.display = "block";
+    hativaStructure.style.display = "block";
+    bafStructure.style.display = "block";
+    bahStructure.style.display = "block";
+    matachimStructure.style.display = "block";
+    schoolStructure.style.display = "block";
+    gdudimStructure.style.display = "block";
+    hativaStructure.addEventListener("click", openHativaDetails);
+    bafStructure.addEventListener("click", openBafDetails);
+    bahStructure.addEventListener("click", openBahDetails);
+    matachimStructure.addEventListener("click", openMatachimDetails);
+    schoolStructure.addEventListener("click", openSchoolDetails);
+    gdudimStructure.addEventListener("click", openGdudimDetails);
+}
+
+const openHativaDetails = () => {
+    createScreen(hativaDetails);
+    currDetails = "hativa";
+    if (!detailsVisited.includes("hativa")) {
+        detailsVisited.push("hativa");
+    }
+}
+
+const openBafDetails = () => {
+    createScreen(bafDetails);
+    currDetails = "baf";
+    if (!detailsVisited.includes("baf")) {
+        detailsVisited.push("baf");
+    }
+}
+
+const openBahDetails = () => {
+    createScreen(bahDetails);
+    currDetails = "bah";
+    if (!detailsVisited.includes("bah")) {
+        detailsVisited.push("bah");
+    }
+}
+
+const openMatachimDetails = () => {
+    createScreen(matachimDetails);
+    currDetails = "matachim";
+    if (!detailsVisited.includes("matachim")) {
+        detailsVisited.push("matachim");
+    }
+}
+
+const openSchoolDetails = () => {
+    createScreen(schoolDetailsA);
+    currSchoolDetailsShown = "a";
+    currDetails = "school-a";
+    if (!detailsVisited.includes("school-a")) {
+        detailsVisited.push("school-a");
+    }
+}
+
+const openGdudimDetails = () => {
+    createScreen(gdudimDetails);
+    currDetails = "gdudim";
+    if (!detailsVisited.includes("gdudim")) {
+        detailsVisited.push("gdudim");
+    }
+    document.getElementById("close-btn-structure").addEventListener("click", checkGdudimFinish);
+    document.getElementById("continue-gdudim-exp-next").addEventListener("click", gdudimDetailsNext);
+}
+
+var changeSchoolDetailsPart = () => {
+    if (currSchoolDetailsShown === "a") {
+        closeDetails();
+        createScreen(schoolDetailsB);
+        currSchoolDetailsShown = "b";
+        currDetails = "school-b";
+        if (!detailsVisited.includes("school-b")) {
+            detailsVisited.push("school-b");
+        }
+    } else if (currSchoolDetailsShown === "b") {
+        closeDetails();
+        createScreen(schoolDetailsA);
+        currSchoolDetailsShown = "a";
+        currDetails = "school-a";
+        if (!detailsVisited.includes("school-a")) {
+            detailsVisited.push("school-a");
+        }
+    }
+}
+
+const checkGdudimFinish = () => {
+    console.log(gdudimNextClicks >= 4);
+    if (gdudimNextClicks >= 4) {
+        console.log(gdudimNextClicks);
+        closeDetails();
+    } else {
+        document.getElementById("structure-gdudim-error").style.display = "block";
+        setTimeout(() => {
+            document.getElementById("structure-gdudim-error").style.display = "none";
+        }, 10000);
+    }
+}
+
+// animation from right to left
+const gdudimDetailsNext = () => {
+    let gdudShahar = document.querySelector(".structure-details-gdud-shahar");
+    let gdudTavor = document.querySelector(".structure-details-gdud-tavor");
+    let gdudKedem = document.querySelector(".structure-details-gdud-kedem");
+    let gdudRam = document.querySelector(".structure-details-gdud-ram");
+    let shaharExp = document.querySelector(".structure-details-gdud-shahar-exp");
+    let tavorExp = document.querySelector(".structure-details-gdud-tavor-exp");
+    let kedemExp = document.querySelector(".structure-details-gdud-kedem-exp");
+    let ramExp = document.querySelector(".structure-details-gdud-ram-exp");
+    if (gdudimNextEnabled) {
+        if (gdudimNextClicks % 4 === 1) {
+            gdudimExpAnim(gdudShahar, shaharExp, gdudTavor, tavorExp);
+        } else if (gdudimNextClicks % 4 === 2) {
+            gdudimExpAnim(gdudTavor, tavorExp, gdudKedem, kedemExp);
+        } else if (gdudimNextClicks % 4 === 3) {
+            gdudimExpAnim(gdudKedem, kedemExp, gdudRam, ramExp);
+        } else if (gdudimNextClicks % 4 === 0) {
+            gdudimExpAnim(gdudRam, ramExp, gdudShahar, shaharExp);
+        }
+    }
+    
+}
+
+const gdudimExpAnim = (currGdud, currExp, nextGdud, nextExp) => {
+    gdudimNextEnabled = false;
+    if (gdudimNextClicks === 0) {
+        nextExp.classList.add("show-exp");
+        gdudimNextEnabled = true;
+        gdudimNextClicks++;
+    } else {
+        currExp.classList.replace("show-exp", "hide-exp");
+        setTimeout(() => {
+            if (gdudimNextClicks === 1) {
+                currGdud.classList.add("hide-gdud-right");
+            } else {
+                currGdud.classList.replace("show-gdud-right", "hide-gdud-right");
+            }
+            nextGdud.classList.add("show-gdud-right");
+            setTimeout(() => {
+                if (gdudimNextClicks === 1) {
+                    currGdud.style.opacity = 0;
+                }
+                currGdud.classList.remove("hide-gdud-right");
+                if (gdudimNextClicks >= 4) {
+                    nextExp.classList.replace("hide-exp", "show-exp");
+                } else {
+                    nextExp.classList.add("show-exp");
+                }
+                setTimeout(() => {
+                    gdudimNextEnabled = true;
+                    gdudimNextClicks++;
+                }, 1000);
+            }, 1500);
+        }, 1000);
+    }
+}
+
+// animation from left to right
+// const gdudimDetailsPrev = () => {
+    
+    // }
+    
+    var closeDetails = () => {
+    console.log(detailsVisited);
+    if (currDetails !== "hativa" && currDetails !== "gdudim") {
+        document.querySelector(".close-card-button").removeEventListener("click", closeCarouselCard);
+    }
+    currDetails = "";
+    document.getElementById("close-btn-structure").removeEventListener("click", closeDetails);
+    document.querySelector(".structure-details").remove();
+    if (detailsVisited.length === 7) {
+        if (!structureExplainTextRemoved) {
+            // document.getElementById("explain-structure").replaceWith();
+            createTextElement(structureFinishBtn);
+            console.log(document.getElementById("finished-structure"));
+            document.getElementById("finished-structure").addEventListener("click", goToEnd);
+            currPageEvLis = ["id", "finished-structure", "click", "nextPage"];
+        }
+    }
+}
 
 // to do
 const menuRedirection = (event) => {
@@ -605,7 +840,7 @@ const showQues = () => {
                     } else if (quesVisited) {
                         document.getElementById("ques-container").style.display = "none";
                         document.getElementById("page").style.opacity = "1";
-                        }
+                    }
                     } else if (event.target.id !== "close-btn-ques") {
                         if (document.getElementById("menu-error") !== null ) {
                             document.getElementById("menu-error").style.display = "none";
@@ -704,10 +939,6 @@ const createScreen = (currObject) => {
     }
 }
 
-const changeText = () => {
-    // need to do
-}
-
 const createTextElement = (list) => {
     // values in list are organized as: tag name, class value, id value, text value, parent element id - all saved as string. if there is no value, it will be ""
     let newElement = document.createElement(list[0]);
@@ -741,6 +972,8 @@ const createImgElement = (list) => {
         }
     }
     newIMG.setAttribute("title", list[4]);
+    console.log(document.getElementById(list[5]));
+    console.log(list[5]);
     document.getElementById(list[5]).appendChild(newIMG);
 }
 
@@ -790,7 +1023,7 @@ const createCarousel = (carouselContent) => {
     }
     carouselExampleIndicators.setAttribute("data-bs-ride", "carousel");
     if (carouselContent.cardType === "el" && carouselContent.closable) {
-        document.getElementById("details-conteiner").appendChild(carouselExampleIndicators);
+        document.querySelector(".details-conteiner").appendChild(carouselExampleIndicators);
     } else {
         document.getElementById("main-roles").appendChild(carouselExampleIndicators);
     }
@@ -933,113 +1166,154 @@ var rolesCarousels = () => {
 
 const removeRescueImageCarousel = () => {
     document.getElementById("rescueCarousel").style.display = "none";
-    console.log("hidden");
 }
 
 var rescueImgCarousel = () => {
     document.getElementById("rescueCarousel").style.display = "block";
-    console.log("visable");
+    // ??????
     document.getElementById("roles-next-arrow").addEventListener("click", removeRescueImageCarousel);
     document.getElementById("roles-next-arrow").removeEventListener("click", removeRescueImageCarousel);
 }
 
-var openDetails = (event) => {
-    if (event.target.id.includes("hativa")) {
-        createScreen(hativaDetails);
-        currDetails = "hativa";
-        if (!detailsVisited.includes("hativa")) {
-            detailsVisited.push("hativa");
-        }
-    } else if (event.target.id.includes("bah")) {
-        createScreen(bahDetails);
-        currDetails = "bah";
-        if (!detailsVisited.includes("bah")) {
-            detailsVisited.push("bah");
-        }
-    } else if (event.target.id.includes("baf")) {
-        createScreen(bafDetails);
-        currDetails = "baf";
-        if (!detailsVisited.includes("baf")) {
-            detailsVisited.push("baf");
-        }
-    } else if (event.target.id.includes("matachim")) {
-        createScreen(matachimDetails);
-        currDetails = "matachim";
-        if (!detailsVisited.includes("matachim")) {
-            detailsVisited.push("matachim");
-        }
-    } else if (event.target.id.includes("school")) {
-        createScreen(schoolDetailsA);
-        currSchoolDetailsShown = "a";
-        currDetails = "school-a";
-        if (!detailsVisited.includes("school-a")) {
-            detailsVisited.push("school-a");
-        }
-    }
-}
+const timelimeNextPage = () => {
+    // normal case- first anim section, then settimeout to basicNextPage, then settimeout to show anim of the page contents, then settimeout to third section to remove classes and add evlis
+    // special cases- 
+    // page1- timeline anim then settimeout to basicNextPage then settimeout to page anim (specified)
+    // page2- only first section
+    // page3- one different line, then first section, then settimeout to 2nd section, then third section is show anim of the page contents and timelineLastAnimSection together
+    // page4- only first line special
+    // page5- normal case
+    // page6- normal case
+    // page7- normal case
+    // page8- normal case
+    // page9- normal case
+    // page10- normal case, show flip cards at the end
+    // page11- normal case, hide flip cards first
+    // page12- no anim
+    // page13-no anim 
+    // page14- first anim, settimeout to basicNextPage, then settimeout to show anim of the page contents and timelineLastAnimSection together
+    // page15- normal case
+    // page16- no anim
 
-var changeSchoolDetailsPart = () => {
-    if (currSchoolDetailsShown === "a") {
-        closeDetails();
-        createScreen(schoolDetailsB);
-        currSchoolDetailsShown = "b";
-        currDetails = "school-b";
-        if (!detailsVisited.includes("school-b")) {
-            detailsVisited.push("school-b");
-        }
-    } else if (currSchoolDetailsShown === "b") {
-        closeDetails();
-        createScreen(schoolDetailsA);
-        currSchoolDetailsShown = "a";
-        currDetails = "school-a";
-        if (!detailsVisited.includes("school-a")) {
-            detailsVisited.push("school-a");
-        }
-    }
-}
-
-var closeDetails = () => {
-    if (currDetails !== "hativa") {
-        document.getElementById("close-card-button").removeEventListener("click", closeCarouselCard);
-    }
-    currDetails = "";
-    document.getElementById("close-btn-structure").removeEventListener("click", closeDetails);
-    document.querySelector(".structure-details").remove();
-    if (detailsVisited.length === 5) {
-        document.getElementById("explain-structure").remove();
-        createTextElement(structureFinishBtn);
-        document.getElementById("finished-structure").addEventListener("click", nextPage);
-        currPageEvLis = ["id", "finished-structure", "click", "nextPage"];
-    }
-}
-
+    // anim length-
+    // page1- 3.5s
+    // page2- 2s
+    // page3- 4.5s
+    // page4- 3s
+    // page5- 3.5s
+    // page6- 3.5s
+    // page7- 3.5s
+    // page8- 2.5s
+    // page9- 3.5s
+    // page10- 2.5s
+    // page11- 3.5s
+    // page12- none
+    // page13- none
+    // page14- 4.5s
+    // page15- 4.5s
+    // page16- none
+    let firstAmin;
+    let secondAnim;
+    let thirdAnim;
     
+    if (currPage === 1) {
+        document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+        setTimeout(function() {
+            basicNextPage();
+            setTimeout(function() {
+                document.getElementById("page3text").classList.add("show-anim");
+                document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
+            }, 3000);
+        }, 500);
+    } else if (currPage === 2) {
+        document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+        document.getElementById("page3text").classList.add("hide-anim");
+        document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+        setTimeout(function() {
+            basicNextPage();
+            setTimeout(function() {
+                document.getElementById("timeline-text-container").classList.add("show-anim");
+                setTimeout(function() {
+                    document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+                }, 500);
+            }, 2000);
+        }, 500);
+    } else if (currPage === 3) {
+        document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+        timelineFirstAnimSection();
+        setTimeout(() => {
+            basicNextPage();
+            setTimeout(() => {
+                document.getElementById("timeline-text-container").classList.add("show-anim");
+                document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+            }, 4500);
+        }, 500);
+    }
+    
+    
+    if (currPage === 4) {
+        firstAmin = 500;
+        secondAnim = 3000;
+        thirdAnim = 500;
+    }
+
+    // normal case anim
+    timelineFirstAnimSection();
+    setTimeout(() => {
+        basicNextPage();
+        setTimeout(() => {
+            document.getElementById("timeline-text-container").classList.add("show-anim");
+            setTimeout(timelineLastAnimSection, thirdAnim);
+        }, secondAnim);
+    }, firstAmin);
+}
+
+const basicNextPage = () => {
+    document.getElementById("page").innerHTML = "";
+    currPage++;
+    let currObjContent = window[`page${currPage}`];
+    createScreen(currObjContent);
+}
+
+const timelineFirstAnimSection = () => {
+    document.getElementById("timeline-text-container").classList.add("hide-anim");
+    document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
+}
+
+const timelineLastAnimSection = () => {
+    document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
+    // event listener by id
+    document.getElementById(`next-btn-${currPage}`).addEventListener("click", nextPage);
+    // currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
+}
+
 var nextPage = () => {
+    console.log(`curr page num: ${currPage}`);
     // if (currPage === 1 && !quesVisited) {
     //     showQues();
     // } else {
         //remove current next button event listener
-        if (currPageEvLis.length !== 0 && currPage !== 29) {
-            let eventFunction = currPageEvLis[3];
-            if (currPageEvLis[0] === "id") {
-                document.getElementById(currPageEvLis[1]).removeEventListener(currPageEvLis[2], window[eventFunction]);
-                currPageEvLis = [];
-            } else {
-                document.querySelector(currPageEvLis[1]).removeEventListener(currPageEvLis[2], window[eventFunction]);
-                currPageEvLis = [];
-            }
-        }
+        // if (currPageEvLis.length !== 0 && currPage !== 29) {
+        //     let eventFunction = currPageEvLis[3];
+        //     if (currPageEvLis[0] === "id") {
+        //         document.getElementById(currPageEvLis[1]).removeEventListener(currPageEvLis[2], window[eventFunction]);
+        //         currPageEvLis = [];
+        //     } else {
+        //         document.querySelector(currPageEvLis[1]).removeEventListener(currPageEvLis[2], window[eventFunction]);
+        //         currPageEvLis = [];
+        //     }
+        // }
         if (currPage === 1) {
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
-                document.getElementById("page").innerHTML = "";
-                currPage++;
-                let currObjContent = window[`page${currPage}`];
-                createScreen(currObjContent);
+                basicNextPage();
                 setTimeout(function() {
+                    console.log(currPage);
                     document.getElementById("page3text").classList.add("show-anim");
-                    document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
-                    currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
+                    document.getElementById("next-btn-2").addEventListener("click", nextPage);
+                    // document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                    // currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                 }, 3000);
             }, 500);
         } else if (currPage === 4) {
@@ -1048,16 +1322,15 @@ var nextPage = () => {
             document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
-                document.getElementById("page").innerHTML = "";
-                currPage++;
-                let currObjContent = window[`page${currPage}`];
-                createScreen(currObjContent);
+                basicNextPage();
                 setTimeout(function() {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     setTimeout(function() {
+                        console.log(currPage);
+                        console.log(`next-btn-${currPage}`);
                         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                        document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
-                        currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
+                        document.getElementById(`next-btn-${currPage}`).addEventListener("click", nextPage);
+                        // currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                     }, 500);
                 }, 3000);
             }, 500);
@@ -1067,13 +1340,11 @@ var nextPage = () => {
             document.getElementById("page3text").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
-                document.getElementById("page").innerHTML = "";
-                currPage++;
-                let currObjContent = window[`page${currPage}`];
-                createScreen(currObjContent);
+                basicNextPage();
                 setTimeout(function() {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     setTimeout(function() {
+                        console.log(currPage);
                         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
                         // document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
                     }, 500);
@@ -1084,34 +1355,38 @@ var nextPage = () => {
             document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
-                document.getElementById("page").innerHTML = "";
-                currPage++;
-                let currObjContent = window[`page${currPage}`];
-                createScreen(currObjContent);
+                basicNextPage();
                 setTimeout(function() {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     setTimeout(function() {
+                        console.log(currPage);
                         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                        document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
-                        currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
+                        document.getElementById(`next-btn-${currPage}`).addEventListener("click", nextPage);
+                        if (currPage === 11) {
+                            handleFlipCards();
+                        }
+                        // currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                     }, 500);
                 }, 2000);
             }, 500);
         } else if (5 <= currPage && currPage <= 7 || currPage === 9 || currPage === 11) {
             // animation is 3.5 s long
+            if (currPage === 11) {
+                document.getElementById('next-btn-11').removeEventListener("click", nextPage);
+                document.getElementById("flip-card-component").style.display = "none";
+            }
             document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
-                document.getElementById("page").innerHTML = "";
-                currPage++;
-                let currObjContent = window[`page${currPage}`];
-                createScreen(currObjContent);
+                basicNextPage();
                 setTimeout(function() {
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     setTimeout(function() {
+                        console.log(currPage);
+                        console.log(`next-btn-${currPage}`);
                         document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
-                        document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
-                        currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
+                        document.getElementById(`next-btn-${currPage}`).addEventListener("click", nextPage);
+                        // currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                     }, 500);
                 }, 3000);
             }, 500);
@@ -1124,43 +1399,29 @@ var nextPage = () => {
             document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
             setTimeout(function() {
-                document.getElementById("page").innerHTML = "";
-                currPage++;
-                let currObjContent = window[`page${currPage}`];
-                createScreen(currObjContent);
+                basicNextPage();
                 setTimeout(function() {
+                    console.log(currPage);
                     document.getElementById("timeline-text-container").classList.add("show-anim");
                     document.getElementById("timeline-roll").classList.remove(`tl-page-${currPage - 1}`);
                     if (currPage !== 15) {
-                        document.querySelector(".next-btn-timeline").addEventListener("click", nextPage);
+                        document.getElementById(`next-btn-${currPage}`).addEventListener("click", nextPage);
                     }
-                    currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
+                    // currPageEvLis = ["class", ".next-btn-timeline", "click", "nextPage"];
                 }, 4500);
             }, 500);
-        } else if (currPage === 27) {
+        } else if (currPage === 28) {
             document.getElementById("page").innerHTML = "";
-            createScreen(page29);
-            if (detailsVisited.length === 6) {
-                document.getElementById("explain-structure").remove();
-                createTextElement(structureFinishBtn);
-                document.getElementById("finished-structure").addEventListener("click", nextPage);
-                currPageEvLis = ["id", "finished-structure", "click", "nextPage"];
-            }
+            createScreen(endScreenContent);
         } else if (currPage === 22) {
-            document.getElementById("page").innerHTML = "";
+            basicNextPage();
             document.getElementById("rescueCarousel").style.display = "none";
-            currPage++;
-            let currObjContent = window[`page${currPage}`];
-            createScreen(currObjContent);
         } else {
-            document.getElementById("page").innerHTML = "";
-            currPage++;
-            let currObjContent = window[`page${currPage}`];
-            createScreen(currObjContent);
+            basicNextPage();
         }
-}
+    }
 
-var restert = () => {
+var restart = () => {
     document.getElementById("page").innerHTML = "";
     currPage = 1;
     currExpShown = "";
@@ -1177,7 +1438,7 @@ var finishScreen = () => {
         document.getElementById("page").innerHTML = "";
         createScreen(endScreenContent);
     } else {
-
+        
     }
 }
 
@@ -1185,3 +1446,24 @@ document.addEventListener("click", function next() {
     this.removeEventListener("click", next)
     document.querySelector(".class")
 })
+
+const goToEnd = (event) => {
+    event.stopPropagation();
+    console.log("finished");
+    document.getElementById("st-structure").style.display = "none";
+    hativaStructure.style.display = "none";
+    bafStructure.style.display = "none";
+    bahStructure.style.display = "none";
+    matachimStructure.style.display = "none";
+    schoolStructure.style.display = "none";
+    gdudimStructure.style.display = "none";
+    hativaStructure.removeEventListener("click", openHativaDetails);
+    bafStructure.removeEventListener("click", openBafDetails);
+    bahStructure.removeEventListener("click", openBahDetails);
+    matachimStructure.removeEventListener("click", openMatachimDetails);
+    schoolStructure.removeEventListener("click", openSchoolDetails);
+    gdudimStructure.removeEventListener("click", openGdudimDetails);
+    document.getElementById("page").innerHTML = "";
+    createScreen(endScreenContent);
+
+}

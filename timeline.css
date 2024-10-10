@@ -26,7 +26,7 @@ html, body {
     text-align: right;
 }
 
-#next-btn-3 {
+#next-btn-2 {
     bottom: -4rem;
 }
 
@@ -35,10 +35,15 @@ html, body {
     bottom: 2rem;
 }
 
-#next-btn-2,
+#next-btn-3,
 #next-btn-7,
 #next-btn-13 {
     bottom: 1rem;
+}
+
+#next-btn-11 {
+    bottom: 9rem;
+    display: none;
 }
 
 .enlistingvid {
