@@ -39,12 +39,13 @@ const openScreenContent = {
 
 var endScreenContent = {
     el1: ["div", "main-title", "open-title", "", "page"],
-    el2: ["div", "", "", "תעודת זהות-", "open-title"],
-    el3: ["div", "", "", "חטיבת החילוץ וההדרכה", "open-title"],
-    el4: ["div", "","re-do-button", "", "page"],
-    img5: ["assets/images/re-do.svg", "חזור", "", "re-do-img", "", "re-do-button"],
-    el6: ["div", "", "", "חזרה על הלומדה", "re-do-button"],
-    evLis7: ["re-do-button", "click", "restart"]
+    el2: ["div", "con-sen", "", "כל הכבוד! סיימת את לומדת:", "page"],
+    el3: ["div", "", "", "תעודת זהות-", "open-title"],
+    el4: ["div", "", "", "חטיבת החילוץ וההדרכה", "open-title"],
+    el5: ["div", "","re-do-button", "", "page"],
+    img6: ["assets/images/re-do.svg", "חזור", "", "re-do-img", "", "re-do-button"],
+    el7: ["div", "", "", "חזרה על הלומדה", "re-do-button"],
+    evLis8: ["re-do-button", "click", "restart"]
 }
 
 var page2 = {
@@ -68,14 +69,14 @@ var page4 = {
 var page5 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2003- הקמת פלוגת החילוץ הראשונה- פלוגת 'שביט'", "timeline-text-container"],
-    el3: ["div", "", "", "ממלחמת לבנון הראשונה ועד לאחר מלחמת המפרץ הורכבו פלוגות החילוץ וההצלה מאנשי מילואים בעלי ידע אזרחי הקשור בבינוי.\nבמלחמת המפרץ הבינו שיש צורך בגוף סדיר שיהיה כונן לאירועי חילוץ בעורף, והתקבלה ההחלטה להקים פלוגת חילוץ סדירה ראשונה, פלוגת 'שביט'.", "timeline-text-container"],
+    el3: ["div", "", "", "ממלחמת לבנון הראשונה ועד לאחר מלחמת המפרץ הורכבו פלוגות החילוץ וההצלה מאנשי מילואים בעלי ידע אזרחי הקשור בבינוי.\nלאחר מלחמת המפרץ הבינו שיש צורך בגוף סדיר שיהיה כונן לאירועי חילוץ בעורף, והתקבלה ההחלטה להקים פלוגת חילוץ סדירה ראשונה, פלוגת 'שביט'.", "timeline-text-container"],
     el4: ["button", "next-btn-timeline", "next-btn-5", "בואו נמשיך!", "timeline-text-container"]
 }
 
 var page6 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2004- הקמת פלוגת 'חץ' ופלוגת 'רותם'", "timeline-text-container"],
-    el3: ["div", "", "", "2004- הקמת שתי פלוגות חילוץ נוספות- פלוגת 'חץ' ופלוגת 'רותם'.\nמשימת הבט''ש של הפלוגות האלו הייתה אבטחת בתי כלא בכלא 'עופר' ובכלא 'מגידו' בעוד שמשימתם האופרטיבית הייתה חילוץ והצלה.", "timeline-text-container"],
+    el3: ["div", "", "", "בשנת 2004 הוקמו שתי פלוגות חילוץ נוספות- פלוגת 'חץ' ופלוגת 'רותם'.\nמשימת הבט''ש של הפלוגות האלו הייתה אבטחת בתי כלא בכלא 'עופר' ובכלא 'מגידו' בעוד שמשימתם האופרטיבית הייתה חילוץ והצלה.", "timeline-text-container"],
     el4: ["div", "bold-txt", "", "המושג 'פלח''ץ' מתייחס לתקופה שבה היו קיימות רק פלוגות חילוץ ללא שייכות לגדוד ולחטיבה.", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-6", "המשך", "timeline-text-container"]
 }
@@ -95,7 +96,7 @@ var page7 = {
 var page8 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2009- הקמת גדוד קדם", "timeline-text-container"],
-    el3: ["div", "", "", "2009- הוחלט להרחיב את מערך החילוץ הסדיר ולהקים גדוד נוסף בשם גדוד 'קדם' ולו 3 פלוגות\n'קרן', 'דוד' ו'מגן'.", "timeline-text-container"],
+    el3: ["div", "", "", "בשנת 2009 הוחלט להרחיב את מערך החילוץ הסדיר ולהקים גדוד נוסף בשם גדוד 'קדם' ולו 3 פלוגות\n'קרן', 'דוד' ו'מגן'.", "timeline-text-container"],
     img4: ["assets/images/gdud-kedem.svg", "גדוד קדם", "", "timeline-symbol-img", "", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-8", "אני רוצה להמשיך!", "timeline-text-container"]
 }
@@ -111,7 +112,7 @@ var page9 = {
 var page10 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד תבור", "timeline-text-container"],
-    el3: ["div", "", "", "2012- הקמת גדוד 'תבור' אשר בתוכו שלוש פלוגות:\n'תבל', 'ברק', 'ראם'.\nבשנת 2020 הוקמה בתוך הגדוד פלוגה נוספת בשם 'ונוס'.", "timeline-text-container"],
+    el3: ["div", "", "", "בשנת 2012 הוקם גדוד 'תבור' אשר בתוכו שלוש פלוגות:\n'תבל', 'ברק', 'ראם'.\nבשנת 2020 הוקמה בתוך הגדוד פלוגה נוספת בשם 'ונוס'.", "timeline-text-container"],
     img4: ["assets/images/gdud-tavor.svg", "גדוד תבור", "", "timeline-symbol-img", "", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-10", "בואו נמשיך!", "timeline-text-container"]
 }
@@ -119,7 +120,7 @@ var page10 = {
 var page11 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2012- הקמת גדוד רם", "timeline-text-container"],
-    el3: ["div", "", "", "2012- גדוד נ''מ (נגד מטוסים) של חיל האוויר ''סטינגר'' הוסב לפיקוד העורף. \nהוחלט כי הגדוד יעבור לפיקוד העורף לאחר סגירת הגדוד בחיל האוויר בשל חוסר צורך מבצעי ביחידה.\nרוב עיסוקו של הגדוד בשנותיו האחרונות בחיל האוויר היה תע''מ ביבשה. \nהשם שנבחר לגדוד החדש בפיקוד העורף הוא גדוד 'רם' אשר בתוכו שלוש פלוגות: 'רמון', 'מצדה', 'ארבל'- שמות הפלוגות ששונו ממושגים של חיל האוויר למושגים של פיקוד העורף. ", "timeline-text-container"],
+    el3: ["div", "", "", "בשנת 2012 גדוד נ''מ (נגד מטוסים) של חיל האוויר ''סטינגר'' הוסב לפיקוד העורף. \nהוחלט כי הגדוד יעבור לפיקוד העורף לאחר סגירת הגדוד בחיל האוויר בשל חוסר צורך מבצעי ביחידה.\nרוב עיסוקו של הגדוד בשנותיו האחרונות בחיל האוויר היה תע''מ ביבשה. \nהשם שנבחר לגדוד החדש בפיקוד העורף הוא גדוד 'רם' אשר בתוכו שלוש פלוגות: 'רמון', 'מצדה', 'ארבל'- שמות הפלוגות ששונו ממושגים של חיל האוויר למושגים של פיקוד העורף. ", "timeline-text-container"],
     img4: ["assets/images/gdud-ram.svg", "גדוד רם", "", "timeline-symbol-img", "", "timeline-text-container"],
     // func5: ["handleFlipCards"]
 }
@@ -128,7 +129,7 @@ var page12 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2013- הקמת הנפה הסדירה", "timeline-text-container"],
     el3: ["div", "", "complex-text11", "", "timeline-text-container"],
-    el4: ["span", "", "", "2013- ארבעת הגדודים הסדירים היו כפופים למחוז ירושלים והמרכז עד שבשנת 2013 הוחלט להקים ", "complex-text11"],
+    el4: ["span", "", "", "ארבעת הגדודים הסדירים היו כפופים למחוז ירושלים והמרכז עד שבשנת 2013 הוחלט להקים ", "complex-text11"],
     el5: ["span", "colored-text", "def3", "נפה סדירה", "complex-text11"],
     el6: ["span", "", "", " בפיקוד העורף אשר אליה יהיו כפופים הגדודים הסדירים של הפיקוד.", "complex-text11"],
     el7: ["div", "", "", "ההחלטה התקבלה בעקבות המורכבות של המחוז לתת קשב גם לגדודי המילואים וגם לגדודים הסדירים.\nבנוסף לארבעת הגדודים הוכפפו לנפה בא''ח העורף וענף מפקדים (עליהם נפרט בהמשך).", "timeline-text-container"],
@@ -165,14 +166,15 @@ var page15 = {
     img11: ["assets/images/emi-branch.png", "ענף אימון יחידות", "emi-branch-img", "branch-img", "", "emi-branch"],
     el12: ["div", "branch-text", "emi-branch-text", "ענף אימון יחידות", "emi-branch"],
     el13: ["div", "", "branch-explaination", "עברו על כל היחידות כדי להמשיך בלומדה", "timeline-text-container"],
-    evLis14: ["branches", "click", "timelineComplexPage"]
+    func14: ["timelineComplexPage"]
+    // evLis14: ["branches", "click", "timelineComplexPage"]
 }
 
 var page16 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2016- איחוד בה''ד 16 והנפה הסדירה", "timeline-text-container"],
     el3: ["div", "", "complex-text15", "", "timeline-text-container"],
-    el4: ["span", "", "", "2016- איחוד בה''ד 16 עם הנפה הסדירה והקמת ", "complex-text15"],
+    el4: ["span", "", "", "בשנת 2016 אוחד בה''ד 16 עם הנפה הסדירה והוקמה ", "complex-text15"],
     el5: ["strong", "", "", "חטיבת החילוץ וההדרכה.", "complex-text15"],
     el6: ["div", "", "pin-container", "", "timeline-text-container"],
     img6: ["assets/images/new-fighter.svg", "סיכת לוחם חדשה", "", ["timeline-symbol-img", "fighter-pin"], "", "pin-container"],
@@ -546,6 +548,14 @@ let rolesNextBtn = ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "
 let structureFinishBtn = ["button", "next-btn-timeline", "finished-structure", "סיימתי!", "structure"];
 let gdudimNextClicks = 0;
 let gdudimNextEnabled = true;
+let totalFlipped = 0; 
+let flippedStatus = {card1: false, card2: false, card3: false}; 
+let page3VidFinished = false;
+let page13VidFinished = false;
+let page20VidFinished = false;
+let page23VidFinished = false;
+let page24VidFinished = false;
+let page26VidFinished = false;
 // let gdudimPrevClicks = 0;
 
 window.addEventListener("load", (event) => {
@@ -571,10 +581,7 @@ window.addEventListener("load", (event) => {
 var handleFlipCards = () => {
     document.getElementById("flip-card-component").style.display = "block";
     const cards = document.querySelectorAll('.flip-card');
-    const flippedStatus = {}; 
-    let totalFlipped = 0;
     cards.forEach((card, index) => {
-        flippedStatus[`card${index + 1}`] = false;
         card.addEventListener('click', () => {
             const cardInner = card.querySelector('.flip-card-inner');
             cardInner.classList.toggle('flipped');
@@ -589,6 +596,7 @@ var handleFlipCards = () => {
             }
         });
     });
+    console.log(flippedStatus);
 }
 
 var handleStructureTree = () => {
@@ -886,30 +894,45 @@ const closeDefinition = () => {
     currExpShown = "";
 }
 
-var timelineComplexPage = (event) => {
-    if (event.target.id.startsWith("profession-branch")) {
-        document.getElementById("branch-explaination").innerText = "הכשרות למדריכים וחיילים למקצועות השונים בעורף, הכשרת אב''כ לכלל צה''ל, והכשרת אזרחים לתפקידם בחירום.";
-        if (!complexBranchesVisited.includes("profession-branch")) {
-            complexBranchesVisited[complexBranchesVisited.length] = "profession-branch";
+var timelineComplexPage = () => {
+    document.getElementById("branches").addEventListener("click", (event) => {
+        if (event.target.id.startsWith("profession-branch")) {
+            document.getElementById("branch-explaination").innerText = "הכשרות למדריכים וחיילים למקצועות השונים בעורף, הכשרת אב''כ לכלל צה''ל, והכשרת אזרחים לתפקידם בחירום.";
+            if (!complexBranchesVisited.includes("profession-branch")) {
+                complexBranchesVisited.push("profession-branch");
+            }
+            if (complexBranchesVisited.length === 3) {
+                createComplaxTimelineBtn();
+            }
+        } else if (event.target.id.startsWith("command-branch")) {
+            document.getElementById("branch-explaination").innerText = "אחראי על אימון מפקדות הפיקוד ברמה המחוזית והנפתית.";
+            if (!complexBranchesVisited.includes("command-branch")) {
+            complexBranchesVisited.push("command-branch");
+            }
+            if (complexBranchesVisited.length === 3) {
+                createComplaxTimelineBtn();
+            }
+        } else if (event.target.id.startsWith("emi-branch")) {
+            document.getElementById("branch-explaination").innerText = "אחראי על אימון המסגרות הגדודיות- גדודי המילואים והסדיר לשמירת הכשירות במקצועות החילוץ והאב''כ.";
+            if (!complexBranchesVisited.includes("emi-branch")) {
+            complexBranchesVisited.push("emi-branch");
+            }
+            if (complexBranchesVisited.length === 3) {
+                createComplaxTimelineBtn();
+            }
         }
-    } else if (event.target.id.startsWith("command-branch")) {
-        document.getElementById("branch-explaination").innerText = "אחראי על אימון מפקדות הפיקוד ברמה המחוזית והנפתית.";
-        if (!complexBranchesVisited.includes("command-branch")) {
-            complexBranchesVisited[complexBranchesVisited.length] = "command-branch";
-        }
-    } else if (event.target.id.startsWith("emi-branch")) {
-        document.getElementById("branch-explaination").innerText = "אחראי על אימון המסגרות הגדודיות- גדודי המילואים והסדיר לשמירת הכשירות במקצועות החילוץ והאב''כ.";
-        if (!complexBranchesVisited.includes("emi-branch")) {
-            complexBranchesVisited[complexBranchesVisited.length] = "emi-branch";
-        }
+    });
+    console.log(complexBranchesVisited.length);
+    if (complexBranchesVisited.length === 3) {
+        createComplaxTimelineBtn();
     }
-    if (!finishButtonAdded && complexBranchesVisited.length === 3) {
-        // add finish button
-        finishButtonAdded = true;
-        createTextElement(complexFinishButton);
-        document.getElementById("next-btn-14").addEventListener("click", nextPage);
-        currPageEvLis = ["id", "next-btn-14", "click", "nextPage"];
-    }
+}
+
+const createComplaxTimelineBtn = () => {
+    finishButtonAdded = true;
+    createTextElement(complexFinishButton);
+    document.getElementById("next-btn-14").addEventListener("click", nextPage);
+    currPageEvLis = ["id", "next-btn-14", "click", "nextPage"];
 }
 
 const createScreen = (currObject) => {
@@ -977,6 +1000,7 @@ const createImgElement = (list) => {
     document.getElementById(list[5]).appendChild(newIMG);
 }
 
+
 const createVideo = (vidList) => {
     let newVideo = document.createElement("video");
     newVideo.width = vidList[0];
@@ -990,21 +1014,29 @@ const createVideo = (vidList) => {
     sourceTag.src = vidList[5];
     sourceTag.setAttribute("type", "video/mp4");
     newVideo.appendChild(sourceTag);
-    newVideo.onended = function() {
-        // alert("enden");
-        if (currPage === 3) {
-            createTextElement(enlisingBtn);
-            document.getElementById(enlisingBtn[2]).addEventListener("click", nextPage);
-            currPageEvLis = ["id", enlisingBtn[2], "click", "nextPage"];
-        } else if (currPage === 13) {
-            createTextElement(nafaBtn);
-            document.getElementById(nafaBtn[2]).addEventListener("click", nextPage);
-            currPageEvLis = ["id", nafaBtn[2], "click", "nextPage"];
-        } else if (currPage === 20 || currPage === 23 || currPage === 24 || currPage === 26) {
-            document.getElementById("roles-next-arrow").addEventListener("click", nextPage);
-            currPageEvLis = ["id", "roles-next-arrow", "click", "nextPage"];
-        }
+    newVideo.onended = () => {
+        window[`page${currPage}VidFinished`] = true;
+        createVidBnt();
+    };
+    if (window[`page${currPage}VidFinished`]) {
+        createVidBnt();
     }
+}
+
+const createVidBnt = () => {
+    if (currPage === 3) {
+        createTextElement(enlisingBtn);
+        document.getElementById(enlisingBtn[2]).addEventListener("click", nextPage);
+        currPageEvLis = ["id", enlisingBtn[2], "click", "nextPage"];
+    } else if (currPage === 13) {
+        createTextElement(nafaBtn);
+        document.getElementById(nafaBtn[2]).addEventListener("click", nextPage);
+        currPageEvLis = ["id", nafaBtn[2], "click", "nextPage"];
+    } else if (currPage === 20 || currPage === 23 || currPage === 24 || currPage === 26) {
+        document.getElementById("roles-next-arrow").addEventListener("click", nextPage);
+        currPageEvLis = ["id", "roles-next-arrow", "click", "nextPage"];
+    }
+
 }
 
 const createCarousel = (carouselContent) => {
@@ -1151,7 +1183,7 @@ var rolesCarousels = () => {
         }
     });
     document.getElementById("roles-next-arrow").addEventListener("click", () => {
-        if (routineNum.length === 8 && emergencyNum.length === 5) {
+        if (routineNum.length >= 7 && emergencyNum.length >= 4) {
             routineCar.style.display = "none";
             emergancyCar.style.display = "none";
             nextPage();
@@ -1374,6 +1406,14 @@ var nextPage = () => {
             if (currPage === 11) {
                 document.getElementById('next-btn-11').removeEventListener("click", nextPage);
                 document.getElementById("flip-card-component").style.display = "none";
+                let innerCards = document.querySelectorAll(".flip-card-inner");
+                console.log(innerCards);
+                innerCards.forEach((innerCard, index) => {
+                    console.log(innerCard);
+                    if (innerCard.classList.contains("flipped")) {
+                        innerCard.classList.toggle('flipped');
+                    }
+                });
             }
             document.getElementById("timeline-text-container").classList.add("hide-anim");
             document.getElementById("timeline-roll").classList.add(`tl-page-${currPage}`);
