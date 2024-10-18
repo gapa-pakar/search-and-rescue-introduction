@@ -21,6 +21,7 @@ If some value is none, it will be left as “”.
 
 For “img” type key, the createImgElement function is called. 
 It creates an image element using the data in the array, ordered as: src, alternative text, id, class (or classes), title, parent element id. 
+
 For the “car” type key, the value calls for the createCarousel. 
 It is used specifically for the details page, as the rest of the carousels that appear in the web app exist in the DOM from the start. 
 
@@ -33,5 +34,5 @@ The nextPage function is also an important part of the web app, and is used to s
 It relies heavily on the createScreen function.
 The function removes all elements from the page element using inner html and adds the next page’s elements using createScreen. 
 For the first chapter of the web app, there are complex animations added in the transition between pages, using setTimeOut. 
-This function is also linked to the menu button, whom function is to move between the pages freely, as long as the page was visited before. For that purpose there is a progress variable that is updated in the nextPage function. 
+This function is also linked to the menu button, whom function is to move between the pages freely, as long as the page was visited before. For that purpose there is a progress variable- "furthestPageVisited"- that is updated in the nextPage function. 
 It is also important to note that this variable is not changed when the web app is restarted. 
