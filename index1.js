@@ -62,8 +62,11 @@ var page3 = {
 var page4 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "1992- הקמת פיקוד העורף", "timeline-text-container"],
-    el3: ["div", "", "", "פיקוד העורף הוקם בשנת 1992 לאחר מלחמת המפרץ הראשונה בה האיום על העורף העלה את הצורך בהתגוננות אזרחית סדורה. \nבן גוריון אמר בשנת 1948: ''ביום מן הימים, מה שקרוי העורף יכריע לא פחות מהחזית. לא נוכל לעמוד במלחמה באמצעים צבאיים בלבד''. \nבמקרה כזה, ישחרר פיקוד העורף את אלופי הפיקודים האחרים (צפון, מרכז, דרום) מדאגה לעורף, ויאפשר להם להתרכז בצרכים המבצעיים בחזית.", "timeline-text-container"],
-    el4: ["button", "next-btn-timeline", "next-btn-4", "הבנתי!", "timeline-text-container"]
+    el3: ["div", "quote", "quote-text", "", "timeline-text-container"],
+    el4: ["strong", "", "", "''ביום מן הימים, מה שקרוי העורף יכריע לא פחות מהחזית. לא נוכל לעמוד במלחמה באמצעים צבאיים בלבד''", "quote-text"],
+    el5: ["span", "quote-end", "", "(דוד בן גוריון, 1948)", "quote-text"],
+    el6: ["div", "", "", "פיקוד העורף הוקם בשנת 1992 לאחר מלחמת המפרץ הראשונה בה האיום על העורף העלה את הצורך בהתגוננות אזרחית סדורה. \nבמקרה כזה, ישחרר פיקוד העורף את אלופי הפיקודים האחרים (צפון, מרכז, דרום) מדאגה לעורף, ויאפשר להם להתרכז בצרכים המבצעיים בחזית.", "timeline-text-container"],
+    el7: ["button", "next-btn-timeline", "next-btn-4", "הבנתי!", "timeline-text-container"]
 }
 
 var page5 = {
@@ -84,7 +87,7 @@ var page6 = {
 var page7 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2008- איחוד פלוגות החילוץ והקמת גדוד שחר", "timeline-text-container"],
-    el3: ["div", "", "", "כאמור, בשלב זה ישנן 3 פלוגות חילוץ סדירות. \nלאחר מלחמת לבנון השנייה הוחלט לחבר את הפלוגות לכדי גדוד בעל מפקדה אשר תבנה ותפעיל את הכוח. \nאיחוד הפלוגות תחת מפקדה אחת אפשר יצירת סטנדרט אחיד ושפה משותפת.\nבשנת 2008, אוחדו שלושת פלוגות החילוץ והוקם הגדוד הראשון בחטיבה- גדוד 'שחר'.\nהגדוד החל להתקדם גם בהיבטים המבצעיים, החל מתחילת תעסוקות מבצעיות ביהודה ושומרון ועד כניסה לעזה כצוותי פריצה וצוותי חילוץ בעת הצורך.", "timeline-text-container"],
+    el3: ["div", "", "", "כאמור, בשלב זה ישנן 3 פלוגות חילוץ סדירות. \nלאחר מלחמת לבנון השנייה הוחלט לחבר את הפלוגות לכדי גדוד בעל מפקדה אשר תבנה ותפעיל את הכוח. \nאיחוד הפלוגות תחת מפקדה אחת אפשר יצירת סטנדרט אחיד ושפה משותפת.\nבשנת 2008, אוחדו שלוש פלוגות החילוץ והוקם הגדוד הראשון בחטיבה- גדוד 'שחר'.\nהגדוד החל להתקדם גם בהיבטים המבצעיים, החל מתחילת תעסוקות מבצעיות ביהודה ושומרון ועד כניסה לעזה כצוותי פריצה וצוותי חילוץ בעת הצורך.", "timeline-text-container"],
     el4: ["div", "", "complex-text7", "", "timeline-text-container"],
     el5: ["span", "", "", "בתחילת דרכו גדוד 'שחר' היה כפוף ", "complex-text7"],
     el6: ["span", "colored-text", "def2", "למחוז", "complex-text7"],
@@ -96,15 +99,15 @@ var page7 = {
 var page8 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
     el2: ["div", "title", "timeline-title", "2009- הקמת גדוד קדם", "timeline-text-container"],
-    el3: ["div", "", "", "בשנת 2009 הוחלט להרחיב את מערך החילוץ הסדיר ולהקים גדוד נוסף בשם גדוד 'קדם' ולו 3 פלוגות\n'קרן', 'דוד' ו'מגן'.", "timeline-text-container"],
+    el3: ["div", "", "", "בשנת 2009 הוחלט להרחיב את מערך החילוץ הסדיר ולהקים גדוד נוסף בשם גדוד 'קדם' ולו 3 פלוגות: 'קרן', 'דוד' ו'מגן'.", "timeline-text-container"],
     img4: ["assets/images/gdud-kedem.svg", "גדוד קדם", "", "timeline-symbol-img", "", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-8", "אני רוצה להמשיך!", "timeline-text-container"]
 }
 
 var page9 = {
     el1: ["div", "timeline-text-page", "timeline-text-container", "", "page"], 
-    el2: ["div", "title", "timeline-title", "2011- המעבר ממגל לפקע''ר", "timeline-text-container"],
-    el3: ["div", "", "", "בשנת 2011 פיקוד העורף קיבל את האחריות על מחנה זיקים שעד אז, היה בכפיפות מג''ל.\nכלל המתגייסים ללוחמה בפיקוד העורף בין השנים 2009-2011 עברו הכשרה אשר הייתה מחולקת לשני חלקים: סגל מגל העביר למתגייסים החדשים את פרק הטירונות, ואת נושאי העורף העבירו מפקדים מפיקוד העורף. \nהידעת? במחזור הראשון שהתגייס ללוחמה בפיקוד העורף היו 80 חיילים בפלוגה. לצורך השוואה- במחזור הגיוס מרץ 2024, היו כ140 חיילים בפלוגה! ", "timeline-text-container"],
+    el2: ["div", "title", "timeline-title", "2011- המעבר ממג''ל לפקע''ר", "timeline-text-container"],
+    el3: ["div", "", "", "בשנת 2011 פיקוד העורף קיבל את האחריות על מחנה זיקים שעד אז, היה בכפיפות מג''ל.\nכלל המתגייסים ללוחמה בפיקוד העורף בין השנים 2009-2011 עברו הכשרה אשר הייתה מחולקת לשני חלקים: סגל מג''ל העביר למתגייסים החדשים את פרק הטירונות, ואת נושאי העורף העבירו מפקדים מפיקוד העורף. \nהידעת? במחזור הראשון שהתגייס ללוחמה בפיקוד העורף היו 80 חיילים בפלוגה. לצורך השוואה- במחזור הגיוס מרץ 2024, היו כ140 חיילים בפלוגה! ", "timeline-text-container"],
     img4: ["assets/images/magal.png", "מערך מגל", "", ["timeline-symbol-img", "shield-sym"], "", "timeline-text-container"],
     el5: ["button", "next-btn-timeline", "next-btn-9", "אני רוצה להמשיך!", "timeline-text-container"]
 }
@@ -175,7 +178,7 @@ var page16 = {
     el2: ["div", "title", "timeline-title", "2016- איחוד בה''ד 16 והנפה הסדירה", "timeline-text-container"],
     el3: ["div", "", "complex-text15", "", "timeline-text-container"],
     el4: ["span", "", "", "בשנת 2016 אוחד בה''ד 16 עם הנפה הסדירה והוקמה ", "complex-text15"],
-    el5: ["strong", "", "", "חטיבת החילוץ וההדרכה.", "complex-text15"],
+    el5: ["strong", "", "", "חטיבת החילוץ וההדרכה", "complex-text15"],
     el6: ["div", "", "pin-container", "", "timeline-text-container"],
     img6: ["assets/images/new-fighter.svg", "סיכת לוחם חדשה", "", ["timeline-symbol-img", "fighter-pin"], "", "pin-container"],
     img7: ["assets/images/old-fighter.svg", "סיכת לוחם ישנה", "", ["timeline-symbol-img", "fighter-pin"], "", "pin-container"],
@@ -565,7 +568,7 @@ window.addEventListener("load", (event) => {
     matachimStructure = document.getElementById("st-matachim");
     schoolStructure = document.getElementById("st-school");
     gdudimStructure = document.getElementById("st-gdudim");
-    createScreen(openScreenContent);
+    createScreen(page4);
     document.getElementById("menu-btn").addEventListener("click", showMenu);
     document.getElementById("info-btn").addEventListener("click", showInfo);
     document.getElementById("ques-btn").addEventListener("click", showQues);
@@ -897,7 +900,7 @@ const closeDefinition = () => {
 var timelineComplexPage = () => {
     document.getElementById("branches").addEventListener("click", (event) => {
         if (event.target.id.startsWith("profession-branch")) {
-            document.getElementById("branch-explaination").innerText = "הכשרות למדריכים וחיילים למקצועות השונים בעורף, הכשרת אב''כ לכלל צה''ל, והכשרת אזרחים לתפקידם בחירום.";
+            document.getElementById("branch-explaination").innerText = "הכשרות למדריכים וחיילים למקצועות השונים בעורף, הכשרת אב''כ לכלל צה''ל, והכשרת אזרחים לתפקידם בחירום";
             if (!complexBranchesVisited.includes("profession-branch")) {
                 complexBranchesVisited.push("profession-branch");
             }
@@ -905,7 +908,7 @@ var timelineComplexPage = () => {
                 createComplaxTimelineBtn();
             }
         } else if (event.target.id.startsWith("command-branch")) {
-            document.getElementById("branch-explaination").innerText = "אחראי על אימון מפקדות הפיקוד ברמה המחוזית והנפתית.";
+            document.getElementById("branch-explaination").innerText = "אחראי על אימון מפקדות הפיקוד ברמה המחוזית והנפתית";
             if (!complexBranchesVisited.includes("command-branch")) {
             complexBranchesVisited.push("command-branch");
             }
@@ -913,7 +916,7 @@ var timelineComplexPage = () => {
                 createComplaxTimelineBtn();
             }
         } else if (event.target.id.startsWith("emi-branch")) {
-            document.getElementById("branch-explaination").innerText = "אחראי על אימון המסגרות הגדודיות- גדודי המילואים והסדיר לשמירת הכשירות במקצועות החילוץ והאב''כ.";
+            document.getElementById("branch-explaination").innerText = "אחראי על אימון המסגרות הגדודיות- גדודי המילואים והסדיר לשמירת הכשירות במקצועות החילוץ והאב''כ";
             if (!complexBranchesVisited.includes("emi-branch")) {
             complexBranchesVisited.push("emi-branch");
             }

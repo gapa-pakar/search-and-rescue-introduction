@@ -112,6 +112,14 @@ html, body {
     opacity: 1;
 }
 
+.quote {
+    font-size: 1.2rem;
+}
+
+.quote-end {
+    font-size: 0.7rem;
+}
+
 .timeline-symbol-img {
     height: 5.5rem;
     padding: 0.5rem 0.5rem 0.5rem 1.8rem;
