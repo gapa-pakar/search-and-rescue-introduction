@@ -4,6 +4,8 @@ Last edited Oct. 2024
 
 This is a web learning app about the Search and Rescue Brigade. 
 
+All of the videos and graghics can be found in the mador's github, additionally there is an .ai file with illustrator created graphics that are used in the project.
+
 Important notes about the code:
 This is a single page app programmed using js vanilla. 
 All elements are added to the DOM with js, except for complicated elements or ones that need to be accessible all throughout the app. 

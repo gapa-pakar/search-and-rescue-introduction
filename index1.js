@@ -186,6 +186,82 @@ var page16 = {
 }
 
 var page17 = {
+    el1: ["div", "", "question-container", "", "page"],
+    el2: ["div", "question-title", "", "מתי הוקם פיקוד העורף?", "question-container"],
+    el3: ["div", "", "ans-container", "", "question-container"],
+    el4: ["div", "answer", "ans1", "1992", "ans-container"],
+    el5: ["div", "answer", "ans2", "1990", "ans-container"],
+    el6: ["div", "answer", "ans3", "2016", "ans-container"],
+    el7: ["div", "answer", "ans4", "1982", "ans-container"],
+    el8: ["button", "", "check-btn", "בדיקה", "question-container"]
+}
+
+var page18 = {
+    el1: ["div", "", "question-container", "", "page"],
+    el2: ["div", "question-title", "", "בעקבות איזה אירוע הוחלט על הקמת פיקוד העורף?", "question-container"],
+    el3: ["div", "", "ans-container", "", "question-container"],
+    el4: ["div", "answer", "ans1", "מלחמת ששת הימים", "ans-container"],
+    el5: ["div", "answer", "ans2", "מלחמת שלום הגליל", "ans-container"],
+    el6: ["div", "answer", "ans3", "מלחמת המפרץ", "ans-container"],
+    el7: ["div", "answer", "ans4", "פעולות התגמול", "ans-container"],
+    el8: ["button", "", "check-btn", "בדיקה", "question-container"]
+}
+
+var page19 = {
+    el1: ["div", "", "question", "אילו שני גופים אוחדו בשנת 2016 לחטיבת החילוץ וההדרכה כפי שהיא היום?", "page"],
+    el2: ["div", "card-container", "card-container", "", "page"],
+    el3: ["div", "card", "ans1", "בה''ד 16", "card-container"],
+    el4: ["div", "card", "ans2", "מפקדה משימתית", "card-container"],
+    el5: ["div", "card", "ans3", "גדוד שחר", "card-container"],
+    el6: ["div", "card", "ans4", "מחוז מרכז", "card-container"],
+    el7: ["div", "card", "ans5", "מחוז צפון", "card-container"],
+    el8: ["div", "card", "ans6", "מפקדת אלון", "card-container"],
+    el9: ["div", "card", "ans7", "ענף מפקדים", "card-container"],
+    el10: ["div", "card", "ans8", "נפה 60 (הנפה הסדירה)", "card-container"],
+    el11: ["div", "card", "ans9", "בה''ד 10", "card-container"],
+    el12: ["div", "card", "ans10", "ענף מקצועות", "card-container"],
+    el13: ["bbutton", "", "check-btn", "בדוק", "page"],
+    el14: ["div", "error", "error-msg", "עליכם לבחור 2 תשובות בלבד", "page"]
+}
+
+var page20 = {
+    el1: ["div", "", "question", "התאם בין התאריך לאירוע. לחץ על 2 תשובות משורות שונות ולחץ על הכפתור כדי לבדוק את תשובתך", "page"],
+    el2: ["div", "card-container", "card-container", "", "page"],
+    el3: ["div", "year-container", "year-container", "", "card-container"],
+    el4: ["div", "event-container", "event-container", "", "card-container"],
+    el5: ["div", "card", "year1", "1992", "year-container"],
+    el6: ["div", "card", "year2", "2003", "year-container"],
+    el7: ["div", "card", "year3", "2004", "year-container"],
+    el8: ["div", "card", "year4", "2008", "year-container"],
+    el9: ["div", "card", "year5", "2009", "year-container"],
+    el10: ["div", "card", "year6", "2012", "year-container"],
+    el11: ["div", "card", "year7", "2012", "year-container"],
+    el12: ["div", "card", "year8", "2013", "year-container"],
+    el13: ["div", "card", "year9", "2016", "year-container"],
+    el14: ["div", "card", "event6", "הקמת גדוד תבור", "event-container"],
+    el15: ["div", "card", "event2", "הקמת פלוגת החילוץ הראשונה- פלוגת 'שביט'", "event-container"],
+    el16: ["div", "card", "event8", "הקמת הנפה הסדירה", "event-container"],
+    el17: ["div", "card", "event3", "הקמת פלוגת 'חץ' ופלוגת 'רותם'", "event-container"],
+    el18: ["div", "card", "event9", "איחוד בה''ד 16 והנפה הסדירה והקמת חטיבת החילוץ", "event-container"],
+    el19: ["div", "card", "event5", "הקמת גדוד קדם", "event-container"],
+    el20: ["div", "card", "event1", "הקמת פיקוד העורף", "event-container"],
+    el21: ["div", "card", "event7", "הקמת גדוד רם", "event-container"],
+    el22: ["div", "card", "event4", "איחוד פלוגות החילוץ והקמת גדוד שחר", "event-container"],
+    el23: ["button", "", "check-btn", "בדיקה", "page"],
+    el24: ["div", "error", "error-msg", "עליכם לבחור 2 תשובות בלבד", "page"]
+}
+
+var page21= {
+    el1: ["div", "", "question-container", "", "page"],
+    el2: ["div", "question-title", "", "בחר את המשפט הנכון", "question-container"],
+    el3: ["div", "", "ans-container", "", "question-container"],
+    el4: ["div", "answer", "ans1", "משימתן של פלוגות החילוץ הראשונות היתה קיום הכשרות למדריכים וללוחמים במקצועות העורף", "ans-container"],
+    el5: ["div", "answer", "ans2", "משימתן של פלוגות החילוץ הראשונות היתה אבטחת כלא מגידו", "ans-container"],
+    el6: ["div", "answer", "ans3", "משימתן של פלוגות החילוץ הראשונות היתה אימון גדודי המילואים לחילוץ ולאב''כ", "ans-container"],
+    el7: ["button", "", "check-btn", "בדיקה", "question-container"]
+}
+
+var page22 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"], 
     el2: ["div", "con-sen", "", "עכשיו, לאחר שלמדנו על הדרך שעברה החטיבה עד היום, נעבור ל:", "main-roles"],
     el3: ["div", "sub-title", "sub-title-roles", "ייעוד ותפקידי חטיבת החילוץ וההדרכה", "main-roles"],
@@ -193,7 +269,7 @@ var page17 = {
     evLis5: ["next-btn-17", "click", "nextPage"]
 }
 
-var page18 = {
+var page23 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "ייעוד ותפקידי חטיבת החילוץ וההדרכה", "main-roles"],
     el3: ["div", "", "complex-text28", "", "main-roles"],
@@ -205,7 +281,7 @@ var page18 = {
     evLis9: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page19 = {
+var page24 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "", "info-roles", "", "main-roles"],
     el3: ["div", "title", "", "תפקידי החטיבה בשגרה ובחירום", "info-roles"],
@@ -215,7 +291,7 @@ var page19 = {
     func7: ["rolesCarousels"]
 }
 
-var page20 = {
+var page25 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- טורקיה", "main-roles"], 
@@ -223,7 +299,7 @@ var page20 = {
     img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"]
 }
 
-var page21 = {
+var page26 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "מפקדה משימתית- קורונה", "main-roles"], 
@@ -240,7 +316,7 @@ var page21 = {
     evLis14: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page22 = {
+var page27 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בעורף", "main-roles"], 
@@ -252,7 +328,7 @@ var page22 = {
     func9: ["rescueImgCarousel"]
 }
 
-var page23 = {
+var page28 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
@@ -261,7 +337,7 @@ var page23 = {
     img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"]
 }
 
-var page24 = {
+var page29 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"], 
@@ -270,7 +346,7 @@ var page24 = {
     img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"]
 }
 
-var page25 = {
+var page30 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "אב''כ", "main-roles"], 
@@ -280,7 +356,7 @@ var page25 = {
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
-var page26 = {
+var page31 = {
     el1: ["div", "roles-text-page", "main-roles", "", "page"],
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "בט''ש", "main-roles"], 
@@ -289,7 +365,70 @@ var page26 = {
     vid6: ["420", "315", "batashvid", "batashvid", "main-roles", "assets/videos/batash.mp4"]
 }
 
-var page27 = {
+var page32 = {
+    el1: ["div", "", "question-container", "", "page"],
+    el2: ["div", "question-title", "question-title", "מהם תפקידי החטיבה בשגרה? יכולה להיות יותר מתשובה אחת נכונה", "question-container"],
+    el3: ["div", "", "ans-container", "", "question-container"],
+    el4: ["div", "", "ans1", "answer-cont", "ans-container"],
+    el5: ["div", "", "ans2", "answer-cont", "ans-container"],
+    el6: ["div", "", "ans3", "answer-cont", "ans-container"],
+    el7: ["div", "", "ans4", "answer-cont", "ans-container"],
+    el8: ["div", "", "ans5", "answer-cont", "ans-container"],
+    el9: ["span", "", "answer", "", "ans1"],
+    el10: ["span", "", "", "לשמש כח כוננות מיידי לאירועי חילוץ, הצלה ואב''כ", "ans1"],
+    el11: ["span", "", "answer", "", "ans2"],
+    el12: ["span", "", "", "להכשיר את מקצועות העורף בסדיר ובמילואים ואת מערך הלחימה בפקע''ר", "ans2"],
+    el13: ["span", "", "answer", "", "ans3"],
+    el14: ["span", "", "", "לדאוג לאבטחתו של בית הסוהר מגידו בשגרה ובחירום", "ans3"],
+    el15: ["span", "", "answer", "", "ans4"],
+    el16: ["span", "", "", "לשלח גדודים ולאמן מסגרות תוך כדי תעסוקה מבצעית", "ans4"],
+    el17: ["span", "", "answer", "", "ans5"],
+    el18: ["span", "", "", "חיזוק החוסן הלאומי והצלת חיים בשגרה", "ans5"],
+    el19: ["button", "", "check-btn", "בדיקה", "question-container"],
+    el20: ["div", "error", "", "יש לבחור תשובה על מנת לבדוק את השאלה", "question-container"]
+}
+
+var page33 = {
+    el1: ["div", "", "question", "השלימו את המשפט בעזרת מחסן המילים", "page"],
+    el2: ["div", "sentence", "sentence", "", "page"],
+    el3: ["span", "", "", "חטיבת החילוץ וההדרכה תהווה גוף ל ", "sentence"],
+    el4: ["span", "drop-zone", "drop1", "", "sentence"],
+    el5: ["span", "", "", " של מערך הלחימה בפקע''ר, ", "sentence"],
+    el6: ["span", "drop-zone", "drop2", "", "sentence"],
+    el7: ["span", "connective-letter", "", " ו", "sentence"],
+    el8: ["span", "drop-zone", "drop3", "", "sentence"],
+    el9: ["span", "", "", " את מסגרות פקע''ר ב ", "sentence"],
+    el10: ["span", "drop-zone", "drop4", "", "sentence"],
+    el11: ["span", "connective-letter", "", " וב", "sentence"],
+    el12: ["span", "drop-zone", "drop5", "", "sentence"],
+    el13: ["span", "", "", " בתחומי ה ", "sentence"],
+    el14: ["span", "drop-zone", "drop6", "", "sentence"],
+    el15: ["span", "connective-letter", "", " וה", "sentence"],
+    el16: ["span", "drop-zone", "drop7", "", "sentence"],
+    el17: ["div", "word-bank", "word-bank", "", "page"],
+    el18: ["button", "", "next-btn", "הבא", "page"],
+    //function
+}
+
+var page34 = {
+    el1: ["div", "", "question", "השלימו את המשפט בעזרת מחסן המילים", "page"],
+    el2: ["div", "sentence", "sentence", "", "page"],
+    el3: ["span", "", "", "מפקדת החטיבה תשמש כ ", "sentence"],
+    el5: ["span", "drop-zone", "drop1", "", "sentence"],
+    el6: ["span", "", "", " בחירום ובתוך כך תפעל באירועי חילוץ והצלה בכל זירות ה", "sentence"],
+    el7: ["span", "drop-zone", "drop2", "", "sentence"],
+    el8: ["span", "connective-letter", "", " , לרבות ", "sentence"],
+    el9: ["span", "drop-zone", "drop3", "", "sentence"],
+    el10: ["span", "", "", " גבולות מדינת ישראל ותפקד על מבצעים ", "sentence"],
+    el12: ["span", "drop-zone", "drop4", "", "sentence"],
+    el13: ["span", "connective-letter", "", " ברגיעה ובלחימה.", "sentence"],
+    el14: ["div", "word-bank", "word-bank", "", "page"],
+    el15: ["button", "", "next-btn", "הבא", "page"],
+    //function
+}
+
+// page 36
+var page36 = {
     el1: ["div", "structure-text-page", "structure", "", "page"],
     el2: ["div", "con-sen", "", "וכעת נעבור לסקירת:", "structure"],
     el3: ["div", "sub-title", "", "מבנה החטיבה ויחידותיה", "structure"],
@@ -297,11 +436,83 @@ var page27 = {
     evLis5: ["next-btn-17", "click", "nextPage"]
 }
 
-var page28 = {
+// page 37
+var page37 = {
     el1: ["div", "structure-text-page", "structure", "", "page"],
     el2: ["div", "", "structure-tree", "", "structure"],
     func3: ["handleStructureTree"],
-    el4: ["div", "explain-structure", "explain-structure", "עברו על כל היחידות כדי לסיים את הלומדה", "structure"]
+    el4: ["div", "explain-structure", "explain-structure", "עברו על כל היחידות כדי להמשיך בלומדה", "structure"]
+}
+
+var page38 = {
+    el1: ["div", "", "question", "התאם בין התאריך לאירוע. לחץ על 2 תשובות משורות שונות ולחץ על הכפתור כדי לבדוק את תשובתך", "page"],
+    el2: ["div", "card-container", "card-container", "", "page"],
+    el3: ["div", "year-container", "year-container", "", "card-container"],
+    el4: ["div", "event-container", "event-container", "", "card-container"],
+    el5: ["div", "card", "unit1", "1992", "year-container"],
+    el6: ["div", "card", "unit2", "2003", "year-container"],
+    el7: ["div", "card", "unit3", "2004", "year-container"],
+    el8: ["div", "card", "unit4", "2008", "year-container"],
+    el9: ["div", "card", "unit5", "2009", "year-container"],
+    el10: ["div", "card", "unit-exp1", "הקמת גדוד תבור", "event-container"],
+    el11: ["div", "card", "unit-exp2", "הקמת פלוגת החילוץ הראשונה- פלוגת 'שביט'", "event-container"],
+    el12: ["div", "card", "unit-exp3", "הקמת הנפה הסדירה", "event-container"],
+    el13: ["div", "card", "unit-exp4", "הקמת פלוגת 'חץ' ופלוגת 'רותם'", "event-container"],
+    el14: ["div", "card", "unit-exp5", "איחוד בה''ד 16 והנפה הסדירה והקמת חטיבת החילוץ", "event-container"],
+    el15: ["button", "", "check-btn", "בדיקה", "page"],
+    el16: ["div", "error", "error-msg", "עליכם לבחור 2 תשובות בלבד", "page"]
+}
+
+var page39 = {
+    el1: ["div", "", "question-container", "", "page"],
+    el2: ["div", "question-title", "question-title", "מהם תחומי הכשירות המרכזיים של לוחמי החטיבה? יכולה להיות יותר מתשובה אחת נכונה", "question-container"],
+    el3: ["div", "", "ans-container", "", "question-container"],
+    el4: ["div", "", "ans1", "answer-cont", "ans-container"],
+    el5: ["div", "", "ans2", "answer-cont", "ans-container"],
+    el6: ["div", "", "ans3", "answer-cont", "ans-container"],
+    el7: ["div", "", "ans4", "answer-cont", "ans-container"],
+    el8: ["div", "", "ans5", "answer-cont", "ans-container"],
+    el9: ["span", "", "answer", "", "ans1"],
+    el10: ["span", "", "", "לש''ב", "ans1"],
+    el11: ["span", "", "answer", "", "ans2"],
+    el12: ["span", "", "", "חילוץ", "ans2"],
+    el13: ["span", "", "answer", "", "ans3"],
+    el14: ["span", "", "", "כושר גופני", "ans3"],
+    el15: ["span", "", "answer", "", "ans4"],
+    el16: ["span", "", "", "מנהיגות ופיקוד", "ans4"],
+    el17: ["span", "", "answer", "", "ans5"],
+    el18: ["span", "", "", "אב''כ", "ans5"],
+    el19: ["button", "", "check-btn", "בדיקה", "question-container"],
+    el20: ["div", "error", "", "יש לבחור תשובה על מנת לבדוק את השאלה", "question-container"]
+
+}
+
+var page40 = {
+    el1: ["div", "", "question-container", "", "page"],
+    el2: ["div", "question-title", "", "מה מסמל המשולש הכחול בסמל החטיבה?", "question-container"],
+    el3: ["div", "", "ans-container", "", "question-container"],
+    el4: ["div", "answer", "ans1", "הגנה על העורף", "ans-container"],
+    el5: ["div", "answer", "ans2", "תפקיד החטיבה בתור מפקדה משימתית בשגרה ובחירום", "ans-container"],
+    el6: ["div", "answer", "ans3", "הכשרת ואימון לוחמי החטיבה במילואים", "ans-container"],
+    el7: ["div", "answer", "ans4", "הסמל הבינלאומי לחילוץ", "ans-container"],
+    el7: ["button", "", "check-btn", "בדיקה", "question-container"]
+}
+
+var page41 = {
+    el1: ["div", "", "question", "התאם בין התאריך לאירוע. לחץ על 2 תשובות משורות שונות ולחץ על הכפתור כדי לבדוק את תשובתך", "page"],
+    el2: ["div", "card-container", "card-container", "", "page"],
+    el3: ["div", "year-container", "year-container", "", "card-container"],
+    el4: ["div", "event-container", "event-container", "", "card-container"],
+    el5: ["div", "card", "unit1", "מדור אב''כ", "year-container"],
+    el6: ["div", "card", "unit2", "אימון מתקדם", "year-container"],
+    el7: ["div", "card", "unit3", "חניכת אוכלוסייה", "year-container"],
+    el8: ["div", "card", "unit4", "גדוד תבור", "year-container"],
+    el10: ["div", "card", "unit-exp1", "בא''פ העורף", "event-container"],
+    el11: ["div", "card", "unit-exp2", "בא''ח העורף", "event-container"],
+    el12: ["div", "card", "unit-exp3", "מפקדת החטיבה", "event-container"],
+    el13: ["div", "card", "unit-exp4", "בית הספר לפיקוד ולמקצועות העורף", "event-container"],
+    el15: ["button", "", "check-btn", "בדיקה", "page"],
+    el16: ["div", "error", "error-msg", "עליכם לבחור 2 תשובות בלבד", "page"]
 }
 
 const hativaDetails = {
